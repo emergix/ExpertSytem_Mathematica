@@ -15,7 +15,7 @@ ExpertSystem technology in Mathematica
 - **Tool Output:** Decomposition of PnL impact by variable and model
 - **Use Case:** Attributing risk to factors and identifying concentration zones
 
-📎 See the *RiskEngine_Features_Show.pdf* for detailed screenshots.
+📎 See for detailed screenshots. [RiskEngine_Features_Show](./RiskEngine_Features_Show.pdf)
 
 ## Example 3: Extended Report
 
@@ -39,4 +39,4 @@ The mathematical backbone of this approach is based on a *Natural Sensitivities 
 - Tensor notation for second-order risk
 - Sensitivity propagation across model changes
 
-📘 Refer to the document *NaturalSensitivitiesAlgebra.pdf* for detailed mathematical derivation【11†NaturalSensitivitiesAlgebra.pdf】.
+📎 See for detailed screenshots. [NaturalSensitivitiesAlgebra](./NaturalSensitivitiesAlgebra.pdf)
