@@ -1,0 +1,6 @@
+Index Curve,ID,Name,Datum,Relative Curve,State Procedure,Procedure Parameter,Curve Function,Function parameters,Time Evolution,Time Interpolation,Term Interpolation,Curve Unit,RiskMetrics Link,Surface
+,,Factor1,2000/05/26,False,,,,,slidingaxis 2,Constant,Linear,USD,USD-Equity,Term,0
+,,,,,,,,,,,,,,0,1000.
+Index Curve,ID,Name,Datum,Relative Curve,State Procedure,Procedure Parameter,Curve Function,Function parameters,Time Evolution,Time Interpolation,Term Interpolation,Curve Unit,RiskMetrics Link,Surface
+,,Factor2,2000/05/26,False,,,,,slidingaxis 2,Constant,Linear,USD,USD-Equity,Term,0
+,,,,,,,,,,,,,,0,2.

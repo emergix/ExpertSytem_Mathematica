@@ -1,0 +1,323 @@
+(* Content-type: application/mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 7.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       145,          7]
+NotebookDataLength[     10896,        314]
+NotebookOptionsPosition[     10096,        284]
+NotebookOutlinePosition[     10470,        300]
+CellTagsIndexPosition[     10427,        297]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"NewKb", "[", "]"}], ";"}]], "Input",
+ InitializationCell->True],
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"AddClass", "[", "\"\<Scenario\>\"", "]"}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{
+   RowBox[{"AddAttribute", "[", 
+    RowBox[{"\"\<Scenario\>\"", ",", "\"\<CurveShifts\>\""}], "]"}], ";"}], 
+  " ", 
+  StyleBox[
+   RowBox[{"(*", " ", 
+    RowBox[{"container", " ", "for", " ", "the", " ", "curve", " ", "shift"}],
+     " ", "*)"}],
+   FontColor->RGBColor[0, 0, 1]]}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"AddAttribute", "[", 
+   RowBox[{"\"\<Scenario\>\"", ",", "\"\<Scenario Name\>\""}], "]"}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"AddAttribute", "[", 
+   RowBox[{"\"\<Scenario\>\"", ",", "\"\<Scenario Probability\>\""}], "]"}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"AddAttribute", "[", 
+   RowBox[{"\"\<Scenario\>\"", ",", "\"\<Scenario Color\>\""}], "]"}], 
+  ";"}]}], "Input",
+ InitializationCell->True],
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"AddClass", "[", "\"\<CurveShift\>\"", "]"}], ";"}], "\n", 
+ RowBox[{
+  RowBox[{"AddAttribute", "[", 
+   RowBox[{"\"\<CurveShift\>\"", ",", "\"\<Scenario Variable\>\""}], "]"}], 
+  ";"}], "\n", 
+ RowBox[{
+  RowBox[{"AddAttribute", "[", 
+   RowBox[{"\"\<CurveShift\>\"", ",", "\"\<Scenario Start Time\>\""}], "]"}], 
+  ";"}], "\n", 
+ RowBox[{
+  RowBox[{"AddAttribute", "[", 
+   RowBox[{"\"\<CurveShift\>\"", ",", "\"\<Scenario Attribute\>\""}], "]"}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"AddAttribute", "[", 
+   RowBox[{"\"\<CurveShift\>\"", ",", "\"\<Time Evolution\>\""}], "]"}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"AddAttribute", "[", 
+   RowBox[{"\"\<CurveShift\>\"", ",", "\"\<Time Evolution to Trigger\>\""}], 
+   "]"}], ";"}], "\n", 
+ RowBox[{
+  RowBox[{"AddAttribute", "[", 
+   RowBox[{"\"\<CurveShift\>\"", ",", "\"\<Trigger Holder\>\""}], "]"}], 
+  ";"}], "\n", 
+ RowBox[{
+  RowBox[{"AddAttribute", "[", 
+   RowBox[{"\"\<CurveShift\>\"", ",", "\"\<Scenario Shift Rule\>\""}], "]"}], 
+  ";"}], "\n", 
+ RowBox[{
+  RowBox[{"AddAttribute", "[", 
+   RowBox[{"\"\<CurveShift\>\"", ",", "\"\<Scenario Type\>\""}], "]"}], 
+  ";"}], "\n", 
+ RowBox[{
+  RowBox[{"AddAttribute", "[", 
+   RowBox[{"\"\<CurveShift\>\"", ",", "\"\<Scenario Replacement Value\>\""}], 
+   "]"}], ";"}], "\n", 
+ RowBox[{
+  RowBox[{"AddAttribute", "[", 
+   RowBox[{"\"\<CurveShift\>\"", ",", "\"\<Scen Type\>\""}], "]"}], 
+  ";"}]}], "Input",
+ InitializationCell->True],
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"AddClass", "[", "\"\<ScenarioSet\>\"", "]"}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{
+   RowBox[{"AddAttribute", "[", 
+    RowBox[{"\"\<ScenarioSet\>\"", ",", "\"\<Scenarios\>\""}], "]"}], ";"}], 
+  " ", 
+  StyleBox[
+   RowBox[{"(*", " ", 
+    RowBox[{"a", " ", "container", " ", "for", " ", "the", " ", "scenarios"}],
+     " ", "*)"}],
+   FontColor->RGBColor[0, 0, 1]]}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"AddAttribute", "[", 
+   RowBox[{"\"\<ScenarioSet\>\"", ",", "\"\<Scenario Set Name\>\""}], "]"}], 
+  ";"}]}], "Input",
+ InitializationCell->True],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"CSVDescriptor", "[", 
+   RowBox[{"flag_", ",", "filename_", ",", "listofrecords_"}], "]"}], ":=", 
+  RowBox[{"Module", "[", 
+   RowBox[{
+    RowBox[{"{", 
+     RowBox[{"records", ",", 
+      RowBox[{"nbrecords", "=", 
+       RowBox[{"Length", "[", "listofrecords", "]"}]}], ",", "rtype", ",", 
+      "rattlist", ",", "nbatt", ",", 
+      RowBox[{"str", "=", "\"\<\>\""}], ",", "i", ",", "j"}], "}"}], ",", 
+    "\[IndentingNewLine]", 
+    RowBox[{"If", "[", 
+     RowBox[{
+      RowBox[{"flag", "\[Equal]", "\"\<Yes\>\""}], ",", "\[IndentingNewLine]",
+       "\t", 
+      RowBox[{
+       RowBox[{"Do", "[", 
+        RowBox[{
+         RowBox[{
+          RowBox[{"records", "=", 
+           RowBox[{"listofrecords", "[", 
+            RowBox[{"[", "i", "]"}], "]"}]}], ";", "\[IndentingNewLine]", 
+          "\t\t", 
+          RowBox[{"rtype", "=", 
+           RowBox[{"records", "[", 
+            RowBox[{"[", "1", "]"}], "]"}]}], ";", "\[IndentingNewLine]", 
+          "\t\t", 
+          RowBox[{"rattlist", "=", 
+           RowBox[{"records", "[", 
+            RowBox[{"[", "2", "]"}], "]"}]}], ";", "\[IndentingNewLine]", 
+          "\t\t", 
+          RowBox[{"nbatt", "=", 
+           RowBox[{"Length", "[", "rattlist", "]"}]}], ";", 
+          "\[IndentingNewLine]", "\t\t", 
+          RowBox[{"str", "=", 
+           RowBox[{"str", "<>", 
+            RowBox[{"V", "[", 
+             RowBox[{"rtype", "<>", "\"\<\\\\\>\"", "<>", "\"\<Type\>\""}], 
+             "]"}], "<>", "\"\<,\>\"", "<>", 
+            RowBox[{"rattlist", "[", 
+             RowBox[{"[", "1", "]"}], "]"}]}]}], ";", "\[IndentingNewLine]", 
+          "\t", 
+          RowBox[{"Do", "[", 
+           RowBox[{
+            RowBox[{"str", "=", 
+             RowBox[{"str", "<>", "\"\<,\>\"", "<>", 
+              RowBox[{"rattlist", "[", 
+               RowBox[{"[", "j", "]"}], "]"}]}]}], ",", 
+            RowBox[{"{", 
+             RowBox[{"j", ",", "2", ",", "nbatt"}], "}"}]}], "]"}], ";", 
+          "\[IndentingNewLine]", "\t", 
+          RowBox[{"str", "=", 
+           RowBox[{"str", "<>", "\"\<\\n,\>\""}]}], ";", 
+          "\[IndentingNewLine]", "\t", 
+          RowBox[{"str", "=", 
+           RowBox[{"str", "<>", 
+            RowBox[{"V", "[", 
+             RowBox[{"rtype", "<>", "\"\<\\\\\>\"", "<>", 
+              RowBox[{"rattlist", "[", 
+               RowBox[{"[", "1", "]"}], "]"}]}], "]"}]}]}], ";", 
+          "\[IndentingNewLine]", "\t", 
+          RowBox[{"Do", "[", 
+           RowBox[{
+            RowBox[{"str", "=", 
+             RowBox[{"str", "<>", "\"\<,\>\"", "<>", 
+              RowBox[{"V", "[", 
+               RowBox[{"rtype", "<>", "\"\<\\\\\>\"", "<>", 
+                RowBox[{"rattlist", "[", 
+                 RowBox[{"[", "j", "]"}], "]"}]}], "]"}]}]}], ",", 
+            RowBox[{"{", 
+             RowBox[{"j", ",", "2", ",", "nbatt"}], "}"}]}], "]"}], ";", 
+          "\[IndentingNewLine]", "\t   ", 
+          RowBox[{"str", "=", 
+           RowBox[{"str", "<>", "\"\<\\n\>\""}]}], ";"}], 
+         "\[IndentingNewLine]", ",", 
+         RowBox[{"{", 
+          RowBox[{"i", ",", "1", ",", "nbrecords"}], "}"}]}], "]"}], ";", 
+       "\[IndentingNewLine]", 
+       RowBox[{"Print", "[", 
+        RowBox[{"\"\<exporting\>\"", ",", "str"}], "]"}], ";", 
+       "\[IndentingNewLine]", 
+       RowBox[{"Export", "[", 
+        RowBox[{"filename", ",", "str", ",", "\"\<Text\>\""}], "]"}]}]}], 
+     "]"}]}], "]"}]}]], "Input",
+ InitializationCell->True],
+
+Cell[BoxData[
+ RowBox[{"(*", " ", 
+  RowBox[{"example", " ", "of", " ", "use"}], " ", "*)"}]], "Input"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"CSVDescriptor", "[", 
+  RowBox[{"\"\<yes\>\"", ",", "\"\<out2.CSV\>\"", ",", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"\"\<asd\>\"", ",", 
+       RowBox[{"{", 
+        RowBox[{"\"\<asd1\>\"", ",", "\"\<asd2\>\"", ",", "\"\<asd3\>\""}], 
+        "}"}]}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"\"\<asd22\>\"", ",", 
+       RowBox[{"{", 
+        RowBox[{"\"\<asd12\>\"", ",", "\"\<asd22\>\"", ",", "\"\<asd32\>\""}],
+         "}"}]}], "}"}]}], "}"}]}], "]"}]], "Input"],
+
+Cell[BoxData["\<\"out2.CSV\"\>"], "Output"]
+}, Open  ]],
+
+Cell[BoxData[
+ RowBox[{"Conclude", "[", 
+  RowBox[{"CurrentInstance", ",", "\"\<CSV Descriptor\>\"", ",", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"\"\<Instrument\>\"", ",", 
+       RowBox[{"{", 
+        RowBox[{
+        "\"\<Name\>\"", ",", "\"\<Type\>\"", ",", "\"\<Currency\>\"", ",", 
+         "\"\<Maturity Date\>\"", ",", "\"\<Notional\>\"", ",", 
+         "\"\<Issue Date\>\"", ",", "\"\<Coupon Rate\>\"", ",", "\n", 
+         "\t     ", "\"\<Fixed Coupon Date\>\"", ",", 
+         "\"\<State Procedure\>\"", ",", "\"\<Term\>\"", ",", 
+         "\"\<Accrual Daycount Basis\>\"", ",", "\[IndentingNewLine]", 
+         "\"\<Coupon Generation Method\>\"", ",", "\"\<Business Day Rule\>\"",
+          ",", "\"\<Spot Price\>\"", ",", "\[IndentingNewLine]", 
+         "\"\<Trade day Rule\>\"", ",", "\"\<Repo Curve\>\"", ",", 
+         "\"\<Discount Curve\>\"", ",", "\[IndentingNewLine]", 
+         "\"\<RiskMetrics Map Procedure\>\"", ",", 
+         "\"\<Spread Over Yield\>\"", ",", "\"\<Theoretical Model*\>\"", ",", 
+         "\"\<Market Model*\>\""}], "}"}]}], "}"}], ",", 
+     "\[IndentingNewLine]", 
+     RowBox[{"{", 
+      RowBox[{"\"\<Market Model\>\"", ",", 
+       RowBox[{"{", 
+        RowBox[{
+        "\"\<Name\>\"", ",", "\"\<Value\>\"", ",", "\"\<Price\>\"", ",", 
+         "\"\<Spot Value\>\"", ",", "\"\<Yield\>\"", ",", 
+         "\"\<Accrued Interest\>\""}], "}"}]}], "}"}], ",", 
+     "\[IndentingNewLine]", 
+     RowBox[{"{", 
+      RowBox[{"\"\<Theoretical Model\>\"", ",", 
+       RowBox[{"{", 
+        RowBox[{
+        "\"\<Name\>\"", ",", "\"\<Value\>\"", ",", "\"\<Price\>\"", ",", 
+         "\"\<Spot Value\>\"", ",", "\"\<Yield\>\"", ",", 
+         "\"\<Accrued Interest\>\""}], "}"}]}], "}"}]}], "}"}]}], 
+  "]"}]], "Input"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"CSVDescriptor", "[", 
+   RowBox[{
+    RowBox[{"V", "[", 
+     RowBox[{"CurrentInstance", ",", "\"\<Want create a CSV File\>\""}], 
+     "]"}], ",", 
+    RowBox[{"V", "[", 
+     RowBox[{"CurrentInstance", ",", "\"\<CSV File Name\>\""}], "]"}], ",", 
+    RowBox[{"V", "[", 
+     RowBox[{"CurrentInstance", ",", "\"\<CSV Descriptor\>\""}], "]"}]}], 
+   "]"}], ";"}]], "Input"]
+},
+AutoGeneratedPackage->Automatic,
+WindowSize->{923, 433},
+WindowMargins->{{153, Automatic}, {Automatic, 60}},
+FrontEndVersion->"7.0 for Mac OS X x86 (32-bit) (February 18, 2009)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[545, 20, 98, 3, 27, "Input",
+ InitializationCell->True],
+Cell[646, 25, 903, 26, 88, "Input",
+ InitializationCell->True],
+Cell[1552, 53, 1515, 43, 178, "Input",
+ InitializationCell->True],
+Cell[3070, 98, 614, 18, 58, "Input",
+ InitializationCell->True],
+Cell[3687, 118, 3499, 86, 253, "Input",
+ InitializationCell->True],
+Cell[7189, 206, 103, 2, 27, "Input"],
+Cell[CellGroupData[{
+Cell[7317, 212, 522, 14, 27, "Input"],
+Cell[7842, 228, 43, 0, 27, "Output"]
+}, Open  ]],
+Cell[7900, 231, 1781, 38, 133, "Input"],
+Cell[9684, 271, 408, 11, 43, "Input"]
+}
+]
+*)
+
+(* End of internal cache information *)

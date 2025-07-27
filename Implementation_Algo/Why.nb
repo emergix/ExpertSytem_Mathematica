@@ -1,0 +1,255 @@
+(* Content-type: application/mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 7.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       145,          7]
+NotebookDataLength[      8145,        245]
+NotebookOptionsPosition[      7307,        212]
+NotebookOutlinePosition[      7681,        228]
+CellTagsIndexPosition[      7638,        225]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"How", "[", 
+   RowBox[{"attname_", ",", "instancename_"}], "]"}], ":=", 
+  RowBox[{"Module", "[", 
+   RowBox[{
+    RowBox[{"{", 
+     RowBox[{
+      RowBox[{"instance", "=", 
+       RowBox[{"InstanceFromInstanceName", "[", "instancename", "]"}]}], ",", 
+      RowBox[{"att", "=", 
+       RowBox[{"LookUpAttribute", "[", "attname", "]"}]}], ",", "SREEvent", 
+      ",", "rule"}], "}"}], ",", "\[IndentingNewLine]", 
+    RowBox[{
+     RowBox[{"SREEvent", "=", 
+      RowBox[{"lookUpSREEvent", "[", 
+       RowBox[{"instance", ",", "att"}], "]"}]}], ";", "\[IndentingNewLine]", 
+     RowBox[{"If", "[", 
+      RowBox[{
+       RowBox[{"SREEvent", "\[Equal]", "0"}], ",", "False", 
+       RowBox[{"(*", " ", 
+        RowBox[{"other", " ", "type", " ", "of", " ", "conclusion"}], " ", 
+        "*)"}], ",", "\[IndentingNewLine]", 
+       RowBox[{
+        RowBox[{"rule", "=", 
+         RowBox[{"SRERule", "[", "SREEvent", "]"}]}], ";", 
+        "\[IndentingNewLine]", 
+        RowBox[{"Print", "[", 
+         RowBox[{"\"\< ->BackwardRule \>\"", ",", 
+          RowBox[{"BRName", "[", "rule", "]"}], ",", " ", 
+          "\"\< concluded  \>\"", " ", ",", " ", "attname", " ", ",", 
+          "\"\<[\>\"", ",", "instancename", ",", "\"\<]\>\"", ",", 
+          "\"\<=\>\"", ",", 
+          RowBox[{"IAConcludedValue", "[", 
+           RowBox[{"InstanceAttributeValue", "[", 
+            RowBox[{"instance", ",", "att"}], "]"}], "]"}]}], "]"}], ";"}]}], 
+      "\[IndentingNewLine]", "]"}]}]}], "]"}]}]], "Input",
+ InitializationCell->True],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{
+   RowBox[{"InstanceFromInstanceName", "[", "instancename_", "]"}], ":=", 
+   RowBox[{"Module", "[", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{"pos1", "=", 
+        RowBox[{"StringPosition", "[", 
+         RowBox[{"instancename", ",", "\"\<<\>\""}], "]"}]}], ",", 
+       "classname", ",", "instancenb", ",", "class"}], "}"}], ",", 
+     "\[IndentingNewLine]", 
+     RowBox[{"If", "[", 
+      RowBox[{
+       RowBox[{
+        RowBox[{"Length", "[", "pos1", "]"}], "\[Equal]", "0"}], ",", 
+       RowBox[{
+        RowBox[{"Print", "[", 
+         RowBox[{
+         "\"\< InstanceFromInstanceName : not an instance name : \>\"", ",", 
+          "instancename"}], "]"}], ";", "False"}], ",", "\[IndentingNewLine]", 
+       RowBox[{
+        RowBox[{"classname", "=", 
+         RowBox[{"StringTake", "[", 
+          RowBox[{"instancename", ",", 
+           RowBox[{
+            RowBox[{"pos1", "[", 
+             RowBox[{"[", 
+              RowBox[{"1", ",", "1"}], "]"}], "]"}], "-", "1"}]}], "]"}]}], 
+        ";", "\[IndentingNewLine]", 
+        RowBox[{"instancenb", "=", 
+         RowBox[{"ToExpression", "[", 
+          RowBox[{"StringTake", "[", 
+           RowBox[{"instancename", ",", 
+            RowBox[{"{", 
+             RowBox[{
+              RowBox[{
+               RowBox[{"pos1", "[", 
+                RowBox[{"[", 
+                 RowBox[{"1", ",", "1"}], "]"}], "]"}], "+", "1"}], ",", 
+              RowBox[{
+               RowBox[{"StringLength", "[", "instancename", "]"}], "-", 
+               "1"}]}], "}"}]}], "]"}], "]"}]}], ";", "\[IndentingNewLine]", 
+        RowBox[{"class", "=", 
+         RowBox[{"LookUpClass", "[", "classname", "]"}]}], ";", 
+        "\[IndentingNewLine]", 
+        RowBox[{"If", "[", 
+         RowBox[{
+          RowBox[{"instancenb", ">", 
+           RowBox[{"Length", "[", 
+            RowBox[{"CLInstanceList", "[", "class", "]"}], "]"}]}], ",", 
+          RowBox[{
+           RowBox[{"Print", "[", 
+            RowBox[{
+            "\"\< InstanceFromInstanceName : instance number greater than the \
+actual number of instance of \>\"", ",", "classname"}], "]"}], ";", "False"}],
+           ",", 
+          RowBox[{
+           RowBox[{"CLInstanceList", "[", "class", "]"}], "[", 
+           RowBox[{"[", "instancenb", "]"}], "]"}]}], "]"}]}]}], "]"}]}], 
+    "]"}]}], "\[IndentingNewLine]"}]], "Input",
+ InitializationCell->True],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"InstanceNameFromInstance", "[", "instance_", "]"}], ":=", 
+  RowBox[{"StringJoin", "[", 
+   RowBox[{
+    RowBox[{"CLName", "[", 
+     RowBox[{"INSClass", "[", "instance", "]"}], "]"}], ",", "\"\<<\>\"", ",",
+     "\[IndentingNewLine]", "\t\t", 
+    RowBox[{"ToString", "[", 
+     RowBox[{
+      RowBox[{"Position", "[", 
+       RowBox[{
+        RowBox[{"CLInstanceList", "[", 
+         RowBox[{"INSClass", "[", "instance", "]"}], "]"}], ",", "instance"}],
+        "]"}], "[", 
+      RowBox[{"[", 
+       RowBox[{"1", ",", "1"}], "]"}], "]"}], "]"}], ",", "\"\<>\>\""}], 
+   "]"}]}]], "Input",
+ InitializationCell->True],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"lookUpSREEvent", "[", 
+   RowBox[{"instance_", ",", "att_"}], "]"}], ":=", 
+  RowBox[{"Module", "[", 
+   RowBox[{
+    RowBox[{"{", 
+     RowBox[{"pos", "=", 
+      RowBox[{"Position", "[", 
+       RowBox[{
+        RowBox[{"Range", "[", "SucceededRuleEventNb", "]"}], ",", 
+        RowBox[{"_", "?", 
+         RowBox[{"(", 
+          RowBox[{
+           RowBox[{
+            RowBox[{"(", 
+             RowBox[{
+              RowBox[{"SREInstance", "[", "#", "]"}], "\[Equal]", 
+              "instance"}], ")"}], " ", "&&", " ", 
+            RowBox[{"(", 
+             RowBox[{
+              RowBox[{"SREAttribute", "[", "#", "]"}], "\[Equal]", "att"}], 
+             ")"}]}], "&"}], ")"}]}]}], "]"}]}], "}"}], ",", 
+    "\[IndentingNewLine]", 
+    RowBox[{"If", "[", 
+     RowBox[{
+      RowBox[{
+       RowBox[{"Length", "[", "pos", "]"}], "\[Equal]", "0"}], ",", "0", ",", 
+      RowBox[{"pos", "[", 
+       RowBox[{"[", 
+        RowBox[{"1", ",", "1"}], "]"}], "]"}]}], "]"}]}], "]"}]}]], "Input",
+ InitializationCell->True],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"InstanceFromInstanceName", "[", "\"\<Maison<2>\>\"", "]"}]], "Input"],
+
+Cell[BoxData["2"], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"InstanceNameFromInstance", "[", "2", "]"}]], "Input"],
+
+Cell[BoxData["\<\"Maison<2>\"\>"], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"How", "[", 
+  RowBox[{"\"\<Confiance\>\"", ",", "\"\<Maison<1>\>\""}], "]"}]], "Input"],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\" ->BackwardRule \"\>", "\[InvisibleSpace]", "\<\"rule4\"\>", 
+   "\[InvisibleSpace]", "\<\" concluded  \"\>", 
+   "\[InvisibleSpace]", "\<\"Confiance\"\>", "\[InvisibleSpace]", "\<\"[\"\>",
+    "\[InvisibleSpace]", "\<\"Maison<1>\"\>", 
+   "\[InvisibleSpace]", "\<\"]\"\>", "\[InvisibleSpace]", "\<\"=\"\>", 
+   "\[InvisibleSpace]", "\<\"TresMoyenne\"\>"}],
+  SequenceForm[
+  " ->BackwardRule ", "rule4", " concluded  ", "Confiance", "[", "Maison<1>", 
+   "]", "=", "TresMoyenne"],
+  Editable->False]], "Print"]
+}, Open  ]]
+},
+AutoGeneratedPackage->Automatic,
+WindowSize->{772, 657},
+WindowMargins->{{Automatic, 83}, {120, Automatic}},
+FrontEndVersion->"7.0 for Mac OS X x86 (32-bit) (February 18, 2009)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[545, 20, 1566, 37, 148, "Input",
+ InitializationCell->True],
+Cell[2114, 59, 2434, 62, 208, "Input",
+ InitializationCell->True],
+Cell[4551, 123, 654, 18, 43, "Input",
+ InitializationCell->True],
+Cell[5208, 143, 1062, 31, 88, "Input",
+ InitializationCell->True],
+Cell[CellGroupData[{
+Cell[6295, 178, 93, 1, 27, "Input"],
+Cell[6391, 181, 28, 0, 27, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[6456, 186, 77, 1, 27, "Input"],
+Cell[6536, 189, 44, 0, 27, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[6617, 194, 111, 2, 27, "Input"],
+Cell[6731, 198, 560, 11, 20, "Print"]
+}, Open  ]]
+}
+]
+*)
+
+(* End of internal cache information *)
+

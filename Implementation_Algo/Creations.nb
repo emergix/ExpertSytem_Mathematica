@@ -1,0 +1,671 @@
+(* Content-type: application/mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 7.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       145,          7]
+NotebookDataLength[     23277,        661]
+NotebookOptionsPosition[     21728,        609]
+NotebookOutlinePosition[     22099,        625]
+CellTagsIndexPosition[     22056,        622]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"(*", " ", 
+   RowBox[{
+    RowBox[{
+     RowBox[{"we", " ", "assume", " ", "that"}], " ", "\[IndentingNewLine]", 
+     "-", " ", 
+     RowBox[{
+     "we", " ", "first", " ", "declare", " ", "the", " ", "classes"}]}], ",", 
+    " ", 
+    RowBox[{"then", " ", "the", " ", "attribute"}], ",", " ", 
+    RowBox[{"then", " ", "the", " ", "rules"}]}], " ", "*)"}], 
+  "\[IndentingNewLine]", 
+  RowBox[{"(*", " ", 
+   RowBox[{
+   "then", " ", "we", " ", "can", " ", "create", " ", "instances", " ", "and",
+     " ", "SucceededRuleEvents", " ", "as", " ", "much", " ", "as", " ", "we",
+     " ", "want"}], " ", "*)"}]}]], "Input"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"AddClass", "[", "name_", "]"}], ":=", 
+  RowBox[{"Module", "[", 
+   RowBox[{
+    RowBox[{"{", "symb", "}"}], ",", "\[IndentingNewLine]", 
+    RowBox[{
+     RowBox[{"symb", "=", 
+      RowBox[{"UniqueClass", "[", "]"}]}], ";", "\[IndentingNewLine]", 
+     RowBox[{
+      RowBox[{"CLName", "[", "symb", "]"}], "=", "name"}], ";", 
+     "\[IndentingNewLine]", 
+     RowBox[{
+      RowBox[{"CLInstanceList", "[", "symb", "]"}], "=", 
+      RowBox[{"{", "}"}]}], ";", "\[IndentingNewLine]", 
+     RowBox[{
+      RowBox[{"CLAttributeList", "[", "symb", "]"}], "=", 
+      RowBox[{"{", "}"}]}], ";", "\[IndentingNewLine]", "symb"}]}], 
+   "]"}]}]], "Input",
+ InitializationCell->True],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"UniqueClass", "[", "]"}], ":=", 
+  RowBox[{"ClassNb", "+=", "1"}]}]], "Input",
+ InitializationCell->True],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"AddAttribute", "[", 
+   RowBox[{"classname_", ",", "attname_", ",", "opts___"}], "]"}], ":=", 
+  RowBox[{"Module", "[", 
+   RowBox[{
+    RowBox[{"{", 
+     RowBox[{
+     "symb", ",", "class", ",", "ask", ",", "legv", ",", "atttype", ",", 
+      "initvalue"}], "}"}], ",", "\[IndentingNewLine]", "\t", 
+    RowBox[{
+     RowBox[{"ask", "=", 
+      RowBox[{
+       RowBox[{"question", " ", "/.", 
+        RowBox[{"{", "opts", "}"}]}], " ", "/.", " ", 
+       RowBox[{"Options", "[", "AddAttribute", "]"}]}]}], ";", 
+     "\[IndentingNewLine]", "\t", 
+     RowBox[{"legv", "=", 
+      RowBox[{
+       RowBox[{"legalvalues", " ", "/.", 
+        RowBox[{"{", "opts", "}"}]}], " ", "/.", " ", 
+       RowBox[{"Options", "[", "AddAttribute", "]"}]}]}], ";", 
+     "\[IndentingNewLine]", "\t", 
+     RowBox[{"atttype", "=", 
+      RowBox[{
+       RowBox[{"type", " ", "/.", 
+        RowBox[{"{", "opts", "}"}]}], " ", "/.", " ", 
+       RowBox[{"Options", "[", "AddAttribute", "]"}]}]}], ";", 
+     "\[IndentingNewLine]", "\t", 
+     RowBox[{"initvalue", "=", 
+      RowBox[{
+       RowBox[{"initialvalue", " ", "/.", 
+        RowBox[{"{", "opts", "}"}]}], " ", "/.", " ", 
+       RowBox[{"Options", "[", "AddAttribute", "]"}]}]}], ";", 
+     "\[IndentingNewLine]", 
+     RowBox[{"class", "=", 
+      RowBox[{"LookUpClass", "[", "classname", "]"}]}], ";", 
+     "\[IndentingNewLine]", 
+     RowBox[{"symb", "=", 
+      RowBox[{"UniqueAttribute", "[", "]"}]}], ";", "\[IndentingNewLine]", 
+     RowBox[{
+      RowBox[{"ATTClass", "[", "symb", "]"}], "=", "class"}], ";", 
+     "\[IndentingNewLine]", 
+     RowBox[{
+      RowBox[{"ATTName", "[", "symb", "]"}], "=", "attname"}], ";", 
+     "\[IndentingNewLine]", 
+     RowBox[{
+      RowBox[{"ATTQuestion", "[", "symb", "]"}], "=", "ask"}], ";", 
+     "\[IndentingNewLine]", 
+     RowBox[{
+      RowBox[{"ATTLegalValues", "[", "symb", "]"}], "=", "legv"}], ";", 
+     "\[IndentingNewLine]", 
+     RowBox[{
+      RowBox[{"ATTType", "[", "symb", "]"}], "=", "atttype"}], ";", 
+     "\[IndentingNewLine]", 
+     RowBox[{
+      RowBox[{"ATTInitialValue", "[", "symb", "]"}], "=", "initvalue"}], ";", 
+     "\[IndentingNewLine]", 
+     RowBox[{
+      RowBox[{"ATTRules", "[", "symb", "]"}], "=", 
+      RowBox[{"{", "}"}]}], ";", "\[IndentingNewLine]", 
+     RowBox[{
+      RowBox[{"CLAttributeList", "[", "class", "]"}], "=", 
+      RowBox[{"Append", "[", 
+       RowBox[{
+        RowBox[{"CLAttributeList", "[", "class", "]"}], ",", "symb"}], 
+       "]"}]}], ";", "\[IndentingNewLine]", "symb"}]}], "]"}]}]], "Input",
+ InitializationCell->True],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{
+   RowBox[{"Options", "[", "AddAttribute", "]"}], "=", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"question", "\[Rule]", "0"}], ",", 
+     RowBox[{"legalvalues", "\[Rule]", "0"}], ",", 
+     RowBox[{"type", "\[Rule]", "\"\<String\>\""}], ",", 
+     RowBox[{"initialvalue", "\[Rule]", "\"\<$$NoInitialValue\>\""}]}], 
+    "}"}]}], ";"}]], "Input",
+ InitializationCell->True],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"UniqueAttribute", "[", "]"}], ":=", 
+  RowBox[{"AttributeNb", "+=", "1"}]}]], "Input",
+ InitializationCell->True],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"LookUpClass", "[", "classname_", "]"}], ":=", 
+  RowBox[{"Module", "[", 
+   RowBox[{
+    RowBox[{"{", 
+     RowBox[{"ll", "=", 
+      RowBox[{"Select", "[", 
+       RowBox[{
+        RowBox[{"Range", "[", "ClassNb", "]"}], ",", 
+        RowBox[{
+         RowBox[{"(", 
+          RowBox[{
+           RowBox[{"CLName", "[", "#", "]"}], "\[Equal]", "classname"}], 
+          ")"}], "&"}]}], "]"}]}], "}"}], ",", "\[IndentingNewLine]", 
+    RowBox[{
+     RowBox[{"If", "[", 
+      RowBox[{
+       RowBox[{
+        RowBox[{"Length", "[", "ll", "]"}], "\[Equal]", "0"}], ",", 
+       RowBox[{
+        RowBox[{"Print", "[", 
+         RowBox[{
+         "\"\<LookUpClass; Non existent class: \>\"", ",", "classname"}], 
+         "]"}], ";", 
+        RowBox[{"Abort", "[", "]"}]}]}], "]"}], ";", "\[IndentingNewLine]", 
+     RowBox[{"If", "[", 
+      RowBox[{
+       RowBox[{
+        RowBox[{"Length", "[", "ll", "]"}], ">", "1"}], ",", 
+       RowBox[{
+        RowBox[{"Print", "[", 
+         RowBox[{
+         "\"\<LookUpClass; more than one class called : \>\"", ",", 
+          "classname"}], "]"}], ";", 
+        RowBox[{"Abort", "[", "]"}]}]}], "]"}], ";", "\[IndentingNewLine]", 
+     RowBox[{"ll", "[", 
+      RowBox[{"[", "1", "]"}], "]"}]}]}], "]"}]}]], "Input",
+ InitializationCell->True],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"LookUpAttribute", "[", "attname_", "]"}], ":=", 
+  RowBox[{"Module", "[", 
+   RowBox[{
+    RowBox[{"{", 
+     RowBox[{"ll", "=", 
+      RowBox[{"Select", "[", 
+       RowBox[{
+        RowBox[{"Range", "[", "AttributeNb", "]"}], ",", 
+        RowBox[{
+         RowBox[{"(", 
+          RowBox[{
+           RowBox[{"ATTName", "[", "#", "]"}], "\[Equal]", "attname"}], ")"}],
+          "&"}]}], "]"}]}], "}"}], ",", "\[IndentingNewLine]", 
+    RowBox[{
+     RowBox[{"If", "[", 
+      RowBox[{
+       RowBox[{
+        RowBox[{"Length", "[", "ll", "]"}], "\[Equal]", "0"}], ",", 
+       RowBox[{
+        RowBox[{"Print", "[", 
+         RowBox[{
+         "\"\<LookUpAttribute: Non existent attribute: \>\"", ",", 
+          "attname"}], "]"}], ";", 
+        RowBox[{"Abort", "[", "]"}]}]}], "]"}], ";", "\[IndentingNewLine]", 
+     RowBox[{"If", "[", 
+      RowBox[{
+       RowBox[{
+        RowBox[{"Length", "[", "ll", "]"}], ">", "1"}], ",", 
+       RowBox[{
+        RowBox[{"Print", "[", 
+         RowBox[{
+         "\"\<LookUpAttribute: more than one attribute called : \>\"", ",", 
+          "attname"}], "]"}], ";", 
+        RowBox[{"Abort", "[", "]"}]}]}], "]"}], ";", "\[IndentingNewLine]", 
+     RowBox[{"ll", "[", 
+      RowBox[{"[", "1", "]"}], "]"}]}]}], "]"}]}]], "Input",
+ InitializationCell->True],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"AddBackwardRule", "[", 
+   RowBox[{
+   "rulename_", ",", "premisse_", ",", "conclusion_", ",", "concludedatt_", 
+    ",", "classname_"}], "]"}], ":=", 
+  RowBox[{"Module", "[", 
+   RowBox[{
+    RowBox[{"{", 
+     RowBox[{"symb", ",", 
+      RowBox[{"att", "=", 
+       RowBox[{"LookUpAttribute", "[", "concludedatt", "]"}]}], ",", 
+      "varatt"}], "}"}], ",", "\[IndentingNewLine]", "\t", 
+    RowBox[{
+     RowBox[{"symb", "=", 
+      RowBox[{"UniqueBackwardRule", "[", "]"}]}], ";", "\[IndentingNewLine]", 
+     "\t", 
+     RowBox[{
+      RowBox[{"BRPremisse", "[", "symb", "]"}], "=", 
+      RowBox[{"HoldForm", "[", "premisse", "]"}]}], ";", 
+     "\[IndentingNewLine]", 
+     RowBox[{
+      RowBox[{"BRConclusion", "[", "symb", "]"}], "=", 
+      RowBox[{"HoldForm", "[", "conclusion", "]"}]}], ";", 
+     "\[IndentingNewLine]", 
+     RowBox[{"varatt", "=", 
+      RowBox[{"DeterminePremisseVarAttributeList", "[", 
+       RowBox[{"HoldForm", "[", "premisse", "]"}], "]"}]}], ";", 
+     "\[IndentingNewLine]", 
+     RowBox[{
+      RowBox[{"BRPremisseAttributeList", "[", "symb", "]"}], "=", 
+      RowBox[{"varatt", "[", 
+       RowBox[{"[", "2", "]"}], "]"}]}], ";", "\[IndentingNewLine]", 
+     RowBox[{
+      RowBox[{"BRPremisseInstanceList", "[", "symb", "]"}], "=", 
+      RowBox[{"varatt", "[", 
+       RowBox[{"[", "1", "]"}], "]"}]}], ";", "\[IndentingNewLine]", 
+     RowBox[{
+      RowBox[{"BRConcludedAttribute", "[", "symb", "]"}], "=", "att"}], ";", 
+     "\[IndentingNewLine]", 
+     RowBox[{
+      RowBox[{"BRClass", "[", "symb", "]"}], "=", "classname"}], ";", 
+     "\[IndentingNewLine]", 
+     RowBox[{
+      RowBox[{"ATTRules", "[", "att", "]"}], "=", 
+      RowBox[{"Append", "[", 
+       RowBox[{
+        RowBox[{"ATTRules", "[", "att", "]"}], ",", "symb"}], "]"}]}], ";", 
+     "\[IndentingNewLine]", 
+     RowBox[{
+      RowBox[{"BRName", "[", "symb", "]"}], "=", "rulename"}], ";"}]}], 
+   "]"}]}]], "Input",
+ InitializationCell->True],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"DeterminePremisseVarAttributeList", "[", "premisse_", "]"}], ":=", 
+  RowBox[{"Module", "[", 
+   RowBox[{
+    RowBox[{"{", "pos1", "}"}], ",", "\[IndentingNewLine]", 
+    RowBox[{
+     RowBox[{"pos1", "=", 
+      RowBox[{"Position", "[", 
+       RowBox[{"premisse", ",", 
+        RowBox[{"Unevaluated", "[", 
+         RowBox[{"V", "[", 
+          RowBox[{"_", ",", "_"}], "]"}], "]"}]}], "]"}]}], ";", 
+     "\[IndentingNewLine]", 
+     RowBox[{"pos2", "=", 
+      RowBox[{"Position", "[", 
+       RowBox[{"premisse", ",", 
+        RowBox[{"Unevaluated", "[", 
+         RowBox[{"Known", "[", 
+          RowBox[{"_", ",", "_"}], "]"}], "]"}]}], "]"}]}], ";", 
+     "\[IndentingNewLine]", 
+     RowBox[{"table1", "=", 
+      RowBox[{"Table", "[", 
+       RowBox[{
+        RowBox[{"{", 
+         RowBox[{
+          RowBox[{
+           RowBox[{"Extract", "[", 
+            RowBox[{"premisse", ",", 
+             RowBox[{"pos1", "[", 
+              RowBox[{"[", "i", "]"}], "]"}], ",", "Hold"}], "]"}], "[", 
+           RowBox[{"[", 
+            RowBox[{"1", ",", "1"}], "]"}], "]"}], ",", 
+          RowBox[{
+           RowBox[{"Extract", "[", 
+            RowBox[{"premisse", ",", 
+             RowBox[{"pos1", "[", 
+              RowBox[{"[", "i", "]"}], "]"}], ",", "Hold"}], "]"}], "[", 
+           RowBox[{"[", 
+            RowBox[{"1", ",", "2"}], "]"}], "]"}]}], "}"}], ",", 
+        RowBox[{"{", 
+         RowBox[{"i", ",", "1", ",", 
+          RowBox[{"Length", "[", "pos1", "]"}]}], "}"}]}], "]"}]}], ";", 
+     "\[IndentingNewLine]", 
+     RowBox[{"table2", "=", 
+      RowBox[{"Table", "[", 
+       RowBox[{
+        RowBox[{"{", 
+         RowBox[{
+          RowBox[{
+           RowBox[{"Extract", "[", 
+            RowBox[{"premisse", ",", 
+             RowBox[{"pos2", "[", 
+              RowBox[{"[", "i", "]"}], "]"}], ",", "Hold"}], "]"}], "[", 
+           RowBox[{"[", 
+            RowBox[{"1", ",", "1"}], "]"}], "]"}], ",", 
+          RowBox[{
+           RowBox[{"Extract", "[", 
+            RowBox[{"premisse", ",", 
+             RowBox[{"pos2", "[", 
+              RowBox[{"[", "i", "]"}], "]"}], ",", "Hold"}], "]"}], "[", 
+           RowBox[{"[", 
+            RowBox[{"1", ",", "2"}], "]"}], "]"}]}], "}"}], ",", 
+        RowBox[{"{", 
+         RowBox[{"i", ",", "1", ",", 
+          RowBox[{"Length", "[", "pos2", "]"}]}], "}"}]}], "]"}]}], ";", 
+     "\[IndentingNewLine]", 
+     RowBox[{"Transpose", "[", 
+      RowBox[{"Union", "[", 
+       RowBox[{"table1", ",", "table2"}], "]"}], "]"}]}]}], 
+   "\[IndentingNewLine]", "\t", "]"}]}]], "Input",
+ InitializationCell->True],
+
+Cell[BoxData[
+ RowBox[{"SetAttributes", "[", 
+  RowBox[{"AddBackwardRule", ",", "HoldAll"}], "]"}]], "Input",
+ InitializationCell->True],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"UniqueBackwardRule", "[", "]"}], ":=", 
+  RowBox[{"BackwardRuleNb", "+=", "1"}]}]], "Input",
+ InitializationCell->True],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"AddInstance", "[", 
+   RowBox[{"classname_", ",", "opts___"}], "]"}], ":=", 
+  RowBox[{"Module", "[", 
+   RowBox[{
+    RowBox[{"{", 
+     RowBox[{"symb", ",", "class", ",", "initial"}], "}"}], ",", 
+    "\[IndentingNewLine]", 
+    RowBox[{
+     RowBox[{"initial", "=", 
+      RowBox[{
+       RowBox[{"initialvalues", " ", "/.", 
+        RowBox[{"{", "opts", "}"}]}], " ", "/.", " ", 
+       RowBox[{"Options", "[", "AddInstance", "]"}]}]}], ";", 
+     "\[IndentingNewLine]", 
+     RowBox[{"If", "[", 
+      RowBox[{
+       RowBox[{
+        RowBox[{"Length", "[", "initial", "]"}], ">", "0"}], ",", 
+       RowBox[{"If", "[", 
+        RowBox[{
+         RowBox[{
+          RowBox[{"Length", "[", 
+           RowBox[{"initial", "[", 
+            RowBox[{"[", "1", "]"}], "]"}], "]"}], "==", "0"}], ",", 
+         RowBox[{"initial", "=", 
+          RowBox[{"{", "initial", "}"}]}]}], "]"}]}], "]"}], ";", 
+     "\[IndentingNewLine]", 
+     RowBox[{"class", "=", 
+      RowBox[{"LookUpClass", "[", "classname", "]"}]}], ";", 
+     "\[IndentingNewLine]", 
+     RowBox[{"symb", "=", 
+      RowBox[{"UniqueInstance", "[", "]"}]}], ";", "\[IndentingNewLine]", 
+     RowBox[{
+      RowBox[{"INSClass", "[", "symb", "]"}], "=", "class"}], ";", 
+     "\[IndentingNewLine]", 
+     RowBox[{
+      RowBox[{"CLInstanceList", "[", "class", "]"}], "=", 
+      RowBox[{"Append", "[", 
+       RowBox[{
+        RowBox[{"CLInstanceList", "[", "class", "]"}], ",", "symb"}], "]"}]}],
+      ";", "\[IndentingNewLine]", 
+     RowBox[{"Map", "[", 
+      RowBox[{
+       RowBox[{
+        RowBox[{"AddInstanciedAttribute", "[", 
+         RowBox[{"class", ",", "symb", ",", "#"}], "]"}], "&"}], ",", 
+       RowBox[{"CLAttributeList", "[", "class", "]"}]}], "]"}], ";", 
+     "\[IndentingNewLine]", 
+     RowBox[{"Map", "[", 
+      RowBox[{
+       RowBox[{
+        RowBox[{"(", 
+         RowBox[{"Module", "[", "\[IndentingNewLine]", 
+          RowBox[{
+           RowBox[{"{", 
+            RowBox[{"insatt", "=", 
+             RowBox[{"InstanceAttributeValue", "[", 
+              RowBox[{"symb", ",", 
+               RowBox[{"LookUpAttribute", "[", 
+                RowBox[{"#", "[", 
+                 RowBox[{"[", "1", "]"}], "]"}], "]"}]}], "]"}]}], "}"}], ",",
+            "\[IndentingNewLine]", 
+           RowBox[{
+            RowBox[{
+             RowBox[{"IAConcluded", "[", "insatt", "]"}], "=", "True"}], ";", 
+            "\[IndentingNewLine]", 
+            RowBox[{
+             RowBox[{"IAConcludedValue", "[", "insatt", "]"}], "=", 
+             RowBox[{"#", "[", 
+              RowBox[{"[", "2", "]"}], "]"}]}]}]}], "]"}], ")"}], "&"}], ",", 
+       "\[IndentingNewLine]", "initial"}], "]"}], ";", "\[IndentingNewLine]", 
+     "symb"}]}], "]"}]}]], "Input",
+ InitializationCell->True],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{
+   RowBox[{"Options", "[", "AddInstance", "]"}], "=", 
+   RowBox[{"{", 
+    RowBox[{"initialvalues", "\[Rule]", 
+     RowBox[{"{", "}"}]}], "}"}]}], ";"}]], "Input",
+ InitializationCell->True],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"UniqueInstance", "[", "]"}], ":=", 
+  RowBox[{"InstanceNb", "+=", "1"}]}]], "Input",
+ InitializationCell->True],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"AddInstanciedAttribute", "[", 
+   RowBox[{"class_", ",", "instance_", ",", "att_"}], "]"}], ":=", 
+  RowBox[{"Module", "[", 
+   RowBox[{
+    RowBox[{"{", "symb", "}"}], ",", "\[IndentingNewLine]", "\t", 
+    RowBox[{
+     RowBox[{"symb", "=", 
+      RowBox[{"UniqueInstanciedAttribute", "[", "]"}]}], ";", 
+     "\[IndentingNewLine]", "\t", 
+     RowBox[{
+      RowBox[{"IAInstance", "[", "symb", "]"}], "=", "instance"}], ";", 
+     "\[IndentingNewLine]", "\t", 
+     RowBox[{
+      RowBox[{"IAClass", "[", "symb", "]"}], "=", "class"}], ";", 
+     "\[IndentingNewLine]", "\t", 
+     RowBox[{
+      RowBox[{"IAAttribute", "[", "symb", "]"}], "=", "att"}], ";", 
+     "\[IndentingNewLine]", "\t", 
+     RowBox[{
+      RowBox[{"InstanceAttributeValue", "[", 
+       RowBox[{"instance", ",", "att"}], "]"}], "=", "symb"}], ";", 
+     "\[IndentingNewLine]", "\t", 
+     RowBox[{
+      RowBox[{"IAConcluded", "[", "symb", "]"}], "=", "False"}], ";", 
+     "\[IndentingNewLine]", "\t", 
+     RowBox[{
+      RowBox[{"IARuleThatConcluded", "[", "symb", "]"}], "=", "0"}], ";", 
+     "\[IndentingNewLine]", "\t", 
+     RowBox[{
+      RowBox[{"IAConcludedByBackchaining", "[", "symb", "]"}], "=", "False"}],
+      ";", "\[IndentingNewLine]", "\t", 
+     RowBox[{
+      RowBox[{"IAConcludedByQuestion", "[", "symb", "]"}], "=", "False"}], 
+     ";", "\[IndentingNewLine]", "\t", 
+     RowBox[{
+      RowBox[{"IAConcludedDirectly", "[", "symb", "]"}], "=", "False"}], ";", 
+     "\[IndentingNewLine]", "\t", 
+     RowBox[{
+      RowBox[{"IAConcludedValue", "[", "symb", "]"}], "=", "0"}], ";", 
+     "\[IndentingNewLine]", "\t", 
+     RowBox[{
+      RowBox[{"IASucceededRuleEvent", "[", "symb", "]"}], "=", "0"}], ";", 
+     "\[IndentingNewLine]", "\t", 
+     RowBox[{
+      RowBox[{"IATriedRules", "[", "symb", "]"}], "=", 
+      RowBox[{"{", "}"}]}], ";", "\[IndentingNewLine]", "\t", 
+     RowBox[{"If", "[", 
+      RowBox[{
+       RowBox[{
+        RowBox[{"ATTInitialValue", "[", "att", "]"}], "\[NotEqual]", " ", 
+        "\"\<$$NoInitialValue\>\""}], ",", "\[IndentingNewLine]", "\t  ", 
+       RowBox[{
+        RowBox[{
+         RowBox[{"IAConcluded", "[", "symb", "]"}], "=", "True"}], ";", 
+        "\[IndentingNewLine]", "\t  ", 
+        RowBox[{
+         RowBox[{"IAConcludedValue", "[", "symb", "]"}], "=", 
+         RowBox[{"ATTInitialValue", "[", "att", "]"}]}]}]}], "]"}], ";", 
+     "symb"}]}], "]"}]}]], "Input",
+ InitializationCell->True],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"UniqueInstanciedAttribute", "[", "]"}], ":=", 
+  RowBox[{"InstanciedAttributeNb", "+=", "1"}]}]], "Input",
+ InitializationCell->True],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"AddSucceededRuleEvent", "[", 
+   RowBox[{"rule_", ",", " ", "instance_", ",", "att_", ",", "concltype_"}], 
+   "]"}], ":=", 
+  RowBox[{"Module", "[", 
+   RowBox[{
+    RowBox[{"{", "symb", "}"}], ",", "\[IndentingNewLine]", "\t", 
+    RowBox[{
+     RowBox[{"symb", "=", 
+      RowBox[{"UniqueSucceededRuleEvent", "[", "]"}]}], ";", 
+     "\[IndentingNewLine]", "\t", 
+     RowBox[{
+      RowBox[{"SREAttribute", "[", "symb", "]"}], "=", "att"}], ";", 
+     "\[IndentingNewLine]", "\t", 
+     RowBox[{
+      RowBox[{"SREConclusionType", "[", "symb", "]"}], "=", "concltype"}], 
+     ";", "\[IndentingNewLine]", "\t", 
+     RowBox[{
+      RowBox[{"SREInstance", "[", "symb", "]"}], "=", "instance"}], ";", 
+     "\[IndentingNewLine]", "\t", 
+     RowBox[{
+      RowBox[{"SRERule", "[", "symb", "]"}], "=", "rule"}], ";", 
+     "\[IndentingNewLine]", "symb"}]}], "]"}]}]], "Input",
+ InitializationCell->True],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"UniqueSucceededRuleEvent", "[", "]"}], ":=", 
+  RowBox[{"SucceededRuleEventNb", "+=", "1"}]}]], "Input",
+ InitializationCell->True],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"NewKb", "[", "]"}], ":=", 
+  RowBox[{"Module", "[", 
+   RowBox[{
+    RowBox[{"{", "}"}], ",", 
+    RowBox[{
+     RowBox[{"ClassNb", "=", "0"}], ";", 
+     RowBox[{"InstanceNb", "=", "0"}], ";", 
+     RowBox[{"AttributeNb", "=", "0"}], ";", 
+     RowBox[{"InstanciedAttributeNb", "=", "0"}], ";", 
+     RowBox[{"BackwardRuleNb", "=", "0"}], ";", 
+     RowBox[{"SucceededRuleEventNb", "=", "0"}], ";", "\[IndentingNewLine]", 
+     RowBox[{"Clear", "[", 
+      RowBox[{"CLName", ",", "CLInstanceList", ",", "CLAttributeList"}], 
+      "]"}], ";", "\[IndentingNewLine]", 
+     RowBox[{"Clear", "[", 
+      RowBox[{
+      "ATTClass", ",", "ATTName", ",", "ATTQuestion", ",", "ATTLegalValues", 
+       ",", "ATTType", ",", "ATTInitialValue", ",", "ATTRules"}], "]"}], ";", 
+     "\[IndentingNewLine]", 
+     RowBox[{"Clear", "[", 
+      RowBox[{
+      "BRPremisse", ",", "BRConclusion", ",", "BRClass", ",", "BRName", ",", 
+       "BRConcludedAttribute", ",", "BRPremisseAttributeList", ",", 
+       "BRPremisseInstanceList"}], "]"}], ";", "\[IndentingNewLine]", 
+     RowBox[{"Clear", "[", 
+      RowBox[{"INSClass", ",", "INSInstanceList"}], "]"}], ";", 
+     "\[IndentingNewLine]", 
+     RowBox[{"Clear", "[", 
+      RowBox[{
+      "IAInstance", ",", "IAClass", ",", "IAAttribute", ",", 
+       "InstanceAttributeValue", ",", "IAConcluded", ",", 
+       "IARuleThatConcluded", ",", "IAConcludedByBackchaining", ",", 
+       "IAConcludedByQuestion", ",", "IAConcludedDirectly", ",", 
+       "IAConcludedValue", ",", "IASucceededRuleEvent", ",", "IATriedRules"}],
+       "]"}], ";", "\[IndentingNewLine]", 
+     RowBox[{"Clear", "[", 
+      RowBox[{
+      "SREInstance", ",", "SRERule", ",", "SREAttribute", ",", 
+       "SREConclusionType"}], "]"}], ";", "\[IndentingNewLine]", 
+     RowBox[{"Clear", "[", "InstanceAttributeValue", "]"}]}]}], 
+   "]"}]}]], "Input",
+ InitializationCell->True]
+},
+AutoGeneratedPackage->Automatic,
+WindowSize->{944, 909},
+WindowMargins->{{Automatic, 4}, {6, Automatic}},
+FrontEndVersion->"7.0 for Mac OS X x86 (32-bit) (February 18, 2009)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[545, 20, 657, 17, 58, "Input"],
+Cell[1205, 39, 712, 19, 103, "Input",
+ InitializationCell->True],
+Cell[1920, 60, 140, 4, 27, "Input",
+ InitializationCell->True],
+Cell[2063, 66, 2617, 67, 253, "Input",
+ InitializationCell->True],
+Cell[4683, 135, 409, 11, 27, "Input",
+ InitializationCell->True],
+Cell[5095, 148, 148, 4, 27, "Input",
+ InitializationCell->True],
+Cell[5246, 154, 1323, 38, 73, "Input",
+ InitializationCell->True],
+Cell[6572, 194, 1340, 38, 73, "Input",
+ InitializationCell->True],
+Cell[7915, 234, 2001, 52, 193, "Input",
+ InitializationCell->True],
+Cell[9919, 288, 2630, 71, 148, "Input",
+ InitializationCell->True],
+Cell[12552, 361, 136, 3, 27, "Input",
+ InitializationCell->True],
+Cell[12691, 366, 154, 4, 27, "Input",
+ InitializationCell->True],
+Cell[12848, 372, 2806, 74, 223, "Input",
+ InitializationCell->True],
+Cell[15657, 448, 227, 7, 27, "Input",
+ InitializationCell->True],
+Cell[15887, 457, 146, 4, 27, "Input",
+ InitializationCell->True],
+Cell[16036, 463, 2480, 61, 268, "Input",
+ InitializationCell->True],
+Cell[18519, 526, 168, 4, 27, "Input",
+ InitializationCell->True],
+Cell[18690, 532, 939, 24, 118, "Input",
+ InitializationCell->True],
+Cell[19632, 558, 166, 4, 27, "Input",
+ InitializationCell->True],
+Cell[19801, 564, 1923, 43, 193, "Input",
+ InitializationCell->True]
+}
+]
+*)
+
+(* End of internal cache information *)
+

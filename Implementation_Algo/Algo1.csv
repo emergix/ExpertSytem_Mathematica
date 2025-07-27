@@ -1,0 +1,2049 @@
+Scenario Set,Scenario Set Name,Scenario Name,Scenario Probability,Scenario Color,Scenario Variable,Scenario Start Time,Scenario Attribute,Time Evolution,Time Evolution To Trigger,Trigger Holder,Scenario Shift Rule,Scenario Type,Scenario Replacement Value,
+,newset01,scen1,1,red,:IndexCurve,0,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,0
+,,,,,,,,,,,,,0,1000.
+,,,,,:IndexCurve,30,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,30
+,,,,,,,,,,,,,0,1000.71
+,,,,,:IndexCurve,60,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,60
+,,,,,,,,,,,,,0,1001.41
+,,,,,:IndexCurve,90,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,90
+,,,,,,,,,,,,,0,1002.12
+,,,,,:IndexCurve,120,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,120
+,,,,,,,,,,,,,0,1002.82
+,,,,,:IndexCurve,150,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,150
+,,,,,,,,,,,,,0,1003.53
+,,,,,:IndexCurve,180,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,180
+,,,,,,,,,,,,,0,1004.23
+,,,,,:IndexCurve,210,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,210
+,,,,,,,,,,,,,0,1004.94
+,,scen2,1,red,:IndexCurve,0,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,0
+,,,,,,,,,,,,,0,1000.
+,,,,,:IndexCurve,30,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,30
+,,,,,,,,,,,,,0,1000.71
+,,,,,:IndexCurve,60,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,60
+,,,,,,,,,,,,,0,1001.41
+,,,,,:IndexCurve,90,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,90
+,,,,,,,,,,,,,0,1002.12
+,,,,,:IndexCurve,120,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,120
+,,,,,,,,,,,,,0,1002.82
+,,,,,:IndexCurve,150,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,150
+,,,,,,,,,,,,,0,1003.53
+,,,,,:IndexCurve,180,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,180
+,,,,,,,,,,,,,0,1004.23
+,,,,,:IndexCurve,210,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,210
+,,,,,,,,,,,,,0,1014.71
+,,scen3,1,red,:IndexCurve,0,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,0
+,,,,,,,,,,,,,0,1000.
+,,,,,:IndexCurve,30,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,30
+,,,,,,,,,,,,,0,1000.71
+,,,,,:IndexCurve,60,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,60
+,,,,,,,,,,,,,0,1001.41
+,,,,,:IndexCurve,90,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,90
+,,,,,,,,,,,,,0,1002.12
+,,,,,:IndexCurve,120,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,120
+,,,,,,,,,,,,,0,1002.82
+,,,,,:IndexCurve,150,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,150
+,,,,,,,,,,,,,0,1003.53
+,,,,,:IndexCurve,180,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,180
+,,,,,,,,,,,,,0,1014.
+,,,,,:IndexCurve,210,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,210
+,,,,,,,,,,,,,0,1014.71
+,,scen4,1,red,:IndexCurve,0,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,0
+,,,,,,,,,,,,,0,1000.
+,,,,,:IndexCurve,30,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,30
+,,,,,,,,,,,,,0,1000.71
+,,,,,:IndexCurve,60,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,60
+,,,,,,,,,,,,,0,1001.41
+,,,,,:IndexCurve,90,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,90
+,,,,,,,,,,,,,0,1002.12
+,,,,,:IndexCurve,120,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,120
+,,,,,,,,,,,,,0,1002.82
+,,,,,:IndexCurve,150,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,150
+,,,,,,,,,,,,,0,1003.53
+,,,,,:IndexCurve,180,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,180
+,,,,,,,,,,,,,0,1014.
+,,,,,:IndexCurve,210,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,210
+,,,,,,,,,,,,,0,1024.48
+,,scen5,1,red,:IndexCurve,0,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,0
+,,,,,,,,,,,,,0,1000.
+,,,,,:IndexCurve,30,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,30
+,,,,,,,,,,,,,0,1000.71
+,,,,,:IndexCurve,60,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,60
+,,,,,,,,,,,,,0,1001.41
+,,,,,:IndexCurve,90,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,90
+,,,,,,,,,,,,,0,1002.12
+,,,,,:IndexCurve,120,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,120
+,,,,,,,,,,,,,0,1002.82
+,,,,,:IndexCurve,150,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,150
+,,,,,,,,,,,,,0,1013.3
+,,,,,:IndexCurve,180,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,180
+,,,,,,,,,,,,,0,1014.
+,,,,,:IndexCurve,210,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,210
+,,,,,,,,,,,,,0,1014.71
+,,scen6,1,red,:IndexCurve,0,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,0
+,,,,,,,,,,,,,0,1000.
+,,,,,:IndexCurve,30,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,30
+,,,,,,,,,,,,,0,1000.71
+,,,,,:IndexCurve,60,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,60
+,,,,,,,,,,,,,0,1001.41
+,,,,,:IndexCurve,90,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,90
+,,,,,,,,,,,,,0,1002.12
+,,,,,:IndexCurve,120,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,120
+,,,,,,,,,,,,,0,1002.82
+,,,,,:IndexCurve,150,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,150
+,,,,,,,,,,,,,0,1013.3
+,,,,,:IndexCurve,180,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,180
+,,,,,,,,,,,,,0,1014.
+,,,,,:IndexCurve,210,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,210
+,,,,,,,,,,,,,0,1024.48
+,,scen7,1,red,:IndexCurve,0,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,0
+,,,,,,,,,,,,,0,1000.
+,,,,,:IndexCurve,30,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,30
+,,,,,,,,,,,,,0,1000.71
+,,,,,:IndexCurve,60,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,60
+,,,,,,,,,,,,,0,1001.41
+,,,,,:IndexCurve,90,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,90
+,,,,,,,,,,,,,0,1002.12
+,,,,,:IndexCurve,120,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,120
+,,,,,,,,,,,,,0,1002.82
+,,,,,:IndexCurve,150,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,150
+,,,,,,,,,,,,,0,1013.3
+,,,,,:IndexCurve,180,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,180
+,,,,,,,,,,,,,0,1023.77
+,,,,,:IndexCurve,210,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,210
+,,,,,,,,,,,,,0,1024.48
+,,scen8,1,red,:IndexCurve,0,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,0
+,,,,,,,,,,,,,0,1000.
+,,,,,:IndexCurve,30,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,30
+,,,,,,,,,,,,,0,1000.71
+,,,,,:IndexCurve,60,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,60
+,,,,,,,,,,,,,0,1001.41
+,,,,,:IndexCurve,90,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,90
+,,,,,,,,,,,,,0,1002.12
+,,,,,:IndexCurve,120,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,120
+,,,,,,,,,,,,,0,1002.82
+,,,,,:IndexCurve,150,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,150
+,,,,,,,,,,,,,0,1013.3
+,,,,,:IndexCurve,180,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,180
+,,,,,,,,,,,,,0,1023.77
+,,,,,:IndexCurve,210,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,210
+,,,,,,,,,,,,,0,1034.25
+,,scen9,1,red,:IndexCurve,0,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,0
+,,,,,,,,,,,,,0,1000.
+,,,,,:IndexCurve,30,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,30
+,,,,,,,,,,,,,0,1000.71
+,,,,,:IndexCurve,60,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,60
+,,,,,,,,,,,,,0,1001.41
+,,,,,:IndexCurve,90,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,90
+,,,,,,,,,,,,,0,1002.12
+,,,,,:IndexCurve,120,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,120
+,,,,,,,,,,,,,0,1012.59
+,,,,,:IndexCurve,150,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,150
+,,,,,,,,,,,,,0,1013.3
+,,,,,:IndexCurve,180,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,180
+,,,,,,,,,,,,,0,1014.
+,,,,,:IndexCurve,210,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,210
+,,,,,,,,,,,,,0,1014.71
+,,scen10,1,red,:IndexCurve,0,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,0
+,,,,,,,,,,,,,0,1000.
+,,,,,:IndexCurve,30,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,30
+,,,,,,,,,,,,,0,1000.71
+,,,,,:IndexCurve,60,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,60
+,,,,,,,,,,,,,0,1001.41
+,,,,,:IndexCurve,90,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,90
+,,,,,,,,,,,,,0,1002.12
+,,,,,:IndexCurve,120,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,120
+,,,,,,,,,,,,,0,1012.59
+,,,,,:IndexCurve,150,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,150
+,,,,,,,,,,,,,0,1013.3
+,,,,,:IndexCurve,180,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,180
+,,,,,,,,,,,,,0,1014.
+,,,,,:IndexCurve,210,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,210
+,,,,,,,,,,,,,0,1024.48
+,,scen11,1,red,:IndexCurve,0,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,0
+,,,,,,,,,,,,,0,1000.
+,,,,,:IndexCurve,30,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,30
+,,,,,,,,,,,,,0,1000.71
+,,,,,:IndexCurve,60,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,60
+,,,,,,,,,,,,,0,1001.41
+,,,,,:IndexCurve,90,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,90
+,,,,,,,,,,,,,0,1002.12
+,,,,,:IndexCurve,120,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,120
+,,,,,,,,,,,,,0,1012.59
+,,,,,:IndexCurve,150,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,150
+,,,,,,,,,,,,,0,1013.3
+,,,,,:IndexCurve,180,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,180
+,,,,,,,,,,,,,0,1023.77
+,,,,,:IndexCurve,210,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,210
+,,,,,,,,,,,,,0,1024.48
+,,scen12,1,red,:IndexCurve,0,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,0
+,,,,,,,,,,,,,0,1000.
+,,,,,:IndexCurve,30,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,30
+,,,,,,,,,,,,,0,1000.71
+,,,,,:IndexCurve,60,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,60
+,,,,,,,,,,,,,0,1001.41
+,,,,,:IndexCurve,90,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,90
+,,,,,,,,,,,,,0,1002.12
+,,,,,:IndexCurve,120,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,120
+,,,,,,,,,,,,,0,1012.59
+,,,,,:IndexCurve,150,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,150
+,,,,,,,,,,,,,0,1013.3
+,,,,,:IndexCurve,180,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,180
+,,,,,,,,,,,,,0,1023.77
+,,,,,:IndexCurve,210,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,210
+,,,,,,,,,,,,,0,1034.25
+,,scen13,1,red,:IndexCurve,0,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,0
+,,,,,,,,,,,,,0,1000.
+,,,,,:IndexCurve,30,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,30
+,,,,,,,,,,,,,0,1000.71
+,,,,,:IndexCurve,60,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,60
+,,,,,,,,,,,,,0,1001.41
+,,,,,:IndexCurve,90,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,90
+,,,,,,,,,,,,,0,1002.12
+,,,,,:IndexCurve,120,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,120
+,,,,,,,,,,,,,0,1012.59
+,,,,,:IndexCurve,150,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,150
+,,,,,,,,,,,,,0,1023.07
+,,,,,:IndexCurve,180,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,180
+,,,,,,,,,,,,,0,1023.77
+,,,,,:IndexCurve,210,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,210
+,,,,,,,,,,,,,0,1024.48
+,,scen14,1,red,:IndexCurve,0,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,0
+,,,,,,,,,,,,,0,1000.
+,,,,,:IndexCurve,30,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,30
+,,,,,,,,,,,,,0,1000.71
+,,,,,:IndexCurve,60,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,60
+,,,,,,,,,,,,,0,1001.41
+,,,,,:IndexCurve,90,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,90
+,,,,,,,,,,,,,0,1002.12
+,,,,,:IndexCurve,120,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,120
+,,,,,,,,,,,,,0,1012.59
+,,,,,:IndexCurve,150,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,150
+,,,,,,,,,,,,,0,1023.07
+,,,,,:IndexCurve,180,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,180
+,,,,,,,,,,,,,0,1023.77
+,,,,,:IndexCurve,210,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,210
+,,,,,,,,,,,,,0,1034.25
+,,scen15,1,red,:IndexCurve,0,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,0
+,,,,,,,,,,,,,0,1000.
+,,,,,:IndexCurve,30,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,30
+,,,,,,,,,,,,,0,1000.71
+,,,,,:IndexCurve,60,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,60
+,,,,,,,,,,,,,0,1001.41
+,,,,,:IndexCurve,90,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,90
+,,,,,,,,,,,,,0,1002.12
+,,,,,:IndexCurve,120,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,120
+,,,,,,,,,,,,,0,1012.59
+,,,,,:IndexCurve,150,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,150
+,,,,,,,,,,,,,0,1023.07
+,,,,,:IndexCurve,180,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,180
+,,,,,,,,,,,,,0,1033.54
+,,,,,:IndexCurve,210,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,210
+,,,,,,,,,,,,,0,1034.25
+,,scen16,1,red,:IndexCurve,0,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,0
+,,,,,,,,,,,,,0,1000.
+,,,,,:IndexCurve,30,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,30
+,,,,,,,,,,,,,0,1000.71
+,,,,,:IndexCurve,60,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,60
+,,,,,,,,,,,,,0,1001.41
+,,,,,:IndexCurve,90,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,90
+,,,,,,,,,,,,,0,1002.12
+,,,,,:IndexCurve,120,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,120
+,,,,,,,,,,,,,0,1012.59
+,,,,,:IndexCurve,150,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,150
+,,,,,,,,,,,,,0,1023.07
+,,,,,:IndexCurve,180,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,180
+,,,,,,,,,,,,,0,1033.54
+,,,,,:IndexCurve,210,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,210
+,,,,,,,,,,,,,0,1044.02
+,,scen17,1,red,:IndexCurve,0,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,0
+,,,,,,,,,,,,,0,1000.
+,,,,,:IndexCurve,30,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,30
+,,,,,,,,,,,,,0,1000.71
+,,,,,:IndexCurve,60,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,60
+,,,,,,,,,,,,,0,1001.41
+,,,,,:IndexCurve,90,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,90
+,,,,,,,,,,,,,0,1011.89
+,,,,,:IndexCurve,120,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,120
+,,,,,,,,,,,,,0,1012.59
+,,,,,:IndexCurve,150,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,150
+,,,,,,,,,,,,,0,1013.3
+,,,,,:IndexCurve,180,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,180
+,,,,,,,,,,,,,0,1014.
+,,,,,:IndexCurve,210,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,210
+,,,,,,,,,,,,,0,1014.71
+,,scen18,1,red,:IndexCurve,0,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,0
+,,,,,,,,,,,,,0,1000.
+,,,,,:IndexCurve,30,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,30
+,,,,,,,,,,,,,0,1000.71
+,,,,,:IndexCurve,60,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,60
+,,,,,,,,,,,,,0,1001.41
+,,,,,:IndexCurve,90,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,90
+,,,,,,,,,,,,,0,1011.89
+,,,,,:IndexCurve,120,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,120
+,,,,,,,,,,,,,0,1012.59
+,,,,,:IndexCurve,150,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,150
+,,,,,,,,,,,,,0,1013.3
+,,,,,:IndexCurve,180,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,180
+,,,,,,,,,,,,,0,1014.
+,,,,,:IndexCurve,210,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,210
+,,,,,,,,,,,,,0,1024.48
+,,scen19,1,red,:IndexCurve,0,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,0
+,,,,,,,,,,,,,0,1000.
+,,,,,:IndexCurve,30,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,30
+,,,,,,,,,,,,,0,1000.71
+,,,,,:IndexCurve,60,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,60
+,,,,,,,,,,,,,0,1001.41
+,,,,,:IndexCurve,90,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,90
+,,,,,,,,,,,,,0,1011.89
+,,,,,:IndexCurve,120,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,120
+,,,,,,,,,,,,,0,1012.59
+,,,,,:IndexCurve,150,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,150
+,,,,,,,,,,,,,0,1013.3
+,,,,,:IndexCurve,180,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,180
+,,,,,,,,,,,,,0,1023.77
+,,,,,:IndexCurve,210,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,210
+,,,,,,,,,,,,,0,1024.48
+,,scen20,1,red,:IndexCurve,0,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,0
+,,,,,,,,,,,,,0,1000.
+,,,,,:IndexCurve,30,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,30
+,,,,,,,,,,,,,0,1000.71
+,,,,,:IndexCurve,60,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,60
+,,,,,,,,,,,,,0,1001.41
+,,,,,:IndexCurve,90,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,90
+,,,,,,,,,,,,,0,1011.89
+,,,,,:IndexCurve,120,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,120
+,,,,,,,,,,,,,0,1012.59
+,,,,,:IndexCurve,150,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,150
+,,,,,,,,,,,,,0,1013.3
+,,,,,:IndexCurve,180,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,180
+,,,,,,,,,,,,,0,1023.77
+,,,,,:IndexCurve,210,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,210
+,,,,,,,,,,,,,0,1034.25
+,,scen21,1,red,:IndexCurve,0,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,0
+,,,,,,,,,,,,,0,1000.
+,,,,,:IndexCurve,30,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,30
+,,,,,,,,,,,,,0,1000.71
+,,,,,:IndexCurve,60,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,60
+,,,,,,,,,,,,,0,1001.41
+,,,,,:IndexCurve,90,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,90
+,,,,,,,,,,,,,0,1011.89
+,,,,,:IndexCurve,120,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,120
+,,,,,,,,,,,,,0,1012.59
+,,,,,:IndexCurve,150,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,150
+,,,,,,,,,,,,,0,1023.07
+,,,,,:IndexCurve,180,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,180
+,,,,,,,,,,,,,0,1023.77
+,,,,,:IndexCurve,210,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,210
+,,,,,,,,,,,,,0,1024.48
+,,scen22,1,red,:IndexCurve,0,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,0
+,,,,,,,,,,,,,0,1000.
+,,,,,:IndexCurve,30,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,30
+,,,,,,,,,,,,,0,1000.71
+,,,,,:IndexCurve,60,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,60
+,,,,,,,,,,,,,0,1001.41
+,,,,,:IndexCurve,90,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,90
+,,,,,,,,,,,,,0,1011.89
+,,,,,:IndexCurve,120,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,120
+,,,,,,,,,,,,,0,1012.59
+,,,,,:IndexCurve,150,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,150
+,,,,,,,,,,,,,0,1023.07
+,,,,,:IndexCurve,180,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,180
+,,,,,,,,,,,,,0,1023.77
+,,,,,:IndexCurve,210,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,210
+,,,,,,,,,,,,,0,1034.25
+,,scen23,1,red,:IndexCurve,0,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,0
+,,,,,,,,,,,,,0,1000.
+,,,,,:IndexCurve,30,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,30
+,,,,,,,,,,,,,0,1000.71
+,,,,,:IndexCurve,60,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,60
+,,,,,,,,,,,,,0,1001.41
+,,,,,:IndexCurve,90,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,90
+,,,,,,,,,,,,,0,1011.89
+,,,,,:IndexCurve,120,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,120
+,,,,,,,,,,,,,0,1012.59
+,,,,,:IndexCurve,150,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,150
+,,,,,,,,,,,,,0,1023.07
+,,,,,:IndexCurve,180,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,180
+,,,,,,,,,,,,,0,1033.54
+,,,,,:IndexCurve,210,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,210
+,,,,,,,,,,,,,0,1034.25
+,,scen24,1,red,:IndexCurve,0,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,0
+,,,,,,,,,,,,,0,1000.
+,,,,,:IndexCurve,30,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,30
+,,,,,,,,,,,,,0,1000.71
+,,,,,:IndexCurve,60,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,60
+,,,,,,,,,,,,,0,1001.41
+,,,,,:IndexCurve,90,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,90
+,,,,,,,,,,,,,0,1011.89
+,,,,,:IndexCurve,120,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,120
+,,,,,,,,,,,,,0,1012.59
+,,,,,:IndexCurve,150,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,150
+,,,,,,,,,,,,,0,1023.07
+,,,,,:IndexCurve,180,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,180
+,,,,,,,,,,,,,0,1033.54
+,,,,,:IndexCurve,210,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,210
+,,,,,,,,,,,,,0,1044.02
+,,scen25,1,red,:IndexCurve,0,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,0
+,,,,,,,,,,,,,0,1000.
+,,,,,:IndexCurve,30,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,30
+,,,,,,,,,,,,,0,1000.71
+,,,,,:IndexCurve,60,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,60
+,,,,,,,,,,,,,0,1001.41
+,,,,,:IndexCurve,90,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,90
+,,,,,,,,,,,,,0,1011.89
+,,,,,:IndexCurve,120,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,120
+,,,,,,,,,,,,,0,1022.36
+,,,,,:IndexCurve,150,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,150
+,,,,,,,,,,,,,0,1023.07
+,,,,,:IndexCurve,180,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,180
+,,,,,,,,,,,,,0,1023.77
+,,,,,:IndexCurve,210,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,210
+,,,,,,,,,,,,,0,1024.48
+,,scen26,1,red,:IndexCurve,0,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,0
+,,,,,,,,,,,,,0,1000.
+,,,,,:IndexCurve,30,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,30
+,,,,,,,,,,,,,0,1000.71
+,,,,,:IndexCurve,60,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,60
+,,,,,,,,,,,,,0,1001.41
+,,,,,:IndexCurve,90,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,90
+,,,,,,,,,,,,,0,1011.89
+,,,,,:IndexCurve,120,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,120
+,,,,,,,,,,,,,0,1022.36
+,,,,,:IndexCurve,150,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,150
+,,,,,,,,,,,,,0,1023.07
+,,,,,:IndexCurve,180,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,180
+,,,,,,,,,,,,,0,1023.77
+,,,,,:IndexCurve,210,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,210
+,,,,,,,,,,,,,0,1034.25
+,,scen27,1,red,:IndexCurve,0,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,0
+,,,,,,,,,,,,,0,1000.
+,,,,,:IndexCurve,30,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,30
+,,,,,,,,,,,,,0,1000.71
+,,,,,:IndexCurve,60,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,60
+,,,,,,,,,,,,,0,1001.41
+,,,,,:IndexCurve,90,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,90
+,,,,,,,,,,,,,0,1011.89
+,,,,,:IndexCurve,120,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,120
+,,,,,,,,,,,,,0,1022.36
+,,,,,:IndexCurve,150,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,150
+,,,,,,,,,,,,,0,1023.07
+,,,,,:IndexCurve,180,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,180
+,,,,,,,,,,,,,0,1033.54
+,,,,,:IndexCurve,210,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,210
+,,,,,,,,,,,,,0,1034.25
+,,scen28,1,red,:IndexCurve,0,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,0
+,,,,,,,,,,,,,0,1000.
+,,,,,:IndexCurve,30,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,30
+,,,,,,,,,,,,,0,1000.71
+,,,,,:IndexCurve,60,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,60
+,,,,,,,,,,,,,0,1001.41
+,,,,,:IndexCurve,90,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,90
+,,,,,,,,,,,,,0,1011.89
+,,,,,:IndexCurve,120,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,120
+,,,,,,,,,,,,,0,1022.36
+,,,,,:IndexCurve,150,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,150
+,,,,,,,,,,,,,0,1023.07
+,,,,,:IndexCurve,180,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,180
+,,,,,,,,,,,,,0,1033.54
+,,,,,:IndexCurve,210,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,210
+,,,,,,,,,,,,,0,1044.02
+,,scen29,1,red,:IndexCurve,0,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,0
+,,,,,,,,,,,,,0,1000.
+,,,,,:IndexCurve,30,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,30
+,,,,,,,,,,,,,0,1000.71
+,,,,,:IndexCurve,60,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,60
+,,,,,,,,,,,,,0,1001.41
+,,,,,:IndexCurve,90,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,90
+,,,,,,,,,,,,,0,1011.89
+,,,,,:IndexCurve,120,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,120
+,,,,,,,,,,,,,0,1022.36
+,,,,,:IndexCurve,150,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,150
+,,,,,,,,,,,,,0,1032.84
+,,,,,:IndexCurve,180,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,180
+,,,,,,,,,,,,,0,1033.54
+,,,,,:IndexCurve,210,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,210
+,,,,,,,,,,,,,0,1034.25
+,,scen30,1,red,:IndexCurve,0,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,0
+,,,,,,,,,,,,,0,1000.
+,,,,,:IndexCurve,30,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,30
+,,,,,,,,,,,,,0,1000.71
+,,,,,:IndexCurve,60,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,60
+,,,,,,,,,,,,,0,1001.41
+,,,,,:IndexCurve,90,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,90
+,,,,,,,,,,,,,0,1011.89
+,,,,,:IndexCurve,120,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,120
+,,,,,,,,,,,,,0,1022.36
+,,,,,:IndexCurve,150,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,150
+,,,,,,,,,,,,,0,1032.84
+,,,,,:IndexCurve,180,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,180
+,,,,,,,,,,,,,0,1033.54
+,,,,,:IndexCurve,210,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,210
+,,,,,,,,,,,,,0,1044.02
+,,scen31,1,red,:IndexCurve,0,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,0
+,,,,,,,,,,,,,0,1000.
+,,,,,:IndexCurve,30,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,30
+,,,,,,,,,,,,,0,1000.71
+,,,,,:IndexCurve,60,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,60
+,,,,,,,,,,,,,0,1001.41
+,,,,,:IndexCurve,90,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,90
+,,,,,,,,,,,,,0,1011.89
+,,,,,:IndexCurve,120,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,120
+,,,,,,,,,,,,,0,1022.36
+,,,,,:IndexCurve,150,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,150
+,,,,,,,,,,,,,0,1032.84
+,,,,,:IndexCurve,180,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,180
+,,,,,,,,,,,,,0,1043.31
+,,,,,:IndexCurve,210,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,210
+,,,,,,,,,,,,,0,1044.02
+,,scen32,1,red,:IndexCurve,0,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,0
+,,,,,,,,,,,,,0,1000.
+,,,,,:IndexCurve,30,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,30
+,,,,,,,,,,,,,0,1000.71
+,,,,,:IndexCurve,60,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,60
+,,,,,,,,,,,,,0,1001.41
+,,,,,:IndexCurve,90,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,90
+,,,,,,,,,,,,,0,1011.89
+,,,,,:IndexCurve,120,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,120
+,,,,,,,,,,,,,0,1022.36
+,,,,,:IndexCurve,150,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,150
+,,,,,,,,,,,,,0,1032.84
+,,,,,:IndexCurve,180,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,180
+,,,,,,,,,,,,,0,1043.31
+,,,,,:IndexCurve,210,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,210
+,,,,,,,,,,,,,0,1053.79
+,,scen33,1,red,:IndexCurve,0,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,0
+,,,,,,,,,,,,,0,1000.
+,,,,,:IndexCurve,30,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,30
+,,,,,,,,,,,,,0,1000.71
+,,,,,:IndexCurve,60,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,60
+,,,,,,,,,,,,,0,1011.18
+,,,,,:IndexCurve,90,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,90
+,,,,,,,,,,,,,0,1011.89
+,,,,,:IndexCurve,120,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,120
+,,,,,,,,,,,,,0,1012.59
+,,,,,:IndexCurve,150,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,150
+,,,,,,,,,,,,,0,1013.3
+,,,,,:IndexCurve,180,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,180
+,,,,,,,,,,,,,0,1014.
+,,,,,:IndexCurve,210,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,210
+,,,,,,,,,,,,,0,1014.71
+,,scen34,1,red,:IndexCurve,0,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,0
+,,,,,,,,,,,,,0,1000.
+,,,,,:IndexCurve,30,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,30
+,,,,,,,,,,,,,0,1000.71
+,,,,,:IndexCurve,60,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,60
+,,,,,,,,,,,,,0,1011.18
+,,,,,:IndexCurve,90,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,90
+,,,,,,,,,,,,,0,1011.89
+,,,,,:IndexCurve,120,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,120
+,,,,,,,,,,,,,0,1012.59
+,,,,,:IndexCurve,150,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,150
+,,,,,,,,,,,,,0,1013.3
+,,,,,:IndexCurve,180,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,180
+,,,,,,,,,,,,,0,1014.
+,,,,,:IndexCurve,210,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,210
+,,,,,,,,,,,,,0,1024.48
+,,scen35,1,red,:IndexCurve,0,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,0
+,,,,,,,,,,,,,0,1000.
+,,,,,:IndexCurve,30,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,30
+,,,,,,,,,,,,,0,1000.71
+,,,,,:IndexCurve,60,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,60
+,,,,,,,,,,,,,0,1011.18
+,,,,,:IndexCurve,90,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,90
+,,,,,,,,,,,,,0,1011.89
+,,,,,:IndexCurve,120,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,120
+,,,,,,,,,,,,,0,1012.59
+,,,,,:IndexCurve,150,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,150
+,,,,,,,,,,,,,0,1013.3
+,,,,,:IndexCurve,180,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,180
+,,,,,,,,,,,,,0,1023.77
+,,,,,:IndexCurve,210,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,210
+,,,,,,,,,,,,,0,1024.48
+,,scen36,1,red,:IndexCurve,0,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,0
+,,,,,,,,,,,,,0,1000.
+,,,,,:IndexCurve,30,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,30
+,,,,,,,,,,,,,0,1000.71
+,,,,,:IndexCurve,60,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,60
+,,,,,,,,,,,,,0,1011.18
+,,,,,:IndexCurve,90,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,90
+,,,,,,,,,,,,,0,1011.89
+,,,,,:IndexCurve,120,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,120
+,,,,,,,,,,,,,0,1012.59
+,,,,,:IndexCurve,150,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,150
+,,,,,,,,,,,,,0,1013.3
+,,,,,:IndexCurve,180,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,180
+,,,,,,,,,,,,,0,1023.77
+,,,,,:IndexCurve,210,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,210
+,,,,,,,,,,,,,0,1034.25
+,,scen37,1,red,:IndexCurve,0,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,0
+,,,,,,,,,,,,,0,1000.
+,,,,,:IndexCurve,30,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,30
+,,,,,,,,,,,,,0,1000.71
+,,,,,:IndexCurve,60,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,60
+,,,,,,,,,,,,,0,1011.18
+,,,,,:IndexCurve,90,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,90
+,,,,,,,,,,,,,0,1011.89
+,,,,,:IndexCurve,120,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,120
+,,,,,,,,,,,,,0,1012.59
+,,,,,:IndexCurve,150,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,150
+,,,,,,,,,,,,,0,1023.07
+,,,,,:IndexCurve,180,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,180
+,,,,,,,,,,,,,0,1023.77
+,,,,,:IndexCurve,210,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,210
+,,,,,,,,,,,,,0,1024.48
+,,scen38,1,red,:IndexCurve,0,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,0
+,,,,,,,,,,,,,0,1000.
+,,,,,:IndexCurve,30,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,30
+,,,,,,,,,,,,,0,1000.71
+,,,,,:IndexCurve,60,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,60
+,,,,,,,,,,,,,0,1011.18
+,,,,,:IndexCurve,90,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,90
+,,,,,,,,,,,,,0,1011.89
+,,,,,:IndexCurve,120,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,120
+,,,,,,,,,,,,,0,1012.59
+,,,,,:IndexCurve,150,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,150
+,,,,,,,,,,,,,0,1023.07
+,,,,,:IndexCurve,180,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,180
+,,,,,,,,,,,,,0,1023.77
+,,,,,:IndexCurve,210,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,210
+,,,,,,,,,,,,,0,1034.25
+,,scen39,1,red,:IndexCurve,0,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,0
+,,,,,,,,,,,,,0,1000.
+,,,,,:IndexCurve,30,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,30
+,,,,,,,,,,,,,0,1000.71
+,,,,,:IndexCurve,60,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,60
+,,,,,,,,,,,,,0,1011.18
+,,,,,:IndexCurve,90,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,90
+,,,,,,,,,,,,,0,1011.89
+,,,,,:IndexCurve,120,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,120
+,,,,,,,,,,,,,0,1012.59
+,,,,,:IndexCurve,150,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,150
+,,,,,,,,,,,,,0,1023.07
+,,,,,:IndexCurve,180,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,180
+,,,,,,,,,,,,,0,1033.54
+,,,,,:IndexCurve,210,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,210
+,,,,,,,,,,,,,0,1034.25
+,,scen40,1,red,:IndexCurve,0,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,0
+,,,,,,,,,,,,,0,1000.
+,,,,,:IndexCurve,30,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,30
+,,,,,,,,,,,,,0,1000.71
+,,,,,:IndexCurve,60,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,60
+,,,,,,,,,,,,,0,1011.18
+,,,,,:IndexCurve,90,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,90
+,,,,,,,,,,,,,0,1011.89
+,,,,,:IndexCurve,120,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,120
+,,,,,,,,,,,,,0,1012.59
+,,,,,:IndexCurve,150,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,150
+,,,,,,,,,,,,,0,1023.07
+,,,,,:IndexCurve,180,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,180
+,,,,,,,,,,,,,0,1033.54
+,,,,,:IndexCurve,210,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,210
+,,,,,,,,,,,,,0,1044.02
+,,scen41,1,red,:IndexCurve,0,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,0
+,,,,,,,,,,,,,0,1000.
+,,,,,:IndexCurve,30,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,30
+,,,,,,,,,,,,,0,1000.71
+,,,,,:IndexCurve,60,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,60
+,,,,,,,,,,,,,0,1011.18
+,,,,,:IndexCurve,90,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,90
+,,,,,,,,,,,,,0,1011.89
+,,,,,:IndexCurve,120,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,120
+,,,,,,,,,,,,,0,1022.36
+,,,,,:IndexCurve,150,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,150
+,,,,,,,,,,,,,0,1023.07
+,,,,,:IndexCurve,180,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,180
+,,,,,,,,,,,,,0,1023.77
+,,,,,:IndexCurve,210,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,210
+,,,,,,,,,,,,,0,1024.48
+,,scen42,1,red,:IndexCurve,0,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,0
+,,,,,,,,,,,,,0,1000.
+,,,,,:IndexCurve,30,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,30
+,,,,,,,,,,,,,0,1000.71
+,,,,,:IndexCurve,60,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,60
+,,,,,,,,,,,,,0,1011.18
+,,,,,:IndexCurve,90,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,90
+,,,,,,,,,,,,,0,1011.89
+,,,,,:IndexCurve,120,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,120
+,,,,,,,,,,,,,0,1022.36
+,,,,,:IndexCurve,150,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,150
+,,,,,,,,,,,,,0,1023.07
+,,,,,:IndexCurve,180,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,180
+,,,,,,,,,,,,,0,1023.77
+,,,,,:IndexCurve,210,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,210
+,,,,,,,,,,,,,0,1034.25
+,,scen43,1,red,:IndexCurve,0,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,0
+,,,,,,,,,,,,,0,1000.
+,,,,,:IndexCurve,30,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,30
+,,,,,,,,,,,,,0,1000.71
+,,,,,:IndexCurve,60,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,60
+,,,,,,,,,,,,,0,1011.18
+,,,,,:IndexCurve,90,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,90
+,,,,,,,,,,,,,0,1011.89
+,,,,,:IndexCurve,120,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,120
+,,,,,,,,,,,,,0,1022.36
+,,,,,:IndexCurve,150,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,150
+,,,,,,,,,,,,,0,1023.07
+,,,,,:IndexCurve,180,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,180
+,,,,,,,,,,,,,0,1033.54
+,,,,,:IndexCurve,210,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,210
+,,,,,,,,,,,,,0,1034.25
+,,scen44,1,red,:IndexCurve,0,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,0
+,,,,,,,,,,,,,0,1000.
+,,,,,:IndexCurve,30,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,30
+,,,,,,,,,,,,,0,1000.71
+,,,,,:IndexCurve,60,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,60
+,,,,,,,,,,,,,0,1011.18
+,,,,,:IndexCurve,90,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,90
+,,,,,,,,,,,,,0,1011.89
+,,,,,:IndexCurve,120,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,120
+,,,,,,,,,,,,,0,1022.36
+,,,,,:IndexCurve,150,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,150
+,,,,,,,,,,,,,0,1023.07
+,,,,,:IndexCurve,180,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,180
+,,,,,,,,,,,,,0,1033.54
+,,,,,:IndexCurve,210,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,210
+,,,,,,,,,,,,,0,1044.02
+,,scen45,1,red,:IndexCurve,0,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,0
+,,,,,,,,,,,,,0,1000.
+,,,,,:IndexCurve,30,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,30
+,,,,,,,,,,,,,0,1000.71
+,,,,,:IndexCurve,60,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,60
+,,,,,,,,,,,,,0,1011.18
+,,,,,:IndexCurve,90,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,90
+,,,,,,,,,,,,,0,1011.89
+,,,,,:IndexCurve,120,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,120
+,,,,,,,,,,,,,0,1022.36
+,,,,,:IndexCurve,150,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,150
+,,,,,,,,,,,,,0,1032.84
+,,,,,:IndexCurve,180,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,180
+,,,,,,,,,,,,,0,1033.54
+,,,,,:IndexCurve,210,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,210
+,,,,,,,,,,,,,0,1034.25
+,,scen46,1,red,:IndexCurve,0,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,0
+,,,,,,,,,,,,,0,1000.
+,,,,,:IndexCurve,30,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,30
+,,,,,,,,,,,,,0,1000.71
+,,,,,:IndexCurve,60,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,60
+,,,,,,,,,,,,,0,1011.18
+,,,,,:IndexCurve,90,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,90
+,,,,,,,,,,,,,0,1011.89
+,,,,,:IndexCurve,120,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,120
+,,,,,,,,,,,,,0,1022.36
+,,,,,:IndexCurve,150,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,150
+,,,,,,,,,,,,,0,1032.84
+,,,,,:IndexCurve,180,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,180
+,,,,,,,,,,,,,0,1033.54
+,,,,,:IndexCurve,210,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,210
+,,,,,,,,,,,,,0,1044.02
+,,scen47,1,red,:IndexCurve,0,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,0
+,,,,,,,,,,,,,0,1000.
+,,,,,:IndexCurve,30,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,30
+,,,,,,,,,,,,,0,1000.71
+,,,,,:IndexCurve,60,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,60
+,,,,,,,,,,,,,0,1011.18
+,,,,,:IndexCurve,90,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,90
+,,,,,,,,,,,,,0,1011.89
+,,,,,:IndexCurve,120,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,120
+,,,,,,,,,,,,,0,1022.36
+,,,,,:IndexCurve,150,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,150
+,,,,,,,,,,,,,0,1032.84
+,,,,,:IndexCurve,180,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,180
+,,,,,,,,,,,,,0,1043.31
+,,,,,:IndexCurve,210,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,210
+,,,,,,,,,,,,,0,1044.02
+,,scen48,1,red,:IndexCurve,0,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,0
+,,,,,,,,,,,,,0,1000.
+,,,,,:IndexCurve,30,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,30
+,,,,,,,,,,,,,0,1000.71
+,,,,,:IndexCurve,60,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,60
+,,,,,,,,,,,,,0,1011.18
+,,,,,:IndexCurve,90,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,90
+,,,,,,,,,,,,,0,1011.89
+,,,,,:IndexCurve,120,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,120
+,,,,,,,,,,,,,0,1022.36
+,,,,,:IndexCurve,150,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,150
+,,,,,,,,,,,,,0,1032.84
+,,,,,:IndexCurve,180,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,180
+,,,,,,,,,,,,,0,1043.31
+,,,,,:IndexCurve,210,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,210
+,,,,,,,,,,,,,0,1053.79
+,,scen49,1,red,:IndexCurve,0,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,0
+,,,,,,,,,,,,,0,1000.
+,,,,,:IndexCurve,30,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,30
+,,,,,,,,,,,,,0,1000.71
+,,,,,:IndexCurve,60,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,60
+,,,,,,,,,,,,,0,1011.18
+,,,,,:IndexCurve,90,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,90
+,,,,,,,,,,,,,0,1021.66
+,,,,,:IndexCurve,120,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,120
+,,,,,,,,,,,,,0,1022.36
+,,,,,:IndexCurve,150,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,150
+,,,,,,,,,,,,,0,1023.07
+,,,,,:IndexCurve,180,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,180
+,,,,,,,,,,,,,0,1023.77
+,,,,,:IndexCurve,210,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,210
+,,,,,,,,,,,,,0,1024.48
+,,scen50,1,red,:IndexCurve,0,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,0
+,,,,,,,,,,,,,0,1000.
+,,,,,:IndexCurve,30,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,30
+,,,,,,,,,,,,,0,1000.71
+,,,,,:IndexCurve,60,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,60
+,,,,,,,,,,,,,0,1011.18
+,,,,,:IndexCurve,90,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,90
+,,,,,,,,,,,,,0,1021.66
+,,,,,:IndexCurve,120,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,120
+,,,,,,,,,,,,,0,1022.36
+,,,,,:IndexCurve,150,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,150
+,,,,,,,,,,,,,0,1023.07
+,,,,,:IndexCurve,180,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,180
+,,,,,,,,,,,,,0,1023.77
+,,,,,:IndexCurve,210,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,210
+,,,,,,,,,,,,,0,1034.25
+,,scen51,1,red,:IndexCurve,0,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,0
+,,,,,,,,,,,,,0,1000.
+,,,,,:IndexCurve,30,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,30
+,,,,,,,,,,,,,0,1000.71
+,,,,,:IndexCurve,60,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,60
+,,,,,,,,,,,,,0,1011.18
+,,,,,:IndexCurve,90,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,90
+,,,,,,,,,,,,,0,1021.66
+,,,,,:IndexCurve,120,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,120
+,,,,,,,,,,,,,0,1022.36
+,,,,,:IndexCurve,150,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,150
+,,,,,,,,,,,,,0,1023.07
+,,,,,:IndexCurve,180,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,180
+,,,,,,,,,,,,,0,1033.54
+,,,,,:IndexCurve,210,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,210
+,,,,,,,,,,,,,0,1034.25
+,,scen52,1,red,:IndexCurve,0,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,0
+,,,,,,,,,,,,,0,1000.
+,,,,,:IndexCurve,30,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,30
+,,,,,,,,,,,,,0,1000.71
+,,,,,:IndexCurve,60,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,60
+,,,,,,,,,,,,,0,1011.18
+,,,,,:IndexCurve,90,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,90
+,,,,,,,,,,,,,0,1021.66
+,,,,,:IndexCurve,120,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,120
+,,,,,,,,,,,,,0,1022.36
+,,,,,:IndexCurve,150,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,150
+,,,,,,,,,,,,,0,1023.07
+,,,,,:IndexCurve,180,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,180
+,,,,,,,,,,,,,0,1033.54
+,,,,,:IndexCurve,210,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,210
+,,,,,,,,,,,,,0,1044.02
+,,scen53,1,red,:IndexCurve,0,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,0
+,,,,,,,,,,,,,0,1000.
+,,,,,:IndexCurve,30,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,30
+,,,,,,,,,,,,,0,1000.71
+,,,,,:IndexCurve,60,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,60
+,,,,,,,,,,,,,0,1011.18
+,,,,,:IndexCurve,90,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,90
+,,,,,,,,,,,,,0,1021.66
+,,,,,:IndexCurve,120,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,120
+,,,,,,,,,,,,,0,1022.36
+,,,,,:IndexCurve,150,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,150
+,,,,,,,,,,,,,0,1032.84
+,,,,,:IndexCurve,180,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,180
+,,,,,,,,,,,,,0,1033.54
+,,,,,:IndexCurve,210,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,210
+,,,,,,,,,,,,,0,1034.25
+,,scen54,1,red,:IndexCurve,0,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,0
+,,,,,,,,,,,,,0,1000.
+,,,,,:IndexCurve,30,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,30
+,,,,,,,,,,,,,0,1000.71
+,,,,,:IndexCurve,60,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,60
+,,,,,,,,,,,,,0,1011.18
+,,,,,:IndexCurve,90,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,90
+,,,,,,,,,,,,,0,1021.66
+,,,,,:IndexCurve,120,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,120
+,,,,,,,,,,,,,0,1022.36
+,,,,,:IndexCurve,150,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,150
+,,,,,,,,,,,,,0,1032.84
+,,,,,:IndexCurve,180,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,180
+,,,,,,,,,,,,,0,1033.54
+,,,,,:IndexCurve,210,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,210
+,,,,,,,,,,,,,0,1044.02
+,,scen55,1,red,:IndexCurve,0,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,0
+,,,,,,,,,,,,,0,1000.
+,,,,,:IndexCurve,30,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,30
+,,,,,,,,,,,,,0,1000.71
+,,,,,:IndexCurve,60,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,60
+,,,,,,,,,,,,,0,1011.18
+,,,,,:IndexCurve,90,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,90
+,,,,,,,,,,,,,0,1021.66
+,,,,,:IndexCurve,120,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,120
+,,,,,,,,,,,,,0,1022.36
+,,,,,:IndexCurve,150,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,150
+,,,,,,,,,,,,,0,1032.84
+,,,,,:IndexCurve,180,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,180
+,,,,,,,,,,,,,0,1043.31
+,,,,,:IndexCurve,210,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,210
+,,,,,,,,,,,,,0,1044.02
+,,scen56,1,red,:IndexCurve,0,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,0
+,,,,,,,,,,,,,0,1000.
+,,,,,:IndexCurve,30,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,30
+,,,,,,,,,,,,,0,1000.71
+,,,,,:IndexCurve,60,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,60
+,,,,,,,,,,,,,0,1011.18
+,,,,,:IndexCurve,90,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,90
+,,,,,,,,,,,,,0,1021.66
+,,,,,:IndexCurve,120,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,120
+,,,,,,,,,,,,,0,1022.36
+,,,,,:IndexCurve,150,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,150
+,,,,,,,,,,,,,0,1032.84
+,,,,,:IndexCurve,180,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,180
+,,,,,,,,,,,,,0,1043.31
+,,,,,:IndexCurve,210,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,210
+,,,,,,,,,,,,,0,1053.79
+,,scen57,1,red,:IndexCurve,0,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,0
+,,,,,,,,,,,,,0,1000.
+,,,,,:IndexCurve,30,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,30
+,,,,,,,,,,,,,0,1000.71
+,,,,,:IndexCurve,60,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,60
+,,,,,,,,,,,,,0,1011.18
+,,,,,:IndexCurve,90,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,90
+,,,,,,,,,,,,,0,1021.66
+,,,,,:IndexCurve,120,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,120
+,,,,,,,,,,,,,0,1032.13
+,,,,,:IndexCurve,150,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,150
+,,,,,,,,,,,,,0,1032.84
+,,,,,:IndexCurve,180,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,180
+,,,,,,,,,,,,,0,1033.54
+,,,,,:IndexCurve,210,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,210
+,,,,,,,,,,,,,0,1034.25
+,,scen58,1,red,:IndexCurve,0,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,0
+,,,,,,,,,,,,,0,1000.
+,,,,,:IndexCurve,30,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,30
+,,,,,,,,,,,,,0,1000.71
+,,,,,:IndexCurve,60,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,60
+,,,,,,,,,,,,,0,1011.18
+,,,,,:IndexCurve,90,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,90
+,,,,,,,,,,,,,0,1021.66
+,,,,,:IndexCurve,120,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,120
+,,,,,,,,,,,,,0,1032.13
+,,,,,:IndexCurve,150,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,150
+,,,,,,,,,,,,,0,1032.84
+,,,,,:IndexCurve,180,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,180
+,,,,,,,,,,,,,0,1033.54
+,,,,,:IndexCurve,210,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,210
+,,,,,,,,,,,,,0,1044.02
+,,scen59,1,red,:IndexCurve,0,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,0
+,,,,,,,,,,,,,0,1000.
+,,,,,:IndexCurve,30,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,30
+,,,,,,,,,,,,,0,1000.71
+,,,,,:IndexCurve,60,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,60
+,,,,,,,,,,,,,0,1011.18
+,,,,,:IndexCurve,90,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,90
+,,,,,,,,,,,,,0,1021.66
+,,,,,:IndexCurve,120,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,120
+,,,,,,,,,,,,,0,1032.13
+,,,,,:IndexCurve,150,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,150
+,,,,,,,,,,,,,0,1032.84
+,,,,,:IndexCurve,180,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,180
+,,,,,,,,,,,,,0,1043.31
+,,,,,:IndexCurve,210,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,210
+,,,,,,,,,,,,,0,1044.02
+,,scen60,1,red,:IndexCurve,0,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,0
+,,,,,,,,,,,,,0,1000.
+,,,,,:IndexCurve,30,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,30
+,,,,,,,,,,,,,0,1000.71
+,,,,,:IndexCurve,60,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,60
+,,,,,,,,,,,,,0,1011.18
+,,,,,:IndexCurve,90,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,90
+,,,,,,,,,,,,,0,1021.66
+,,,,,:IndexCurve,120,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,120
+,,,,,,,,,,,,,0,1032.13
+,,,,,:IndexCurve,150,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,150
+,,,,,,,,,,,,,0,1032.84
+,,,,,:IndexCurve,180,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,180
+,,,,,,,,,,,,,0,1043.31
+,,,,,:IndexCurve,210,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,210
+,,,,,,,,,,,,,0,1053.79
+,,scen61,1,red,:IndexCurve,0,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,0
+,,,,,,,,,,,,,0,1000.
+,,,,,:IndexCurve,30,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,30
+,,,,,,,,,,,,,0,1000.71
+,,,,,:IndexCurve,60,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,60
+,,,,,,,,,,,,,0,1011.18
+,,,,,:IndexCurve,90,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,90
+,,,,,,,,,,,,,0,1021.66
+,,,,,:IndexCurve,120,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,120
+,,,,,,,,,,,,,0,1032.13
+,,,,,:IndexCurve,150,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,150
+,,,,,,,,,,,,,0,1042.6
+,,,,,:IndexCurve,180,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,180
+,,,,,,,,,,,,,0,1043.31
+,,,,,:IndexCurve,210,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,210
+,,,,,,,,,,,,,0,1044.02
+,,scen62,1,red,:IndexCurve,0,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,0
+,,,,,,,,,,,,,0,1000.
+,,,,,:IndexCurve,30,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,30
+,,,,,,,,,,,,,0,1000.71
+,,,,,:IndexCurve,60,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,60
+,,,,,,,,,,,,,0,1011.18
+,,,,,:IndexCurve,90,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,90
+,,,,,,,,,,,,,0,1021.66
+,,,,,:IndexCurve,120,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,120
+,,,,,,,,,,,,,0,1032.13
+,,,,,:IndexCurve,150,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,150
+,,,,,,,,,,,,,0,1042.6
+,,,,,:IndexCurve,180,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,180
+,,,,,,,,,,,,,0,1043.31
+,,,,,:IndexCurve,210,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,210
+,,,,,,,,,,,,,0,1053.79
+,,scen63,1,red,:IndexCurve,0,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,0
+,,,,,,,,,,,,,0,1000.
+,,,,,:IndexCurve,30,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,30
+,,,,,,,,,,,,,0,1000.71
+,,,,,:IndexCurve,60,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,60
+,,,,,,,,,,,,,0,1011.18
+,,,,,:IndexCurve,90,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,90
+,,,,,,,,,,,,,0,1021.66
+,,,,,:IndexCurve,120,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,120
+,,,,,,,,,,,,,0,1032.13
+,,,,,:IndexCurve,150,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,150
+,,,,,,,,,,,,,0,1042.6
+,,,,,:IndexCurve,180,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,180
+,,,,,,,,,,,,,0,1053.08
+,,,,,:IndexCurve,210,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,210
+,,,,,,,,,,,,,0,1053.79
+,,scen64,1,red,:IndexCurve,0,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,0
+,,,,,,,,,,,,,0,1000.
+,,,,,:IndexCurve,30,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,30
+,,,,,,,,,,,,,0,1000.71
+,,,,,:IndexCurve,60,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,60
+,,,,,,,,,,,,,0,1011.18
+,,,,,:IndexCurve,90,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,90
+,,,,,,,,,,,,,0,1021.66
+,,,,,:IndexCurve,120,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,120
+,,,,,,,,,,,,,0,1032.13
+,,,,,:IndexCurve,150,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,150
+,,,,,,,,,,,,,0,1042.6
+,,,,,:IndexCurve,180,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,180
+,,,,,,,,,,,,,0,1053.08
+,,,,,:IndexCurve,210,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,210
+,,,,,,,,,,,,,0,1063.55
+,,scen65,1,red,:IndexCurve,0,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,0
+,,,,,,,,,,,,,0,1000.
+,,,,,:IndexCurve,30,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,30
+,,,,,,,,,,,,,0,1010.47
+,,,,,:IndexCurve,60,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,60
+,,,,,,,,,,,,,0,1011.18
+,,,,,:IndexCurve,90,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,90
+,,,,,,,,,,,,,0,1011.89
+,,,,,:IndexCurve,120,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,120
+,,,,,,,,,,,,,0,1012.59
+,,,,,:IndexCurve,150,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,150
+,,,,,,,,,,,,,0,1013.3
+,,,,,:IndexCurve,180,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,180
+,,,,,,,,,,,,,0,1014.
+,,,,,:IndexCurve,210,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,210
+,,,,,,,,,,,,,0,1014.71
+,,scen66,1,red,:IndexCurve,0,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,0
+,,,,,,,,,,,,,0,1000.
+,,,,,:IndexCurve,30,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,30
+,,,,,,,,,,,,,0,1010.47
+,,,,,:IndexCurve,60,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,60
+,,,,,,,,,,,,,0,1011.18
+,,,,,:IndexCurve,90,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,90
+,,,,,,,,,,,,,0,1011.89
+,,,,,:IndexCurve,120,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,120
+,,,,,,,,,,,,,0,1012.59
+,,,,,:IndexCurve,150,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,150
+,,,,,,,,,,,,,0,1013.3
+,,,,,:IndexCurve,180,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,180
+,,,,,,,,,,,,,0,1014.
+,,,,,:IndexCurve,210,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,210
+,,,,,,,,,,,,,0,1024.48
+,,scen67,1,red,:IndexCurve,0,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,0
+,,,,,,,,,,,,,0,1000.
+,,,,,:IndexCurve,30,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,30
+,,,,,,,,,,,,,0,1010.47
+,,,,,:IndexCurve,60,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,60
+,,,,,,,,,,,,,0,1011.18
+,,,,,:IndexCurve,90,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,90
+,,,,,,,,,,,,,0,1011.89
+,,,,,:IndexCurve,120,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,120
+,,,,,,,,,,,,,0,1012.59
+,,,,,:IndexCurve,150,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,150
+,,,,,,,,,,,,,0,1013.3
+,,,,,:IndexCurve,180,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,180
+,,,,,,,,,,,,,0,1023.77
+,,,,,:IndexCurve,210,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,210
+,,,,,,,,,,,,,0,1024.48
+,,scen68,1,red,:IndexCurve,0,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,0
+,,,,,,,,,,,,,0,1000.
+,,,,,:IndexCurve,30,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,30
+,,,,,,,,,,,,,0,1010.47
+,,,,,:IndexCurve,60,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,60
+,,,,,,,,,,,,,0,1011.18
+,,,,,:IndexCurve,90,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,90
+,,,,,,,,,,,,,0,1011.89
+,,,,,:IndexCurve,120,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,120
+,,,,,,,,,,,,,0,1012.59
+,,,,,:IndexCurve,150,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,150
+,,,,,,,,,,,,,0,1013.3
+,,,,,:IndexCurve,180,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,180
+,,,,,,,,,,,,,0,1023.77
+,,,,,:IndexCurve,210,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,210
+,,,,,,,,,,,,,0,1034.25
+,,scen69,1,red,:IndexCurve,0,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,0
+,,,,,,,,,,,,,0,1000.
+,,,,,:IndexCurve,30,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,30
+,,,,,,,,,,,,,0,1010.47
+,,,,,:IndexCurve,60,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,60
+,,,,,,,,,,,,,0,1011.18
+,,,,,:IndexCurve,90,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,90
+,,,,,,,,,,,,,0,1011.89
+,,,,,:IndexCurve,120,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,120
+,,,,,,,,,,,,,0,1012.59
+,,,,,:IndexCurve,150,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,150
+,,,,,,,,,,,,,0,1023.07
+,,,,,:IndexCurve,180,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,180
+,,,,,,,,,,,,,0,1023.77
+,,,,,:IndexCurve,210,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,210
+,,,,,,,,,,,,,0,1024.48
+,,scen70,1,red,:IndexCurve,0,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,0
+,,,,,,,,,,,,,0,1000.
+,,,,,:IndexCurve,30,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,30
+,,,,,,,,,,,,,0,1010.47
+,,,,,:IndexCurve,60,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,60
+,,,,,,,,,,,,,0,1011.18
+,,,,,:IndexCurve,90,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,90
+,,,,,,,,,,,,,0,1011.89
+,,,,,:IndexCurve,120,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,120
+,,,,,,,,,,,,,0,1012.59
+,,,,,:IndexCurve,150,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,150
+,,,,,,,,,,,,,0,1023.07
+,,,,,:IndexCurve,180,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,180
+,,,,,,,,,,,,,0,1023.77
+,,,,,:IndexCurve,210,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,210
+,,,,,,,,,,,,,0,1034.25
+,,scen71,1,red,:IndexCurve,0,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,0
+,,,,,,,,,,,,,0,1000.
+,,,,,:IndexCurve,30,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,30
+,,,,,,,,,,,,,0,1010.47
+,,,,,:IndexCurve,60,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,60
+,,,,,,,,,,,,,0,1011.18
+,,,,,:IndexCurve,90,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,90
+,,,,,,,,,,,,,0,1011.89
+,,,,,:IndexCurve,120,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,120
+,,,,,,,,,,,,,0,1012.59
+,,,,,:IndexCurve,150,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,150
+,,,,,,,,,,,,,0,1023.07
+,,,,,:IndexCurve,180,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,180
+,,,,,,,,,,,,,0,1033.54
+,,,,,:IndexCurve,210,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,210
+,,,,,,,,,,,,,0,1034.25
+,,scen72,1,red,:IndexCurve,0,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,0
+,,,,,,,,,,,,,0,1000.
+,,,,,:IndexCurve,30,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,30
+,,,,,,,,,,,,,0,1010.47
+,,,,,:IndexCurve,60,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,60
+,,,,,,,,,,,,,0,1011.18
+,,,,,:IndexCurve,90,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,90
+,,,,,,,,,,,,,0,1011.89
+,,,,,:IndexCurve,120,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,120
+,,,,,,,,,,,,,0,1012.59
+,,,,,:IndexCurve,150,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,150
+,,,,,,,,,,,,,0,1023.07
+,,,,,:IndexCurve,180,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,180
+,,,,,,,,,,,,,0,1033.54
+,,,,,:IndexCurve,210,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,210
+,,,,,,,,,,,,,0,1044.02
+,,scen73,1,red,:IndexCurve,0,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,0
+,,,,,,,,,,,,,0,1000.
+,,,,,:IndexCurve,30,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,30
+,,,,,,,,,,,,,0,1010.47
+,,,,,:IndexCurve,60,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,60
+,,,,,,,,,,,,,0,1011.18
+,,,,,:IndexCurve,90,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,90
+,,,,,,,,,,,,,0,1011.89
+,,,,,:IndexCurve,120,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,120
+,,,,,,,,,,,,,0,1022.36
+,,,,,:IndexCurve,150,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,150
+,,,,,,,,,,,,,0,1023.07
+,,,,,:IndexCurve,180,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,180
+,,,,,,,,,,,,,0,1023.77
+,,,,,:IndexCurve,210,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,210
+,,,,,,,,,,,,,0,1024.48
+,,scen74,1,red,:IndexCurve,0,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,0
+,,,,,,,,,,,,,0,1000.
+,,,,,:IndexCurve,30,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,30
+,,,,,,,,,,,,,0,1010.47
+,,,,,:IndexCurve,60,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,60
+,,,,,,,,,,,,,0,1011.18
+,,,,,:IndexCurve,90,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,90
+,,,,,,,,,,,,,0,1011.89
+,,,,,:IndexCurve,120,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,120
+,,,,,,,,,,,,,0,1022.36
+,,,,,:IndexCurve,150,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,150
+,,,,,,,,,,,,,0,1023.07
+,,,,,:IndexCurve,180,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,180
+,,,,,,,,,,,,,0,1023.77
+,,,,,:IndexCurve,210,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,210
+,,,,,,,,,,,,,0,1034.25
+,,scen75,1,red,:IndexCurve,0,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,0
+,,,,,,,,,,,,,0,1000.
+,,,,,:IndexCurve,30,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,30
+,,,,,,,,,,,,,0,1010.47
+,,,,,:IndexCurve,60,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,60
+,,,,,,,,,,,,,0,1011.18
+,,,,,:IndexCurve,90,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,90
+,,,,,,,,,,,,,0,1011.89
+,,,,,:IndexCurve,120,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,120
+,,,,,,,,,,,,,0,1022.36
+,,,,,:IndexCurve,150,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,150
+,,,,,,,,,,,,,0,1023.07
+,,,,,:IndexCurve,180,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,180
+,,,,,,,,,,,,,0,1033.54
+,,,,,:IndexCurve,210,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,210
+,,,,,,,,,,,,,0,1034.25
+,,scen76,1,red,:IndexCurve,0,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,0
+,,,,,,,,,,,,,0,1000.
+,,,,,:IndexCurve,30,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,30
+,,,,,,,,,,,,,0,1010.47
+,,,,,:IndexCurve,60,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,60
+,,,,,,,,,,,,,0,1011.18
+,,,,,:IndexCurve,90,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,90
+,,,,,,,,,,,,,0,1011.89
+,,,,,:IndexCurve,120,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,120
+,,,,,,,,,,,,,0,1022.36
+,,,,,:IndexCurve,150,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,150
+,,,,,,,,,,,,,0,1023.07
+,,,,,:IndexCurve,180,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,180
+,,,,,,,,,,,,,0,1033.54
+,,,,,:IndexCurve,210,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,210
+,,,,,,,,,,,,,0,1044.02
+,,scen77,1,red,:IndexCurve,0,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,0
+,,,,,,,,,,,,,0,1000.
+,,,,,:IndexCurve,30,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,30
+,,,,,,,,,,,,,0,1010.47
+,,,,,:IndexCurve,60,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,60
+,,,,,,,,,,,,,0,1011.18
+,,,,,:IndexCurve,90,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,90
+,,,,,,,,,,,,,0,1011.89
+,,,,,:IndexCurve,120,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,120
+,,,,,,,,,,,,,0,1022.36
+,,,,,:IndexCurve,150,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,150
+,,,,,,,,,,,,,0,1032.84
+,,,,,:IndexCurve,180,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,180
+,,,,,,,,,,,,,0,1033.54
+,,,,,:IndexCurve,210,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,210
+,,,,,,,,,,,,,0,1034.25
+,,scen78,1,red,:IndexCurve,0,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,0
+,,,,,,,,,,,,,0,1000.
+,,,,,:IndexCurve,30,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,30
+,,,,,,,,,,,,,0,1010.47
+,,,,,:IndexCurve,60,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,60
+,,,,,,,,,,,,,0,1011.18
+,,,,,:IndexCurve,90,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,90
+,,,,,,,,,,,,,0,1011.89
+,,,,,:IndexCurve,120,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,120
+,,,,,,,,,,,,,0,1022.36
+,,,,,:IndexCurve,150,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,150
+,,,,,,,,,,,,,0,1032.84
+,,,,,:IndexCurve,180,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,180
+,,,,,,,,,,,,,0,1033.54
+,,,,,:IndexCurve,210,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,210
+,,,,,,,,,,,,,0,1044.02
+,,scen79,1,red,:IndexCurve,0,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,0
+,,,,,,,,,,,,,0,1000.
+,,,,,:IndexCurve,30,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,30
+,,,,,,,,,,,,,0,1010.47
+,,,,,:IndexCurve,60,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,60
+,,,,,,,,,,,,,0,1011.18
+,,,,,:IndexCurve,90,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,90
+,,,,,,,,,,,,,0,1011.89
+,,,,,:IndexCurve,120,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,120
+,,,,,,,,,,,,,0,1022.36
+,,,,,:IndexCurve,150,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,150
+,,,,,,,,,,,,,0,1032.84
+,,,,,:IndexCurve,180,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,180
+,,,,,,,,,,,,,0,1043.31
+,,,,,:IndexCurve,210,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,210
+,,,,,,,,,,,,,0,1044.02
+,,scen80,1,red,:IndexCurve,0,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,0
+,,,,,,,,,,,,,0,1000.
+,,,,,:IndexCurve,30,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,30
+,,,,,,,,,,,,,0,1010.47
+,,,,,:IndexCurve,60,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,60
+,,,,,,,,,,,,,0,1011.18
+,,,,,:IndexCurve,90,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,90
+,,,,,,,,,,,,,0,1011.89
+,,,,,:IndexCurve,120,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,120
+,,,,,,,,,,,,,0,1022.36
+,,,,,:IndexCurve,150,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,150
+,,,,,,,,,,,,,0,1032.84
+,,,,,:IndexCurve,180,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,180
+,,,,,,,,,,,,,0,1043.31
+,,,,,:IndexCurve,210,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,210
+,,,,,,,,,,,,,0,1053.79
+,,scen81,1,red,:IndexCurve,0,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,0
+,,,,,,,,,,,,,0,1000.
+,,,,,:IndexCurve,30,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,30
+,,,,,,,,,,,,,0,1010.47
+,,,,,:IndexCurve,60,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,60
+,,,,,,,,,,,,,0,1011.18
+,,,,,:IndexCurve,90,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,90
+,,,,,,,,,,,,,0,1021.66
+,,,,,:IndexCurve,120,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,120
+,,,,,,,,,,,,,0,1022.36
+,,,,,:IndexCurve,150,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,150
+,,,,,,,,,,,,,0,1023.07
+,,,,,:IndexCurve,180,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,180
+,,,,,,,,,,,,,0,1023.77
+,,,,,:IndexCurve,210,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,210
+,,,,,,,,,,,,,0,1024.48
+,,scen82,1,red,:IndexCurve,0,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,0
+,,,,,,,,,,,,,0,1000.
+,,,,,:IndexCurve,30,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,30
+,,,,,,,,,,,,,0,1010.47
+,,,,,:IndexCurve,60,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,60
+,,,,,,,,,,,,,0,1011.18
+,,,,,:IndexCurve,90,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,90
+,,,,,,,,,,,,,0,1021.66
+,,,,,:IndexCurve,120,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,120
+,,,,,,,,,,,,,0,1022.36
+,,,,,:IndexCurve,150,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,150
+,,,,,,,,,,,,,0,1023.07
+,,,,,:IndexCurve,180,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,180
+,,,,,,,,,,,,,0,1023.77
+,,,,,:IndexCurve,210,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,210
+,,,,,,,,,,,,,0,1034.25
+,,scen83,1,red,:IndexCurve,0,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,0
+,,,,,,,,,,,,,0,1000.
+,,,,,:IndexCurve,30,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,30
+,,,,,,,,,,,,,0,1010.47
+,,,,,:IndexCurve,60,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,60
+,,,,,,,,,,,,,0,1011.18
+,,,,,:IndexCurve,90,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,90
+,,,,,,,,,,,,,0,1021.66
+,,,,,:IndexCurve,120,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,120
+,,,,,,,,,,,,,0,1022.36
+,,,,,:IndexCurve,150,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,150
+,,,,,,,,,,,,,0,1023.07
+,,,,,:IndexCurve,180,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,180
+,,,,,,,,,,,,,0,1033.54
+,,,,,:IndexCurve,210,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,210
+,,,,,,,,,,,,,0,1034.25
+,,scen84,1,red,:IndexCurve,0,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,0
+,,,,,,,,,,,,,0,1000.
+,,,,,:IndexCurve,30,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,30
+,,,,,,,,,,,,,0,1010.47
+,,,,,:IndexCurve,60,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,60
+,,,,,,,,,,,,,0,1011.18
+,,,,,:IndexCurve,90,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,90
+,,,,,,,,,,,,,0,1021.66
+,,,,,:IndexCurve,120,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,120
+,,,,,,,,,,,,,0,1022.36
+,,,,,:IndexCurve,150,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,150
+,,,,,,,,,,,,,0,1023.07
+,,,,,:IndexCurve,180,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,180
+,,,,,,,,,,,,,0,1033.54
+,,,,,:IndexCurve,210,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,210
+,,,,,,,,,,,,,0,1044.02
+,,scen85,1,red,:IndexCurve,0,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,0
+,,,,,,,,,,,,,0,1000.
+,,,,,:IndexCurve,30,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,30
+,,,,,,,,,,,,,0,1010.47
+,,,,,:IndexCurve,60,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,60
+,,,,,,,,,,,,,0,1011.18
+,,,,,:IndexCurve,90,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,90
+,,,,,,,,,,,,,0,1021.66
+,,,,,:IndexCurve,120,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,120
+,,,,,,,,,,,,,0,1022.36
+,,,,,:IndexCurve,150,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,150
+,,,,,,,,,,,,,0,1032.84
+,,,,,:IndexCurve,180,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,180
+,,,,,,,,,,,,,0,1033.54
+,,,,,:IndexCurve,210,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,210
+,,,,,,,,,,,,,0,1034.25
+,,scen86,1,red,:IndexCurve,0,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,0
+,,,,,,,,,,,,,0,1000.
+,,,,,:IndexCurve,30,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,30
+,,,,,,,,,,,,,0,1010.47
+,,,,,:IndexCurve,60,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,60
+,,,,,,,,,,,,,0,1011.18
+,,,,,:IndexCurve,90,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,90
+,,,,,,,,,,,,,0,1021.66
+,,,,,:IndexCurve,120,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,120
+,,,,,,,,,,,,,0,1022.36
+,,,,,:IndexCurve,150,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,150
+,,,,,,,,,,,,,0,1032.84
+,,,,,:IndexCurve,180,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,180
+,,,,,,,,,,,,,0,1033.54
+,,,,,:IndexCurve,210,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,210
+,,,,,,,,,,,,,0,1044.02
+,,scen87,1,red,:IndexCurve,0,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,0
+,,,,,,,,,,,,,0,1000.
+,,,,,:IndexCurve,30,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,30
+,,,,,,,,,,,,,0,1010.47
+,,,,,:IndexCurve,60,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,60
+,,,,,,,,,,,,,0,1011.18
+,,,,,:IndexCurve,90,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,90
+,,,,,,,,,,,,,0,1021.66
+,,,,,:IndexCurve,120,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,120
+,,,,,,,,,,,,,0,1022.36
+,,,,,:IndexCurve,150,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,150
+,,,,,,,,,,,,,0,1032.84
+,,,,,:IndexCurve,180,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,180
+,,,,,,,,,,,,,0,1043.31
+,,,,,:IndexCurve,210,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,210
+,,,,,,,,,,,,,0,1044.02
+,,scen88,1,red,:IndexCurve,0,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,0
+,,,,,,,,,,,,,0,1000.
+,,,,,:IndexCurve,30,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,30
+,,,,,,,,,,,,,0,1010.47
+,,,,,:IndexCurve,60,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,60
+,,,,,,,,,,,,,0,1011.18
+,,,,,:IndexCurve,90,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,90
+,,,,,,,,,,,,,0,1021.66
+,,,,,:IndexCurve,120,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,120
+,,,,,,,,,,,,,0,1022.36
+,,,,,:IndexCurve,150,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,150
+,,,,,,,,,,,,,0,1032.84
+,,,,,:IndexCurve,180,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,180
+,,,,,,,,,,,,,0,1043.31
+,,,,,:IndexCurve,210,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,210
+,,,,,,,,,,,,,0,1053.79
+,,scen89,1,red,:IndexCurve,0,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,0
+,,,,,,,,,,,,,0,1000.
+,,,,,:IndexCurve,30,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,30
+,,,,,,,,,,,,,0,1010.47
+,,,,,:IndexCurve,60,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,60
+,,,,,,,,,,,,,0,1011.18
+,,,,,:IndexCurve,90,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,90
+,,,,,,,,,,,,,0,1021.66
+,,,,,:IndexCurve,120,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,120
+,,,,,,,,,,,,,0,1032.13
+,,,,,:IndexCurve,150,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,150
+,,,,,,,,,,,,,0,1032.84
+,,,,,:IndexCurve,180,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,180
+,,,,,,,,,,,,,0,1033.54
+,,,,,:IndexCurve,210,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,210
+,,,,,,,,,,,,,0,1034.25
+,,scen90,1,red,:IndexCurve,0,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,0
+,,,,,,,,,,,,,0,1000.
+,,,,,:IndexCurve,30,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,30
+,,,,,,,,,,,,,0,1010.47
+,,,,,:IndexCurve,60,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,60
+,,,,,,,,,,,,,0,1011.18
+,,,,,:IndexCurve,90,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,90
+,,,,,,,,,,,,,0,1021.66
+,,,,,:IndexCurve,120,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,120
+,,,,,,,,,,,,,0,1032.13
+,,,,,:IndexCurve,150,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,150
+,,,,,,,,,,,,,0,1032.84
+,,,,,:IndexCurve,180,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,180
+,,,,,,,,,,,,,0,1033.54
+,,,,,:IndexCurve,210,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,210
+,,,,,,,,,,,,,0,1044.02
+,,scen91,1,red,:IndexCurve,0,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,0
+,,,,,,,,,,,,,0,1000.
+,,,,,:IndexCurve,30,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,30
+,,,,,,,,,,,,,0,1010.47
+,,,,,:IndexCurve,60,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,60
+,,,,,,,,,,,,,0,1011.18
+,,,,,:IndexCurve,90,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,90
+,,,,,,,,,,,,,0,1021.66
+,,,,,:IndexCurve,120,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,120
+,,,,,,,,,,,,,0,1032.13
+,,,,,:IndexCurve,150,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,150
+,,,,,,,,,,,,,0,1032.84
+,,,,,:IndexCurve,180,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,180
+,,,,,,,,,,,,,0,1043.31
+,,,,,:IndexCurve,210,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,210
+,,,,,,,,,,,,,0,1044.02
+,,scen92,1,red,:IndexCurve,0,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,0
+,,,,,,,,,,,,,0,1000.
+,,,,,:IndexCurve,30,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,30
+,,,,,,,,,,,,,0,1010.47
+,,,,,:IndexCurve,60,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,60
+,,,,,,,,,,,,,0,1011.18
+,,,,,:IndexCurve,90,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,90
+,,,,,,,,,,,,,0,1021.66
+,,,,,:IndexCurve,120,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,120
+,,,,,,,,,,,,,0,1032.13
+,,,,,:IndexCurve,150,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,150
+,,,,,,,,,,,,,0,1032.84
+,,,,,:IndexCurve,180,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,180
+,,,,,,,,,,,,,0,1043.31
+,,,,,:IndexCurve,210,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,210
+,,,,,,,,,,,,,0,1053.79
+,,scen93,1,red,:IndexCurve,0,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,0
+,,,,,,,,,,,,,0,1000.
+,,,,,:IndexCurve,30,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,30
+,,,,,,,,,,,,,0,1010.47
+,,,,,:IndexCurve,60,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,60
+,,,,,,,,,,,,,0,1011.18
+,,,,,:IndexCurve,90,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,90
+,,,,,,,,,,,,,0,1021.66
+,,,,,:IndexCurve,120,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,120
+,,,,,,,,,,,,,0,1032.13
+,,,,,:IndexCurve,150,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,150
+,,,,,,,,,,,,,0,1042.6
+,,,,,:IndexCurve,180,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,180
+,,,,,,,,,,,,,0,1043.31
+,,,,,:IndexCurve,210,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,210
+,,,,,,,,,,,,,0,1044.02
+,,scen94,1,red,:IndexCurve,0,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,0
+,,,,,,,,,,,,,0,1000.
+,,,,,:IndexCurve,30,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,30
+,,,,,,,,,,,,,0,1010.47
+,,,,,:IndexCurve,60,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,60
+,,,,,,,,,,,,,0,1011.18
+,,,,,:IndexCurve,90,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,90
+,,,,,,,,,,,,,0,1021.66
+,,,,,:IndexCurve,120,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,120
+,,,,,,,,,,,,,0,1032.13
+,,,,,:IndexCurve,150,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,150
+,,,,,,,,,,,,,0,1042.6
+,,,,,:IndexCurve,180,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,180
+,,,,,,,,,,,,,0,1043.31
+,,,,,:IndexCurve,210,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,210
+,,,,,,,,,,,,,0,1053.79
+,,scen95,1,red,:IndexCurve,0,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,0
+,,,,,,,,,,,,,0,1000.
+,,,,,:IndexCurve,30,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,30
+,,,,,,,,,,,,,0,1010.47
+,,,,,:IndexCurve,60,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,60
+,,,,,,,,,,,,,0,1011.18
+,,,,,:IndexCurve,90,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,90
+,,,,,,,,,,,,,0,1021.66
+,,,,,:IndexCurve,120,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,120
+,,,,,,,,,,,,,0,1032.13
+,,,,,:IndexCurve,150,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,150
+,,,,,,,,,,,,,0,1042.6
+,,,,,:IndexCurve,180,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,180
+,,,,,,,,,,,,,0,1053.08
+,,,,,:IndexCurve,210,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,210
+,,,,,,,,,,,,,0,1053.79
+,,scen96,1,red,:IndexCurve,0,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,0
+,,,,,,,,,,,,,0,1000.
+,,,,,:IndexCurve,30,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,30
+,,,,,,,,,,,,,0,1010.47
+,,,,,:IndexCurve,60,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,60
+,,,,,,,,,,,,,0,1011.18
+,,,,,:IndexCurve,90,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,90
+,,,,,,,,,,,,,0,1021.66
+,,,,,:IndexCurve,120,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,120
+,,,,,,,,,,,,,0,1032.13
+,,,,,:IndexCurve,150,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,150
+,,,,,,,,,,,,,0,1042.6
+,,,,,:IndexCurve,180,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,180
+,,,,,,,,,,,,,0,1053.08
+,,,,,:IndexCurve,210,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,210
+,,,,,,,,,,,,,0,1063.55
+,,scen97,1,red,:IndexCurve,0,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,0
+,,,,,,,,,,,,,0,1000.
+,,,,,:IndexCurve,30,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,30
+,,,,,,,,,,,,,0,1010.47
+,,,,,:IndexCurve,60,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,60
+,,,,,,,,,,,,,0,1020.95
+,,,,,:IndexCurve,90,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,90
+,,,,,,,,,,,,,0,1021.66
+,,,,,:IndexCurve,120,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,120
+,,,,,,,,,,,,,0,1022.36
+,,,,,:IndexCurve,150,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,150
+,,,,,,,,,,,,,0,1023.07
+,,,,,:IndexCurve,180,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,180
+,,,,,,,,,,,,,0,1023.77
+,,,,,:IndexCurve,210,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,210
+,,,,,,,,,,,,,0,1024.48
+,,scen98,1,red,:IndexCurve,0,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,0
+,,,,,,,,,,,,,0,1000.
+,,,,,:IndexCurve,30,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,30
+,,,,,,,,,,,,,0,1010.47
+,,,,,:IndexCurve,60,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,60
+,,,,,,,,,,,,,0,1020.95
+,,,,,:IndexCurve,90,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,90
+,,,,,,,,,,,,,0,1021.66
+,,,,,:IndexCurve,120,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,120
+,,,,,,,,,,,,,0,1022.36
+,,,,,:IndexCurve,150,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,150
+,,,,,,,,,,,,,0,1023.07
+,,,,,:IndexCurve,180,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,180
+,,,,,,,,,,,,,0,1023.77
+,,,,,:IndexCurve,210,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,210
+,,,,,,,,,,,,,0,1034.25
+,,scen99,1,red,:IndexCurve,0,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,0
+,,,,,,,,,,,,,0,1000.
+,,,,,:IndexCurve,30,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,30
+,,,,,,,,,,,,,0,1010.47
+,,,,,:IndexCurve,60,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,60
+,,,,,,,,,,,,,0,1020.95
+,,,,,:IndexCurve,90,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,90
+,,,,,,,,,,,,,0,1021.66
+,,,,,:IndexCurve,120,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,120
+,,,,,,,,,,,,,0,1022.36
+,,,,,:IndexCurve,150,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,150
+,,,,,,,,,,,,,0,1023.07
+,,,,,:IndexCurve,180,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,180
+,,,,,,,,,,,,,0,1033.54
+,,,,,:IndexCurve,210,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,210
+,,,,,,,,,,,,,0,1034.25
+,,scen100,1,red,:IndexCurve,0,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,0
+,,,,,,,,,,,,,0,1000.
+,,,,,:IndexCurve,30,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,30
+,,,,,,,,,,,,,0,1010.47
+,,,,,:IndexCurve,60,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,60
+,,,,,,,,,,,,,0,1020.95
+,,,,,:IndexCurve,90,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,90
+,,,,,,,,,,,,,0,1021.66
+,,,,,:IndexCurve,120,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,120
+,,,,,,,,,,,,,0,1022.36
+,,,,,:IndexCurve,150,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,150
+,,,,,,,,,,,,,0,1023.07
+,,,,,:IndexCurve,180,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,180
+,,,,,,,,,,,,,0,1033.54
+,,,,,:IndexCurve,210,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,210
+,,,,,,,,,,,,,0,1044.02
+,,scen101,1,red,:IndexCurve,0,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,0
+,,,,,,,,,,,,,0,1000.
+,,,,,:IndexCurve,30,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,30
+,,,,,,,,,,,,,0,1010.47
+,,,,,:IndexCurve,60,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,60
+,,,,,,,,,,,,,0,1020.95
+,,,,,:IndexCurve,90,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,90
+,,,,,,,,,,,,,0,1021.66
+,,,,,:IndexCurve,120,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,120
+,,,,,,,,,,,,,0,1022.36
+,,,,,:IndexCurve,150,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,150
+,,,,,,,,,,,,,0,1032.84
+,,,,,:IndexCurve,180,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,180
+,,,,,,,,,,,,,0,1033.54
+,,,,,:IndexCurve,210,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,210
+,,,,,,,,,,,,,0,1034.25
+,,scen102,1,red,:IndexCurve,0,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,0
+,,,,,,,,,,,,,0,1000.
+,,,,,:IndexCurve,30,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,30
+,,,,,,,,,,,,,0,1010.47
+,,,,,:IndexCurve,60,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,60
+,,,,,,,,,,,,,0,1020.95
+,,,,,:IndexCurve,90,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,90
+,,,,,,,,,,,,,0,1021.66
+,,,,,:IndexCurve,120,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,120
+,,,,,,,,,,,,,0,1022.36
+,,,,,:IndexCurve,150,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,150
+,,,,,,,,,,,,,0,1032.84
+,,,,,:IndexCurve,180,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,180
+,,,,,,,,,,,,,0,1033.54
+,,,,,:IndexCurve,210,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,210
+,,,,,,,,,,,,,0,1044.02
+,,scen103,1,red,:IndexCurve,0,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,0
+,,,,,,,,,,,,,0,1000.
+,,,,,:IndexCurve,30,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,30
+,,,,,,,,,,,,,0,1010.47
+,,,,,:IndexCurve,60,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,60
+,,,,,,,,,,,,,0,1020.95
+,,,,,:IndexCurve,90,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,90
+,,,,,,,,,,,,,0,1021.66
+,,,,,:IndexCurve,120,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,120
+,,,,,,,,,,,,,0,1022.36
+,,,,,:IndexCurve,150,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,150
+,,,,,,,,,,,,,0,1032.84
+,,,,,:IndexCurve,180,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,180
+,,,,,,,,,,,,,0,1043.31
+,,,,,:IndexCurve,210,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,210
+,,,,,,,,,,,,,0,1044.02
+,,scen104,1,red,:IndexCurve,0,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,0
+,,,,,,,,,,,,,0,1000.
+,,,,,:IndexCurve,30,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,30
+,,,,,,,,,,,,,0,1010.47
+,,,,,:IndexCurve,60,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,60
+,,,,,,,,,,,,,0,1020.95
+,,,,,:IndexCurve,90,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,90
+,,,,,,,,,,,,,0,1021.66
+,,,,,:IndexCurve,120,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,120
+,,,,,,,,,,,,,0,1022.36
+,,,,,:IndexCurve,150,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,150
+,,,,,,,,,,,,,0,1032.84
+,,,,,:IndexCurve,180,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,180
+,,,,,,,,,,,,,0,1043.31
+,,,,,:IndexCurve,210,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,210
+,,,,,,,,,,,,,0,1053.79
+,,scen105,1,red,:IndexCurve,0,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,0
+,,,,,,,,,,,,,0,1000.
+,,,,,:IndexCurve,30,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,30
+,,,,,,,,,,,,,0,1010.47
+,,,,,:IndexCurve,60,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,60
+,,,,,,,,,,,,,0,1020.95
+,,,,,:IndexCurve,90,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,90
+,,,,,,,,,,,,,0,1021.66
+,,,,,:IndexCurve,120,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,120
+,,,,,,,,,,,,,0,1032.13
+,,,,,:IndexCurve,150,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,150
+,,,,,,,,,,,,,0,1032.84
+,,,,,:IndexCurve,180,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,180
+,,,,,,,,,,,,,0,1033.54
+,,,,,:IndexCurve,210,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,210
+,,,,,,,,,,,,,0,1034.25
+,,scen106,1,red,:IndexCurve,0,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,0
+,,,,,,,,,,,,,0,1000.
+,,,,,:IndexCurve,30,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,30
+,,,,,,,,,,,,,0,1010.47
+,,,,,:IndexCurve,60,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,60
+,,,,,,,,,,,,,0,1020.95
+,,,,,:IndexCurve,90,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,90
+,,,,,,,,,,,,,0,1021.66
+,,,,,:IndexCurve,120,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,120
+,,,,,,,,,,,,,0,1032.13
+,,,,,:IndexCurve,150,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,150
+,,,,,,,,,,,,,0,1032.84
+,,,,,:IndexCurve,180,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,180
+,,,,,,,,,,,,,0,1033.54
+,,,,,:IndexCurve,210,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,210
+,,,,,,,,,,,,,0,1044.02
+,,scen107,1,red,:IndexCurve,0,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,0
+,,,,,,,,,,,,,0,1000.
+,,,,,:IndexCurve,30,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,30
+,,,,,,,,,,,,,0,1010.47
+,,,,,:IndexCurve,60,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,60
+,,,,,,,,,,,,,0,1020.95
+,,,,,:IndexCurve,90,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,90
+,,,,,,,,,,,,,0,1021.66
+,,,,,:IndexCurve,120,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,120
+,,,,,,,,,,,,,0,1032.13
+,,,,,:IndexCurve,150,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,150
+,,,,,,,,,,,,,0,1032.84
+,,,,,:IndexCurve,180,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,180
+,,,,,,,,,,,,,0,1043.31
+,,,,,:IndexCurve,210,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,210
+,,,,,,,,,,,,,0,1044.02
+,,scen108,1,red,:IndexCurve,0,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,0
+,,,,,,,,,,,,,0,1000.
+,,,,,:IndexCurve,30,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,30
+,,,,,,,,,,,,,0,1010.47
+,,,,,:IndexCurve,60,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,60
+,,,,,,,,,,,,,0,1020.95
+,,,,,:IndexCurve,90,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,90
+,,,,,,,,,,,,,0,1021.66
+,,,,,:IndexCurve,120,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,120
+,,,,,,,,,,,,,0,1032.13
+,,,,,:IndexCurve,150,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,150
+,,,,,,,,,,,,,0,1032.84
+,,,,,:IndexCurve,180,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,180
+,,,,,,,,,,,,,0,1043.31
+,,,,,:IndexCurve,210,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,210
+,,,,,,,,,,,,,0,1053.79
+,,scen109,1,red,:IndexCurve,0,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,0
+,,,,,,,,,,,,,0,1000.
+,,,,,:IndexCurve,30,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,30
+,,,,,,,,,,,,,0,1010.47
+,,,,,:IndexCurve,60,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,60
+,,,,,,,,,,,,,0,1020.95
+,,,,,:IndexCurve,90,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,90
+,,,,,,,,,,,,,0,1021.66
+,,,,,:IndexCurve,120,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,120
+,,,,,,,,,,,,,0,1032.13
+,,,,,:IndexCurve,150,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,150
+,,,,,,,,,,,,,0,1042.6
+,,,,,:IndexCurve,180,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,180
+,,,,,,,,,,,,,0,1043.31
+,,,,,:IndexCurve,210,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,210
+,,,,,,,,,,,,,0,1044.02
+,,scen110,1,red,:IndexCurve,0,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,0
+,,,,,,,,,,,,,0,1000.
+,,,,,:IndexCurve,30,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,30
+,,,,,,,,,,,,,0,1010.47
+,,,,,:IndexCurve,60,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,60
+,,,,,,,,,,,,,0,1020.95
+,,,,,:IndexCurve,90,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,90
+,,,,,,,,,,,,,0,1021.66
+,,,,,:IndexCurve,120,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,120
+,,,,,,,,,,,,,0,1032.13
+,,,,,:IndexCurve,150,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,150
+,,,,,,,,,,,,,0,1042.6
+,,,,,:IndexCurve,180,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,180
+,,,,,,,,,,,,,0,1043.31
+,,,,,:IndexCurve,210,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,210
+,,,,,,,,,,,,,0,1053.79
+,,scen111,1,red,:IndexCurve,0,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,0
+,,,,,,,,,,,,,0,1000.
+,,,,,:IndexCurve,30,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,30
+,,,,,,,,,,,,,0,1010.47
+,,,,,:IndexCurve,60,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,60
+,,,,,,,,,,,,,0,1020.95
+,,,,,:IndexCurve,90,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,90
+,,,,,,,,,,,,,0,1021.66
+,,,,,:IndexCurve,120,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,120
+,,,,,,,,,,,,,0,1032.13
+,,,,,:IndexCurve,150,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,150
+,,,,,,,,,,,,,0,1042.6
+,,,,,:IndexCurve,180,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,180
+,,,,,,,,,,,,,0,1053.08
+,,,,,:IndexCurve,210,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,210
+,,,,,,,,,,,,,0,1053.79
+,,scen112,1,red,:IndexCurve,0,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,0
+,,,,,,,,,,,,,0,1000.
+,,,,,:IndexCurve,30,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,30
+,,,,,,,,,,,,,0,1010.47
+,,,,,:IndexCurve,60,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,60
+,,,,,,,,,,,,,0,1020.95
+,,,,,:IndexCurve,90,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,90
+,,,,,,,,,,,,,0,1021.66
+,,,,,:IndexCurve,120,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,120
+,,,,,,,,,,,,,0,1032.13
+,,,,,:IndexCurve,150,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,150
+,,,,,,,,,,,,,0,1042.6
+,,,,,:IndexCurve,180,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,180
+,,,,,,,,,,,,,0,1053.08
+,,,,,:IndexCurve,210,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,210
+,,,,,,,,,,,,,0,1063.55
+,,scen113,1,red,:IndexCurve,0,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,0
+,,,,,,,,,,,,,0,1000.
+,,,,,:IndexCurve,30,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,30
+,,,,,,,,,,,,,0,1010.47
+,,,,,:IndexCurve,60,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,60
+,,,,,,,,,,,,,0,1020.95
+,,,,,:IndexCurve,90,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,90
+,,,,,,,,,,,,,0,1031.42
+,,,,,:IndexCurve,120,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,120
+,,,,,,,,,,,,,0,1032.13
+,,,,,:IndexCurve,150,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,150
+,,,,,,,,,,,,,0,1032.84
+,,,,,:IndexCurve,180,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,180
+,,,,,,,,,,,,,0,1033.54
+,,,,,:IndexCurve,210,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,210
+,,,,,,,,,,,,,0,1034.25
+,,scen114,1,red,:IndexCurve,0,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,0
+,,,,,,,,,,,,,0,1000.
+,,,,,:IndexCurve,30,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,30
+,,,,,,,,,,,,,0,1010.47
+,,,,,:IndexCurve,60,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,60
+,,,,,,,,,,,,,0,1020.95
+,,,,,:IndexCurve,90,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,90
+,,,,,,,,,,,,,0,1031.42
+,,,,,:IndexCurve,120,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,120
+,,,,,,,,,,,,,0,1032.13
+,,,,,:IndexCurve,150,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,150
+,,,,,,,,,,,,,0,1032.84
+,,,,,:IndexCurve,180,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,180
+,,,,,,,,,,,,,0,1033.54
+,,,,,:IndexCurve,210,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,210
+,,,,,,,,,,,,,0,1044.02
+,,scen115,1,red,:IndexCurve,0,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,0
+,,,,,,,,,,,,,0,1000.
+,,,,,:IndexCurve,30,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,30
+,,,,,,,,,,,,,0,1010.47
+,,,,,:IndexCurve,60,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,60
+,,,,,,,,,,,,,0,1020.95
+,,,,,:IndexCurve,90,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,90
+,,,,,,,,,,,,,0,1031.42
+,,,,,:IndexCurve,120,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,120
+,,,,,,,,,,,,,0,1032.13
+,,,,,:IndexCurve,150,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,150
+,,,,,,,,,,,,,0,1032.84
+,,,,,:IndexCurve,180,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,180
+,,,,,,,,,,,,,0,1043.31
+,,,,,:IndexCurve,210,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,210
+,,,,,,,,,,,,,0,1044.02
+,,scen116,1,red,:IndexCurve,0,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,0
+,,,,,,,,,,,,,0,1000.
+,,,,,:IndexCurve,30,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,30
+,,,,,,,,,,,,,0,1010.47
+,,,,,:IndexCurve,60,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,60
+,,,,,,,,,,,,,0,1020.95
+,,,,,:IndexCurve,90,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,90
+,,,,,,,,,,,,,0,1031.42
+,,,,,:IndexCurve,120,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,120
+,,,,,,,,,,,,,0,1032.13
+,,,,,:IndexCurve,150,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,150
+,,,,,,,,,,,,,0,1032.84
+,,,,,:IndexCurve,180,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,180
+,,,,,,,,,,,,,0,1043.31
+,,,,,:IndexCurve,210,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,210
+,,,,,,,,,,,,,0,1053.79
+,,scen117,1,red,:IndexCurve,0,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,0
+,,,,,,,,,,,,,0,1000.
+,,,,,:IndexCurve,30,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,30
+,,,,,,,,,,,,,0,1010.47
+,,,,,:IndexCurve,60,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,60
+,,,,,,,,,,,,,0,1020.95
+,,,,,:IndexCurve,90,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,90
+,,,,,,,,,,,,,0,1031.42
+,,,,,:IndexCurve,120,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,120
+,,,,,,,,,,,,,0,1032.13
+,,,,,:IndexCurve,150,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,150
+,,,,,,,,,,,,,0,1042.6
+,,,,,:IndexCurve,180,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,180
+,,,,,,,,,,,,,0,1043.31
+,,,,,:IndexCurve,210,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,210
+,,,,,,,,,,,,,0,1044.02
+,,scen118,1,red,:IndexCurve,0,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,0
+,,,,,,,,,,,,,0,1000.
+,,,,,:IndexCurve,30,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,30
+,,,,,,,,,,,,,0,1010.47
+,,,,,:IndexCurve,60,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,60
+,,,,,,,,,,,,,0,1020.95
+,,,,,:IndexCurve,90,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,90
+,,,,,,,,,,,,,0,1031.42
+,,,,,:IndexCurve,120,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,120
+,,,,,,,,,,,,,0,1032.13
+,,,,,:IndexCurve,150,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,150
+,,,,,,,,,,,,,0,1042.6
+,,,,,:IndexCurve,180,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,180
+,,,,,,,,,,,,,0,1043.31
+,,,,,:IndexCurve,210,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,210
+,,,,,,,,,,,,,0,1053.79
+,,scen119,1,red,:IndexCurve,0,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,0
+,,,,,,,,,,,,,0,1000.
+,,,,,:IndexCurve,30,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,30
+,,,,,,,,,,,,,0,1010.47
+,,,,,:IndexCurve,60,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,60
+,,,,,,,,,,,,,0,1020.95
+,,,,,:IndexCurve,90,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,90
+,,,,,,,,,,,,,0,1031.42
+,,,,,:IndexCurve,120,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,120
+,,,,,,,,,,,,,0,1032.13
+,,,,,:IndexCurve,150,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,150
+,,,,,,,,,,,,,0,1042.6
+,,,,,:IndexCurve,180,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,180
+,,,,,,,,,,,,,0,1053.08
+,,,,,:IndexCurve,210,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,210
+,,,,,,,,,,,,,0,1053.79
+,,scen120,1,red,:IndexCurve,0,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,0
+,,,,,,,,,,,,,0,1000.
+,,,,,:IndexCurve,30,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,30
+,,,,,,,,,,,,,0,1010.47
+,,,,,:IndexCurve,60,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,60
+,,,,,,,,,,,,,0,1020.95
+,,,,,:IndexCurve,90,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,90
+,,,,,,,,,,,,,0,1031.42
+,,,,,:IndexCurve,120,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,120
+,,,,,,,,,,,,,0,1032.13
+,,,,,:IndexCurve,150,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,150
+,,,,,,,,,,,,,0,1042.6
+,,,,,:IndexCurve,180,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,180
+,,,,,,,,,,,,,0,1053.08
+,,,,,:IndexCurve,210,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,210
+,,,,,,,,,,,,,0,1063.55
+,,scen121,1,red,:IndexCurve,0,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,0
+,,,,,,,,,,,,,0,1000.
+,,,,,:IndexCurve,30,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,30
+,,,,,,,,,,,,,0,1010.47
+,,,,,:IndexCurve,60,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,60
+,,,,,,,,,,,,,0,1020.95
+,,,,,:IndexCurve,90,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,90
+,,,,,,,,,,,,,0,1031.42
+,,,,,:IndexCurve,120,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,120
+,,,,,,,,,,,,,0,1041.9
+,,,,,:IndexCurve,150,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,150
+,,,,,,,,,,,,,0,1042.6
+,,,,,:IndexCurve,180,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,180
+,,,,,,,,,,,,,0,1043.31
+,,,,,:IndexCurve,210,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,210
+,,,,,,,,,,,,,0,1044.02
+,,scen122,1,red,:IndexCurve,0,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,0
+,,,,,,,,,,,,,0,1000.
+,,,,,:IndexCurve,30,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,30
+,,,,,,,,,,,,,0,1010.47
+,,,,,:IndexCurve,60,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,60
+,,,,,,,,,,,,,0,1020.95
+,,,,,:IndexCurve,90,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,90
+,,,,,,,,,,,,,0,1031.42
+,,,,,:IndexCurve,120,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,120
+,,,,,,,,,,,,,0,1041.9
+,,,,,:IndexCurve,150,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,150
+,,,,,,,,,,,,,0,1042.6
+,,,,,:IndexCurve,180,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,180
+,,,,,,,,,,,,,0,1043.31
+,,,,,:IndexCurve,210,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,210
+,,,,,,,,,,,,,0,1053.79
+,,scen123,1,red,:IndexCurve,0,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,0
+,,,,,,,,,,,,,0,1000.
+,,,,,:IndexCurve,30,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,30
+,,,,,,,,,,,,,0,1010.47
+,,,,,:IndexCurve,60,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,60
+,,,,,,,,,,,,,0,1020.95
+,,,,,:IndexCurve,90,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,90
+,,,,,,,,,,,,,0,1031.42
+,,,,,:IndexCurve,120,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,120
+,,,,,,,,,,,,,0,1041.9
+,,,,,:IndexCurve,150,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,150
+,,,,,,,,,,,,,0,1042.6
+,,,,,:IndexCurve,180,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,180
+,,,,,,,,,,,,,0,1053.08
+,,,,,:IndexCurve,210,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,210
+,,,,,,,,,,,,,0,1053.79
+,,scen124,1,red,:IndexCurve,0,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,0
+,,,,,,,,,,,,,0,1000.
+,,,,,:IndexCurve,30,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,30
+,,,,,,,,,,,,,0,1010.47
+,,,,,:IndexCurve,60,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,60
+,,,,,,,,,,,,,0,1020.95
+,,,,,:IndexCurve,90,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,90
+,,,,,,,,,,,,,0,1031.42
+,,,,,:IndexCurve,120,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,120
+,,,,,,,,,,,,,0,1041.9
+,,,,,:IndexCurve,150,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,150
+,,,,,,,,,,,,,0,1042.6
+,,,,,:IndexCurve,180,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,180
+,,,,,,,,,,,,,0,1053.08
+,,,,,:IndexCurve,210,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,210
+,,,,,,,,,,,,,0,1063.55
+,,scen125,1,red,:IndexCurve,0,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,0
+,,,,,,,,,,,,,0,1000.
+,,,,,:IndexCurve,30,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,30
+,,,,,,,,,,,,,0,1010.47
+,,,,,:IndexCurve,60,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,60
+,,,,,,,,,,,,,0,1020.95
+,,,,,:IndexCurve,90,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,90
+,,,,,,,,,,,,,0,1031.42
+,,,,,:IndexCurve,120,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,120
+,,,,,,,,,,,,,0,1041.9
+,,,,,:IndexCurve,150,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,150
+,,,,,,,,,,,,,0,1052.37
+,,,,,:IndexCurve,180,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,180
+,,,,,,,,,,,,,0,1053.08
+,,,,,:IndexCurve,210,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,210
+,,,,,,,,,,,,,0,1053.79
+,,scen126,1,red,:IndexCurve,0,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,0
+,,,,,,,,,,,,,0,1000.
+,,,,,:IndexCurve,30,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,30
+,,,,,,,,,,,,,0,1010.47
+,,,,,:IndexCurve,60,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,60
+,,,,,,,,,,,,,0,1020.95
+,,,,,:IndexCurve,90,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,90
+,,,,,,,,,,,,,0,1031.42
+,,,,,:IndexCurve,120,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,120
+,,,,,,,,,,,,,0,1041.9
+,,,,,:IndexCurve,150,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,150
+,,,,,,,,,,,,,0,1052.37
+,,,,,:IndexCurve,180,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,180
+,,,,,,,,,,,,,0,1053.08
+,,,,,:IndexCurve,210,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,210
+,,,,,,,,,,,,,0,1063.55
+,,scen127,1,red,:IndexCurve,0,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,0
+,,,,,,,,,,,,,0,1000.
+,,,,,:IndexCurve,30,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,30
+,,,,,,,,,,,,,0,1010.47
+,,,,,:IndexCurve,60,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,60
+,,,,,,,,,,,,,0,1020.95
+,,,,,:IndexCurve,90,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,90
+,,,,,,,,,,,,,0,1031.42
+,,,,,:IndexCurve,120,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,120
+,,,,,,,,,,,,,0,1041.9
+,,,,,:IndexCurve,150,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,150
+,,,,,,,,,,,,,0,1052.37
+,,,,,:IndexCurve,180,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,180
+,,,,,,,,,,,,,0,1062.85
+,,,,,:IndexCurve,210,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,210
+,,,,,,,,,,,,,0,1063.55
+,,scen128,1,red,:IndexCurve,0,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,0
+,,,,,,,,,,,,,0,1000.
+,,,,,:IndexCurve,30,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,30
+,,,,,,,,,,,,,0,1010.47
+,,,,,:IndexCurve,60,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,60
+,,,,,,,,,,,,,0,1020.95
+,,,,,:IndexCurve,90,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,90
+,,,,,,,,,,,,,0,1031.42
+,,,,,:IndexCurve,120,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,120
+,,,,,,,,,,,,,0,1041.9
+,,,,,:IndexCurve,150,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,150
+,,,,,,,,,,,,,0,1052.37
+,,,,,:IndexCurve,180,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,180
+,,,,,,,,,,,,,0,1062.85
+,,,,,:IndexCurve,210,,@Sliding Axis 1,@Sliding Axis 2,@Standard(),Trigger Time,absolute,Term,210
+,,,,,,,,,,,,,0,1073.32
