@@ -1,0 +1,181 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 8.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       157,          7]
+NotebookDataLength[      6436,        171]
+NotebookOptionsPosition[      5849,        147]
+NotebookOutlinePosition[      6192,        162]
+CellTagsIndexPosition[      6149,        159]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"CMS_Digit", "_CappeFloore"}], "\n"}]], "Input",
+ CellChangeTimes->{{3.5499660850113573`*^9, 3.5499660850113573`*^9}}],
+
+Cell[CellGroupData[{
+
+Cell["Elements Generique", "Subsection",
+ CellChangeTimes->{{3.483428721882857*^9, 3.4834287278515687`*^9}}],
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"DirectorySave", "=", 
+   RowBox[{"Directory", "[", "]"}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{
+  "SetDirectory", "[", 
+   "\"\<C:\\\\Users\\\\ocroissant\\\\Documents\\\\Desk_EDA23\\\\\
+ExpertSystemEDA23\\\\PayOffConstruction\\\\Base\>\"", "]"}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"Get", "[", "\"\<Creations.m\>\"", "]"}], ";"}], "\n", 
+ RowBox[{
+  RowBox[{"Get", "[", "\"\<InferenceEngine.m\>\"", "]"}], ";"}], "\n", 
+ RowBox[{
+  RowBox[{"Get", "[", "\"\<DisplayFunctions.m\>\"", "]"}], ";"}], "\n", 
+ RowBox[{
+  RowBox[{"Get", "[", "\"\<Why.m\>\"", "]"}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"SetDirectory", "[", "DirectorySave", "]"}], ";"}]}], "Input",
+ InitializationCell->True,
+ CellChangeTimes->{{3.4833633470361905`*^9, 3.4833633485362005`*^9}, {
+   3.483367606469701*^9, 3.4833676209072933`*^9}, {3.4833676852670803`*^9, 
+   3.4833676917358713`*^9}, {3.483367783220832*^9, 3.483367802408455*^9}, 
+   3.4833761914621444`*^9, {3.5498867660510993`*^9, 3.5498867797479873`*^9}, {
+   3.549886848811631*^9, 3.5498868511204457`*^9}}],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"NewKb", "[", "]"}], ";"}]], "Input"],
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{
+   RowBox[{"AddSuperClass", 
+    RowBox[{"{", "\"\<TypeOfPayoff\>\""}]}], "]"}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"AddAttribute", "[", 
+   RowBox[{"\"\<TypeOfPayoff\>\"", ",", "\"\<PayOffStructure\>\""}], "]"}], 
+  ";"}]}], "Input"],
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"AddClass", "[", 
+   RowBox[{"\"\<CMS_Digit_CappeFloore\>\"", ",", "\"\<TypeOfPayoff\>\""}], 
+   "]"}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"SetValue", "[", 
+   RowBox[{
+   "\"\<PayOffStructure\>\"", ",", "\"\<CMS_Digit_CappeFloore\>\"", ",", 
+    "\[IndentingNewLine]", "\t", 
+    RowBox[{"ConditionnedCashFlow", "[", 
+     RowBox[{
+      RowBox[{"Choice", "[", 
+       RowBox[{
+        RowBox[{"CappedCashFlow", "[", " ", 
+         RowBox[{"SpreadedCashFlow", "[", " ", 
+          RowBox[{"TimeShiftableByOne", "[", "CMSIndex", "]"}], "]"}], "]"}], 
+        ",", 
+        RowBox[{"FlooredCashFlow", "[", " ", 
+         RowBox[{"SpreadedCashFlow", "[", " ", 
+          RowBox[{"TimeShiftableByOne", "[", "CMSIndex", "]"}], "]"}], 
+         "]"}]}], "]"}], ",", 
+      RowBox[{"IntervalCondition", "[", "Basket", "]"}]}], "]"}]}], 
+   "\[IndentingNewLine]", "]"}], ";"}]}], "Input",
+ InitializationCell->True,
+ CellChangeTimes->{{3.5499661761315413`*^9, 3.549966179157961*^9}, {
+   3.549966299855934*^9, 3.549966340696996*^9}, {3.549966409649438*^9, 
+   3.549966419181099*^9}, {3.549966451223705*^9, 3.549966571297674*^9}, {
+   3.549966632106864*^9, 3.549966660483446*^9}, {3.5499687995461626`*^9, 
+   3.549968806566208*^9}, {3.549968860589354*^9, 3.549968886828722*^9}, {
+   3.549968961990004*^9, 3.5499689760768943`*^9}, {3.5499690325960565`*^9, 
+   3.549969043016923*^9}, 3.549969102234903*^9, {3.549969246130225*^9, 
+   3.5499694370286493`*^9}, {3.549969473376882*^9, 3.5499695066674957`*^9}, {
+   3.5499695517049837`*^9, 3.549969593388451*^9}, {3.5499697970009565`*^9, 
+   3.549969837514416*^9}}],
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"AddClass", "[", 
+   RowBox[{"\"\<CMS_LockIn_CappeFloore\>\"", ",", "\"\<TypeOfPayoff\>\""}], 
+   "]"}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"SetValue", "[", 
+   RowBox[{
+   "\"\<PayOffStructure\>\"", ",", "\"\<CMS_LockIn_CappeFloore\>\"", ",", 
+    "\[IndentingNewLine]", "\t", 
+    RowBox[{"Choice", "[", 
+     RowBox[{
+      RowBox[{"ConditionnedCashFlow", "[", 
+       RowBox[{
+        RowBox[{"CappedFlooredCashFlow", "[", " ", 
+         RowBox[{"SpreadedCashFlow", "[", "CMSIndex", "]"}], "]"}], ",", 
+        RowBox[{"PastExisitngCondition", "[", 
+         RowBox[{"Basket", ",", "AboveCondition"}], "]"}]}], "]"}], ",", 
+      "\[IndentingNewLine]", 
+      RowBox[{"ConditionnedCashFlow", "[", 
+       RowBox[{"FixedCashFlow", ",", 
+        RowBox[{"PastExisitngCondition", "[", 
+         RowBox[{"Basket", ",", "BelowCondition"}], "]"}]}], "]"}]}], "]"}]}],
+    "\[IndentingNewLine]", "]"}], ";"}]}], "Input",
+ InitializationCell->True,
+ CellChangeTimes->{{3.5499661761315413`*^9, 3.549966179157961*^9}, {
+   3.549966299855934*^9, 3.549966340696996*^9}, {3.549966409649438*^9, 
+   3.549966419181099*^9}, {3.549966451223705*^9, 3.549966571297674*^9}, {
+   3.549966632106864*^9, 3.549966660483446*^9}, {3.5499687995461626`*^9, 
+   3.549968806566208*^9}, {3.549968860589354*^9, 3.549968886828722*^9}, {
+   3.549968961990004*^9, 3.5499689760768943`*^9}, {3.5499690325960565`*^9, 
+   3.549969043016923*^9}, 3.549969102234903*^9, {3.549969246130225*^9, 
+   3.5499694370286493`*^9}, {3.549969473376882*^9, 3.5499695066674957`*^9}, {
+   3.5499695517049837`*^9, 3.549969593388451*^9}, {3.5499697970009565`*^9, 
+   3.549969837514416*^9}, {3.5499699320822225`*^9, 3.549969966964046*^9}, {
+   3.5499702458002334`*^9, 3.5499702570635056`*^9}, {3.5499713904487963`*^9, 
+   3.5499716037521243`*^9}}]
+}, Open  ]]
+},
+WindowSize->{928, 776},
+WindowMargins->{{0, Automatic}, {Automatic, 0}},
+FrontEndVersion->"8.0 for Microsoft Windows (64-bit) (February 23, 2011)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[557, 20, 152, 3, 52, "Input"],
+Cell[CellGroupData[{
+Cell[734, 27, 108, 1, 36, "Subsection"],
+Cell[845, 30, 1122, 25, 152, "Input",
+ InitializationCell->True],
+Cell[1970, 57, 71, 2, 31, "Input"],
+Cell[2044, 61, 289, 9, 52, "Input"],
+Cell[2336, 72, 1651, 34, 112, "Input",
+ InitializationCell->True],
+Cell[3990, 108, 1843, 36, 132, "Input",
+ InitializationCell->True]
+}, Open  ]]
+}
+]
+*)
+
+(* End of internal cache information *)
+
