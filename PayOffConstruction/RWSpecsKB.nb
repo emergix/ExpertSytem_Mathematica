@@ -1,0 +1,2214 @@
+(* Content-type: application/mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 7.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       145,          7]
+NotebookDataLength[     90888,       2205]
+NotebookOptionsPosition[     88893,       2141]
+NotebookOutlinePosition[     89359,       2160]
+CellTagsIndexPosition[     89316,       2157]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"DirectorySave", "=", 
+   RowBox[{"Directory", "[", "]"}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{
+  "SetDirectory", "[", 
+   "\"\<C:\\\\Documents and Settings\\\\ocroissant\\\\My Documents\\\\EDA23\\\
+\\ExpertSystemEDA23\\\\PayOffConstruction\\\\Base\>\"", "]"}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"Get", "[", "\"\<Creations.m\>\"", "]"}], ";"}], "\n", 
+ RowBox[{
+  RowBox[{"Get", "[", "\"\<InferenceEngine.m\>\"", "]"}], ";"}], "\n", 
+ RowBox[{
+  RowBox[{"Get", "[", "\"\<DisplayFunctions.m\>\"", "]"}], ";"}], "\n", 
+ RowBox[{
+  RowBox[{"Get", "[", "\"\<Why.m\>\"", "]"}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"SetDirectory", "[", "DirectorySave", "]"}], 
+  ";"}], "\[IndentingNewLine]"}], "Input",
+ InitializationCell->True,
+ CellChangeTimes->{{3.4833633470361905`*^9, 3.4833633485362005`*^9}, {
+  3.483367606469701*^9, 3.4833676209072933`*^9}, {3.4833676852670803`*^9, 
+  3.4833676917358713`*^9}, {3.483367783220832*^9, 3.483367802408455*^9}}],
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"NewKb", "[", "]"}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"AddClass", "[", "\"\<Consultation\>\"", "]"}], ";"}]}], "Input",
+ InitializationCell->True],
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"AddAttribute", "[", 
+   RowBox[{"\"\<Consultation\>\"", ",", "\"\<Main\>\""}], "]"}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"AddAttribute", "[", 
+   RowBox[{"\"\<Consultation\>\"", ",", "\"\<Risk Watch Spec\>\""}], "]"}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"AddAttribute", "[", 
+   RowBox[{"\"\<Consultation\>\"", ",", "\"\<Class Of Instrument\>\"", ",", 
+    RowBox[{
+    "question", "\[Rule]", "\"\<What type of instrument is it ?\>\""}], ",", 
+    "\[IndentingNewLine]", "\t\t\t", 
+    RowBox[{"legalvalues", "\[Rule]", 
+     RowBox[{"{", 
+      RowBox[{
+      "\"\<Treasury Bond\>\"", ",", "\"\<Treasury Bill\>\"", ",", 
+       "\"\<Bond\>\""}], "}"}]}]}], "]"}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"AddAttribute", "[", 
+   RowBox[{"\"\<Consultation\>\"", ",", "\"\<Pur Coupon\>\"", ",", 
+    RowBox[{"question", "\[Rule]", "\"\<What is the coupon ?\>\""}]}], "]"}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"AddAttribute", "[", 
+   RowBox[{"\"\<Consultation\>\"", ",", "\"\<Pur Notional\>\"", ",", 
+    RowBox[{"question", "->", "\"\<What is the notional ?\>\""}]}], "]"}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"AddAttribute", "[", 
+   RowBox[{
+   "\"\<Consultation\>\"", ",", "\"\<Day Counting Convention\>\"", ",", 
+    RowBox[{
+    "question", "->", "\"\<What is the Day Counting Convention ?\>\""}], ",", 
+    "\[IndentingNewLine]", "\t\t\t", 
+    RowBox[{"legalvalues", "\[Rule]", 
+     RowBox[{"{", 
+      RowBox[{
+      "\"\<actual/actual\>\"", ",", "\"\<actual/365\>\"", ",", 
+       "\"\<30E/360\>\"", ",", "\"\<30/360\>\"", ",", 
+       "\"\<act/act French\>\"", ",", "\"\<business/30 (CalBRL)\>\""}], 
+      "}"}]}]}], "]"}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"AddAttribute", "[", 
+   RowBox[{"\"\<Consultation\>\"", ",", "\"\<Compounding Frequency\>\"", ",", 
+    RowBox[{
+    "question", "->", 
+     "\"\<What is the Compounding Frequency Convention ?\>\""}], ",", 
+    "\[IndentingNewLine]", "\t\t\t", 
+    RowBox[{"legalvalues", "\[Rule]", 
+     RowBox[{"{", 
+      RowBox[{
+      "\"\<ANNU\>\"", ",", "\"\<SEMI\>\"", ",", "\"\<SMP\>\"", ",", 
+       "\"\<CONT\>\"", ",", "\"\<DAY\>\""}], "}"}]}]}], "]"}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"AddAttribute", "[", 
+   RowBox[{
+   "\"\<Consultation\>\"", ",", "\"\<Trade Day Number\>\"", ",", 
+    "\[IndentingNewLine]", "\t\t\t", 
+    RowBox[{
+    "question", "\[Rule]", 
+     "\"\<What is the number of days needed to settle the deal ?\>\""}]}], 
+   "]"}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"AddAttribute", "[", 
+   RowBox[{
+   "\"\<Consultation\>\"", ",", "\"\<Denominated bond in XEU\>\"", ",", 
+    RowBox[{
+    "question", "\[Rule]", "\"\<Is this bond denominated in XEU ?\>\""}], ",",
+     "\[IndentingNewLine]", "\t\t\t", 
+    RowBox[{"legalvalues", "\[Rule]", 
+     RowBox[{"{", 
+      RowBox[{"\"\<Yes\>\"", ",", "\"\<No\>\""}], "}"}]}]}], "]"}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"AddAttribute", "[", 
+   RowBox[{"\"\<Consultation\>\"", ",", "\"\<Issuer Currency\>\"", ",", 
+    RowBox[{"question", "\[Rule]", "\"\<What is the issuer currency ?\>\""}], 
+    ",", "\[IndentingNewLine]", "\t", 
+    RowBox[{"legalvalues", "\[Rule]", 
+     RowBox[{"{", 
+      RowBox[{
+      "\"\<USD\>\"", ",", "\"\<PTE\>\"", ",", "\"\<FRF\>\"", ",", 
+       "\"\<DKK\>\"", ",", "\"\<DEM\>\"", ",", "\"\<CHF\>\"", ",", 
+       "\"\<BEF\>\"", ",", "\"\<SEK\>\"", ",", "\"\<NLG\>\"", ",", 
+       "\"\<ESP\>\"", ",", "\"\<NZD\>\"", ",", "\"\<HKD\>\"", ",", 
+       "\"\<GBP\>\"", ",", "\"\<CAD\>\"", ",", "\"\<AUD\>\"", ",", 
+       "\"\<FIM\>\"", ",", "\"\<ITL\>\""}], "}"}]}]}], "]"}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"AddAttribute", "[", 
+   RowBox[{
+   "\"\<Consultation\>\"", ",", "\"\<Bond Convention\>\"", ",", 
+    "\[IndentingNewLine]", "\t", 
+    RowBox[{
+    "question", "\[Rule]", "\"\<Does this bond follow a convention  ?\>\""}], 
+    ",", "\[IndentingNewLine]", "\t", 
+    RowBox[{"legalvalues", "\[Rule]", 
+     RowBox[{"{", 
+      RowBox[{
+      "\"\<Treasury Bond Convention\>\"", ",", 
+       "\"\<Treasury Bill Convention\>\"", ",", "\"\<No Convention\>\""}], 
+      "}"}]}]}], "]"}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"AddAttribute", "[", 
+   RowBox[{
+   "\"\<Consultation\>\"", ",", "\"\<Accrued Interest Computation\>\"", ",", 
+    RowBox[{
+    "question", "\[Rule]", 
+     "\"\<What kind of  computation of accruals do you want to use ?\>\""}], 
+    ",", 
+    RowBox[{"legalvalues", "\[Rule]", 
+     RowBox[{"{", 
+      RowBox[{"\"\<Regular\>\"", ",", "\"\<Italian Type\>\""}], "}"}]}]}], 
+   "]"}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"AddAttribute", "[", 
+   RowBox[{"\"\<Consultation\>\"", ",", "\"\<Price Quoted in Yield\>\"", ",", 
+    RowBox[{
+    "question", "\[Rule]", 
+     "\"\<Is the price of this bond quoted in yield?\>\""}], ",", 
+    "\[IndentingNewLine]", "\t\t", 
+    RowBox[{"legalvalues", "\[Rule]", 
+     RowBox[{"{", 
+      RowBox[{"\"\<Yes\>\"", ",", "\"\<No\>\""}], "}"}]}]}], "]"}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"AddAttribute", "[", 
+   RowBox[{"\"\<Consultation\>\"", ",", "\"\<CSV File Name\>\"", ",", 
+    RowBox[{
+    "question", "\[Rule]", "\"\<What is the Name of the CSV File ?\>\""}], 
+    ",", 
+    RowBox[{"initialvalue", "\[Rule]", "\"\<out.CSV\>\""}]}], "]"}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"AddAttribute", "[", 
+   RowBox[{"\"\<Consultation\>\"", ",", "\"\<Want create a CSV File\>\"", ",", 
+    RowBox[{
+    "question", "\[Rule]", "\"\<Do you want to create a csv file ?\>\""}], 
+    ",", "\[IndentingNewLine]", "\t\t", 
+    RowBox[{"legalvalues", "\[Rule]", 
+     RowBox[{"{", 
+      RowBox[{"\"\<Yes\>\"", ",", "\"\<No\>\""}], "}"}]}]}], "]"}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"AddAttribute", "[", 
+   RowBox[{"\"\<Consultation\>\"", ",", "\"\<CSV Descriptor\>\""}], "]"}], 
+  ";"}]}], "Input",
+ InitializationCell->True,
+ CellChangeTimes->{{3.4833635227873154`*^9, 3.48336352424045*^9}}],
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"AddAttribute", "[", 
+   RowBox[{"\"\<Consultation\>\"", ",", "\"\<Instrument/Type\>\""}], "]"}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"AddAttribute", "[", 
+   RowBox[{"\"\<Consultation\>\"", ",", "\"\<Instrument/Name\>\"", ",", 
+    RowBox[{
+    "question", "\[Rule]", "\"\<What is the name of the instrument ?\>\""}]}],
+    "]"}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"AddAttribute", "[", 
+   RowBox[{"\"\<Consultation\>\"", ",", "\"\<Instrument/Currency\>\"", ",", 
+    RowBox[{
+    "question", "\[Rule]", "\"\<What is the denomination Currency ?\>\""}], 
+    ",", "\[IndentingNewLine]", "\t", 
+    RowBox[{"legalvalues", "\[Rule]", 
+     RowBox[{"{", 
+      RowBox[{
+      "\"\<USD\>\"", ",", "\"\<PTE\>\"", ",", "\"\<FRF\>\"", ",", 
+       "\"\<DKK\>\"", ",", "\"\<DEM\>\"", ",", "\"\<CHF\>\"", ",", 
+       "\"\<BEF\>\"", ",", "\"\<SEK\>\"", ",", "\"\<NLG\>\"", ",", 
+       "\"\<ESP\>\"", ",", "\"\<NZD\>\"", ",", "\"\<HKD\>\"", ",", 
+       "\"\<GBP\>\"", ",", "\"\<CAD\>\"", ",", "\"\<AUD\>\"", ",", 
+       "\"\<FIM\>\"", ",", "\"\<ITL\>\"", ",", "\"\<XEU\>\""}], "}"}]}]}], 
+   "]"}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"AddAttribute", "[", 
+   RowBox[{"\"\<Consultation\>\"", ",", "\"\<Instrument/Notional\>\""}], 
+   "]"}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"AddAttribute", "[", 
+   RowBox[{
+   "\"\<Consultation\>\"", ",", "\"\<Instrument/Maturity Date\>\"", ",", 
+    RowBox[{"question", "\[Rule]", "\"\<What is the Maturity Date ?\>\""}]}], 
+   "]"}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"AddAttribute", "[", 
+   RowBox[{"\"\<Consultation\>\"", ",", "\"\<Instrument/Issue Date\>\"", ",", 
+    RowBox[{"question", "\[Rule]", "\"\<What is the Issue Date ?\>\""}]}], 
+   "]"}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"AddAttribute", "[", 
+   RowBox[{
+   "\"\<Consultation\>\"", ",", "\"\<Instrument/Fixed Coupon Date\>\"", ",", 
+    RowBox[{
+    "question", "\[Rule]", "\"\<What is the Fixed Coupon Date ?\>\""}]}], 
+   "]"}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"AddAttribute", "[", 
+   RowBox[{"\"\<Consultation\>\"", ",", "\"\<Instrument/Coupon Rate\>\"", ",", 
+    RowBox[{
+    "question", "\[Rule]", "\"\<What is the Fixed Coupon Date ?\>\""}]}], 
+   "]"}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"AddAttribute", "[", 
+   RowBox[{
+   "\"\<Consultation\>\"", ",", "\"\<Instrument/Accrual Daycount Basis\>\"", 
+    ",", 
+    RowBox[{
+    "question", "\[Rule]", "\"\<What is the Accrual Daycount Basis ?\>\""}]}],
+    "]"}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"AddAttribute", "[", 
+   RowBox[{
+   "\"\<Consultation\>\"", ",", "\"\<Instrument/State Procedure\>\""}], "]"}],
+   ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"AddAttribute", "[", 
+   RowBox[{
+   "\"\<Consultation\>\"", ",", 
+    "\"\<Instrument/Coupon Generation Method\>\""}], "]"}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"AddAttribute", "[", 
+   RowBox[{"\"\<Consultation\>\"", ",", "\"\<Instrument/Term\>\"", ",", 
+    RowBox[{"question", "\[Rule]", "\"\<What is the Term?\>\""}]}], "]"}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"AddAttribute", "[", 
+   RowBox[{
+   "\"\<Consultation\>\"", ",", "\"\<Instrument/Business Day Rule\>\""}], 
+   "]"}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"AddAttribute", "[", 
+   RowBox[{"\"\<Consultation\>\"", ",", "\"\<Instrument/Spot Price\>\""}], 
+   "]"}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"AddAttribute", "[", 
+   RowBox[{"\"\<Consultation\>\"", ",", "\"\<Instrument/Trade day Rule\>\""}],
+    "]"}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"AddAttribute", "[", 
+   RowBox[{"\"\<Consultation\>\"", ",", "\"\<Instrument/Repo Curve\>\"", ",", 
+    RowBox[{"question", "\[Rule]", "\"\<What is the repo curve ?\>\""}]}], 
+   "]"}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"AddAttribute", "[", 
+   RowBox[{
+   "\"\<Consultation\>\"", ",", "\"\<Instrument/Discount Curve\>\"", ",", 
+    RowBox[{"question", "\[Rule]", "\"\<What is the discount curve ?\>\""}]}],
+    "]"}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"AddAttribute", "[", 
+   RowBox[{
+   "\"\<Consultation\>\"", ",", 
+    "\"\<Instrument/RiskMetrics Map Procedure\>\""}], "]"}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"AddAttribute", "[", 
+   RowBox[{
+   "\"\<Consultation\>\"", ",", "\"\<Instrument/Spread Over Yield\>\""}], 
+   "]"}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"AddAttribute", "[", 
+   RowBox[{
+   "\"\<Consultation\>\"", ",", "\"\<Instrument/Theoretical Model*\>\""}], 
+   "]"}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"AddAttribute", "[", 
+   RowBox[{"\"\<Consultation\>\"", ",", "\"\<Instrument/Market Model*\>\""}], 
+   "]"}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"AddAttribute", "[", 
+   RowBox[{"\"\<Consultation\>\"", ",", "\"\<Market Model/Name\>\"", ",", 
+    RowBox[{
+    "question", "\[Rule]", 
+     "\"\<What is the name of the market model ?\>\""}]}], "]"}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"AddAttribute", "[", 
+   RowBox[{"\"\<Consultation\>\"", ",", "\"\<Market Model/Type\>\""}], "]"}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"AddAttribute", "[", 
+   RowBox[{"\"\<Consultation\>\"", ",", "\"\<Market Model/Value\>\""}], "]"}],
+   ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"AddAttribute", "[", 
+   RowBox[{"\"\<Consultation\>\"", ",", "\"\<Market Model/Price\>\""}], "]"}],
+   ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"AddAttribute", "[", 
+   RowBox[{
+   "\"\<Consultation\>\"", ",", "\"\<Market Model/Accrued Interest\>\""}], 
+   "]"}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"AddAttribute", "[", 
+   RowBox[{"\"\<Consultation\>\"", ",", "\"\<Market Model/Spot Value\>\""}], 
+   "]"}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"AddAttribute", "[", 
+   RowBox[{"\"\<Consultation\>\"", ",", "\"\<Market Model/Yield\>\""}], "]"}],
+   ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"AddAttribute", "[", 
+   RowBox[{"\"\<Consultation\>\"", ",", "\"\<Theoretical Model/Name\>\"", ",", 
+    RowBox[{
+    "question", "\[Rule]", 
+     "\"\<What is the name of the theoretical model ?\>\""}]}], "]"}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"AddAttribute", "[", 
+   RowBox[{"\"\<Consultation\>\"", ",", "\"\<Theoretical Model/Value\>\""}], 
+   "]"}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"AddAttribute", "[", 
+   RowBox[{"\"\<Consultation\>\"", ",", "\"\<Theoretical Model/Price\>\""}], 
+   "]"}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"AddAttribute", "[", 
+   RowBox[{"\"\<Consultation\>\"", ",", "\"\<Theoretical Model/Type\>\""}], 
+   "]"}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"AddAttribute", "[", 
+   RowBox[{
+   "\"\<Consultation\>\"", ",", 
+    "\"\<Theoretical Model/Accrued Interest\>\""}], "]"}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"AddAttribute", "[", 
+   RowBox[{
+   "\"\<Consultation\>\"", ",", "\"\<Theoretical Model/Spot Value\>\""}], 
+   "]"}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"AddAttribute", "[", 
+   RowBox[{"\"\<Consultation\>\"", ",", "\"\<Theoretical Model/Yield\>\""}], 
+   "]"}], ";"}]}], "Input",
+ InitializationCell->True,
+ CellChangeTimes->{{3.4833643540426354`*^9, 3.483364368198976*^9}, {
+  3.483364639669463*^9, 3.4833646488882723`*^9}}],
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{
+   RowBox[{"AddBackwardRule", "[", 
+    RowBox[{
+    "\"\<Main determination 1\>\"", ",", "\[IndentingNewLine]", "\t\t  ", 
+     RowBox[{
+      RowBox[{"(", 
+       RowBox[{"Known", "[", 
+        RowBox[{"CurrentInstance", ",", "\"\<Risk Watch Spec\>\""}], "]"}], 
+       ")"}], "&&", "\[IndentingNewLine]", "\t\t", 
+      RowBox[{"(", 
+       RowBox[{
+        RowBox[{"V", "[", 
+         RowBox[{"CurrentInstance", ",", "\"\<Want create a CSV File\>\""}], 
+         "]"}], "==", "\"\<Yes\>\""}], ")"}]}], ",", "\[IndentingNewLine]", 
+     "\t", 
+     RowBox[{
+      RowBox[{"CSVDescriptor", "[", 
+       RowBox[{
+        RowBox[{"V", "[", 
+         RowBox[{"CurrentInstance", ",", "\"\<Want create a CSV File\>\""}], 
+         "]"}], ",", 
+        RowBox[{"V", "[", 
+         RowBox[{"CurrentInstance", ",", "\"\<CSV File Name\>\""}], "]"}], 
+        ",", 
+        RowBox[{"V", "[", 
+         RowBox[{"CurrentInstance", ",", "\"\<CSV Descriptor\>\""}], "]"}], 
+        ",", "CurrentInstance"}], "]"}], ";", "\"\<Done\>\""}], ",", 
+     "\[IndentingNewLine]", "\t", "\"\<Main\>\"", ",", 
+     "\"\<Consultation\>\""}], "]"}], ";"}], "\[IndentingNewLine]"}], "\n", 
+ RowBox[{
+  RowBox[{"AddBackwardRule", "[", 
+   RowBox[{
+   "\"\<Main determination 2\>\"", ",", "\[IndentingNewLine]", "\t\t  ", 
+    RowBox[{
+     RowBox[{"(", 
+      RowBox[{"Known", "[", 
+       RowBox[{"CurrentInstance", ",", "\"\<Risk Watch Spec\>\""}], "]"}], 
+      ")"}], "&&", "\[IndentingNewLine]", "\t\t", 
+     RowBox[{"(", 
+      RowBox[{
+       RowBox[{"V", "[", 
+        RowBox[{"CurrentInstance", ",", "\"\<Want create a CSV File\>\""}], 
+        "]"}], "==", "\"\<No\>\""}], ")"}]}], ",", "\[IndentingNewLine]", 
+    "\t", "\"\<Good Bye\>\"", ",", "\[IndentingNewLine]", "\t", 
+    "\"\<Main\>\"", ",", "\"\<Consultation\>\""}], "]"}], 
+  ";"}], "\[IndentingNewLine]"}], "Input",
+ InitializationCell->True],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"h", "[", "x_", "]"}], ":=", 
+  RowBox[{"Module", "[", 
+   RowBox[{
+    RowBox[{"{", "}"}], ",", 
+    RowBox[{
+     RowBox[{"Print", "[", 
+      RowBox[{"\"\<%%%%%% Evaluating Rule : val=\>\"", ",", "x"}], "]"}], ";",
+      "x"}]}], "]"}]}]], "Input",
+ InitializationCell->True],
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"AddBackwardRule", "[", 
+   RowBox[{
+   "\"\<Rule Treasury Bond 1\>\"", ",", " ", "\[IndentingNewLine]", "\t", 
+    RowBox[{"(", 
+     RowBox[{
+      RowBox[{"V", "[", 
+       RowBox[{"CurrentInstance", ",", "\"\<Class Of Instrument\>\""}], "]"}],
+       "\[Equal]", "\"\<Treasury Bond\>\""}], ")"}], ",", 
+    "\[IndentingNewLine]", "\"\<Treasury Bond Convention\>\"", ",", 
+    "\[IndentingNewLine]", "\"\<Bond Convention\>\"", ",", 
+    "\"\<Consultation\>\""}], "]"}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"AddBackwardRule", "[", 
+   RowBox[{"\"\<Rule Treasury Bond 2\>\"", ",", "\[IndentingNewLine]", "\t", 
+    RowBox[{
+     RowBox[{"(", 
+      RowBox[{
+       RowBox[{"V", "[", 
+        RowBox[{"CurrentInstance", ",", "\"\<Class Of Instrument\>\""}], 
+        "]"}], "\[Equal]", "\"\<Treasury Bond\>\""}], ")"}], "&&", 
+     "\[IndentingNewLine]", "\t", 
+     RowBox[{"(", 
+      RowBox[{"Known", "[", 
+       RowBox[{"CurrentInstance", ",", "\"\<Instrument/Currency\>\""}], "]"}],
+       ")"}], "&&", "\[IndentingNewLine]", "\t", 
+     RowBox[{"(", 
+      RowBox[{"Known", "[", 
+       RowBox[{"CurrentInstance", ",", "\"\<Instrument/Maturity Date\>\""}], 
+       "]"}], ")"}], "&&", "\[IndentingNewLine]", "\t", 
+     RowBox[{"(", 
+      RowBox[{"Known", "[", 
+       RowBox[{"CurrentInstance", ",", "\"\<Instrument/Issue Date\>\""}], 
+       "]"}], ")"}], "&&", "\[IndentingNewLine]", "\t", 
+     RowBox[{"(", 
+      RowBox[{"Known", "[", 
+       RowBox[{
+       "CurrentInstance", ",", "\"\<Instrument/Fixed Coupon Date\>\""}], 
+       "]"}], ")"}], "&&", "\[IndentingNewLine]", "\t", 
+     RowBox[{"(", 
+      RowBox[{"Known", "[", 
+       RowBox[{"CurrentInstance", ",", "\"\<Instrument/Term\>\""}], "]"}], 
+      ")"}], "&&", "\[IndentingNewLine]", "\t", 
+     RowBox[{"(", 
+      RowBox[{"Known", "[", 
+       RowBox[{
+       "CurrentInstance", ",", "\"\<Market Model/Accrued Interest\>\""}], 
+       "]"}], ")"}], "&&", "\[IndentingNewLine]", "\t", 
+     RowBox[{"(", 
+      RowBox[{"Known", "[", 
+       RowBox[{
+       "CurrentInstance", ",", "\"\<Instrument/Accrual Daycount Basis\>\""}], 
+       "]"}], ")"}]}], ",", "\[IndentingNewLine]", "\[IndentingNewLine]", 
+    RowBox[{
+     RowBox[{"Conclude", "[", 
+      RowBox[{
+      "CurrentInstance", ",", "\"\<Instrument/Type\>\"", ",", 
+       "\"\<Fixed Rate Bond\>\""}], "]"}], ";", "\[IndentingNewLine]", 
+     RowBox[{"Conclude", "[", 
+      RowBox[{"CurrentInstance", ",", "\"\<Instrument/Notional\>\"", ",", 
+       RowBox[{"StringJoin", "[", 
+        RowBox[{
+         RowBox[{"ToString", "[", 
+          RowBox[{"V", "[", 
+           RowBox[{"CurrentInstance", ",", "\"\<Pur Notional\>\""}], "]"}], 
+          "]"}], ",", "\"\< \>\"", ",", 
+         RowBox[{"V", "[", 
+          RowBox[{"CurrentInstance", ",", "\"\<Instrument/Currency\>\""}], 
+          "]"}]}], "]"}]}], "]"}], ";", "\[IndentingNewLine]", 
+     RowBox[{"Conclude", "[", 
+      RowBox[{"CurrentInstance", ",", "\"\<Instrument/Coupon Rate\>\"", ",", 
+       RowBox[{"StringJoin", "[", 
+        RowBox[{
+         RowBox[{"ToString", "[", 
+          RowBox[{"V", "[", 
+           RowBox[{"CurrentInstance", ",", "\"\<Pur Coupon\>\""}], "]"}], 
+          "]"}], ",", "\"\<% \>\"", ",", 
+         RowBox[{"V", "[", 
+          RowBox[{"CurrentInstance", ",", "\"\<Compounding Frequency\>\""}], 
+          "]"}], ",", "\"\< \>\"", ",", 
+         RowBox[{"V", "[", 
+          RowBox[{"CurrentInstance", ",", "\"\<Day Counting Convention\>\""}],
+           "]"}]}], "]"}]}], "]"}], ";", "\[IndentingNewLine]", 
+     RowBox[{"Conclude", "[", 
+      RowBox[{
+      "CurrentInstance", ",", "\"\<Instrument/State Procedure\>\"", ",", 
+       "\"\<@cash flow generator\>\""}], "]"}], ";", "\[IndentingNewLine]", 
+     RowBox[{"Conclude", "[", 
+      RowBox[{
+      "CurrentInstance", ",", "\"\<Instrument/Coupon Generation Method\>\"", 
+       ",", "\"\<Backward\>\""}], "]"}], ";", "\[IndentingNewLine]", 
+     RowBox[{"Conclude", "[", 
+      RowBox[{
+      "CurrentInstance", ",", "\"\<Instrument/Business Day Rule\>\"", ",", 
+       "\n", "\t\t", 
+       RowBox[{"StringJoin", "[", 
+        RowBox[{"\"\<Regular Following 0-day(Cal\>\"", ",", 
+         RowBox[{"V", "[", 
+          RowBox[{"CurrentInstance", ",", "\"\<Issuer Currency\>\""}], "]"}], 
+         ",", "\"\<)\>\""}], "]"}]}], "]"}], ";", "\[IndentingNewLine]", 
+     RowBox[{"Conclude", "[", 
+      RowBox[{"CurrentInstance", ",", "\"\<Instrument/Spot Price\>\"", ",", 
+       RowBox[{"StringJoin", "[", 
+        RowBox[{"\"\<98.8281 \>\"", ",", 
+         RowBox[{"V", "[", 
+          RowBox[{"CurrentInstance", ",", "\"\<Instrument/Currency\>\""}], 
+          "]"}]}], "]"}]}], "]"}], ";", "\[IndentingNewLine]", 
+     RowBox[{"Conclude", "[", 
+      RowBox[{
+      "CurrentInstance", ",", "\"\<Instrument/Trade day Rule\>\"", ",", 
+       RowBox[{"StringJoin", "[", 
+        RowBox[{"\"\<Regular Following \>\"", ",", 
+         RowBox[{"ToString", "[", 
+          RowBox[{"V", "[", 
+           RowBox[{"CurrentInstance", ",", "\"\<Trade Day Number\>\""}], 
+           "]"}], "]"}], ",", "\n", "\t\t\t\t\t\t\t\t\t\t", 
+         "\"\<-day(Cal\>\"", ",", 
+         RowBox[{"V", "[", 
+          RowBox[{"CurrentInstance", ",", "\"\<Issuer Currency\>\""}], "]"}], 
+         ",", "\"\<)\>\""}], "]"}]}], "]"}], ";", "\n", "    ", 
+     RowBox[{"Conclude", "[", 
+      RowBox[{"CurrentInstance", ",", "\"\<Instrument/Repo Curve\>\"", ",", 
+       RowBox[{"StringJoin", "[", 
+        RowBox[{"\"\<IR\>\"", ",", 
+         RowBox[{"V", "[", 
+          RowBox[{"CurrentInstance", ",", "\"\<Instrument/Currency\>\""}], 
+          "]"}], ",", "\"\<-Treasury\>\""}], "]"}]}], "]"}], ";", 
+     "\[IndentingNewLine]", 
+     RowBox[{"Conclude", "[", 
+      RowBox[{
+      "CurrentInstance", ",", "\"\<Instrument/Discount Curve\>\"", ",", 
+       RowBox[{"StringJoin", "[", 
+        RowBox[{"\"\<IR\>\"", ",", 
+         RowBox[{"V", "[", 
+          RowBox[{"CurrentInstance", ",", "\"\<Instrument/Currency\>\""}], 
+          "]"}], ",", "\"\<-Treasury\>\""}], "]"}]}], "]"}], ";", 
+     "\[IndentingNewLine]", 
+     RowBox[{"Conclude", "[", 
+      RowBox[{
+      "CurrentInstance", ",", "\"\<Instrument/RiskMetrics Map Procedure\>\"", 
+       ",", "\"\<@CashFlow riskmetrics map\>\""}], "]"}], ";", 
+     "\[IndentingNewLine]", 
+     RowBox[{"Conclude", "[", 
+      RowBox[{
+      "CurrentInstance", ",", "\"\<Instrument/Spread Over Yield\>\"", ",", 
+       RowBox[{"StringJoin", "[", 
+        RowBox[{"\"\<@implied spread MKT(%CONT \>\"", ",", 
+         RowBox[{"V", "[", 
+          RowBox[{"CurrentInstance", ",", "\"\<Day Counting Convention\>\""}],
+           "]"}]}], "]"}]}], "]"}], ";", "\[IndentingNewLine]", 
+     RowBox[{"Conclude", "[", 
+      RowBox[{
+      "CurrentInstance", ",", "\"\<Market Model/Type\>\"", ",", 
+       "\"\<Bond Model\>\""}], "]"}], ";", "\[IndentingNewLine]", 
+     RowBox[{"Conclude", "[", 
+      RowBox[{
+      "CurrentInstance", ",", "\"\<Market Model/Value\>\"", ",", 
+       "\"\<@clean to dirty($)\>\""}], "]"}], ";", "\[IndentingNewLine]", 
+     RowBox[{"Conclude", "[", 
+      RowBox[{
+      "CurrentInstance", ",", "\"\<Market Model/Price\>\"", ",", 
+       "\"\<@spot price($)\>\""}], "]"}], ";", "\[IndentingNewLine]", 
+     RowBox[{"Conclude", "[", 
+      RowBox[{
+      "CurrentInstance", ",", "\"\<Market Model/Spot Value\>\"", ",", 
+       "\"\<@spot value($)\>\""}], "]"}], ";", "\[IndentingNewLine]", 
+     RowBox[{"Conclude", "[", 
+      RowBox[{
+      "CurrentInstance", ",", "\"\<Market Model/Yield\>\"", ",", 
+       "\[IndentingNewLine]", "\t", 
+       RowBox[{"StringJoin", "[", 
+        RowBox[{"\"\<bond IRR from value(%\>\"", ",", 
+         RowBox[{"V", "[", 
+          RowBox[{"CurrentInstance", ",", "\"\<Compounding Frequency\>\""}], 
+          "]"}], ",", "\"\< \>\"", ",", 
+         RowBox[{"V", "[", 
+          RowBox[{"CurrentInstance", ",", "\"\<Day Counting Convention\>\""}],
+           "]"}], ",", "\"\<)\>\""}], "]"}]}], "]"}], ";", 
+     "\[IndentingNewLine]", 
+     RowBox[{"Conclude", "[", 
+      RowBox[{
+      "CurrentInstance", ",", "\"\<Theoretical Model/Type\>\"", ",", 
+       "\"\<Bond Model\>\""}], "]"}], ";", "\[IndentingNewLine]", 
+     RowBox[{"Conclude", "[", 
+      RowBox[{
+      "CurrentInstance", ",", "\"\<Theoretical Model/Value\>\"", ",", 
+       "\"\<@PV bond($)\>\""}], "]"}], ";", "\[IndentingNewLine]", 
+     RowBox[{"Conclude", "[", 
+      RowBox[{
+      "CurrentInstance", ",", "\"\<Theoretical Model/Spot Value\>\"", ",", 
+       "\"\<@spot value($)\>\""}], "]"}], ";", "\[IndentingNewLine]", 
+     RowBox[{"Conclude", "[", 
+      RowBox[{
+      "CurrentInstance", ",", "\"\<Theoretical Model/Price\>\"", ",", 
+       "\"\<@PV bond less accrued($)\>\""}], "]"}], ";", 
+     "\[IndentingNewLine]", 
+     RowBox[{"Conclude", "[", 
+      RowBox[{
+      "CurrentInstance", ",", "\"\<Theoretical Model/Accrued Interest\>\"", 
+       ",", 
+       RowBox[{"V", "[", 
+        RowBox[{
+        "CurrentInstance", ",", "\"\<Market Model/Accrued Interest\>\""}], 
+        "]"}]}], "]"}], ";", "\[IndentingNewLine]", 
+     RowBox[{"Conclude", "[", 
+      RowBox[{"CurrentInstance", ",", "\"\<Theoretical Model/Yield\>\"", ",", 
+       RowBox[{"V", "[", 
+        RowBox[{"CurrentInstance", ",", "\"\<Market Model/Yield\>\""}], 
+        "]"}]}], "]"}], ";", "\[IndentingNewLine]", 
+     RowBox[{"Conclude", "[", 
+      RowBox[{"CurrentInstance", ",", "\"\<CSV Descriptor\>\"", ",", 
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{"{", 
+          RowBox[{"\"\<Instrument\>\"", ",", 
+           RowBox[{"{", 
+            RowBox[{
+            "\"\<Name\>\"", ",", "\"\<Type\>\"", ",", "\"\<Currency\>\"", 
+             ",", "\"\<Maturity Date\>\"", ",", "\"\<Notional\>\"", ",", 
+             "\"\<Issue Date\>\"", ",", "\"\<Coupon Rate\>\"", ",", "\n", 
+             "\t     ", "\"\<Fixed Coupon Date\>\"", ",", 
+             "\"\<State Procedure\>\"", ",", "\"\<Term\>\"", ",", 
+             "\"\<Accrual Daycount Basis\>\"", ",", "\[IndentingNewLine]", 
+             "\"\<Coupon Generation Method\>\"", ",", 
+             "\"\<Business Day Rule\>\"", ",", "\"\<Spot Price\>\"", ",", 
+             "\[IndentingNewLine]", "\"\<Trade day Rule\>\"", ",", 
+             "\"\<Repo Curve\>\"", ",", "\"\<Discount Curve\>\"", ",", 
+             "\[IndentingNewLine]", "\"\<RiskMetrics Map Procedure\>\"", ",", 
+             "\"\<Spread Over Yield\>\"", ",", "\"\<Theoretical Model*\>\"", 
+             ",", "\"\<Market Model*\>\""}], "}"}]}], "}"}], ",", 
+         "\[IndentingNewLine]", 
+         RowBox[{"{", 
+          RowBox[{"\"\<Market Model\>\"", ",", 
+           RowBox[{"{", 
+            RowBox[{
+            "\"\<Name\>\"", ",", "\"\<Value\>\"", ",", "\"\<Price\>\"", ",", 
+             "\"\<Spot Value\>\"", ",", "\"\<Yield\>\"", ",", 
+             "\"\<Accrued Interest\>\""}], "}"}]}], "}"}], ",", 
+         "\[IndentingNewLine]", 
+         RowBox[{"{", 
+          RowBox[{"\"\<Theoretical Model\>\"", ",", 
+           RowBox[{"{", 
+            RowBox[{
+            "\"\<Name\>\"", ",", "\"\<Value\>\"", ",", "\"\<Price\>\"", ",", 
+             "\"\<Spot Value\>\"", ",", "\"\<Yield\>\"", ",", 
+             "\"\<Accrued Interest\>\""}], "}"}]}], "}"}]}], "}"}]}], "]"}]}],
+     ",", "\[IndentingNewLine]", "\"\<Risk Watch Spec\>\"", ",", 
+    "\"\<Consultation\>\""}], "]"}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{"\t"}]}], "Input",
+ InitializationCell->True,
+ CellChangeTimes->{{3.483364369948987*^9, 3.483364396027279*^9}, {
+  3.4833646490601482`*^9, 3.4833646573883266`*^9}}],
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"AddBackwardRule", "[", 
+   RowBox[{
+   "\"\<Rule Day Counting Convention 1\>\"", ",", "\[IndentingNewLine]", "\t", 
+    RowBox[{
+     RowBox[{"(", 
+      RowBox[{"BelongTo", "[", 
+       RowBox[{
+        RowBox[{"V", "[", 
+         RowBox[{"CurrentInstance", ",", "\"\<Issuer Currency\>\""}], "]"}], 
+        ",", 
+        RowBox[{"{", 
+         RowBox[{"\"\<USD\>\"", ",", "\"\<ESP\>\"", ",", "\"\<NZD\>\""}], 
+         "}"}]}], "]"}], ")"}], "&&", "\[IndentingNewLine]", "\t", 
+     RowBox[{"(", 
+      RowBox[{
+       RowBox[{"V", "[", 
+        RowBox[{"CurrentInstance", ",", "\"\<Bond Convention\>\""}], "]"}], 
+       "\[Equal]", "\"\<Treasury Bond Convention\>\""}], ")"}]}], ",", 
+    "\[IndentingNewLine]", "\t", "\"\<actual/actual\>\"", ",", 
+    "\[IndentingNewLine]", "\t", "\"\<Day Counting Convention\>\"", ",", 
+    "\"\<Consultation\>\""}], "]"}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"AddBackwardRule", "[", 
+   RowBox[{
+   "\"\<Rule Day Counting Convention 2\>\"", ",", "\[IndentingNewLine]", "\t", 
+    RowBox[{
+     RowBox[{"(", 
+      RowBox[{"BelongTo", "[", 
+       RowBox[{
+        RowBox[{"V", "[", 
+         RowBox[{"CurrentInstance", ",", "\"\<Issuer Currency\>\""}], "]"}], 
+        ",", 
+        RowBox[{"{", 
+         RowBox[{
+         "\"\<DKK\>\"", ",", "\"\<DEM\>\"", ",", "\"\<CHF\>\"", ",", 
+          "\"\<BEF\>\"", ",", "\"\<SEK\>\"", ",", "\"\<NLG\>\""}], "}"}]}], 
+       "]"}], ")"}], "&&", "\[IndentingNewLine]", "\t", 
+     RowBox[{"(", 
+      RowBox[{
+       RowBox[{"V", "[", 
+        RowBox[{"CurrentInstance", ",", "\"\<Bond Convention\>\""}], "]"}], 
+       "\[Equal]", "\"\<Treasury Bond Convention\>\""}], ")"}]}], ",", 
+    "\[IndentingNewLine]", "\t", "\"\<30E/360\>\"", ",", 
+    "\[IndentingNewLine]", "\t", "\"\<Day Counting Convention\>\"", ",", 
+    "\"\<Consultation\>\""}], "]"}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"AddBackwardRule", "[", 
+   RowBox[{
+   "\"\<Rule Day Counting Convention 3\>\"", ",", "\[IndentingNewLine]", "\t", 
+    RowBox[{
+     RowBox[{"(", 
+      RowBox[{"BelongTo", "[", 
+       RowBox[{
+        RowBox[{"V", "[", 
+         RowBox[{"CurrentInstance", ",", "\"\<Issuer Currency\>\""}], "]"}], 
+        ",", 
+        RowBox[{"{", "\"\<FRF\>\"", "}"}]}], "]"}], ")"}], "&&", 
+     "\[IndentingNewLine]", "\t", 
+     RowBox[{"(", 
+      RowBox[{
+       RowBox[{"V", "[", 
+        RowBox[{"CurrentInstance", ",", "\"\<Bond Convention\>\""}], "]"}], 
+       "\[Equal]", "\"\<Treasury Bond Convention\>\""}], ")"}]}], ",", 
+    "\[IndentingNewLine]", "\t", "\"\<act/act French\>\"", ",", 
+    "\[IndentingNewLine]", "\t", "\"\<Day Counting Convention\>\"", ",", 
+    "\"\<Consultation\>\""}], "]"}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"AddBackwardRule", "[", 
+   RowBox[{
+   "\"\<Rule Day Counting Convention 4\>\"", ",", "\[IndentingNewLine]", "\t", 
+    RowBox[{
+     RowBox[{"(", 
+      RowBox[{"BelongTo", "[", 
+       RowBox[{
+        RowBox[{"V", "[", 
+         RowBox[{"CurrentInstance", ",", "\"\<Issuer Currency\>\""}], "]"}], 
+        ",", 
+        RowBox[{"{", 
+         RowBox[{"\"\<PTE\>\"", ",", "\"\<FIM\>\""}], "}"}]}], "]"}], ")"}], "&&",
+      "\[IndentingNewLine]", "\t", 
+     RowBox[{"(", 
+      RowBox[{
+       RowBox[{"V", "[", 
+        RowBox[{"CurrentInstance", ",", "\"\<Bond Convention\>\""}], "]"}], 
+       "\[Equal]", "\"\<Treasury Bond Convention\>\""}], ")"}]}], ",", 
+    "\[IndentingNewLine]", "\t", "\"\<30/360\>\"", ",", "\[IndentingNewLine]",
+     "\t", "\"\<Day Counting Convention\>\"", ",", "\"\<Consultation\>\""}], 
+   "]"}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"AddBackwardRule", "[", 
+   RowBox[{
+   "\"\<Rule Day Counting Convention 5\>\"", ",", "\[IndentingNewLine]", "\t", 
+    RowBox[{
+     RowBox[{"(", 
+      RowBox[{"BelongTo", "[", 
+       RowBox[{
+        RowBox[{"V", "[", 
+         RowBox[{"CurrentInstance", ",", "\"\<Issuer Currency\>\""}], "]"}], 
+        ",", 
+        RowBox[{"{", 
+         RowBox[{
+         "\"\<GBP\>\"", ",", "\"\<CAD\>\"", ",", "\"\<AUD\>\"", ",", 
+          "\"\<ITL\>\""}], "}"}]}], "]"}], ")"}], "&&", "\[IndentingNewLine]",
+      "\t", 
+     RowBox[{"(", 
+      RowBox[{
+       RowBox[{"V", "[", 
+        RowBox[{"CurrentInstance", ",", "\"\<Bond Convention\>\""}], "]"}], 
+       "\[Equal]", "\"\<Treasury Bond Convention\>\""}], ")"}]}], ",", 
+    "\[IndentingNewLine]", "\t", "\"\<actual/365\>\"", ",", 
+    "\[IndentingNewLine]", "\t", "\"\<Day Counting Convention\>\"", ",", 
+    "\"\<Consultation\>\""}], "]"}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"AddBackwardRule", "[", 
+   RowBox[{
+   "\"\<Rule Day Counting Convention 6\>\"", ",", "\[IndentingNewLine]", "\t", 
+    RowBox[{
+     RowBox[{"(", 
+      RowBox[{"BelongTo", "[", 
+       RowBox[{
+        RowBox[{"V", "[", 
+         RowBox[{"CurrentInstance", ",", "\"\<Issuer Currency\>\""}], "]"}], 
+        ",", 
+        RowBox[{"{", "\"\<USD\>\"", "}"}]}], "]"}], ")"}], "&&", 
+     "\[IndentingNewLine]", "\t", 
+     RowBox[{"(", 
+      RowBox[{
+       RowBox[{"V", "[", 
+        RowBox[{"CurrentInstance", ",", "\"\<Bond Convention\>\""}], "]"}], 
+       "\[Equal]", "\"\<Treasury Bill Convention\>\""}], ")"}]}], ",", 
+    "\[IndentingNewLine]", "\t", "\"\<actual/360\>\"", ",", 
+    "\[IndentingNewLine]", "\t", "\"\<Day Counting Convention\>\"", ",", 
+    "\"\<Consultation\>\""}], "]"}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"AddBackwardRule", "[", 
+   RowBox[{
+   "\"\<Rule Day Counting Convention 7\>\"", ",", "\[IndentingNewLine]", "\t", 
+    RowBox[{
+     RowBox[{"(", 
+      RowBox[{"BelongTo", "[", 
+       RowBox[{
+        RowBox[{"V", "[", 
+         RowBox[{"CurrentInstance", ",", "\"\<Issuer Currency\>\""}], "]"}], 
+        ",", 
+        RowBox[{"{", "\"\<HKD\>\"", "}"}]}], "]"}], ")"}], "&&", 
+     "\[IndentingNewLine]", "\t", 
+     RowBox[{"(", 
+      RowBox[{
+       RowBox[{"V", "[", 
+        RowBox[{"CurrentInstance", ",", "\"\<Bond Convention\>\""}], "]"}], 
+       "\[Equal]", "\"\<Treasury Bill Convention\>\""}], ")"}]}], ",", 
+    "\[IndentingNewLine]", "\t", "\"\<actual/365\>\"", ",", 
+    "\[IndentingNewLine]", "\t", "\"\<Day Counting Convention\>\"", ",", 
+    "\"\<Consultation\>\""}], "]"}], ";"}], "\[IndentingNewLine]"}], "Input",
+ InitializationCell->True],
+
+Cell[BoxData[
+ RowBox[{"\[IndentingNewLine]", 
+  RowBox[{
+   RowBox[{
+    RowBox[{"AddBackwardRule", "[", 
+     RowBox[{
+     "\"\<Rule Compounding Frequency 1\>\"", ",", "\[IndentingNewLine]", "\t", 
+      RowBox[{
+       RowBox[{"(", 
+        RowBox[{"BelongTo", "[", 
+         RowBox[{
+          RowBox[{"V", "[", 
+           RowBox[{"CurrentInstance", ",", "\"\<Issuer Currency\>\""}], "]"}],
+           ",", 
+          RowBox[{"{", 
+           RowBox[{
+           "\"\<ESP\>\"", ",", "\"\<CHF\>\"", ",", "\"\<DEM\>\"", ",", 
+            "\"\<DKK\>\"", ",", "\"\<BEF\>\"", ",", "\"\<SEK\>\"", ",", 
+            "\"\<NLG\>\"", ",", "\"\<FRF\>\"", ",", "\"\<PTE\>\"", ",", 
+            "\"\<FIM\>\""}], "}"}]}], "]"}], ")"}], "&&", 
+       "\[IndentingNewLine]", "\t", 
+       RowBox[{"(", 
+        RowBox[{
+         RowBox[{"V", "[", 
+          RowBox[{"CurrentInstance", ",", "\"\<Bond Convention\>\""}], "]"}], 
+         "\[Equal]", "\"\<Treasury Bond Convention\>\""}], ")"}]}], ",", 
+      "\[IndentingNewLine]", "\t", "\"\<ANNU\>\"", ",", "\[IndentingNewLine]",
+       "\t", "\"\<Compounding Frequency\>\"", ",", "\"\<Consultation\>\""}], 
+     "]"}], ";"}], "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"AddBackwardRule", "[", 
+     RowBox[{
+     "\"\<Rule Compounding Frequency 2\>\"", ",", "\[IndentingNewLine]", "\t", 
+      RowBox[{
+       RowBox[{"(", 
+        RowBox[{"BelongTo", "[", 
+         RowBox[{
+          RowBox[{"V", "[", 
+           RowBox[{"CurrentInstance", ",", "\"\<Issuer Currency\>\""}], "]"}],
+           ",", 
+          RowBox[{"{", 
+           RowBox[{
+           "\"\<AUD\>\"", ",", "\"\<CAD\>\"", ",", "\"\<GBP\>\"", ",", 
+            "\"\<NZD\>\"", ",", "\"\<USD\>\""}], "}"}]}], "]"}], ")"}], "&&", 
+       "\[IndentingNewLine]", "\t", 
+       RowBox[{"(", 
+        RowBox[{
+         RowBox[{"V", "[", 
+          RowBox[{"CurrentInstance", ",", "\"\<Bond Convention\>\""}], "]"}], 
+         "\[Equal]", "\"\<Treasury Bond Convention\>\""}], ")"}]}], ",", 
+      "\[IndentingNewLine]", "\t", "\"\<SEMI\>\"", ",", "\[IndentingNewLine]",
+       "\t", "\"\<Compounding Frequency\>\"", ",", "\"\<Consultation\>\""}], 
+     "]"}], ";"}], "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"AddBackwardRule", "[", 
+     RowBox[{
+     "\"\<Rule Compounding Frequency \>\"", ",", "\[IndentingNewLine]", "\t", 
+      RowBox[{
+       RowBox[{"(", 
+        RowBox[{"BelongTo", "[", 
+         RowBox[{
+          RowBox[{"V", "[", 
+           RowBox[{"CurrentInstance", ",", "\"\<Issuer Currency\>\""}], "]"}],
+           ",", 
+          RowBox[{"{", "\"\<ITL\>\"", "}"}]}], "]"}], ")"}], "&&", 
+       "\[IndentingNewLine]", "\t", 
+       RowBox[{"(", 
+        RowBox[{
+         RowBox[{"V", "[", 
+          RowBox[{"CurrentInstance", ",", "\"\<Bond Convention\>\""}], "]"}], 
+         "\[Equal]", "\"\<Treasury Bond Convention\>\""}], ")"}], "&&", 
+       "\[IndentingNewLine]", "\t", 
+       RowBox[{
+        RowBox[{"V", "[", 
+         RowBox[{"CurrentInstance", ",", "\"\<Denominated bond in XEU\>\""}], 
+         "]"}], "\[Equal]", "\"\<Yes\>\""}]}], ",", "\[IndentingNewLine]", 
+      "\t", "\"\<ANNU\>\"", ",", "\[IndentingNewLine]", "\t", 
+      "\"\<Compounding Frequency\>\"", ",", "\"\<Consultation\>\""}], "]"}], 
+    ";"}], "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"AddBackwardRule", "[", 
+     RowBox[{
+     "\"\<Rule Compounding Frequency \>\"", ",", "\[IndentingNewLine]", "\t", 
+      RowBox[{
+       RowBox[{"(", 
+        RowBox[{"BelongTo", "[", 
+         RowBox[{
+          RowBox[{"V", "[", 
+           RowBox[{"CurrentInstance", ",", "\"\<Issuer Currency\>\""}], "]"}],
+           ",", 
+          RowBox[{"{", "\"\<ITL\>\"", "}"}]}], "]"}], ")"}], "&&", 
+       "\[IndentingNewLine]", "\t", 
+       RowBox[{"(", 
+        RowBox[{
+         RowBox[{"V", "[", 
+          RowBox[{"CurrentInstance", ",", "\"\<Bond Convention\>\""}], "]"}], 
+         "\[Equal]", "\"\<Treasury Bond Convention\>\""}], ")"}], "&&", 
+       "\[IndentingNewLine]", "\t", 
+       RowBox[{
+        RowBox[{"V", "[", 
+         RowBox[{"CurrentInstance", ",", "\"\<Denominated bond in XEU\>\""}], 
+         "]"}], "\[Equal]", "\"\<No\>\""}]}], ",", "\[IndentingNewLine]", 
+      "\t", "\"\<SEMI\>\"", ",", "\[IndentingNewLine]", "\t", 
+      "\"\<Compounding Frequency\>\"", ",", "\"\<Consultation\>\""}], "]"}], 
+    ";"}], "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"AddBackwardRule", "[", 
+     RowBox[{
+     "\"\<Rule Compounding Frequency \>\"", ",", "\[IndentingNewLine]", "\t", 
+      RowBox[{"(", 
+       RowBox[{
+        RowBox[{"V", "[", 
+         RowBox[{"CurrentInstance", ",", "\"\<Bond Convention\>\""}], "]"}], 
+        "\[Equal]", "\"\<Treasury Bill Convention\>\""}], ")"}], ",", 
+      "\[IndentingNewLine]", "\t", "\"\<SMP\>\"", ",", "\[IndentingNewLine]", 
+      "\t", "\"\<Compounding Frequency\>\"", ",", "\"\<Consultation\>\""}], 
+     "]"}], ";"}]}]}]], "Input",
+ InitializationCell->True],
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"AddBackwardRule", "[", 
+   RowBox[{
+   "\"\<Rule Trade Day Number 1\>\"", ",", "\[IndentingNewLine]", "\t", 
+    RowBox[{
+     RowBox[{"(", 
+      RowBox[{"BelongTo", "[", 
+       RowBox[{
+        RowBox[{"V", "[", 
+         RowBox[{"CurrentInstance", ",", "\"\<Issuer Currency\>\""}], "]"}], 
+        ",", 
+        RowBox[{"{", 
+         RowBox[{"\"\<FRF\>\"", ",", "\"\<GBP\>\""}], "}"}]}], "]"}], ")"}], "&&",
+      "\[IndentingNewLine]", "\t", 
+     RowBox[{"(", 
+      RowBox[{
+       RowBox[{"V", "[", 
+        RowBox[{"CurrentInstance", ",", "\"\<Bond Convention\>\""}], "]"}], 
+       "\[Equal]", "\"\<Treasury Bond Convention\>\""}], ")"}]}], ",", 
+    "\[IndentingNewLine]", "\t", "1", ",", "\[IndentingNewLine]", "\t", 
+    "\"\<Trade Day Number\>\"", ",", "\"\<Consultation\>\""}], "]"}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"AddBackwardRule", "[", 
+   RowBox[{
+   "\"\<Rule Trade Day Number 2\>\"", ",", "\[IndentingNewLine]", "\t", 
+    RowBox[{
+     RowBox[{"(", 
+      RowBox[{"BelongTo", "[", 
+       RowBox[{
+        RowBox[{"V", "[", 
+         RowBox[{"CurrentInstance", ",", "\"\<Issuer Currency\>\""}], "]"}], 
+        ",", 
+        RowBox[{"{", 
+         RowBox[{"\"\<DEM\>\"", ",", "\"\<NZD\>\""}], "}"}]}], "]"}], ")"}], "&&",
+      "\[IndentingNewLine]", "\t", 
+     RowBox[{"(", 
+      RowBox[{
+       RowBox[{"V", "[", 
+        RowBox[{"CurrentInstance", ",", "\"\<Bond Convention\>\""}], "]"}], 
+       "\[Equal]", "\"\<Treasury Bond Convention\>\""}], ")"}]}], ",", 
+    "\[IndentingNewLine]", "\t", "2", ",", "\[IndentingNewLine]", "\t", 
+    "\"\<Trade Day Number\>\"", ",", "\"\<Consultation\>\""}], "]"}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"AddBackwardRule", "[", 
+   RowBox[{
+   "\"\<Rule Trade Day Number 3\>\"", ",", "\[IndentingNewLine]", "\t", 
+    RowBox[{
+     RowBox[{"(", 
+      RowBox[{"BelongTo", "[", 
+       RowBox[{
+        RowBox[{"V", "[", 
+         RowBox[{"CurrentInstance", ",", "\"\<Issuer Currency\>\""}], "]"}], 
+        ",", 
+        RowBox[{"{", 
+         RowBox[{
+         "\"\<CHF\>\"", ",", "\"\<DKK\>\"", ",", "\"\<BEF\>\"", ",", 
+          "\"\<SEK\>\"", ",", "\"\<NLG\>\"", ",", "\"\<FIM\>\"", ",", 
+          "\"\<AUD\>\"", ",", "\"\<CAD\>\"", ",", "\"\<USD\>\"", ",", 
+          "\"\<ITL\>\""}], "}"}]}], "]"}], ")"}], "&&", "\[IndentingNewLine]",
+      "\t", 
+     RowBox[{"(", 
+      RowBox[{
+       RowBox[{"V", "[", 
+        RowBox[{"CurrentInstance", ",", "\"\<Bond Convention\>\""}], "]"}], 
+       "\[Equal]", "\"\<Treasury Bond Convention\>\""}], ")"}]}], ",", 
+    "\[IndentingNewLine]", "\t", "3", ",", "\[IndentingNewLine]", "\t", 
+    "\"\<Trade Day Number\>\"", ",", "\"\<Consultation\>\""}], "]"}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"AddBackwardRule", "[", 
+   RowBox[{
+   "\"\<Rule Trade Day Number 4\>\"", ",", "\[IndentingNewLine]", "\t", 
+    RowBox[{
+     RowBox[{"(", 
+      RowBox[{"BelongTo", "[", 
+       RowBox[{
+        RowBox[{"V", "[", 
+         RowBox[{"CurrentInstance", ",", "\"\<Issuer Currency\>\""}], "]"}], 
+        ",", 
+        RowBox[{"{", "\"\<PTE\>\"", "}"}]}], "]"}], ")"}], "&&", 
+     "\[IndentingNewLine]", "\t", 
+     RowBox[{"(", 
+      RowBox[{
+       RowBox[{"V", "[", 
+        RowBox[{"CurrentInstance", ",", "\"\<Bond Convention\>\""}], "]"}], 
+       "\[Equal]", "\"\<Treasury Bond Convention\>\""}], ")"}]}], ",", 
+    "\[IndentingNewLine]", "\t", "4", ",", "\[IndentingNewLine]", "\t", 
+    "\"\<Trade Day Number\>\"", ",", "\"\<Consultation\>\""}], "]"}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"AddBackwardRule", "[", 
+   RowBox[{
+   "\"\<Rule Trade Day Number 5\>\"", ",", "\[IndentingNewLine]", "\t", 
+    RowBox[{
+     RowBox[{"(", 
+      RowBox[{"BelongTo", "[", 
+       RowBox[{
+        RowBox[{"V", "[", 
+         RowBox[{"CurrentInstance", ",", "\"\<Issuer Currency\>\""}], "]"}], 
+        ",", 
+        RowBox[{"{", "\"\<ESP\>\"", "}"}]}], "]"}], ")"}], "&&", 
+     "\[IndentingNewLine]", "\t", 
+     RowBox[{"(", 
+      RowBox[{
+       RowBox[{"V", "[", 
+        RowBox[{"CurrentInstance", ",", "\"\<Bond Convention\>\""}], "]"}], 
+       "\[Equal]", "\"\<Treasury Bond Convention\>\""}], ")"}]}], ",", 
+    "\[IndentingNewLine]", "\t", "7", ",", "\[IndentingNewLine]", "\t", 
+    "\"\<Trade Day Number\>\"", ",", "\"\<Consultation\>\""}], "]"}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"AddBackwardRule", "[", 
+   RowBox[{
+   "\"\<Rule Trade Day Number 6\>\"", ",", "\[IndentingNewLine]", "\t", 
+    RowBox[{"(", 
+     RowBox[{
+      RowBox[{"V", "[", 
+       RowBox[{"CurrentInstance", ",", "\"\<Bond Convention\>\""}], "]"}], 
+      "\[Equal]", "\"\<Treasury Bill Convention\>\""}], ")"}], ",", 
+    "\[IndentingNewLine]", "\t", "1", ",", "\[IndentingNewLine]", "\t", 
+    "\"\<Trade Day Number\>\"", ",", "\"\<Consultation\>\""}], "]"}], 
+  ";"}], "\[IndentingNewLine]"}], "Input",
+ InitializationCell->True],
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"AddBackwardRule", "[", 
+   RowBox[{"\"\<Rule Instrument/Term 1\>\"", ",", "\[IndentingNewLine]", "\t", 
+    RowBox[{
+     RowBox[{"(", 
+      RowBox[{"BelongTo", "[", 
+       RowBox[{
+        RowBox[{"V", "[", 
+         RowBox[{"CurrentInstance", ",", "\"\<Compounding Frequency\>\""}], 
+         "]"}], ",", 
+        RowBox[{"{", "\"\<SEMI\>\"", "}"}]}], "]"}], ")"}], "&&", 
+     "\[IndentingNewLine]", "\t", 
+     RowBox[{"(", 
+      RowBox[{
+       RowBox[{"V", "[", 
+        RowBox[{"CurrentInstance", ",", "\"\<Bond Convention\>\""}], "]"}], 
+       "\[Equal]", "\"\<Treasury Bond Convention\>\""}], ")"}]}], ",", 
+    "\[IndentingNewLine]", "\t", "\"\<6 Months\>\"", ",", 
+    "\[IndentingNewLine]", "\t", "\"\<Instrument/Term\>\"", ",", 
+    "\"\<Consultation\>\""}], "]"}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"AddBackwardRule", "[", 
+   RowBox[{"\"\<Rule Instrument/Term 2\>\"", ",", "\[IndentingNewLine]", "\t", 
+    RowBox[{
+     RowBox[{"(", 
+      RowBox[{"BelongTo", "[", 
+       RowBox[{
+        RowBox[{"V", "[", 
+         RowBox[{"CurrentInstance", ",", "\"\<Compounding Frequency\>\""}], 
+         "]"}], ",", 
+        RowBox[{"{", "\"\<ANNU\>\"", "}"}]}], "]"}], ")"}], "&&", 
+     "\[IndentingNewLine]", "\t", 
+     RowBox[{"(", 
+      RowBox[{
+       RowBox[{"V", "[", 
+        RowBox[{"CurrentInstance", ",", "\"\<Bond Convention\>\""}], "]"}], 
+       "\[Equal]", "\"\<Treasury Bond Convention\>\""}], ")"}]}], ",", 
+    "\[IndentingNewLine]", "\t", "\"\<1 Years\>\"", ",", 
+    "\[IndentingNewLine]", "\t", "\"\<Instrument/Term\>\"", ",", 
+    "\"\<Consultation\>\""}], "]"}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"AddBackwardRule", "[", 
+   RowBox[{"\"\<Rule Instrument/Term 3\>\"", ",", "\[IndentingNewLine]", "\t", 
+    RowBox[{"(", 
+     RowBox[{
+      RowBox[{"V", "[", 
+       RowBox[{"CurrentInstance", ",", "\"\<Bond Convention\>\""}], "]"}], 
+      "\[Equal]", "\"\<Treasury Bill Convention\>\""}], ")"}], ",", 
+    "\[IndentingNewLine]", "\t", "\"\<0 Months\>\"", ",", 
+    "\[IndentingNewLine]", "\t", "\"\<Instrument/Term\>\"", ",", 
+    "\"\<Consultation\>\""}], "]"}], ";"}]}], "Input",
+ InitializationCell->True,
+ CellChangeTimes->{{3.48336439618353*^9, 3.483364404433583*^9}, {
+  3.4833646575289526`*^9, 3.483364659763342*^9}}],
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"AddBackwardRule", "[", 
+   RowBox[{
+   "\"\<Rule Market Model/Accrued Interest 1\>\"", ",", "\[IndentingNewLine]",
+     "\t", 
+    RowBox[{
+     RowBox[{"(", 
+      RowBox[{"BelongTo", "[", 
+       RowBox[{
+        RowBox[{"V", "[", 
+         RowBox[{"CurrentInstance", ",", "\"\<Issuer Currency\>\""}], "]"}], 
+        ",", 
+        RowBox[{"{", 
+         RowBox[{
+         "\"\<ESP\>\"", ",", "\"\<CHF\>\"", ",", "\"\<DEM\>\"", ",", 
+          "\"\<DKK\>\"", ",", "\"\<BEF\>\"", ",", "\"\<SEK\>\"", ",", 
+          "\"\<NLG\>\"", ",", "\"\<FRF\>\"", ",", "\[IndentingNewLine]", 
+          "\t\t\t\t\t\t\t\t\t\t", "\"\<PTE\>\"", ",", "\"\<FIM\>\"", ",", 
+          "\"\<AUD\>\"", ",", "\"\<CAD\>\"", ",", "\"\<GBP\>\"", ",", 
+          "\"\<NZD\>\"", ",", "\"\<USD\>\""}], "}"}]}], "]"}], ")"}], "&&", 
+     "\[IndentingNewLine]", "\t", 
+     RowBox[{"(", 
+      RowBox[{
+       RowBox[{"V", "[", 
+        RowBox[{"CurrentInstance", ",", "\"\<Bond Convention\>\""}], "]"}], 
+       "\[Equal]", "\"\<Treasury Bond Convention\>\""}], ")"}]}], ",", 
+    "\[IndentingNewLine]", "\t", "\"\<@accrued bond($)\>\"", ",", 
+    "\[IndentingNewLine]", "\t", "\"\<Market Model/Accrued Interest\>\"", 
+    ",", "\"\<Consultation\>\""}], "]"}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"AddBackwardRule", "[", 
+   RowBox[{
+   "\"\<Rule Market Model/Accrued Interest 2\>\"", ",", "\[IndentingNewLine]",
+     "\t", 
+    RowBox[{
+     RowBox[{"(", 
+      RowBox[{"BelongTo", "[", 
+       RowBox[{
+        RowBox[{"V", "[", 
+         RowBox[{"CurrentInstance", ",", "\"\<Issuer Currency\>\""}], "]"}], 
+        ",", 
+        RowBox[{"{", "\"\<ITL\>\"", "}"}]}], "]"}], ")"}], "&&", 
+     "\[IndentingNewLine]", "\t", 
+     RowBox[{"(", 
+      RowBox[{
+       RowBox[{"V", "[", 
+        RowBox[{"CurrentInstance", ",", "\"\<Bond Convention\>\""}], "]"}], 
+       "\[Equal]", "\"\<Treasury Bond Convention\>\""}], ")"}]}], ",", 
+    "\[IndentingNewLine]", "\t", "\"\<@accrued bond+1($)\>\"", ",", 
+    "\[IndentingNewLine]", "\t", "\"\<Market Model/Accrued Interest\>\"", 
+    ",", "\"\<Consultation\>\""}], "]"}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"AddBackwardRule", "[", 
+   RowBox[{
+   "\"\<Rule Market Model/Accrued Interest 3\>\"", ",", "\[IndentingNewLine]",
+     "\t", 
+    RowBox[{
+     RowBox[{"(", 
+      RowBox[{
+       RowBox[{"V", "[", 
+        RowBox[{"CurrentInstance", ",", "\"\<Bond Convention\>\""}], "]"}], 
+       "\[Equal]", "\"\<No Convention\>\""}], ")"}], "&&", 
+     "\[IndentingNewLine]", "\t", 
+     RowBox[{"(", 
+      RowBox[{
+       RowBox[{"V", "[", 
+        RowBox[{
+        "CurrentInstance", ",", "\"\<Accrued Interest Computation\>\""}], 
+        "]"}], "==", "\"\<Regular\>\""}], ")"}]}], ",", "\[IndentingNewLine]",
+     "\t", "\"\<@accrued bond($)\>\"", ",", "\[IndentingNewLine]", "\t", 
+    "\"\<Market Model/Accrued Interest\>\"", ",", "\"\<Consultation\>\""}], 
+   "]"}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"AddBackwardRule", "[", 
+   RowBox[{
+   "\"\<Rule Market Model/Accrued Interest 4\>\"", ",", "\[IndentingNewLine]",
+     "\t", 
+    RowBox[{
+     RowBox[{"(", 
+      RowBox[{
+       RowBox[{"V", "[", 
+        RowBox[{"CurrentInstance", ",", "\"\<Bond Convention\>\""}], "]"}], 
+       "\[Equal]", "\"\<No Convention\>\""}], ")"}], "&&", 
+     "\[IndentingNewLine]", "\t", 
+     RowBox[{"(", 
+      RowBox[{
+       RowBox[{"V", "[", 
+        RowBox[{
+        "CurrentInstance", ",", "\"\<Accrued Interest Computation\>\""}], 
+        "]"}], "==", "\"\<Italian Type\>\""}], ")"}]}], ",", 
+    "\[IndentingNewLine]", "\t", "\"\<@accrued bond+1($)\>\"", ",", 
+    "\[IndentingNewLine]", "\t", "\"\<Market Model/Accrued Interest\>\"", 
+    ",", "\"\<Consultation\>\""}], "]"}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"AddBackwardRule", "[", 
+   RowBox[{
+   "\"\<Rule Market Model/Accrued Interest 5\>\"", ",", "\[IndentingNewLine]",
+     "\t", 
+    RowBox[{"(", 
+     RowBox[{
+      RowBox[{"V", "[", 
+       RowBox[{"CurrentInstance", ",", "\"\<Bond Convention\>\""}], "]"}], 
+      "\[Equal]", "\"\<Treasury Bill Convention\>\""}], ")"}], ",", 
+    "\[IndentingNewLine]", "\t", "\"\<@accrued bond($)\>\"", ",", 
+    "\[IndentingNewLine]", "\t", "\"\<Market Model/Accrued Interest\>\"", 
+    ",", "\"\<Consultation\>\""}], "]"}], ";"}]}], "Input",
+ InitializationCell->True,
+ CellChangeTimes->{{3.48336440546484*^9, 3.483364408246107*^9}, {
+  3.4833646604820967`*^9, 3.483364663044613*^9}}],
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"AddBackwardRule", "[", 
+   RowBox[{
+   "\"\<Rule Instrument/Currency 1\>\"", ",", "\[IndentingNewLine]", "\t", 
+    RowBox[{
+     RowBox[{"(", 
+      RowBox[{"BelongTo", "[", 
+       RowBox[{
+        RowBox[{"V", "[", 
+         RowBox[{"CurrentInstance", ",", "\"\<Issuer Currency\>\""}], "]"}], 
+        ",", 
+        RowBox[{"{", "\"\<ITL\>\"", "}"}]}], "]"}], ")"}], "&&", 
+     "\[IndentingNewLine]", "\t", 
+     RowBox[{"(", 
+      RowBox[{
+       RowBox[{"V", "[", 
+        RowBox[{"CurrentInstance", ",", "\"\<Denominated bond in XEU\>\""}], 
+        "]"}], "\[Equal]", "\"\<Yes\>\""}], ")"}], "&&", 
+     "\[IndentingNewLine]", "\t", 
+     RowBox[{"(", 
+      RowBox[{
+       RowBox[{"V", "[", 
+        RowBox[{"CurrentInstance", ",", "\"\<Bond Convention\>\""}], "]"}], 
+       "\[Equal]", "\"\<Treasury Bond Convention\>\""}], ")"}]}], ",", 
+    "\[IndentingNewLine]", "\t", "\"\<XEU\>\"", ",", "\[IndentingNewLine]", 
+    "\t", "\"\<Instrument/Currency\>\"", ",", "\"\<Consultation\>\""}], "]"}],
+   ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"AddBackwardRule", "[", 
+   RowBox[{
+   "\"\<Rule Instrument/Currency 2\>\"", ",", "\[IndentingNewLine]", "\t", 
+    RowBox[{
+     RowBox[{"(", 
+      RowBox[{"BelongTo", "[", 
+       RowBox[{
+        RowBox[{"V", "[", 
+         RowBox[{"CurrentInstance", ",", "\"\<Issuer Currency\>\""}], "]"}], 
+        ",", 
+        RowBox[{"{", "\"\<ITL\>\"", "}"}]}], "]"}], ")"}], "&&", 
+     "\[IndentingNewLine]", "\t", 
+     RowBox[{"(", 
+      RowBox[{
+       RowBox[{"V", "[", 
+        RowBox[{"CurrentInstance", ",", "\"\<Denominated bond in XEU\>\""}], 
+        "]"}], "\[Equal]", "\"\<No\>\""}], ")"}], "&&", "\[IndentingNewLine]",
+      "\t", 
+     RowBox[{"(", 
+      RowBox[{
+       RowBox[{"V", "[", 
+        RowBox[{"CurrentInstance", ",", "\"\<Bond Convention\>\""}], "]"}], 
+       "\[Equal]", "\"\<Treasury Bond Convention\>\""}], ")"}]}], ",", 
+    "\[IndentingNewLine]", "\t", 
+    RowBox[{"V", "[", 
+     RowBox[{"CurrentInstance", ",", "\"\<Issuer Currency\>\""}], "]"}], ",", 
+    "\[IndentingNewLine]", "\t", "\"\<Instrument/Currency\>\"", ",", 
+    "\"\<Consultation\>\""}], "]"}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"AddBackwardRule", "[", 
+   RowBox[{
+   "\"\<Rule Instrument/Currency 3\>\"", ",", "\[IndentingNewLine]", "\t", 
+    RowBox[{
+     RowBox[{"(", 
+      RowBox[{"!", 
+       RowBox[{"BelongTo", "[", 
+        RowBox[{
+         RowBox[{"V", "[", 
+          RowBox[{"CurrentInstance", ",", "\"\<Issuer Currency\>\""}], "]"}], 
+         ",", 
+         RowBox[{"{", "\"\<ITL\>\"", "}"}]}], "]"}]}], ")"}], "&&", 
+     "\[IndentingNewLine]", "\t", 
+     RowBox[{"(", 
+      RowBox[{
+       RowBox[{"V", "[", 
+        RowBox[{"CurrentInstance", ",", "\"\<Bond Convention\>\""}], "]"}], 
+       "\[Equal]", "\"\<Treasury Bond Convention\>\""}], ")"}]}], ",", 
+    "\[IndentingNewLine]", "\t ", 
+    RowBox[{"V", "[", 
+     RowBox[{"CurrentInstance", ",", "\"\<Issuer Currency\>\""}], "]"}], ",", 
+    "\[IndentingNewLine]", "\t", "\"\<Instrument/Currency\>\"", ",", 
+    "\"\<Consultation\>\""}], "]"}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"AddBackwardRule", "[", 
+   RowBox[{
+   "\"\<Rule Instrument/Currency 4\>\"", ",", "\[IndentingNewLine]", "\t", 
+    RowBox[{"(", 
+     RowBox[{
+      RowBox[{"V", "[", 
+       RowBox[{"CurrentInstance", ",", "\"\<Bond Convention\>\""}], "]"}], 
+      "\[Equal]", "\"\<Treasury Bill Convention\>\""}], ")"}], ",", 
+    "\[IndentingNewLine]", "\t", 
+    RowBox[{"V", "[", 
+     RowBox[{"CurrentInstance", ",", "\"\<Issuer Currency\>\""}], "]"}], ",", 
+    "\[IndentingNewLine]", "\t", "\"\<Instrument/Currency\>\"", ",", 
+    "\"\<Consultation\>\""}], "]"}], ";"}]}], "Input",
+ InitializationCell->True,
+ CellChangeTimes->{{3.483364408558609*^9, 3.483364410558622*^9}, {
+  3.483364663200864*^9, 3.4833646646539984`*^9}}],
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"AddBackwardRule", "[", 
+   RowBox[{
+   "\"\<Rule Accrual Daycount Basis 1\>\"", ",", "\[IndentingNewLine]", "\t", 
+    RowBox[{
+     RowBox[{"(", 
+      RowBox[{"!", 
+       RowBox[{"BelongTo", "[", 
+        RowBox[{
+         RowBox[{"V", "[", 
+          RowBox[{"CurrentInstance", ",", "\"\<Issuer Currency\>\""}], "]"}], 
+         ",", 
+         RowBox[{"{", "\"\<ITL\>\"", "}"}]}], "]"}]}], ")"}], "&&", 
+     "\[IndentingNewLine]", "\t", 
+     RowBox[{"(", 
+      RowBox[{
+       RowBox[{"V", "[", 
+        RowBox[{"CurrentInstance", ",", "\"\<Bond Convention\>\""}], "]"}], 
+       "\[Equal]", "\"\<Treasury Bond Convention\>\""}], ")"}]}], ",", 
+    "\[IndentingNewLine]", "\t", 
+    RowBox[{"V", "[", 
+     RowBox[{"CurrentInstance", ",", "\"\<Day Counting Convention\>\""}], 
+     "]"}], ",", "\[IndentingNewLine]", "\t", 
+    "\"\<Instrument/Accrual Daycount Basis\>\"", ",", 
+    "\"\<Consultation\>\""}], "]"}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"AddBackwardRule", "[", 
+   RowBox[{
+   "\"\<Rule Accrual Daycount Basis 2\>\"", ",", "\[IndentingNewLine]", "\t", 
+    RowBox[{
+     RowBox[{"(", 
+      RowBox[{"BelongTo", "[", 
+       RowBox[{
+        RowBox[{"V", "[", 
+         RowBox[{"CurrentInstance", ",", "\"\<Issuer Currency\>\""}], "]"}], 
+        ",", 
+        RowBox[{"{", "\"\<ITL\>\"", "}"}]}], "]"}], ")"}], "&&", 
+     "\[IndentingNewLine]", "\t", 
+     RowBox[{"(", 
+      RowBox[{
+       RowBox[{"V", "[", 
+        RowBox[{"CurrentInstance", ",", "\"\<Bond Convention\>\""}], "]"}], 
+       "\[Equal]", "\"\<Treasury Bond Convention\>\""}], ")"}]}], ",", 
+    "\[IndentingNewLine]", "\t", "\"\<30/360 European\>\"", ",", 
+    "\[IndentingNewLine]", "\t", "\"\<Instrument/Accrual Daycount Basis\>\"", 
+    ",", "\"\<Consultation\>\""}], "]"}], 
+  ";"}], "\[IndentingNewLine]"}], "Input",
+ InitializationCell->True,
+ CellChangeTimes->{{3.4833644106992483`*^9, 3.4833644109336243`*^9}, {
+  3.4833646648571243`*^9, 3.483364665091501*^9}}],
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"AddBackwardRule", "[", 
+   RowBox[{"\"\<Rule  Bond 1\>\"", ",", " ", "\[IndentingNewLine]", "\t", 
+    RowBox[{
+     RowBox[{"(", 
+      RowBox[{
+       RowBox[{"V", "[", 
+        RowBox[{"CurrentInstance", ",", "\"\<Class Of Instrument\>\""}], 
+        "]"}], "\[Equal]", "\"\<Bond\>\""}], ")"}], "&&", 
+     "\[IndentingNewLine]", "\t", 
+     RowBox[{"(", 
+      RowBox[{"Known", "[", 
+       RowBox[{"CurrentInstance", ",", "\"\<Instrument/Currency\>\""}], "]"}],
+       ")"}], "&&", "\[IndentingNewLine]", "\t", 
+     RowBox[{"(", 
+      RowBox[{"Known", "[", 
+       RowBox[{"CurrentInstance", ",", "\"\<Instrument/Maturity Date\>\""}], 
+       "]"}], ")"}], "&&", "\[IndentingNewLine]", "\t", 
+     RowBox[{"(", 
+      RowBox[{"Known", "[", 
+       RowBox[{"CurrentInstance", ",", "\"\<Instrument/Issue Date\>\""}], 
+       "]"}], ")"}], "&&", "\[IndentingNewLine]", "\t", 
+     RowBox[{"(", 
+      RowBox[{"Known", "[", 
+       RowBox[{
+       "CurrentInstance", ",", "\"\<Instrument/Fixed Coupon Date\>\""}], 
+       "]"}], ")"}], "&&", "\[IndentingNewLine]", "\t", 
+     RowBox[{"(", 
+      RowBox[{"Known", "[", 
+       RowBox[{"CurrentInstance", ",", "\"\<Instrument/Term\>\""}], "]"}], 
+      ")"}], "&&", "\[IndentingNewLine]", "\t", 
+     RowBox[{"(", 
+      RowBox[{"Known", "[", 
+       RowBox[{
+       "CurrentInstance", ",", "\"\<Market Model/Accrued Interest\>\""}], 
+       "]"}], ")"}], "&&", "\[IndentingNewLine]", "\t", 
+     RowBox[{"(", 
+      RowBox[{"Known", "[", 
+       RowBox[{
+       "CurrentInstance", ",", "\"\<Instrument/Accrual Daycount Basis\>\""}], 
+       "]"}], ")"}]}], ",", "\[IndentingNewLine]", "\[IndentingNewLine]", 
+    RowBox[{
+     RowBox[{"Conclude", "[", 
+      RowBox[{
+      "CurrentInstance", ",", "\"\<Instrument/Type\>\"", ",", 
+       "\"\<Fixed Rate Bond\>\""}], "]"}], ";", "\[IndentingNewLine]", 
+     RowBox[{"Conclude", "[", 
+      RowBox[{"CurrentInstance", ",", "\"\<Instrument/Notional\>\"", ",", 
+       RowBox[{"StringJoin", "[", 
+        RowBox[{
+         RowBox[{"ToString", "[", 
+          RowBox[{"V", "[", 
+           RowBox[{"CurrentInstance", ",", "\"\<Pur Notional\>\""}], "]"}], 
+          "]"}], ",", "\"\< \>\"", ",", 
+         RowBox[{"V", "[", 
+          RowBox[{"CurrentInstance", ",", "\"\<Instrument/Currency\>\""}], 
+          "]"}]}], "]"}]}], "]"}], ";", "\[IndentingNewLine]", 
+     RowBox[{"Conclude", "[", 
+      RowBox[{"CurrentInstance", ",", "\"\<Instrument/Coupon Rate\>\"", ",", 
+       RowBox[{"StringJoin", "[", 
+        RowBox[{
+         RowBox[{"ToString", "[", 
+          RowBox[{"V", "[", 
+           RowBox[{"CurrentInstance", ",", "\"\<Pur Coupon\>\""}], "]"}], 
+          "]"}], ",", "\"\<% \>\"", ",", 
+         RowBox[{"V", "[", 
+          RowBox[{"CurrentInstance", ",", "\"\<Compounding Frequency\>\""}], 
+          "]"}], ",", "\"\< \>\"", ",", 
+         RowBox[{"V", "[", 
+          RowBox[{"CurrentInstance", ",", "\"\<Day Counting Convention\>\""}],
+           "]"}]}], "]"}]}], "]"}], ";", "\[IndentingNewLine]", 
+     RowBox[{"Conclude", "[", 
+      RowBox[{
+      "CurrentInstance", ",", "\"\<Instrument/State Procedure\>\"", ",", 
+       "\"\<@cash flow generator\>\""}], "]"}], ";", "\[IndentingNewLine]", 
+     RowBox[{"Conclude", "[", 
+      RowBox[{
+      "CurrentInstance", ",", "\"\<Instrument/Coupon Generation Method\>\"", 
+       ",", "\"\<Backward\>\""}], "]"}], ";", "\[IndentingNewLine]", 
+     RowBox[{"Conclude", "[", 
+      RowBox[{
+      "CurrentInstance", ",", "\"\<Instrument/Business Day Rule\>\"", ",", 
+       "\n", "\t\t", 
+       RowBox[{"StringJoin", "[", 
+        RowBox[{"\"\<Regular Following 0-day(Cal\>\"", ",", 
+         RowBox[{"V", "[", 
+          RowBox[{"CurrentInstance", ",", "\"\<Issuer Currency\>\""}], "]"}], 
+         ",", "\"\<)\>\""}], "]"}]}], "]"}], ";", "\[IndentingNewLine]", 
+     RowBox[{"Conclude", "[", 
+      RowBox[{"CurrentInstance", ",", "\"\<Instrument/Spot Price\>\"", ",", 
+       RowBox[{"StringJoin", "[", 
+        RowBox[{"\"\<98.8281 \>\"", ",", 
+         RowBox[{"V", "[", 
+          RowBox[{"CurrentInstance", ",", "\"\<Instrument/Currency\>\""}], 
+          "]"}]}], "]"}]}], "]"}], ";", "\[IndentingNewLine]", 
+     RowBox[{"Conclude", "[", 
+      RowBox[{
+      "CurrentInstance", ",", "\"\<Instrument/Trade day Rule\>\"", ",", 
+       RowBox[{"StringJoin", "[", 
+        RowBox[{"\"\<Regular Following \>\"", ",", 
+         RowBox[{"ToString", "[", 
+          RowBox[{"V", "[", 
+           RowBox[{"CurrentInstance", ",", "\"\<Trade Day Number\>\""}], 
+           "]"}], "]"}], ",", "\n", "\t\t\t\t\t\t\t\t\t\t", 
+         "\"\<-day(Cal\>\"", ",", 
+         RowBox[{"V", "[", 
+          RowBox[{"CurrentInstance", ",", "\"\<Issuer Currency\>\""}], "]"}], 
+         ",", "\"\<)\>\""}], "]"}]}], "]"}], ";", "\n", "    ", 
+     RowBox[{"Conclude", "[", 
+      RowBox[{"CurrentInstance", ",", "\"\<Instrument/Repo Curve\>\"", ",", 
+       RowBox[{"StringJoin", "[", 
+        RowBox[{"\"\<IR\>\"", ",", 
+         RowBox[{"V", "[", 
+          RowBox[{"CurrentInstance", ",", "\"\<Instrument/Currency\>\""}], 
+          "]"}], ",", "\"\<-Treasury\>\""}], "]"}]}], "]"}], ";", 
+     "\[IndentingNewLine]", 
+     RowBox[{"Conclude", "[", 
+      RowBox[{
+      "CurrentInstance", ",", "\"\<Instrument/Discount Curve\>\"", ",", 
+       RowBox[{"StringJoin", "[", 
+        RowBox[{"\"\<IR\>\"", ",", 
+         RowBox[{"V", "[", 
+          RowBox[{"CurrentInstance", ",", "\"\<Instrument/Currency\>\""}], 
+          "]"}], ",", "\"\<-Treasury\>\""}], "]"}]}], "]"}], ";", 
+     "\[IndentingNewLine]", 
+     RowBox[{"Conclude", "[", 
+      RowBox[{
+      "CurrentInstance", ",", "\"\<Instrument/RiskMetrics Map Procedure\>\"", 
+       ",", "\"\<@CashFlow riskmetrics map\>\""}], "]"}], ";", 
+     "\[IndentingNewLine]", 
+     RowBox[{"Conclude", "[", 
+      RowBox[{
+      "CurrentInstance", ",", "\"\<Instrument/Spread Over Yield\>\"", ",", 
+       "\"\<@implied spread MKT(%CONT actual/365)\>\""}], "]"}], ";", 
+     "\[IndentingNewLine]", 
+     RowBox[{"Conclude", "[", 
+      RowBox[{
+      "CurrentInstance", ",", "\"\<Market Model/Type\>\"", ",", 
+       "\"\<Bond Model\>\""}], "]"}], ";", "\[IndentingNewLine]", 
+     RowBox[{"Conclude", "[", 
+      RowBox[{
+      "CurrentInstance", ",", "\"\<Market Model/Value\>\"", ",", 
+       "\"\<@clean to dirty($)\>\""}], "]"}], ";", "\[IndentingNewLine]", 
+     RowBox[{"Conclude", "[", 
+      RowBox[{
+      "CurrentInstance", ",", "\"\<Market Model/Price\>\"", ",", 
+       "\"\<@spot price($)\>\""}], "]"}], ";", "\[IndentingNewLine]", 
+     RowBox[{"Conclude", "[", 
+      RowBox[{
+      "CurrentInstance", ",", "\"\<Market Model/Spot Value\>\"", ",", 
+       "\"\<@spot value($)\>\""}], "]"}], ";", "\[IndentingNewLine]", 
+     RowBox[{"Conclude", "[", 
+      RowBox[{
+      "CurrentInstance", ",", "\"\<Market Model/Yield\>\"", ",", 
+       "\[IndentingNewLine]", "\t", 
+       RowBox[{"StringJoin", "[", 
+        RowBox[{"\"\<bond IRR from value(%\>\"", ",", 
+         RowBox[{"V", "[", 
+          RowBox[{"CurrentInstance", ",", "\"\<Compounding Frequency\>\""}], 
+          "]"}], ",", "\"\< \>\"", ",", 
+         RowBox[{"V", "[", 
+          RowBox[{"CurrentInstance", ",", "\"\<Day Counting Convention\>\""}],
+           "]"}], ",", "\"\<)\>\""}], "]"}]}], "]"}], ";", 
+     "\[IndentingNewLine]", 
+     RowBox[{"Conclude", "[", 
+      RowBox[{
+      "CurrentInstance", ",", "\"\<Theoretical Model/Type\>\"", ",", 
+       "\"\<Bond Model\>\""}], "]"}], ";", "\[IndentingNewLine]", 
+     RowBox[{"Conclude", "[", 
+      RowBox[{
+      "CurrentInstance", ",", "\"\<Theoretical Model/Value\>\"", ",", 
+       "\"\<@PV bond($)\>\""}], "]"}], ";", "\[IndentingNewLine]", 
+     RowBox[{"Conclude", "[", 
+      RowBox[{
+      "CurrentInstance", ",", "\"\<Theoretical Model/Spot Value\>\"", ",", 
+       "\"\<@spot value($)\>\""}], "]"}], ";", "\[IndentingNewLine]", 
+     RowBox[{"Conclude", "[", 
+      RowBox[{
+      "CurrentInstance", ",", "\"\<Theoretical Model/Price\>\"", ",", 
+       "\"\<@PV bond less accrued($)\>\""}], "]"}], ";", 
+     "\[IndentingNewLine]", 
+     RowBox[{"Conclude", "[", 
+      RowBox[{
+      "CurrentInstance", ",", "\"\<Theoretical Model/Accrued Interest\>\"", 
+       ",", 
+       RowBox[{"V", "[", 
+        RowBox[{
+        "CurrentInstance", ",", "\"\<Market Model/Accrued Interest\>\""}], 
+        "]"}]}], "]"}], ";", "\[IndentingNewLine]", 
+     RowBox[{"Conclude", "[", 
+      RowBox[{"CurrentInstance", ",", "\"\<Theoretical Model/Yield\>\"", ",", 
+       RowBox[{"V", "[", 
+        RowBox[{"CurrentInstance", ",", "\"\<Market Model/Yield\>\""}], 
+        "]"}]}], "]"}], ";", "\[IndentingNewLine]", 
+     RowBox[{"Conclude", "[", 
+      RowBox[{"CurrentInstance", ",", "\"\<CSV Descriptor\>\"", ",", 
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{"{", 
+          RowBox[{"\"\<Instrument\>\"", ",", 
+           RowBox[{"{", 
+            RowBox[{
+            "\"\<Name\>\"", ",", "\"\<Type\>\"", ",", "\"\<Currency\>\"", 
+             ",", "\"\<Maturity Date\>\"", ",", "\"\<Notional\>\"", ",", 
+             "\"\<Issue Date\>\"", ",", "\"\<Coupon Rate\>\"", ",", "\n", 
+             "\t     ", "\"\<Fixed Coupon Date\>\"", ",", 
+             "\"\<State Procedure\>\"", ",", "\"\<Term\>\"", ",", 
+             "\"\<Accrual Daycount Basis\>\"", ",", "\[IndentingNewLine]", 
+             "\"\<Coupon Generation Method\>\"", ",", 
+             "\"\<Business Day Rule\>\"", ",", "\"\<Spot Price\>\"", ",", 
+             "\[IndentingNewLine]", "\"\<Trade day Rule\>\"", ",", 
+             "\"\<Repo Curve\>\"", ",", "\"\<Discount Curve\>\"", ",", 
+             "\[IndentingNewLine]", "\"\<RiskMetrics Map Procedure\>\"", ",", 
+             "\"\<Spread Over Yield\>\"", ",", "\"\<Theoretical Model*\>\"", 
+             ",", "\"\<Market Model*\>\""}], "}"}]}], "}"}], ",", 
+         "\[IndentingNewLine]", 
+         RowBox[{"{", 
+          RowBox[{"\"\<Market Model\>\"", ",", 
+           RowBox[{"{", 
+            RowBox[{
+            "\"\<Name\>\"", ",", "\"\<Value\>\"", ",", "\"\<Price\>\"", ",", 
+             "\"\<Spot Value\>\"", ",", "\"\<Yield\>\"", ",", 
+             "\"\<Accrued Interest\>\""}], "}"}]}], "}"}], ",", 
+         "\[IndentingNewLine]", 
+         RowBox[{"{", 
+          RowBox[{"\"\<Theoretical Model\>\"", ",", 
+           RowBox[{"{", 
+            RowBox[{
+            "\"\<Name\>\"", ",", "\"\<Value\>\"", ",", "\"\<Price\>\"", ",", 
+             "\"\<Spot Value\>\"", ",", "\"\<Yield\>\"", ",", 
+             "\"\<Accrued Interest\>\""}], "}"}]}], "}"}]}], "}"}]}], "]"}]}],
+     ",", "\[IndentingNewLine]", "\"\<Risk Watch Spec\>\"", ",", 
+    "\"\<Consultation\>\""}], "]"}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{"\t"}]}], "Input",
+ InitializationCell->True,
+ CellChangeTimes->{{3.483364411168001*^9, 3.4833644227774506`*^9}, {
+  3.483364665357128*^9, 3.4833646757634444`*^9}}],
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"AddBackwardRule", "[", 
+   RowBox[{
+   "\"\<Rule Treasury Bill 1\>\"", ",", " ", "\[IndentingNewLine]", "\t", 
+    RowBox[{"(", 
+     RowBox[{
+      RowBox[{"V", "[", 
+       RowBox[{"CurrentInstance", ",", "\"\<Class Of Instrument\>\""}], "]"}],
+       "\[Equal]", "\"\<Treasury Bill\>\""}], ")"}], ",", 
+    "\[IndentingNewLine]", "\"\<Treasury Bond Convention\>\"", ",", 
+    "\[IndentingNewLine]", "\"\<Bond Convention\>\"", ",", 
+    "\"\<Consultation\>\""}], "]"}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"AddBackwardRule", "[", 
+   RowBox[{
+   "\"\<Rule  Treasury Bill 2\>\"", ",", " ", "\[IndentingNewLine]", "\t", 
+    RowBox[{
+     RowBox[{"(", 
+      RowBox[{
+       RowBox[{"V", "[", 
+        RowBox[{"CurrentInstance", ",", "\"\<Class Of Instrument\>\""}], 
+        "]"}], "\[Equal]", "\"\<Treasury Bill\>\""}], ")"}], "&&", 
+     "\[IndentingNewLine]", "\t", 
+     RowBox[{"(", 
+      RowBox[{"Known", "[", 
+       RowBox[{"CurrentInstance", ",", "\"\<Instrument/Currency\>\""}], "]"}],
+       ")"}], "&&", "\[IndentingNewLine]", "\t", 
+     RowBox[{"(", 
+      RowBox[{"Known", "[", 
+       RowBox[{"CurrentInstance", ",", "\"\<Instrument/Maturity Date\>\""}], 
+       "]"}], ")"}], "&&", "\[IndentingNewLine]", "\t", 
+     RowBox[{"(", 
+      RowBox[{"Known", "[", 
+       RowBox[{"CurrentInstance", ",", "\"\<Instrument/Issue Date\>\""}], 
+       "]"}], ")"}], "&&", "\[IndentingNewLine]", "\t", 
+     RowBox[{"(", 
+      RowBox[{"Known", "[", 
+       RowBox[{
+       "CurrentInstance", ",", "\"\<Instrument/Fixed Coupon Date\>\""}], 
+       "]"}], ")"}], "&&", "\[IndentingNewLine]", "\t", 
+     RowBox[{"(", 
+      RowBox[{"Known", "[", 
+       RowBox[{"CurrentInstance", ",", "\"\<Instrument/Term\>\""}], "]"}], 
+      ")"}], "&&", "\[IndentingNewLine]", "\t", 
+     RowBox[{"(", 
+      RowBox[{"Known", "[", 
+       RowBox[{
+       "CurrentInstance", ",", "\"\<Market Model/Accrued Interest\>\""}], 
+       "]"}], ")"}], "&&", "\[IndentingNewLine]", "\t", 
+     RowBox[{"(", 
+      RowBox[{"Known", "[", 
+       RowBox[{"CurrentInstance", ",", "\"\<Market Model/Price\>\""}], "]"}], 
+      ")"}]}], ",", "\[IndentingNewLine]", "\[IndentingNewLine]", 
+    RowBox[{
+     RowBox[{"Conclude", "[", 
+      RowBox[{
+      "CurrentInstance", ",", "\"\<Instrument/Type\>\"", ",", 
+       "\"\<Treasury Bill\>\""}], "]"}], ";", "\[IndentingNewLine]", 
+     RowBox[{"Conclude", "[", 
+      RowBox[{"CurrentInstance", ",", "\"\<Instrument/Notional\>\"", ",", 
+       RowBox[{"StringJoin", "[", 
+        RowBox[{
+         RowBox[{"ToString", "[", 
+          RowBox[{"V", "[", 
+           RowBox[{"CurrentInstance", ",", "\"\<Pur Notional\>\""}], "]"}], 
+          "]"}], ",", "\"\< \>\"", ",", 
+         RowBox[{"V", "[", 
+          RowBox[{"CurrentInstance", ",", "\"\<Instrument/Currency\>\""}], 
+          "]"}]}], "]"}]}], "]"}], ";", "\[IndentingNewLine]", 
+     RowBox[{"Conclude", "[", 
+      RowBox[{"CurrentInstance", ",", "\"\<Instrument/Coupon Rate\>\"", ",", 
+       RowBox[{"StringJoin", "[", 
+        RowBox[{
+         RowBox[{"ToString", "[", 
+          RowBox[{"V", "[", 
+           RowBox[{"CurrentInstance", ",", "\"\<Pur Coupon\>\""}], "]"}], 
+          "]"}], ",", "\"\<% \>\"", ",", 
+         RowBox[{"V", "[", 
+          RowBox[{"CurrentInstance", ",", "\"\<Compounding Frequency\>\""}], 
+          "]"}], ",", "\"\< \>\"", ",", 
+         RowBox[{"V", "[", 
+          RowBox[{"CurrentInstance", ",", "\"\<Day Counting Convention\>\""}],
+           "]"}]}], "]"}]}], "]"}], ";", "\[IndentingNewLine]", 
+     RowBox[{"Conclude", "[", 
+      RowBox[{
+      "CurrentInstance", ",", "\"\<Instrument/State Procedure\>\"", ",", 
+       "\"\<@cash flow generator\>\""}], "]"}], ";", "\[IndentingNewLine]", 
+     RowBox[{"Conclude", "[", 
+      RowBox[{
+      "CurrentInstance", ",", "\"\<Instrument/Coupon Generation Method\>\"", 
+       ",", "\"\<Backward\>\""}], "]"}], ";", "\[IndentingNewLine]", 
+     RowBox[{"Conclude", "[", 
+      RowBox[{
+      "CurrentInstance", ",", "\"\<Instrument/Business Day Rule\>\"", ",", 
+       "\n", "\t\t", 
+       RowBox[{"StringJoin", "[", 
+        RowBox[{"\"\<Regular Following 0-day(Cal\>\"", ",", 
+         RowBox[{"V", "[", 
+          RowBox[{"CurrentInstance", ",", "\"\<Issuer Currency\>\""}], "]"}], 
+         ",", "\"\<)\>\""}], "]"}]}], "]"}], ";", "\[IndentingNewLine]", 
+     RowBox[{"Conclude", "[", 
+      RowBox[{"CurrentInstance", ",", "\"\<Instrument/Spot Price\>\"", ",", 
+       RowBox[{"StringJoin", "[", 
+        RowBox[{"\"\<98.8281 \>\"", ",", 
+         RowBox[{"V", "[", 
+          RowBox[{"CurrentInstance", ",", "\"\<Instrument/Currency\>\""}], 
+          "]"}]}], "]"}]}], "]"}], ";", "\[IndentingNewLine]", 
+     RowBox[{"Conclude", "[", 
+      RowBox[{
+      "CurrentInstance", ",", "\"\<Instrument/Trade day Rule\>\"", ",", 
+       RowBox[{"StringJoin", "[", 
+        RowBox[{"\"\<Regular Following \>\"", ",", 
+         RowBox[{"ToString", "[", 
+          RowBox[{"V", "[", 
+           RowBox[{"CurrentInstance", ",", "\"\<Trade Day Number\>\""}], 
+           "]"}], "]"}], ",", "\n", "\t\t\t\t\t\t\t\t\t\t", 
+         "\"\<-day(Cal\>\"", ",", 
+         RowBox[{"V", "[", 
+          RowBox[{"CurrentInstance", ",", "\"\<Issuer Currency\>\""}], "]"}], 
+         ",", "\"\<)\>\""}], "]"}]}], "]"}], ";", "\n", "    ", 
+     RowBox[{"Conclude", "[", 
+      RowBox[{"CurrentInstance", ",", "\"\<Instrument/Repo Curve\>\"", ",", 
+       RowBox[{"StringJoin", "[", 
+        RowBox[{"\"\<IR\>\"", ",", 
+         RowBox[{"V", "[", 
+          RowBox[{"CurrentInstance", ",", "\"\<Instrument/Currency\>\""}], 
+          "]"}], ",", "\"\<-Treasury\>\""}], "]"}]}], "]"}], ";", 
+     "\[IndentingNewLine]", 
+     RowBox[{"Conclude", "[", 
+      RowBox[{
+      "CurrentInstance", ",", "\"\<Instrument/Discount Curve\>\"", ",", 
+       RowBox[{"StringJoin", "[", 
+        RowBox[{"\"\<IR\>\"", ",", 
+         RowBox[{"V", "[", 
+          RowBox[{"CurrentInstance", ",", "\"\<Instrument/Currency\>\""}], 
+          "]"}], ",", "\"\<-Treasury\>\""}], "]"}]}], "]"}], ";", 
+     "\[IndentingNewLine]", 
+     RowBox[{"Conclude", "[", 
+      RowBox[{
+      "CurrentInstance", ",", "\"\<Instrument/RiskMetrics Map Procedure\>\"", 
+       ",", "\"\<@CashFlow riskmetrics map\>\""}], "]"}], ";", 
+     "\[IndentingNewLine]", 
+     RowBox[{"Conclude", "[", 
+      RowBox[{
+      "CurrentInstance", ",", "\"\<Instrument/Spread Over Yield\>\"", ",", 
+       "\"\<@implied spread MKT(%CONT actual/365)\>\""}], "]"}], ";", 
+     "\[IndentingNewLine]", 
+     RowBox[{"Conclude", "[", 
+      RowBox[{
+      "CurrentInstance", ",", "\"\<Market Model/Type\>\"", ",", 
+       "\"\<Bond Model\>\""}], "]"}], ";", "\[IndentingNewLine]", 
+     RowBox[{"Conclude", "[", 
+      RowBox[{
+      "CurrentInstance", ",", "\"\<Market Model/Value\>\"", ",", 
+       "\"\<@clean to dirty($)\>\""}], "]"}], ";", "\[IndentingNewLine]", 
+     RowBox[{"Conclude", "[", 
+      RowBox[{
+      "CurrentInstance", ",", "\"\<Market Model/Spot Value\>\"", ",", 
+       "\"\<@spot value($)\>\""}], "]"}], ";", "\[IndentingNewLine]", 
+     RowBox[{"Conclude", "[", 
+      RowBox[{
+      "CurrentInstance", ",", "\"\<Market Model/Yield\>\"", ",", 
+       "\[IndentingNewLine]", "\t", 
+       RowBox[{"StringJoin", "[", 
+        RowBox[{"\"\<bond IRR from value(%\>\"", ",", 
+         RowBox[{"V", "[", 
+          RowBox[{"CurrentInstance", ",", "\"\<Compounding Frequency\>\""}], 
+          "]"}], ",", "\"\< \>\"", ",", 
+         RowBox[{"V", "[", 
+          RowBox[{"CurrentInstance", ",", "\"\<Day Counting Convention\>\""}],
+           "]"}], ",", "\"\<)\>\""}], "]"}]}], "]"}], ";", 
+     "\[IndentingNewLine]", 
+     RowBox[{"Conclude", "[", 
+      RowBox[{
+      "CurrentInstance", ",", "\"\<Theoretical Model/Type\>\"", ",", 
+       "\"\<Bond Model\>\""}], "]"}], ";", "\[IndentingNewLine]", 
+     RowBox[{"Conclude", "[", 
+      RowBox[{
+      "CurrentInstance", ",", "\"\<Theoretical Model/Value\>\"", ",", 
+       "\"\<@PV bond($)\>\""}], "]"}], ";", "\[IndentingNewLine]", 
+     RowBox[{"Conclude", "[", 
+      RowBox[{
+      "CurrentInstance", ",", "\"\<Theoretical Model/Spot Value\>\"", ",", 
+       "\"\<@spot value($)\>\""}], "]"}], ";", "\[IndentingNewLine]", 
+     RowBox[{"Conclude", "[", 
+      RowBox[{
+      "CurrentInstance", ",", "\"\<Theoretical Model/Price\>\"", ",", 
+       "\"\<@PV bond less accrued($)\>\""}], "]"}], ";", 
+     "\[IndentingNewLine]", 
+     RowBox[{"Conclude", "[", 
+      RowBox[{
+      "CurrentInstance", ",", "\"\<Theoretical Model/Accrued Interest\>\"", 
+       ",", 
+       RowBox[{"V", "[", 
+        RowBox[{
+        "CurrentInstance", ",", "\"\<Market Model/Accrued Interest\>\""}], 
+        "]"}]}], "]"}], ";", "\[IndentingNewLine]", 
+     RowBox[{"Conclude", "[", 
+      RowBox[{"CurrentInstance", ",", "\"\<Theoretical Model/Yield\>\"", ",", 
+       RowBox[{"V", "[", 
+        RowBox[{"CurrentInstance", ",", "\"\<Market Model/Yield\>\""}], 
+        "]"}]}], "]"}], ";", "\[IndentingNewLine]", 
+     RowBox[{"Conclude", "[", 
+      RowBox[{"CurrentInstance", ",", "\"\<CSV Descriptor\>\"", ",", 
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{"{", 
+          RowBox[{"\"\<Instrument\>\"", ",", 
+           RowBox[{"{", 
+            RowBox[{
+            "\"\<Name\>\"", ",", "\"\<Type\>\"", ",", "\"\<Currency\>\"", 
+             ",", "\"\<Maturity Date\>\"", ",", "\"\<Notional\>\"", ",", 
+             "\"\<Issue Date\>\"", ",", "\"\<Coupon Rate\>\"", ",", "\n", 
+             "\t     ", "\"\<Fixed Coupon Date\>\"", ",", 
+             "\"\<State Procedure\>\"", ",", "\"\<Term\>\"", ",", 
+             "\[IndentingNewLine]", "\"\<Coupon Generation Method\>\"", ",", 
+             "\"\<Business Day Rule\>\"", ",", "\"\<Spot Price\>\"", ",", 
+             "\[IndentingNewLine]", "\"\<Trade day Rule\>\"", ",", 
+             "\"\<Repo Curve\>\"", ",", "\"\<Discount Curve\>\"", ",", 
+             "\[IndentingNewLine]", "\"\<RiskMetrics Map Procedure\>\"", ",", 
+             "\"\<Spread Over Yield\>\"", ",", "\"\<Theoretical Model*\>\"", 
+             ",", "\"\<Market Model*\>\""}], "}"}]}], "}"}], ",", 
+         "\[IndentingNewLine]", 
+         RowBox[{"{", 
+          RowBox[{"\"\<Market Model\>\"", ",", 
+           RowBox[{"{", 
+            RowBox[{
+            "\"\<Name\>\"", ",", "\"\<Value\>\"", ",", "\"\<Price\>\"", ",", 
+             "\"\<Spot Value\>\"", ",", "\"\<Yield\>\"", ",", 
+             "\"\<Accrued Interest\>\""}], "}"}]}], "}"}], ",", 
+         "\[IndentingNewLine]", 
+         RowBox[{"{", 
+          RowBox[{"\"\<Theoretical Model\>\"", ",", 
+           RowBox[{"{", 
+            RowBox[{
+            "\"\<Name\>\"", ",", "\"\<Value\>\"", ",", "\"\<Price\>\"", ",", 
+             "\"\<Spot value\>\"", ",", "\"\<Yield\>\"", ",", 
+             "\"\<Accrued Interest\>\""}], "}"}]}], "}"}]}], "}"}]}], "]"}]}],
+     ",", "\[IndentingNewLine]", "\"\<Risk Watch Spec\>\"", ",", 
+    "\"\<Consultation\>\""}], "]"}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{"\t"}]}], "Input",
+ InitializationCell->True,
+ CellChangeTimes->{{3.4833644232930784`*^9, 3.4833644342306485`*^9}, {
+  3.4833646759196954`*^9, 3.483364684966628*^9}}],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"AddBackwardRule", "[", 
+   RowBox[{"\"\<Theoretical Model 1\>\"", ",", "\[IndentingNewLine]", "\t", 
+    RowBox[{"Known", "[", 
+     RowBox[{"CurrentInstance", ",", "\"\<Theoretical Model/Name\>\""}], 
+     "]"}], ",", "\[IndentingNewLine]", "\t", 
+    RowBox[{"V", "[", 
+     RowBox[{"CurrentInstance", ",", "\"\<Theoretical Model/Name\>\""}], 
+     "]"}], ",", "\[IndentingNewLine]", 
+    "\"\<Instrument/Theoretical Model*\>\"", ",", "\"\<Consultation\>\""}], 
+   "]"}], ";"}]], "Input",
+ InitializationCell->True,
+ CellChangeTimes->{{3.4833644346525264`*^9, 3.4833644360431604`*^9}, {
+  3.483364685122879*^9, 3.483364685576007*^9}}],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"AddBackwardRule", "[", 
+   RowBox[{"\"\<Market Model 1\>\"", ",", "\[IndentingNewLine]", "\t", 
+    RowBox[{"Known", "[", 
+     RowBox[{"CurrentInstance", ",", "\"\<Market Model/Name\>\""}], "]"}], 
+    ",", "\[IndentingNewLine]", "\t", 
+    RowBox[{"V", "[", 
+     RowBox[{"CurrentInstance", ",", "\"\<Market Model/Name\>\""}], "]"}], 
+    ",", "\[IndentingNewLine]", "\"\<Instrument/Market Model*\>\"", ",", 
+    "\"\<Consultation\>\""}], "]"}], ";"}]], "Input",
+ InitializationCell->True,
+ CellChangeTimes->{{3.4833644362462864`*^9, 3.4833644366994143`*^9}, {
+  3.483364685841634*^9, 3.4833646868572655`*^9}}],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"AddBackwardRule", "[", 
+   RowBox[{
+   "\"\<Rule Market Model/Price 1\>\"", ",", " ", "\[IndentingNewLine]", "\t", 
+    RowBox[{"(", 
+     RowBox[{
+      RowBox[{"V", "[", 
+       RowBox[{"CurrentInstance", ",", "\"\<Price Quoted in Yield\>\""}], 
+       "]"}], "\[Equal]", "\"\<No\>\""}], ")"}], ",", "\[IndentingNewLine]", 
+    "\"\<@spot price($)\>\"", ",", "\[IndentingNewLine]", 
+    "\"\<Market Model/Price\>\"", ",", "\"\<Consultation\>\""}], "]"}], 
+  ";"}]], "Input",
+ InitializationCell->True,
+ CellChangeTimes->{
+  3.4833638091485233`*^9, {3.4833644369337907`*^9, 3.483364437168167*^9}, {
+   3.483364687388519*^9, 3.483364687747896*^9}}],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"AddBackwardRule", "[", 
+   RowBox[{
+   "\"\<Rule Market Model/Price 2\>\"", ",", " ", "\[IndentingNewLine]", "\t", 
+    RowBox[{"(", 
+     RowBox[{
+      RowBox[{"V", "[", 
+       RowBox[{"CurrentInstance", ",", "\"\<Price Quoted in Yield\>\""}], 
+       "]"}], "\[Equal]", "\"\<Yes\>\""}], ")"}], ",", "\[IndentingNewLine]", 
+    "\"\<@price given yield($)\>\"", ",", "\[IndentingNewLine]", 
+    "\"\<Market Model/Price\>\"", ",", "\"\<Consultation\>\""}], "]"}], 
+  ";"}]], "Input",
+ InitializationCell->True,
+ CellChangeTimes->{
+  3.4833638091485233`*^9, {3.483364437433794*^9, 3.483364437699421*^9}, {
+   3.483364688044773*^9, 3.4833646882947745`*^9}}],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"AddBackwardRule", "[", 
+   RowBox[{
+   "\"\<Price Quoted in Yield 1\>\"", ",", " ", "\[IndentingNewLine]", "\t", 
+    RowBox[{
+     RowBox[{"(", 
+      RowBox[{"BelongTo", "[", 
+       RowBox[{
+        RowBox[{"V", "[", 
+         RowBox[{"CurrentInstance", ",", "\"\<Issuer Currency\>\""}], "]"}], 
+        ",", 
+        RowBox[{"{", "\"\<USD\>\"", "}"}]}], "]"}], ")"}], "&&", 
+     "\[IndentingNewLine]", "\t", 
+     RowBox[{"(", 
+      RowBox[{
+       RowBox[{"V", "[", 
+        RowBox[{"CurrentInstance", ",", "\"\<Bond Convention\>\""}], "]"}], 
+       "\[Equal]", "\"\<Treasury Bill Convention\>\""}], ")"}]}], ",", 
+    "\[IndentingNewLine]", "\"\<Yes\>\"", ",", "\[IndentingNewLine]", 
+    "\"\<Price Quoted in Yield\>\"", ",", "\"\<Consultation\>\""}], "]"}], 
+  ";"}]], "Input",
+ InitializationCell->True,
+ CellChangeTimes->{3.4833638158673162`*^9}],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"AddBackwardRule", "[", 
+   RowBox[{
+   "\"\<Price Quoted in Yield 2\>\"", ",", " ", "\[IndentingNewLine]", "\t", 
+    RowBox[{
+     RowBox[{"(", 
+      RowBox[{"BelongTo", "[", 
+       RowBox[{
+        RowBox[{"V", "[", 
+         RowBox[{"CurrentInstance", ",", "\"\<Issuer Currency\>\""}], "]"}], 
+        ",", 
+        RowBox[{"{", "\"\<HKD\>\"", "}"}]}], "]"}], ")"}], "&&", 
+     "\[IndentingNewLine]", "\t", 
+     RowBox[{"(", 
+      RowBox[{
+       RowBox[{"V", "[", 
+        RowBox[{"CurrentInstance", ",", "\"\<Bond Convention\>\""}], "]"}], 
+       "\[Equal]", "\"\<Treasury Bill Convention\>\""}], ")"}]}], ",", 
+    "\[IndentingNewLine]", "\"\<No\>\"", ",", "\[IndentingNewLine]", 
+    "\"\<Price Quoted in Yield\>\"", ",", "\"\<Consultation\>\""}], "]"}], 
+  ";"}]], "Input",
+ InitializationCell->True,
+ CellChangeTimes->{3.4833638158673162`*^9}],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"Print", "[", "\"\<end of KB\>\"", "]"}], ";"}]], "Input",
+ InitializationCell->True,
+ CellChangeTimes->{{3.483363721772964*^9, 3.4833637321636553`*^9}}],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"CSVDescriptor", "[", 
+   RowBox[{"flag_", ",", "filename_", ",", "listofrecords_", ",", "ins_"}], 
+   "]"}], ":=", 
+  RowBox[{"Module", "[", 
+   RowBox[{
+    RowBox[{"{", 
+     RowBox[{"records", ",", 
+      RowBox[{"nbrecords", "=", 
+       RowBox[{"Length", "[", "listofrecords", "]"}]}], ",", "rtype", ",", 
+      "rattlist", ",", "nbatt", ",", 
+      RowBox[{"str", "=", "\"\<\>\""}], ",", "i", ",", "j"}], "}"}], ",", 
+    "\[IndentingNewLine]", 
+    RowBox[{"If", "[", 
+     RowBox[{
+      RowBox[{"flag", "\[Equal]", "\"\<Yes\>\""}], ",", "\[IndentingNewLine]",
+       "\t", 
+      RowBox[{
+       RowBox[{"Do", "[", 
+        RowBox[{
+         RowBox[{
+          RowBox[{"records", "=", 
+           RowBox[{"listofrecords", "[", 
+            RowBox[{"[", "i", "]"}], "]"}]}], ";", "\[IndentingNewLine]", 
+          "\t\t", 
+          RowBox[{"rtype", "=", 
+           RowBox[{"records", "[", 
+            RowBox[{"[", "1", "]"}], "]"}]}], ";", "\[IndentingNewLine]", 
+          "\t\t", 
+          RowBox[{"rattlist", "=", 
+           RowBox[{"records", "[", 
+            RowBox[{"[", "2", "]"}], "]"}]}], ";", "\[IndentingNewLine]", 
+          "\t\t", 
+          RowBox[{"nbatt", "=", 
+           RowBox[{"Length", "[", "rattlist", "]"}]}], ";", 
+          "\[IndentingNewLine]", "\t\t", 
+          RowBox[{"str", "=", 
+           RowBox[{"str", "<>", 
+            RowBox[{"V", "[", 
+             RowBox[{"ins", ",", 
+              RowBox[{"rtype", "<>", "\"\</\>\"", "<>", "\"\<Type\>\""}]}], 
+             "]"}], "<>", "\"\<,\>\"", "<>", 
+            RowBox[{"rattlist", "[", 
+             RowBox[{"[", "1", "]"}], "]"}]}]}], ";", "\[IndentingNewLine]", 
+          "\t", 
+          RowBox[{"Do", "[", 
+           RowBox[{
+            RowBox[{"str", "=", 
+             RowBox[{"str", "<>", "\"\<,\>\"", "<>", 
+              RowBox[{"rattlist", "[", 
+               RowBox[{"[", "j", "]"}], "]"}]}]}], ",", 
+            RowBox[{"{", 
+             RowBox[{"j", ",", "2", ",", "nbatt"}], "}"}]}], "]"}], ";", 
+          "\[IndentingNewLine]", "\t", 
+          RowBox[{"str", "=", 
+           RowBox[{"str", "<>", "\"\<\\n,\>\""}]}], ";", 
+          "\[IndentingNewLine]", "\t", 
+          RowBox[{"str", "=", 
+           RowBox[{"str", "<>", 
+            RowBox[{"V", "[", 
+             RowBox[{"ins", ",", 
+              RowBox[{"rtype", "<>", "\"\</\>\"", "<>", 
+               RowBox[{"rattlist", "[", 
+                RowBox[{"[", "1", "]"}], "]"}]}]}], "]"}]}]}], ";", 
+          "\[IndentingNewLine]", "\t", 
+          RowBox[{"Do", "[", 
+           RowBox[{
+            RowBox[{"str", "=", 
+             RowBox[{"str", "<>", "\"\<,\>\"", "<>", 
+              RowBox[{"V", "[", 
+               RowBox[{"ins", ",", 
+                RowBox[{"rtype", "<>", "\"\</\>\"", "<>", 
+                 RowBox[{"rattlist", "[", 
+                  RowBox[{"[", "j", "]"}], "]"}]}]}], "]"}]}]}], ",", 
+            RowBox[{"{", 
+             RowBox[{"j", ",", "2", ",", "nbatt"}], "}"}]}], "]"}], ";", 
+          "\[IndentingNewLine]", "\t   ", 
+          RowBox[{"str", "=", 
+           RowBox[{"str", "<>", "\"\<\\n\>\""}]}], ";"}], 
+         "\[IndentingNewLine]", ",", 
+         RowBox[{"{", 
+          RowBox[{"i", ",", "1", ",", "nbrecords"}], "}"}]}], "]"}], ";", 
+       "\[IndentingNewLine]", 
+       RowBox[{"Print", "[", 
+        RowBox[{"\"\<exporting\>\"", ",", "str"}], "]"}], ";", 
+       "\[IndentingNewLine]", 
+       RowBox[{"Export", "[", 
+        RowBox[{"filename", ",", "str", ",", "\"\<Text\>\""}], "]"}]}]}], 
+     "]"}]}], "]"}]}]], "Input",
+ InitializationCell->True,
+ CellChangeTimes->{{3.4833637792108316`*^9, 3.483363781601472*^9}, {
+   3.4833644379494224`*^9, 3.483364438199424*^9}, {3.483364688497901*^9, 
+   3.4833646899510355`*^9}, 3.4833670189503155`*^9}]
+},
+AutoGeneratedPackage->Automatic,
+WindowSize->{1256, 962},
+WindowMargins->{{Automatic, -2557}, {Automatic, -18}},
+PrintingCopies->1,
+PrintingPageRange->{Automatic, Automatic},
+ShowSelection->True,
+FrontEndVersion->"7.0 for Microsoft Windows (32-bit) (February 18, 2009)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[545, 20, 1031, 24, 172, "Input",
+ InitializationCell->True],
+Cell[1579, 46, 199, 5, 52, "Input",
+ InitializationCell->True],
+Cell[1781, 53, 6125, 152, 552, "Input",
+ InitializationCell->True],
+Cell[7909, 207, 7463, 191, 732, "Input",
+ InitializationCell->True],
+Cell[15375, 400, 1925, 48, 272, "Input",
+ InitializationCell->True],
+Cell[17303, 450, 312, 10, 31, "Input",
+ InitializationCell->True],
+Cell[17618, 462, 11615, 252, 1012, "Input",
+ InitializationCell->True],
+Cell[29236, 716, 6341, 156, 732, "Input",
+ InitializationCell->True],
+Cell[35580, 874, 4944, 117, 552, "Input",
+ InitializationCell->True],
+Cell[40527, 993, 4963, 125, 612, "Input",
+ InitializationCell->True],
+Cell[45493, 1120, 2333, 54, 292, "Input",
+ InitializationCell->True],
+Cell[47829, 1176, 4507, 109, 512, "Input",
+ InitializationCell->True],
+Cell[52339, 1287, 3908, 97, 432, "Input",
+ InitializationCell->True],
+Cell[56250, 1386, 2013, 50, 232, "Input",
+ InitializationCell->True],
+Cell[58266, 1438, 10912, 237, 932, "Input",
+ InitializationCell->True],
+Cell[69181, 1677, 11198, 244, 992, "Input",
+ InitializationCell->True],
+Cell[80382, 1923, 671, 14, 92, "Input",
+ InitializationCell->True],
+Cell[81056, 1939, 647, 13, 92, "Input",
+ InitializationCell->True],
+Cell[81706, 1954, 683, 16, 92, "Input",
+ InitializationCell->True],
+Cell[82392, 1972, 691, 16, 92, "Input",
+ InitializationCell->True],
+Cell[83086, 1990, 894, 23, 112, "Input",
+ InitializationCell->True],
+Cell[83983, 2015, 893, 23, 112, "Input",
+ InitializationCell->True],
+Cell[84879, 2040, 187, 4, 31, "Input",
+ InitializationCell->True],
+Cell[85069, 2046, 3820, 93, 312, "Input",
+ InitializationCell->True]
+}
+]
+*)
+
+(* End of internal cache information *)

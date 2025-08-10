@@ -1,0 +1,753 @@
+(* Content-type: application/mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 7.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       145,          7]
+NotebookDataLength[     30004,        744]
+NotebookOptionsPosition[     28429,        688]
+NotebookOutlinePosition[     28812,        704]
+CellTagsIndexPosition[     28769,        701]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell["Base de connaissance pour le codage de payoff EDA23", "Title",
+ CellChangeTimes->{{3.48342867922688*^9, 3.4834286988986287`*^9}}],
+
+Cell[CellGroupData[{
+
+Cell["Elements Generique", "Subsection",
+ CellChangeTimes->{{3.483428721882857*^9, 3.4834287278515687`*^9}}],
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"DirectorySave", "=", 
+   RowBox[{"Directory", "[", "]"}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{
+  "SetDirectory", "[", 
+   "\"\<C:\\\\Users\\\\ocroissant\\\\Documents\\\\Desk_EDA23\\\\\
+ExpertSystemEDA23\\\\PayOffConstruction\\\\Base\>\"", "]"}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"Get", "[", "\"\<Creations.m\>\"", "]"}], ";"}], "\n", 
+ RowBox[{
+  RowBox[{"Get", "[", "\"\<InferenceEngine.m\>\"", "]"}], ";"}], "\n", 
+ RowBox[{
+  RowBox[{"Get", "[", "\"\<DisplayFunctions.m\>\"", "]"}], ";"}], "\n", 
+ RowBox[{
+  RowBox[{"Get", "[", "\"\<Why.m\>\"", "]"}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"SetDirectory", "[", "DirectorySave", "]"}], ";"}]}], "Input",
+ InitializationCell->True,
+ CellChangeTimes->{{3.4833633470361905`*^9, 3.4833633485362005`*^9}, {
+   3.483367606469701*^9, 3.4833676209072933`*^9}, {3.4833676852670803`*^9, 
+   3.4833676917358713`*^9}, {3.483367783220832*^9, 3.483367802408455*^9}, 
+   3.4833761914621444`*^9, {3.5498867660510993`*^9, 3.5498867797479873`*^9}, {
+   3.549886848811631*^9, 3.5498868511204457`*^9}}],
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"NewKb", "[", "]"}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"AddClass", "[", "\"\<Consultation\>\"", "]"}], ";"}]}], "Input",
+ InitializationCell->True],
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"AddAttribute", "[", 
+   RowBox[{"\"\<Consultation\>\"", ",", "\"\<Main\>\""}], "]"}], ";"}], "\n", 
+ RowBox[{
+  RowBox[{"AddAttribute", "[", 
+   RowBox[{"\"\<Consultation\>\"", ",", "\"\<Sophis PayOff\>\""}], "]"}], 
+  ";"}], "\n", 
+ RowBox[{
+  RowBox[{"AddAttribute", "[", 
+   RowBox[{
+   "\"\<Consultation\>\"", ",", "\"\<Want create a PayOff File\>\"", ",", 
+    RowBox[{
+    "question", "\[Rule]", "\"\<Do you want to create a PayOff file ?\>\""}], 
+    ",", "\[IndentingNewLine]", "\t\t", 
+    RowBox[{"legalvalues", "\[Rule]", 
+     RowBox[{"{", 
+      RowBox[{"\"\<Yes\>\"", ",", "\"\<No\>\""}], "}"}]}]}], "]"}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"AddAttribute", "[", 
+   RowBox[{"\"\<Consultation\>\"", ",", "\"\<PayOff Descriptor\>\""}], "]"}], 
+  ";"}], "\n", 
+ RowBox[{
+  RowBox[{"AddAttribute", "[", 
+   RowBox[{"\"\<Consultation\>\"", ",", "\"\<PayOff File Name\>\"", ",", 
+    RowBox[{
+    "question", "\[Rule]", "\"\<What is the Name of the PayOff File ?\>\""}], 
+    ",", 
+    RowBox[{"initialvalue", "\[Rule]", "\"\<OutPayOff.CSV\>\""}]}], "]"}], 
+  ";"}]}], "Input",
+ InitializationCell->True,
+ CellChangeTimes->{{3.483368328364946*^9, 3.4833684372562675`*^9}, 
+   3.483370204955081*^9, 3.483370252799137*^9, {3.4833703474091177`*^9, 
+   3.4833703734561596`*^9}, {3.4833706466766577`*^9, 
+   3.4833706587704854`*^9}, {3.4833713084777684`*^9, 3.483371311712164*^9}, 
+   3.483372556126378*^9, {3.483428088247864*^9, 3.4834281012008233`*^9}}],
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"AddAttribute", "[", 
+   RowBox[{"\"\<Consultation\>\"", ",", "\"\<Clause/Min\>\""}], "]"}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"AddAttribute", "[", 
+   RowBox[{"\"\<Consultation\>\"", ",", "\"\<Clause/Max\>\""}], "]"}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"AddAttribute", "[", 
+   RowBox[{"\"\<Consultation\>\"", ",", "\"\<Clause/Gearing\>\""}], "]"}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"AddAttribute", "[", 
+   RowBox[{"\"\<Consultation\>\"", ",", "\"\<Clause/Cloture\>\""}], "]"}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"AddAttribute", "[", 
+   RowBox[{"\"\<Consultation\>\"", ",", "\"\<Clause/GearingHyb\>\""}], "]"}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"AddAttribute", "[", 
+   RowBox[{"\"\<Consultation\>\"", ",", "\"\<PayOff Type\>\"", ",", 
+    RowBox[{"legalvalues", "\[Rule]", 
+     RowBox[{"{", 
+      RowBox[{
+      "\"\<NoSwap_Autocall_CMSTrigger\>\"", ",", 
+       "\"\<AutoCall_CMS_InArrear_FinalPDI\>\""}], "}"}]}]}], "]"}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"AddAttribute", "[", 
+   RowBox[{"\"\<Consultation\>\"", ",", "\"\<Coupon Type\>\"", ",", 
+    RowBox[{"question", "\[Rule]", "\"\<What is the Coupon Type ?\>\""}], ",", 
+    RowBox[{"legalvalues", "\[Rule]", 
+     RowBox[{"{", "\"\<CMS avec Barriere\>\"", "}"}]}]}], "]"}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"AddAttribute", "[", 
+   RowBox[{"\"\<Consultation\>\"", ",", "\"\<Payment Currency\>\"", ",", 
+    RowBox[{"question", "\[Rule]", "\"\<What is the Payment Currency ?\>\""}],
+     ",", "\[IndentingNewLine]", "\t", 
+    RowBox[{"legalvalues", "\[Rule]", 
+     RowBox[{"{", 
+      RowBox[{
+      "\"\<USD\>\"", ",", "\"\<PTE\>\"", ",", "\"\<FRF\>\"", ",", 
+       "\"\<DKK\>\"", ",", "\"\<DEM\>\"", ",", "\"\<CHF\>\"", ",", 
+       "\"\<BEF\>\"", ",", "\"\<SEK\>\"", ",", "\"\<NLG\>\"", ",", 
+       "\"\<ESP\>\"", ",", "\"\<NZD\>\"", ",", "\"\<HKD\>\"", ",", 
+       "\"\<GBP\>\"", ",", "\"\<CAD\>\"", ",", "\"\<AUD\>\"", ",", 
+       "\"\<FIM\>\"", ",", "\"\<ITL\>\"", ",", "\"\<XEU\>\""}], "}"}]}]}], 
+   "]"}], ";"}]}], "Input",
+ InitializationCell->True,
+ CellChangeTimes->{{3.48337213293617*^9, 3.483372235280575*^9}, {
+  3.4833726867834644`*^9, 3.4833727001898003`*^9}, {3.48337274859636*^9, 
+  3.483372787237232*^9}, {3.483372854722039*^9, 3.483372871675273*^9}, {
+  3.483375524801628*^9, 3.4833755619424906`*^9}, {3.4833755921145587`*^9, 
+  3.483375594052071*^9}, {3.483376230196767*^9, 3.483376239228075*^9}, {
+  3.483426739511428*^9, 3.4834267410574317`*^9}, {3.483428550024582*^9, 
+  3.483428551540197*^9}, {3.4834300965771837`*^9, 3.483430097155305*^9}, {
+  3.483430193779687*^9, 3.483430200451519*^9}, {3.483430245123108*^9, 
+  3.483430254935545*^9}}],
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"AddAttribute", "[", 
+   RowBox[{"\"\<Consultation\>\"", ",", "\"\<Number of coupons\>\"", ",", 
+    RowBox[{"question", "\[Rule]", "\"\<Number of Coupons ?\>\""}]}], "]"}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"AddAttribute", "[", 
+   RowBox[{
+   "\"\<Consultation\>\"", ",", "\"\<Periods between coupons\>\"", ",", 
+    RowBox[{"question", "\[Rule]", "\"\<Periods between coupons ?\>\""}]}], 
+   "]"}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"AddAttribute", "[", 
+   RowBox[{"\"\<Consultation\>\"", ",", "\"\<Starting Date\>\"", ",", 
+    RowBox[{"question", "\[Rule]", "\"\<Starting Date ?\>\""}]}], "]"}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"AddAttribute", "[", 
+   RowBox[{"\"\<Consultation\>\"", ",", "\"\<Coupon Date List\>\""}], "]"}], 
+  ";"}]}], "Input",
+ InitializationCell->True,
+ CellChangeTimes->{{3.48337329550611*^9, 3.483373332787599*^9}, {
+  3.4833733746003666`*^9, 3.483373479522913*^9}, {3.4833739830573854`*^9, 
+  3.4833740103700604`*^9}}],
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"AddAttribute", "[", 
+   RowBox[{"\"\<Consultation\>\"", ",", "\"\<Clause Name List\>\""}], "]"}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"AddAttribute", "[", 
+   RowBox[{"\"\<Consultation\>\"", ",", "\"\<Clause Matrix\>\""}], "]"}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"AddAttribute", "[", 
+   RowBox[{"\"\<Consultation\>\"", ",", "\"\<Clause List\>\""}], "]"}], 
+  ";"}]}], "Input",
+ InitializationCell->True,
+ CellChangeTimes->{{3.483426758828667*^9, 3.4834267883120527`*^9}, {
+  3.483427590538252*^9, 3.48342759435063*^9}}],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{
+   RowBox[{"AddBackwardRule", "[", 
+    RowBox[{
+    "\"\<Main determination 1\>\"", ",", "\[IndentingNewLine]", "\t\t  ", 
+     RowBox[{
+      RowBox[{"(", 
+       RowBox[{"Known", "[", 
+        RowBox[{"CurrentInstance", ",", "\"\<Clause List\>\""}], "]"}], ")"}],
+       "&&", " ", 
+      RowBox[{"(", 
+       RowBox[{"Known", "[", 
+        RowBox[{"CurrentInstance", ",", "\"\<PayOff Type\>\""}], "]"}], ")"}],
+       "&&", "\[IndentingNewLine]", "\t\t", 
+      RowBox[{"(", 
+       RowBox[{
+        RowBox[{"V", "[", 
+         RowBox[{
+         "CurrentInstance", ",", "\"\<Want create a PayOff File\>\""}], "]"}],
+         "==", "\"\<Yes\>\""}], ")"}]}], ",", "\[IndentingNewLine]", "\t", 
+     RowBox[{
+      RowBox[{"PayOffDescriptor", "[", 
+       RowBox[{
+        RowBox[{"V", "[", 
+         RowBox[{
+         "CurrentInstance", ",", "\"\<Want create a PayOff File\>\""}], "]"}],
+         ",", 
+        RowBox[{"V", "[", 
+         RowBox[{"CurrentInstance", ",", "\"\<PayOff File Name\>\""}], "]"}], 
+        ",", 
+        RowBox[{"V", "[", 
+         RowBox[{"CurrentInstance", ",", "\"\<Clause Name List\>\""}], "]"}], 
+        ",", 
+        RowBox[{"V", "[", 
+         RowBox[{"CurrentInstance", ",", "\"\<Clause Matrix\>\""}], "]"}], 
+        ",", 
+        RowBox[{"V", "[", 
+         RowBox[{"CurrentInstance", ",", "\"\<PayOff Type\>\""}], "]"}]}], 
+       "]"}], ";", "\"\<Done\>\""}], ",", "\[IndentingNewLine]", "\t", 
+     "\"\<Main\>\"", ",", "\"\<Consultation\>\""}], "]"}], ";"}], 
+  "\n"}]], "Input",
+ InitializationCell->True,
+ CellChangeTimes->{{3.48337541886345*^9, 3.483375512364048*^9}, {
+  3.483426895772997*^9, 3.483426936623743*^9}, {3.483427660161024*^9, 
+  3.483427668067021*^9}}],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{
+   RowBox[{"AddBackwardRule", "[", 
+    RowBox[{
+    "\"\<Main determination 2\>\"", ",", "\[IndentingNewLine]", "\t\t  ", 
+     RowBox[{
+      RowBox[{"(", 
+       RowBox[{"Known", "[", 
+        RowBox[{"CurrentInstance", ",", "\"\<Clause List\>\""}], "]"}], ")"}],
+       "&&", " ", 
+      RowBox[{"(", 
+       RowBox[{"Known", "[", 
+        RowBox[{"CurrentInstance", ",", "\"\<PayOff Type\>\""}], "]"}], ")"}],
+       "&&", "\[IndentingNewLine]", "\t\t", 
+      RowBox[{"(", 
+       RowBox[{
+        RowBox[{"V", "[", 
+         RowBox[{
+         "CurrentInstance", ",", "\"\<Want create a PayOff File\>\""}], "]"}],
+         "==", "\"\<No\>\""}], ")"}]}], ",", "\[IndentingNewLine]", "\t", 
+     "\"\<Good Bye\>\"", ",", "\[IndentingNewLine]", "\t", "\"\<Main\>\"", 
+     ",", "\"\<Consultation\>\""}], "]"}], ";"}], 
+  "\[IndentingNewLine]"}]], "Input",
+ InitializationCell->True,
+ CellChangeTimes->{{3.483368400709159*^9, 3.483368407162325*^9}, {
+   3.4833684405062885`*^9, 3.4833684512876077`*^9}, {3.4833690267600403`*^9, 
+   3.4833690286506777`*^9}, {3.4833753048002195`*^9, 3.483375306565856*^9}, 
+   3.483376512370448*^9}],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"PayOffDescriptor", "[", 
+   RowBox[{
+   "flag_", ",", "filename_", ",", "ClauseNameList_", ",", "ClauseMatrix_", 
+    ",", "payoff_"}], "]"}], ":=", 
+  RowBox[{"Module", "[", 
+   RowBox[{
+    RowBox[{"{", 
+     RowBox[{"records", ",", 
+      RowBox[{"nbclause", "=", 
+       RowBox[{"Length", "[", "ClauseNameList", "]"}]}], ",", 
+      RowBox[{"nbdate", "=", 
+       RowBox[{"Length", "[", "ClauseMatrix", "]"}]}], ",", 
+      RowBox[{"str", "=", "\"\<\>\""}], ",", "i", ",", "j"}], "}"}], ",", 
+    "\[IndentingNewLine]", 
+    RowBox[{"If", "[", 
+     RowBox[{
+      RowBox[{"flag", "\[Equal]", "\"\<Yes\>\""}], ",", "\[IndentingNewLine]", 
+      RowBox[{
+       RowBox[{"str", "=", 
+        RowBox[{"ClauseNameList", "[", 
+         RowBox[{"[", "1", "]"}], "]"}]}], ";", "\[IndentingNewLine]", 
+       RowBox[{"Do", "[", 
+        RowBox[{
+         RowBox[{"str", "=", 
+          RowBox[{"str", "<>", "\"\<,\>\"", "<>", 
+           RowBox[{"ClauseNameList", "[", 
+            RowBox[{"[", "j", "]"}], "]"}]}]}], ",", 
+         RowBox[{"{", 
+          RowBox[{"j", ",", "2", ",", "nbclause"}], "}"}]}], "]"}], ";", 
+       "\[IndentingNewLine]", 
+       RowBox[{"Do", "[", 
+        RowBox[{
+         RowBox[{
+          RowBox[{"str", "=", 
+           RowBox[{"str", "<>", "\"\<\\n\>\""}]}], ";", "\[IndentingNewLine]", 
+          RowBox[{"str", "=", 
+           RowBox[{"str", "<>", 
+            RowBox[{"ClauseMatrix", "[", 
+             RowBox[{"[", 
+              RowBox[{"i", ",", "1"}], "]"}], "]"}]}]}], ";", 
+          "\[IndentingNewLine]", 
+          RowBox[{"Do", "[", 
+           RowBox[{
+            RowBox[{"str", "=", 
+             RowBox[{"str", "<>", "\"\<,\>\"", "<>", 
+              RowBox[{"ClauseMatrix", "[", 
+               RowBox[{"[", 
+                RowBox[{"i", ",", "j"}], "]"}], "]"}]}]}], ",", 
+            RowBox[{"{", 
+             RowBox[{"j", ",", "2", ",", "nbclause"}], "}"}]}], "]"}], ";"}], 
+         "\[IndentingNewLine]", ",", 
+         RowBox[{"{", 
+          RowBox[{"i", ",", "1", ",", "nbdate"}], "}"}]}], "]"}], ";", 
+       "\[IndentingNewLine]", 
+       RowBox[{"Print", "[", 
+        RowBox[{"\"\<exporting \\n\>\"", ",", "str"}], "]"}], ";", 
+       "\[IndentingNewLine]", 
+       RowBox[{"Export", "[", 
+        RowBox[{"filename", ",", "str", ",", "\"\<Text\>\""}], "]"}]}]}], 
+     "]"}]}], "]"}]}]], "Input",
+ InitializationCell->True,
+ CellChangeTimes->{{3.4833637792108316`*^9, 3.483363781601472*^9}, {
+   3.4833644379494224`*^9, 3.483364438199424*^9}, {3.483364688497901*^9, 
+   3.4833646899510355`*^9}, 3.4833670189503155`*^9, 3.483369033603834*^9, {
+   3.4833751365803933`*^9, 3.4833751916432457`*^9}, {3.4833757869751806`*^9, 
+   3.4833757992252593`*^9}, {3.4833758896477127`*^9, 3.483375927835457*^9}, {
+   3.4833760611644354`*^9, 3.4833760672582245`*^9}, {3.4833761414305744`*^9, 
+   3.4833761591025624`*^9}, {3.4834270421170826`*^9, 3.48342713287916*^9}, 
+   3.483427218294233*^9, {3.4834272521353836`*^9, 3.4834274642297935`*^9}, {
+   3.48342795496832*^9, 3.483427956843296*^9}}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Generation de la liste de date pour les clause", "Subsection",
+ CellChangeTimes->{{3.483428998052964*^9, 3.4834290085528975`*^9}}],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"AddBackwardRule", "[", 
+   RowBox[{"\"\<Rule Clause Date Generation\>\"", ",", "\[IndentingNewLine]", 
+    RowBox[{
+     RowBox[{"(", 
+      RowBox[{
+       RowBox[{"V", "[", 
+        RowBox[{"CurrentInstance", ",", "\"\<Coupon Type\>\""}], "]"}], 
+       "\[Equal]", "\"\<CMS avec Barriere\>\""}], ")"}], "&&", 
+     "\[IndentingNewLine]", "\t", 
+     RowBox[{"(", 
+      RowBox[{"Known", "[", 
+       RowBox[{"CurrentInstance", ",", "\"\<Number of coupons\>\""}], "]"}], 
+      ")"}], "&&", "\[IndentingNewLine]", "\t", 
+     RowBox[{"(", 
+      RowBox[{"Known", "[", 
+       RowBox[{"CurrentInstance", ",", "\"\<Periods between coupons\>\""}], 
+       "]"}], ")"}], "&&", "\[IndentingNewLine]", "\t", 
+     RowBox[{"(", 
+      RowBox[{"Known", "[", 
+       RowBox[{"CurrentInstance", ",", "\"\<Starting Date\>\""}], "]"}], 
+      ")"}]}], ",", "\[IndentingNewLine]", 
+    RowBox[{"Map", "[", 
+     RowBox[{
+      RowBox[{
+       RowBox[{"(", 
+        RowBox[{"V", "[", 
+         RowBox[{"CurrentInstance", ",", "\"\<Starting Date\>\""}], "]"}], 
+        ")"}], "&"}], ",", 
+      RowBox[{"Range", "[", 
+       RowBox[{"ToNumber", "[", 
+        RowBox[{"V", "[", 
+         RowBox[{"CurrentInstance", ",", "\"\<Number of coupons\>\""}], "]"}],
+         "]"}], "]"}]}], "]"}], ",", "\[IndentingNewLine]", 
+    "\"\<Coupon Date List\>\"", ",", "\"\<Consultation\>\""}], "]"}], 
+  ";"}]], "Input",
+ InitializationCell->True,
+ CellChangeTimes->{{3.4833732008648796`*^9, 3.4833732407401347`*^9}, {
+  3.483373595929908*^9, 3.483373605289343*^9}, {3.483373688836753*^9, 
+  3.4833737090087566`*^9}, {3.483374023213893*^9, 3.4833741430584097`*^9}, {
+  3.483374272496738*^9, 3.4833742830436807`*^9}, {3.483374685296255*^9, 
+  3.483374692171299*^9}, {3.483377931707657*^9, 3.4833779642859907`*^9}, {
+  3.483378491445614*^9, 3.483378497695654*^9}, {3.4834289443033085`*^9, 
+  3.4834289771624727`*^9}, {3.4834290147872324`*^9, 3.483429016834094*^9}}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Rule NoSwap_Autocall _CMSTrigger", "Subsection"],
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"AddAttribute", "[", 
+   RowBox[{"\"\<Consultation\>\"", ",", "\"\<BarrierDown\>\"", ",", 
+    RowBox[{"question", "\[Rule]", "\"\<BarrierDown ?\>\""}]}], "]"}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"AddAttribute", "[", 
+   RowBox[{"\"\<Consultation\>\"", ",", "\"\<BarrierUp\>\"", ",", 
+    RowBox[{"question", "\[Rule]", "\"\<BarrierUp ?\>\""}]}], "]"}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"AddAttribute", "[", 
+   RowBox[{"\"\<Consultation\>\"", ",", "\"\<Spread\>\"", ",", 
+    RowBox[{"question", "\[Rule]", "\"\<Spread ?\>\""}]}], "]"}], 
+  ";"}]}], "Input",
+ InitializationCell->True],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"AddBackwardRule", "[", 
+   RowBox[{
+   "\"\<Rule NoSwap_Autocall_CMSTrigger\>\"", ",", "\[IndentingNewLine]", 
+    "\t", 
+    RowBox[{
+     RowBox[{"(", 
+      RowBox[{
+       RowBox[{"V", "[", 
+        RowBox[{"CurrentInstance", ",", "\"\<Coupon Type\>\""}], "]"}], 
+       "\[Equal]", "\"\<CMS avec Barriere\>\""}], ")"}], "&&", 
+     "\[IndentingNewLine]", "\t", 
+     RowBox[{"(", 
+      RowBox[{"Known", "[", 
+       RowBox[{"CurrentInstance", ",", "\"\<Coupon Date List\>\""}], "]"}], 
+      ")"}]}], ",", "\[IndentingNewLine]", 
+    RowBox[{
+     RowBox[{"Conclude", "[", 
+      RowBox[{
+      "CurrentInstance", ",", "\"\<PayOff Type\>\"", ",", 
+       "\"\<NoSwap_Autocall_CMSTrigger\>\""}], "]"}], ";", 
+     "\[IndentingNewLine]", 
+     RowBox[{"Conclude", "[", 
+      RowBox[{"CurrentInstance", ",", "\"\<Clause/Min\>\"", ",", 
+       RowBox[{"V", "[", 
+        RowBox[{"CurrentInstance", ",", "\"\<BarrierDown\>\""}], "]"}]}], 
+      "]"}], ";", "\[IndentingNewLine]", 
+     RowBox[{"Conclude", "[", 
+      RowBox[{"CurrentInstance", ",", "\"\<Clause/Max\>\"", ",", 
+       RowBox[{"V", "[", 
+        RowBox[{"CurrentInstance", ",", "\"\<BarrierUp\>\""}], "]"}]}], "]"}],
+      ";", "\[IndentingNewLine]", 
+     RowBox[{"Conclude", "[", 
+      RowBox[{"CurrentInstance", ",", "\"\<Clause/Gearing\>\"", ",", 
+       RowBox[{"V", "[", 
+        RowBox[{"CurrentInstance", ",", "\"\<Spread\>\""}], "]"}]}], "]"}], 
+     ";", "\[IndentingNewLine]", 
+     RowBox[{"Conclude", "[", 
+      RowBox[{"CurrentInstance", ",", "\"\<Clause Name List\>\"", ",", 
+       RowBox[{"{", "\[IndentingNewLine]", 
+        RowBox[{
+        "\"\<Payer\>\"", ",", "\[IndentingNewLine]", "\"\<Min\>\"", ",", 
+         "\[IndentingNewLine]", "\"\<Max\>\"", ",", "\[IndentingNewLine]", 
+         "\"\<Gearing\>\""}], "\[IndentingNewLine]", "}"}]}], "]"}], ";", 
+     "\[IndentingNewLine]", 
+     RowBox[{"Conclude", "[", 
+      RowBox[{"CurrentInstance", ",", "\"\<Clause Matrix\>\"", ",", 
+       RowBox[{"Map", "[", 
+        RowBox[{
+         RowBox[{
+          RowBox[{"(", 
+           RowBox[{"{", "\[IndentingNewLine]", 
+            RowBox[{"#", ",", "\[IndentingNewLine]", 
+             RowBox[{"ToString", "[", 
+              RowBox[{"V", "[", 
+               RowBox[{"CurrentInstance", ",", "\"\<Clause/Min\>\""}], "]"}], 
+              "]"}], ",", "\[IndentingNewLine]", 
+             RowBox[{"ToString", "[", 
+              RowBox[{"V", "[", 
+               RowBox[{"CurrentInstance", ",", "\"\<Clause/Max\>\""}], "]"}], 
+              "]"}], ",", "\[IndentingNewLine]", 
+             RowBox[{"ToString", "[", 
+              RowBox[{"V", "[", 
+               RowBox[{"CurrentInstance", ",", "\"\<Clause/Gearing\>\""}], 
+               "]"}], "]"}]}], "\[IndentingNewLine]", "}"}], ")"}], "&"}], 
+         ",", 
+         RowBox[{"V", "[", 
+          RowBox[{"CurrentInstance", ",", "\"\<Coupon Date List\>\""}], 
+          "]"}]}], "]"}]}], "]"}]}], ",", "\[IndentingNewLine]", 
+    "\"\<Clause List\>\"", ",", "\"\<Consultation\>\""}], "]"}], 
+  ";"}]], "Input",
+ InitializationCell->True,
+ CellChangeTimes->{{3.483364369948987*^9, 3.483364396027279*^9}, {
+   3.4833646490601482`*^9, 3.4833646573883266`*^9}, {3.4833712365398083`*^9, 
+   3.4833713218684793`*^9}, 3.483371414322196*^9, {3.483371684417674*^9, 
+   3.483371780090162*^9}, {3.4833718601687994`*^9, 3.48337204537311*^9}, {
+   3.4833722949215813`*^9, 3.4833722955309606`*^9}, {3.4833723294843025`*^9, 
+   3.4833723386718616`*^9}, {3.4833723963441057`*^9, 
+   3.4833724477819347`*^9}, {3.483374587186252*^9, 3.4833745928737884`*^9}, {
+   3.483374724234004*^9, 3.4833747674374056`*^9}, {3.4833748097189264`*^9, 
+   3.4833748474691677`*^9}, {3.4833748990476227`*^9, 3.483374959063632*^9}, 
+   3.4833750223921623`*^9, 3.4833753948789215`*^9, {3.48337563522421*^9, 
+   3.483375676865101*^9}, {3.4833757112090707`*^9, 3.4833757224747677`*^9}, {
+   3.4834265873159423`*^9, 3.4834266240452447`*^9}, {3.4834266836522803`*^9, 
+   3.4834267285800877`*^9}, {3.4834267929812965`*^9, 3.4834268705751953`*^9}, 
+   3.483427848094688*^9, 3.4834279075001774`*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Rule AutoCall_CMS_InArrear_FinalPDI", "Subsection",
+ CellChangeTimes->{{3.4834291405676775`*^9, 3.4834291633331566`*^9}}],
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"AddAttribute", "[", 
+   RowBox[{
+   "\"\<Consultation\>\"", ",", 
+    "\"\<AutoCall_CMS_InArrear_FinalPDI/BarrierDown\>\"", ",", 
+    RowBox[{"question", "\[Rule]", "\"\<BarrierDown ?\>\""}]}], "]"}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"AddAttribute", "[", 
+   RowBox[{
+   "\"\<Consultation\>\"", ",", 
+    "\"\<AutoCall_CMS_InArrear_FinalPDI/BarrierUp\>\"", ",", 
+    RowBox[{"question", "\[Rule]", "\"\<BarrierUp ?\>\""}]}], "]"}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"AddAttribute", "[", 
+   RowBox[{
+   "\"\<Consultation\>\"", ",", 
+    "\"\<AutoCall_CMS_InArrear_FinalPDI/SpreadCMS\>\"", ",", 
+    RowBox[{"question", "\[Rule]", "\"\<SpreadCMS ?\>\""}]}], "]"}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"AddAttribute", "[", 
+   RowBox[{
+   "\"\<Consultation\>\"", ",", 
+    "\"\<AutoCall_CMS_InArrear_FinalPDI/Fix Coupon\>\"", ",", 
+    RowBox[{"question", "\[Rule]", "\"\<Fix Coupon ?\>\""}]}], "]"}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"AddAttribute", "[", 
+   RowBox[{
+   "\"\<Consultation\>\"", ",", 
+    "\"\<AutoCall_CMS_InArrear_FinalPDI/Gearing\>\"", ",", 
+    RowBox[{"question", "\[Rule]", "\"\<Gearing ?\>\""}]}], "]"}], 
+  ";"}]}], "Input",
+ InitializationCell->True,
+ CellChangeTimes->{{3.4834292406451616`*^9, 3.483429363613125*^9}}],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"AddBackwardRule", "[", 
+   RowBox[{
+   "\"\<Rule AutoCall_CMS_InArrear_FinalPDI\>\"", ",", "\[IndentingNewLine]", 
+    "\t", 
+    RowBox[{
+     RowBox[{"(", 
+      RowBox[{
+       RowBox[{"V", "[", 
+        RowBox[{"CurrentInstance", ",", "\"\<PayOff Type\>\""}], "]"}], 
+       "\[Equal]", "\"\<AutoCall_CMS_InArrear_FinalPDI\>\""}], ")"}], "&&", 
+     "\[IndentingNewLine]", "\t", 
+     RowBox[{"(", 
+      RowBox[{"Known", "[", 
+       RowBox[{"CurrentInstance", ",", "\"\<Coupon Date List\>\""}], "]"}], 
+      ")"}]}], ",", "\[IndentingNewLine]", 
+    RowBox[{
+     RowBox[{"Conclude", "[", 
+      RowBox[{
+      "CurrentInstance", ",", "\"\<PayOff Type\>\"", ",", 
+       "\"\<AutoCall_CMS_InArrear_FinalPDI\>\""}], "]"}], ";", 
+     "\[IndentingNewLine]", 
+     RowBox[{"Conclude", "[", 
+      RowBox[{"CurrentInstance", ",", "\"\<Clause/Min\>\"", ",", 
+       RowBox[{"V", "[", 
+        RowBox[{
+        "CurrentInstance", ",", 
+         "\"\<AutoCall_CMS_InArrear_FinalPDI/BarrierDown\>\""}], "]"}]}], 
+      "]"}], ";", "\[IndentingNewLine]", 
+     RowBox[{"Conclude", "[", 
+      RowBox[{"CurrentInstance", ",", "\"\<Clause/Max\>\"", ",", 
+       RowBox[{"V", "[", 
+        RowBox[{
+        "CurrentInstance", ",", 
+         "\"\<AutoCall_CMS_InArrear_FinalPDI/BarrierUp\>\""}], "]"}]}], "]"}],
+      ";", "\[IndentingNewLine]", 
+     RowBox[{"Conclude", "[", 
+      RowBox[{"CurrentInstance", ",", "\"\<Clause/Gearing\>\"", ",", 
+       RowBox[{"V", "[", 
+        RowBox[{
+        "CurrentInstance", ",", 
+         "\"\<AutoCall_CMS_InArrear_FinalPDI/SpreadCMS\>\""}], "]"}]}], "]"}],
+      ";", "\[IndentingNewLine]", 
+     RowBox[{"Conclude", "[", 
+      RowBox[{"CurrentInstance", ",", "\"\<Clause/GearingHyb\>\"", ",", 
+       RowBox[{"V", "[", 
+        RowBox[{
+        "CurrentInstance", ",", 
+         "\"\<AutoCall_CMS_InArrear_FinalPDI/Fix Coupon\>\""}], "]"}]}], 
+      "]"}], ";", "\[IndentingNewLine]", 
+     RowBox[{"Conclude", "[", 
+      RowBox[{"CurrentInstance", ",", "\"\<Clause/Cloture\>\"", ",", 
+       RowBox[{"V", "[", 
+        RowBox[{
+        "CurrentInstance", ",", 
+         "\"\<AutoCall_CMS_InArrear_FinalPDI/Gearing\>\""}], "]"}]}], "]"}], 
+     ";", "\[IndentingNewLine]", 
+     RowBox[{"Conclude", "[", 
+      RowBox[{"CurrentInstance", ",", "\"\<Clause Name List\>\"", ",", 
+       RowBox[{"{", "\[IndentingNewLine]", 
+        RowBox[{
+        "\"\<Debut\>\"", ",", "\[IndentingNewLine]", "\"\<Fin\>\"", ",", 
+         "\[IndentingNewLine]", "\"\<ExCoupon\>\"", ",", 
+         "\[IndentingNewLine]", "\"\<Payer\>\"", ",", "\[IndentingNewLine]", 
+         "\"\<Min\>\"", ",", "\[IndentingNewLine]", "\"\<Max\>\"", ",", 
+         "\[IndentingNewLine]", "\"\<Gearing\>\"", ",", 
+         "\[IndentingNewLine]", "\"\<Cloture\>\""}], "\[IndentingNewLine]", 
+        "}"}]}], "]"}], ";", "\[IndentingNewLine]", 
+     RowBox[{"Conclude", "[", 
+      RowBox[{"CurrentInstance", ",", "\"\<Clause Matrix\>\"", ",", 
+       RowBox[{"Map", "[", 
+        RowBox[{
+         RowBox[{
+          RowBox[{"(", 
+           RowBox[{"{", "\[IndentingNewLine]", 
+            RowBox[{
+            "#", ",", "#", ",", "#", ",", "#", ",", "\[IndentingNewLine]", 
+             RowBox[{"ToString", "[", 
+              RowBox[{"V", "[", 
+               RowBox[{"CurrentInstance", ",", "\"\<Clause/Min\>\""}], "]"}], 
+              "]"}], ",", "\[IndentingNewLine]", 
+             RowBox[{"ToString", "[", 
+              RowBox[{"V", "[", 
+               RowBox[{"CurrentInstance", ",", "\"\<Clause/Max\>\""}], "]"}], 
+              "]"}], ",", "\[IndentingNewLine]", 
+             RowBox[{"ToString", "[", 
+              RowBox[{"V", "[", 
+               RowBox[{"CurrentInstance", ",", "\"\<Clause/Gearing\>\""}], 
+               "]"}], "]"}], ",", "\[IndentingNewLine]", 
+             RowBox[{"ToString", "[", 
+              RowBox[{"V", "[", 
+               RowBox[{"CurrentInstance", ",", "\"\<Clause/Cloture\>\""}], 
+               "]"}], "]"}]}], "\[IndentingNewLine]", "}"}], ")"}], "&"}], 
+         ",", 
+         RowBox[{"V", "[", 
+          RowBox[{"CurrentInstance", ",", "\"\<Coupon Date List\>\""}], 
+          "]"}]}], "]"}]}], "]"}]}], ",", "\[IndentingNewLine]", 
+    "\"\<Clause List\>\"", ",", "\"\<Consultation\>\""}], "]"}], 
+  ";"}]], "Input",
+ InitializationCell->True,
+ CellChangeTimes->{{3.483364369948987*^9, 3.483364396027279*^9}, {
+   3.4833646490601482`*^9, 3.4833646573883266`*^9}, {3.4833712365398083`*^9, 
+   3.4833713218684793`*^9}, 3.483371414322196*^9, {3.483371684417674*^9, 
+   3.483371780090162*^9}, {3.4833718601687994`*^9, 3.48337204537311*^9}, {
+   3.4833722949215813`*^9, 3.4833722955309606`*^9}, {3.4833723294843025`*^9, 
+   3.4833723386718616`*^9}, {3.4833723963441057`*^9, 
+   3.4833724477819347`*^9}, {3.483374587186252*^9, 3.4833745928737884`*^9}, {
+   3.483374724234004*^9, 3.4833747674374056`*^9}, {3.4833748097189264`*^9, 
+   3.4833748474691677`*^9}, {3.4833748990476227`*^9, 3.483374959063632*^9}, 
+   3.4833750223921623`*^9, 3.4833753948789215`*^9, {3.48337563522421*^9, 
+   3.483375676865101*^9}, {3.4833757112090707`*^9, 3.4833757224747677`*^9}, {
+   3.4834265873159423`*^9, 3.4834266240452447`*^9}, {3.4834266836522803`*^9, 
+   3.4834267285800877`*^9}, {3.4834267929812965`*^9, 3.4834268705751953`*^9}, 
+   3.483427848094688*^9, 3.4834279075001774`*^9, {3.483429386034856*^9, 
+   3.4834294089722095`*^9}, {3.4834294626749907`*^9, 3.483429565393083*^9}, {
+   3.4834296135490255`*^9, 3.4834296371113744`*^9}, {3.483429679017356*^9, 
+   3.483429693876636*^9}, {3.4834297797354617`*^9, 3.4834298054852967`*^9}, {
+   3.483430024124522*^9, 3.4834300558118196`*^9}, 3.483430451778035*^9}]
+}, Open  ]]
+}, Open  ]]
+},
+AutoGeneratedPackage->Automatic,
+WindowSize->{1220, 816},
+WindowMargins->{{Automatic, -1224}, {Automatic, -57}},
+FrontEndVersion->"8.0 for Microsoft Windows (64-bit) (February 23, 2011)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[567, 22, 135, 1, 83, "Title"],
+Cell[CellGroupData[{
+Cell[727, 27, 108, 1, 36, "Subsection"],
+Cell[838, 30, 1122, 25, 152, "Input",
+ InitializationCell->True],
+Cell[1963, 57, 199, 5, 52, "Input",
+ InitializationCell->True],
+Cell[2165, 64, 1514, 36, 132, "Input",
+ InitializationCell->True],
+Cell[3682, 102, 2814, 61, 192, "Input",
+ InitializationCell->True],
+Cell[6499, 165, 1043, 24, 92, "Input",
+ InitializationCell->True],
+Cell[7545, 191, 595, 15, 72, "Input",
+ InitializationCell->True],
+Cell[8143, 208, 1748, 45, 152, "Input",
+ InitializationCell->True],
+Cell[9894, 255, 1168, 28, 132, "Input",
+ InitializationCell->True],
+Cell[11065, 285, 3078, 71, 232, "Input",
+ InitializationCell->True]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[14180, 361, 136, 1, 36, "Subsection"],
+Cell[14319, 364, 1973, 44, 152, "Input",
+ InitializationCell->True]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[16329, 413, 54, 0, 36, "Subsection"],
+Cell[16386, 415, 662, 16, 72, "Input",
+ InitializationCell->True],
+Cell[17051, 433, 4135, 86, 412, "Input",
+ InitializationCell->True]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[21223, 524, 127, 1, 36, "Subsection"],
+Cell[21353, 527, 1358, 37, 112, "Input",
+ InitializationCell->True],
+Cell[22714, 566, 5687, 118, 552, "Input",
+ InitializationCell->True]
+}, Open  ]]
+}, Open  ]]
+}
+]
+*)
+
+(* End of internal cache information *)

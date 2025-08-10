@@ -1,0 +1,641 @@
+(* Content-type: application/mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 7.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       145,          7]
+NotebookDataLength[     21042,        631]
+NotebookOptionsPosition[     18859,        559]
+NotebookOutlinePosition[     19206,        574]
+CellTagsIndexPosition[     19163,        571]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell["AutoCall_CMS _InArrear _FinalPDI", "Subsection",
+ CellChangeTimes->{3.4834369585083065`*^9}],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"coupon", 
+   RowBox[{"(", "i", ")"}]}], "=", 
+  RowBox[{
+   RowBox[{"CMS", 
+    RowBox[{"(", "i", ")"}]}], "+", 
+   RowBox[{"spreadCMS", 
+    RowBox[{"(", "i", ")"}]}]}]}]], "Input",
+ CellChangeTimes->{{3.4834369696176105`*^9, 3.4834370118985896`*^9}, {
+  3.4834371321009455`*^9, 3.4834371330540648`*^9}, {3.483437584816798*^9, 
+  3.483437593519867*^9}}],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"ConditionCoupon", 
+   RowBox[{"(", "i", ")"}]}], ":", 
+  RowBox[{
+   RowBox[{"Perf", 
+    RowBox[{"(", "i", ")"}]}], ">", 
+   RowBox[{"BarrierDown", 
+    RowBox[{"(", "i", ")"}]}]}]}]], "Input",
+ CellChangeTimes->{{3.4834370221485243`*^9, 3.4834370617107706`*^9}, {
+   3.483437135585298*^9, 3.483437136913415*^9}, 3.48343758214494*^9}],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"coupon2", 
+   RowBox[{"(", "i", ")"}]}], "=", 
+  RowBox[{"FixCoupon", 
+   RowBox[{"(", "i", ")"}]}]}]], "Input",
+ CellChangeTimes->{{3.48343708374188*^9, 3.4834370939918146`*^9}, {
+  3.4834371390227757`*^9, 3.483437143100875*^9}, {3.483437586707411*^9, 
+  3.483437597254218*^9}}],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"coupon3", 
+   RowBox[{"(", "i", ")"}]}], "=", 
+  RowBox[{"swap", 
+   RowBox[{"(", "i", ")"}]}]}]], "Input",
+ CellChangeTimes->{{3.4834371014605165`*^9, 3.4834371133354406`*^9}, {
+  3.483437144975863*^9, 3.483437146085231*^9}, {3.4834375886292734`*^9, 
+  3.48343760086357*^9}}],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"ConditionCoupon3", 
+   RowBox[{"(", "i", ")"}]}], ":", 
+  RowBox[{
+   RowBox[{"Perf", 
+    RowBox[{"(", "i", ")"}]}], ">", 
+   RowBox[{"BarrierUp", 
+    RowBox[{"(", "i", ")"}]}]}]}]], "Input",
+ CellChangeTimes->{{3.4834371500227056`*^9, 3.4834371842256117`*^9}, 
+   3.483437603972925*^9}],
+
+Cell[BoxData[
+ RowBox[{"Callability", 
+  RowBox[{"(", "i", ")"}], " ", 
+  RowBox[{"if", "  ", ":", " ", 
+   RowBox[{
+    RowBox[{"Perf", 
+     RowBox[{"(", "i", ")"}]}], ">", 
+    RowBox[{"Barrierup", 
+     RowBox[{"(", "i", ")"}]}]}]}]}]], "Input",
+ CellChangeTimes->{{3.483438457029966*^9, 3.483438516373336*^9}}],
+
+Cell[BoxData[
+ RowBox[{"PayOffMaturity", "=", 
+  RowBox[{
+   RowBox[{"Min", "[", 
+    RowBox[{
+     RowBox[{"Perf", 
+      RowBox[{"(", "n", ")"}]}], "-", "1"}], "]"}], " ", "Gearing", 
+   RowBox[{"(", "n", ")"}]}]}]], "Input",
+ CellChangeTimes->{{3.4834388511680684`*^9, 3.4834389082458277`*^9}}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["CMS_LockIn", "Subsection",
+ CellChangeTimes->{3.4834369601957955`*^9}],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"coupon", 
+   RowBox[{"(", "i", ")"}]}], "=", 
+  RowBox[{"Max", "[", 
+   RowBox[{
+    RowBox[{
+     RowBox[{"IRIndex", 
+      RowBox[{"(", 
+       RowBox[{"i", "-", "1"}], ")"}]}], "+", 
+     RowBox[{"X", "%"}]}], ",", "0"}], "]"}]}]], "Input",
+ CellChangeTimes->{{3.483436976555066*^9, 3.483436978523803*^9}, {
+   3.483437437348992*^9, 3.483437464395694*^9}, {3.4834375565044794`*^9, 
+   3.4834375574263487`*^9}, 3.4834397753965282`*^9}],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"ConditionCoupon", 
+   RowBox[{"(", "i", ")"}]}], ":", 
+  RowBox[{
+   RowBox[{"(", 
+    RowBox[{
+     RowBox[{"\[Exists]", 
+      RowBox[{"i0", "\[LessEqual]", "i"}]}], ",", 
+     RowBox[{
+      RowBox[{"Perf", 
+       RowBox[{"(", "i0", ")"}]}], ">", 
+      RowBox[{"HlockIn", 
+       RowBox[{"(", "i0", ")"}]}]}]}], " ", ")"}], "&&", " ", 
+   RowBox[{
+    RowBox[{"Perf", 
+     RowBox[{"(", "i", ")"}]}], ">", 
+    RowBox[{"Hcoupon", 
+     RowBox[{"(", "i", ")"}]}]}]}]}]], "Input",
+ CellChangeTimes->{{3.4834370221485243`*^9, 3.48343702819536*^9}, {
+  3.4834375312858906`*^9, 3.4834375543482428`*^9}, {3.4834376083635225`*^9, 
+  3.483437635613348*^9}, {3.4834377306752396`*^9, 3.483437819127798*^9}, {
+  3.4834378635025144`*^9, 3.483437883283638*^9}, {3.4834381606412373`*^9, 
+  3.483438184312961*^9}}],
+
+Cell[BoxData[
+ RowBox[{"PayOffMaturity", "=", 
+  RowBox[{"Max", "[", 
+   RowBox[{
+    RowBox[{"typ", " ", 
+     RowBox[{"(", 
+      RowBox[{
+       RowBox[{"Perf", 
+        RowBox[{"(", "n", ")"}]}], "-", "PutStrike"}], ")"}]}], ",", "0"}], 
+   "]"}]}]], "Input",
+ CellChangeTimes->{{3.48343894077687*^9, 3.4834390079639397`*^9}}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["CMS_Call _DI", "Subsection"],
+
+Cell[BoxData[
+ RowBox[{"coupon", "=", 
+  RowBox[{
+   RowBox[{"CMS", 
+    RowBox[{"(", "i", ")"}]}], "+", "X"}]}]], "Input",
+ CellChangeTimes->{{3.4834369807269144`*^9, 3.483436982648777*^9}, {
+  3.483438208609681*^9, 3.483438217297125*^9}}],
+
+Cell[BoxData[
+ RowBox[{"ConditionCoupon", "=", 
+  RowBox[{
+   RowBox[{"(", 
+    RowBox[{
+     RowBox[{"Worst", 
+      RowBox[{"(", "i", ")"}]}], ">", "H"}], ")"}], "&&", 
+   RowBox[{"(", 
+    RowBox[{
+     RowBox[{"\[Exists]", 
+      RowBox[{"i0", "\[LessEqual]", "i"}]}], ",", 
+     RowBox[{
+      RowBox[{"Perf", 
+       RowBox[{"(", "i0", ")"}]}], ">", 
+      RowBox[{"HlockIn", 
+       RowBox[{"(", "i0", ")"}]}]}]}], " ", ")"}]}]}]], "Input",
+ CellChangeTimes->{{3.4834370221485243`*^9, 3.48343702819536*^9}, {
+  3.4834382255314474`*^9, 3.4834382317657824`*^9}, {3.483438307499673*^9, 
+  3.483438313765258*^9}}],
+
+Cell[BoxData[
+ RowBox[{"PayOffMaturity", "=", 
+  RowBox[{"Max", "[", 
+   RowBox[{
+    RowBox[{"strike", "-", 
+     RowBox[{"Worst", 
+      RowBox[{"(", "n", ")"}]}]}], ",", "0"}], "]"}]}]], "Input",
+ CellChangeTimes->{{3.4834391481817923`*^9, 3.4834391767441096`*^9}}],
+
+Cell[BoxData[
+ RowBox[{"ConditionMaturity", "=", 
+  RowBox[{"(", 
+   RowBox[{
+    RowBox[{"\[ForAll]", 
+     RowBox[{"i", "\[LessEqual]", "n"}]}], ",", 
+    RowBox[{
+     RowBox[{"Worst", 
+      RowBox[{"(", "i", ")"}]}], "<", "HDI"}]}], ")"}]}]], "Input",
+ CellChangeTimes->{{3.4834391844471855`*^9, 3.4834392207125783`*^9}, {
+  3.483439259852953*^9, 3.4834393846021547`*^9}}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["CMS_Conditional _Digit", "Subsection",
+ CellChangeTimes->{{3.4834396075382276`*^9, 3.48343962977246*^9}}],
+
+Cell[BoxData[
+ RowBox[{"coupon", "=", 
+  RowBox[{"Max", "[", 
+   RowBox[{
+    RowBox[{
+     RowBox[{"CMS", 
+      RowBox[{"(", "i", ")"}]}], "+", 
+     RowBox[{"M", 
+      RowBox[{"(", "i", ")"}]}]}], ",", 
+    RowBox[{
+     RowBox[{"X", "%"}], "-", 
+     RowBox[{"CMS", 
+      RowBox[{"(", "i", ")"}]}]}]}], "]"}]}]], "Input",
+ CellChangeTimes->{{3.4834369807269144`*^9, 3.483436982648777*^9}, {
+   3.483438208609681*^9, 3.483438217297125*^9}, {3.483439666834723*^9, 
+   3.483439722443742*^9}, 3.483440202284421*^9}],
+
+Cell[BoxData[
+ RowBox[{"ConditionCoupon", "=", 
+  RowBox[{
+   RowBox[{"(", 
+    RowBox[{
+     RowBox[{"\[Exists]", 
+      RowBox[{"i0", "\[LessEqual]", "i"}]}], ",", 
+     RowBox[{
+      RowBox[{"Perf", 
+       RowBox[{"(", "i0", ")"}]}], ">", "Up"}]}], " ", ")"}], " ", "||", " ", 
+   RowBox[{"(", 
+    RowBox[{
+     RowBox[{"Perf", 
+      RowBox[{"(", "i", ")"}]}], ">", "Down"}], ")"}], " "}]}]], "Input",
+ CellChangeTimes->{{3.4834370221485243`*^9, 3.48343702819536*^9}, {
+  3.4834382255314474`*^9, 3.4834382317657824`*^9}, {3.483438307499673*^9, 
+  3.483438313765258*^9}, {3.483439942442334*^9, 3.4834399561766214`*^9}, {
+  3.483440078722712*^9, 3.483440139316074*^9}, {3.4834401701908765`*^9, 
+  3.4834401878001385`*^9}}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["CMS_Digit _Cappe _Floore", "Subsection",
+ CellChangeTimes->{{3.483440316205567*^9, 3.4834403363773127`*^9}}],
+
+Cell[BoxData[
+ RowBox[{"coupon", "=", 
+  RowBox[{"Min", "[", 
+   RowBox[{
+    RowBox[{
+     RowBox[{"CMS", 
+      RowBox[{"(", 
+       RowBox[{"i", "-", "1"}], ")"}]}], "+", 
+     RowBox[{"X1", "%", 
+      RowBox[{"(", "i", ")"}]}]}], ",", "cap"}], "]"}]}]], "Input",
+ CellChangeTimes->{{3.4834369807269144`*^9, 3.483436982648777*^9}, {
+  3.483438208609681*^9, 3.483438217297125*^9}, {3.4834403970019245`*^9, 
+  3.483440431204831*^9}, {3.48344056650084*^9, 3.483440578563263*^9}}],
+
+Cell[BoxData[
+ RowBox[{"ConditionCoupon", "=", 
+  RowBox[{
+   RowBox[{
+    RowBox[{"Perf", 
+     RowBox[{"(", "i", ")"}]}], "<", "H2"}], " ", "&&", " ", 
+   RowBox[{
+    RowBox[{"Perf", 
+     RowBox[{"(", "i", ")"}]}], ">", 
+    RowBox[{"H1", 
+     RowBox[{"(", "i", ")"}]}]}]}]}]], "Input",
+ CellChangeTimes->{{3.4834370221485243`*^9, 3.48343702819536*^9}, {
+  3.4834382255314474`*^9, 3.4834382317657824`*^9}, {3.483438307499673*^9, 
+  3.483438313765258*^9}, {3.4834404910481977`*^9, 3.4834405282354603`*^9}}],
+
+Cell[BoxData[
+ RowBox[{"coupon", "=", 
+  RowBox[{"Max", "[", 
+   RowBox[{
+    RowBox[{
+     RowBox[{"CMS", 
+      RowBox[{"(", 
+       RowBox[{"i", "-", "1"}], ")"}]}], "+", 
+     RowBox[{"X2", "%", 
+      RowBox[{"(", "i", ")"}]}]}], ",", "floor"}], "]"}]}]], "Input",
+ CellChangeTimes->{{3.4834369807269144`*^9, 3.483436982648777*^9}, {
+  3.483438208609681*^9, 3.483438217297125*^9}, {3.4834403970019245`*^9, 
+  3.483440431204831*^9}, {3.483440558735265*^9, 3.4834405817507424`*^9}}],
+
+Cell[BoxData[
+ RowBox[{"ConditionCoupon", "=", 
+  RowBox[{
+   RowBox[{
+    RowBox[{"Perf", 
+     RowBox[{"(", "i", ")"}]}], "<", "H4"}], " ", "&&", " ", 
+   RowBox[{
+    RowBox[{"Perf", 
+     RowBox[{"(", "i", ")"}]}], ">", 
+    RowBox[{"H3", 
+     RowBox[{"(", "i", ")"}]}]}]}]}]], "Input",
+ CellChangeTimes->{{3.4834370221485243`*^9, 3.48343702819536*^9}, {
+  3.4834382255314474`*^9, 3.4834382317657824`*^9}, {3.483438307499673*^9, 
+  3.483438313765258*^9}, {3.4834404910481977`*^9, 3.4834405282354603`*^9}, {
+  3.4834405905631857`*^9, 3.4834405956412783`*^9}}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["CMS_Digit _Worst", "Subsection",
+ CellChangeTimes->{{3.483440713124902*^9, 3.4834407189061146`*^9}}],
+
+Cell[BoxData[
+ RowBox[{"coupon", "=", 
+  RowBox[{"Min", "[", 
+   RowBox[{
+    RowBox[{
+     RowBox[{"CMS", 
+      RowBox[{"(", "i", ")"}]}], "+", 
+     RowBox[{"X1", "%", 
+      RowBox[{"(", "i", ")"}]}]}], ",", "cap"}], "]"}]}]], "Input",
+ CellChangeTimes->{{3.4834369807269144`*^9, 3.483436982648777*^9}, {
+  3.483438208609681*^9, 3.483438217297125*^9}, {3.4834403970019245`*^9, 
+  3.483440431204831*^9}, {3.48344056650084*^9, 3.483440578563263*^9}, {
+  3.4834407635933285`*^9, 3.483440764437073*^9}}],
+
+Cell[BoxData[
+ RowBox[{"ConditionCoupon", "=", 
+  RowBox[{
+   RowBox[{"Worst", 
+    RowBox[{"(", "i", ")"}]}], ">", "H", " "}]}]], "Input",
+ CellChangeTimes->{{3.4834370221485243`*^9, 3.48343702819536*^9}, {
+  3.4834382255314474`*^9, 3.4834382317657824`*^9}, {3.483438307499673*^9, 
+  3.483438313765258*^9}, {3.4834404910481977`*^9, 3.4834405282354603`*^9}, {
+  3.4834408728895044`*^9, 3.4834408947018642`*^9}}],
+
+Cell[BoxData[
+ RowBox[{"coupon", "=", 
+  RowBox[{"Max", "[", 
+   RowBox[{
+    RowBox[{
+     RowBox[{"CMS", 
+      RowBox[{"(", "i", ")"}]}], "+", 
+     RowBox[{"X2", "%", 
+      RowBox[{"(", "i", ")"}]}]}], ",", "floor"}], "]"}]}]], "Input",
+ CellChangeTimes->{{3.4834369807269144`*^9, 3.483436982648777*^9}, {
+  3.483438208609681*^9, 3.483438217297125*^9}, {3.4834403970019245`*^9, 
+  3.483440431204831*^9}, {3.483440558735265*^9, 3.4834405817507424`*^9}, {
+  3.4834407657964396`*^9, 3.483440765999563*^9}}],
+
+Cell[BoxData[
+ RowBox[{"ConditionCoupon", "=", 
+  RowBox[{
+   RowBox[{"Worst", 
+    RowBox[{"(", "i", ")"}]}], "<", "H"}]}]], "Input",
+ CellChangeTimes->{{3.4834370221485243`*^9, 3.48343702819536*^9}, {
+  3.4834382255314474`*^9, 3.4834382317657824`*^9}, {3.483438307499673*^9, 
+  3.483438313765258*^9}, {3.4834404910481977`*^9, 3.4834405282354603`*^9}, {
+  3.4834405905631857`*^9, 3.4834405956412783`*^9}, {3.4834408748582416`*^9, 
+  3.483440896311229*^9}}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["CMS_Equity _Rainbow _Coupon", "Subsection",
+ CellChangeTimes->{{3.483441036029085*^9, 3.483441058169568*^9}}],
+
+Cell[BoxData[
+ RowBox[{"coupon", "=", 
+  RowBox[{"Min", "[", 
+   RowBox[{
+    RowBox[{"floor", 
+     RowBox[{"(", "i", ")"}]}], ",", 
+    RowBox[{"Max", "[", 
+     RowBox[{
+      RowBox[{
+       RowBox[{"m", 
+        RowBox[{"(", "i", ")"}], " ", "CMS", 
+        RowBox[{"(", "i", ")"}]}], "+", 
+       RowBox[{"X", " ", "Rainbow", 
+        RowBox[{"(", "i", ")"}]}], "+", 
+       RowBox[{"s", 
+        RowBox[{"(", "i", ")"}]}]}], ",", "cap"}], "]"}]}], "]"}]}]], "Input",
+ CellChangeTimes->{{3.4834369807269144`*^9, 3.483436982648777*^9}, {
+  3.483438208609681*^9, 3.483438217297125*^9}, {3.4834403970019245`*^9, 
+  3.483440431204831*^9}, {3.48344056650084*^9, 3.483440578563263*^9}, {
+  3.4834407635933285`*^9, 3.483440764437073*^9}, {3.4834412845587444`*^9, 
+  3.4834413017773843`*^9}, {3.4834413689644547`*^9, 3.4834414053548465`*^9}}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["CMS_LockIn _Cappe _Floore", "Subsection",
+ CellChangeTimes->{{3.4834423726455307`*^9, 3.4834423851142006`*^9}}],
+
+Cell[BoxData[
+ RowBox[{"coupon", "=", 
+  RowBox[{"C", 
+   RowBox[{"(", "i", ")"}]}]}]], "Input",
+ CellChangeTimes->{{3.4834369807269144`*^9, 3.483436982648777*^9}, {
+  3.483438208609681*^9, 3.483438217297125*^9}, {3.4834403970019245`*^9, 
+  3.483440431204831*^9}, {3.48344056650084*^9, 3.483440578563263*^9}, {
+  3.4834407635933285`*^9, 3.483440764437073*^9}, {3.483442751395754*^9, 
+  3.4834427528330603`*^9}}],
+
+Cell[BoxData[
+ RowBox[{"ConditionCoupon", ":", 
+  RowBox[{
+   RowBox[{
+    RowBox[{"Basket", 
+     RowBox[{"(", "i", ")"}]}], ">", 
+    RowBox[{"BUI", 
+     RowBox[{"(", "i", ")"}]}]}], "  ", "&&", " ", 
+   RowBox[{"(", 
+    RowBox[{
+     RowBox[{"\[ForAll]", 
+      RowBox[{"j", "\[LessEqual]", "i"}]}], ",", 
+     RowBox[{
+      RowBox[{"Basket", 
+       RowBox[{"(", "j", ")"}]}], "<", 
+      RowBox[{"BUI", 
+       RowBox[{"(", "j", ")"}]}]}]}], ")"}]}]}]], "Input",
+ CellChangeTimes->{{3.4834370221485243`*^9, 3.48343702819536*^9}, {
+  3.4834382255314474`*^9, 3.4834382317657824`*^9}, {3.483438307499673*^9, 
+  3.483438313765258*^9}, {3.4834404910481977`*^9, 3.4834405282354603`*^9}, {
+  3.4834408728895044`*^9, 3.4834408947018642`*^9}, {3.4834427756112485`*^9, 
+  3.4834428330878973`*^9}, {3.4834428653179407`*^9, 3.483442900110139*^9}}],
+
+Cell[BoxData[
+ RowBox[{"coupon2", "=", 
+  RowBox[{"Min", "[", 
+   RowBox[{"F", ",", 
+    RowBox[{"Max", "[", 
+     RowBox[{"C", ",", 
+      RowBox[{"(", 
+       RowBox[{
+        RowBox[{"CMS", 
+         RowBox[{"(", "i", ")"}]}], "-", 
+        RowBox[{"M", 
+         RowBox[{"(", "i", ")"}]}]}], ")"}]}], "]"}]}], "]"}]}]], "Input",
+ CellChangeTimes->{{3.4834369807269144`*^9, 3.483436982648777*^9}, {
+  3.483438208609681*^9, 3.483438217297125*^9}, {3.4834403970019245`*^9, 
+  3.483440431204831*^9}, {3.48344056650084*^9, 3.483440578563263*^9}, {
+  3.4834407635933285`*^9, 3.483440764437073*^9}, {3.483442751395754*^9, 
+  3.4834427528330603`*^9}, {3.483442950619026*^9, 3.483442999554021*^9}}],
+
+Cell[BoxData[
+ RowBox[{"ConditionCoupon2", ":", " ", 
+  RowBox[{"(", 
+   RowBox[{
+    RowBox[{"\[Exists]", 
+     RowBox[{"i0", "\[LessEqual]", "i"}]}], ",", 
+    RowBox[{
+     RowBox[{"Basket", 
+      RowBox[{"(", "i0", ")"}]}], "\[GreaterEqual]", " ", 
+     RowBox[{"BUI", 
+      RowBox[{"(", "i0", ")"}]}]}]}], ")"}]}]], "Input",
+ CellChangeTimes->{{3.4834370221485243`*^9, 3.48343702819536*^9}, {
+   3.4834382255314474`*^9, 3.4834382317657824`*^9}, {3.483438307499673*^9, 
+   3.483438313765258*^9}, {3.4834404910481977`*^9, 3.4834405282354603`*^9}, {
+   3.4834408728895044`*^9, 3.4834408947018642`*^9}, {3.4834427756112485`*^9, 
+   3.4834428330878973`*^9}, {3.4834428653179407`*^9, 3.483442900110139*^9}, 
+   3.483442953072026*^9, {3.4834430139126606`*^9, 3.483443059191592*^9}}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["CMS_LockIn _Rainbow", "Subsection",
+ CellChangeTimes->{{3.483443304758546*^9, 3.4834433132114544`*^9}}],
+
+Cell[BoxData[
+ RowBox[{"coupon", "=", 
+  RowBox[{"C", 
+   RowBox[{"(", "i", ")"}]}]}]], "Input",
+ CellChangeTimes->{{3.4834369807269144`*^9, 3.483436982648777*^9}, {
+  3.483438208609681*^9, 3.483438217297125*^9}, {3.4834403970019245`*^9, 
+  3.483440431204831*^9}, {3.48344056650084*^9, 3.483440578563263*^9}, {
+  3.4834407635933285`*^9, 3.483440764437073*^9}, {3.483442751395754*^9, 
+  3.4834427528330603`*^9}}],
+
+Cell[BoxData[
+ RowBox[{"ConditionCoupon", ":", 
+  RowBox[{
+   RowBox[{
+    RowBox[{"Rainbow", 
+     RowBox[{"(", "i", ")"}]}], ">", 
+    RowBox[{"BUI", 
+     RowBox[{"(", "i", ")"}]}]}], "  ", "&&", " ", 
+   RowBox[{"(", 
+    RowBox[{
+     RowBox[{"\[ForAll]", 
+      RowBox[{"j", "\[LessEqual]", "i"}]}], ",", 
+     RowBox[{
+      RowBox[{"Rainbow", 
+       RowBox[{"(", "j", ")"}]}], "<", 
+      RowBox[{"BUI", 
+       RowBox[{"(", "j", ")"}]}]}]}], ")"}]}]}]], "Input",
+ CellChangeTimes->{{3.4834370221485243`*^9, 3.48343702819536*^9}, {
+  3.4834382255314474`*^9, 3.4834382317657824`*^9}, {3.483438307499673*^9, 
+  3.483438313765258*^9}, {3.4834404910481977`*^9, 3.4834405282354603`*^9}, {
+  3.4834408728895044`*^9, 3.4834408947018642`*^9}, {3.4834427756112485`*^9, 
+  3.4834428330878973`*^9}, {3.4834428653179407`*^9, 3.483442900110139*^9}, {
+  3.483443404568491*^9, 3.483443411583936*^9}}],
+
+Cell[BoxData[
+ RowBox[{"coupon2", "=", 
+  RowBox[{"Min", "[", 
+   RowBox[{"F", ",", 
+    RowBox[{"Max", "[", 
+     RowBox[{"C", ",", 
+      RowBox[{"(", 
+       RowBox[{
+        RowBox[{"CMS", 
+         RowBox[{"(", "i", ")"}]}], "-", 
+        RowBox[{"M", 
+         RowBox[{"(", "i", ")"}]}]}], ")"}]}], "]"}]}], "]"}]}]], "Input",
+ CellChangeTimes->{{3.4834369807269144`*^9, 3.483436982648777*^9}, {
+  3.483438208609681*^9, 3.483438217297125*^9}, {3.4834403970019245`*^9, 
+  3.483440431204831*^9}, {3.48344056650084*^9, 3.483440578563263*^9}, {
+  3.4834407635933285`*^9, 3.483440764437073*^9}, {3.483442751395754*^9, 
+  3.4834427528330603`*^9}, {3.483442950619026*^9, 3.483442999554021*^9}}],
+
+Cell[BoxData[
+ RowBox[{"ConditionCoupon2", ":", " ", 
+  RowBox[{"(", 
+   RowBox[{
+    RowBox[{"\[Exists]", 
+     RowBox[{"i0", "\[LessEqual]", "i"}]}], ",", 
+    RowBox[{
+     RowBox[{"Rainbow", 
+      RowBox[{"(", "i0", ")"}]}], "\[GreaterEqual]", " ", 
+     RowBox[{"BUI", 
+      RowBox[{"(", "i0", ")"}]}]}]}], ")"}]}]], "Input",
+ CellChangeTimes->{{3.4834370221485243`*^9, 3.48343702819536*^9}, {
+   3.4834382255314474`*^9, 3.4834382317657824`*^9}, {3.483438307499673*^9, 
+   3.483438313765258*^9}, {3.4834404910481977`*^9, 3.4834405282354603`*^9}, {
+   3.4834408728895044`*^9, 3.4834408947018642`*^9}, {3.4834427756112485`*^9, 
+   3.4834428330878973`*^9}, {3.4834428653179407`*^9, 3.483442900110139*^9}, 
+   3.483442953072026*^9, {3.4834430139126606`*^9, 3.483443059191592*^9}, 
+   3.4834434162088175`*^9}]
+}, Open  ]]
+},
+WindowSize->{717, 792},
+WindowMargins->{{Automatic, -1071}, {Automatic, 1}},
+FrontEndVersion->"7.0 for Microsoft Windows (32-bit) (February 18, 2009)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[567, 22, 98, 1, 36, "Subsection"],
+Cell[668, 25, 389, 11, 31, "Input"],
+Cell[1060, 38, 370, 10, 31, "Input"],
+Cell[1433, 50, 314, 8, 31, "Input"],
+Cell[1750, 60, 311, 8, 31, "Input"],
+Cell[2064, 70, 324, 10, 31, "Input"],
+Cell[2391, 82, 315, 9, 31, "Input"],
+Cell[2709, 93, 297, 8, 31, "Input"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[3043, 106, 76, 1, 36, "Subsection"],
+Cell[3122, 109, 472, 13, 31, "Input"],
+Cell[3597, 124, 839, 23, 31, "Input"],
+Cell[4439, 149, 330, 10, 31, "Input"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[4806, 164, 34, 0, 36, "Subsection"],
+Cell[4843, 166, 240, 6, 31, "Input"],
+Cell[5086, 174, 616, 18, 31, "Input"],
+Cell[5705, 194, 268, 7, 31, "Input"],
+Cell[5976, 203, 377, 10, 31, "Input"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[6390, 218, 111, 1, 36, "Subsection"],
+Cell[6504, 221, 517, 15, 31, "Input"],
+Cell[7024, 238, 727, 18, 31, "Input"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[7788, 261, 114, 1, 36, "Subsection"],
+Cell[7905, 264, 480, 12, 31, "Input"],
+Cell[8388, 278, 510, 13, 31, "Input"],
+Cell[8901, 293, 485, 12, 31, "Input"],
+Cell[9389, 307, 563, 14, 31, "Input"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[9989, 326, 106, 1, 36, "Subsection"],
+Cell[10098, 329, 503, 12, 31, "Input"],
+Cell[10604, 343, 411, 8, 31, "Input"],
+Cell[11018, 353, 508, 12, 31, "Input"],
+Cell[11529, 367, 457, 9, 31, "Input"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[12023, 381, 115, 1, 36, "Subsection"],
+Cell[12141, 384, 840, 20, 31, "Input"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[13018, 409, 117, 1, 36, "Subsection"],
+Cell[13138, 412, 411, 8, 31, "Input"],
+Cell[13552, 422, 843, 21, 31, "Input"],
+Cell[14398, 445, 693, 16, 31, "Input"],
+Cell[15094, 463, 782, 16, 31, "Input"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[15913, 484, 109, 1, 36, "Subsection"],
+Cell[16025, 487, 411, 8, 31, "Input"],
+Cell[16439, 497, 894, 22, 31, "Input"],
+Cell[17336, 521, 693, 16, 31, "Input"],
+Cell[18032, 539, 811, 17, 31, "Input"]
+}, Open  ]]
+}
+]
+*)
+
+(* End of internal cache information *)
+

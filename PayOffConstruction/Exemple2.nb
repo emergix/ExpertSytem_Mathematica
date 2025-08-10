@@ -1,0 +1,781 @@
+(* Content-type: application/mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 7.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       145,          7]
+NotebookDataLength[     24228,        772]
+NotebookOptionsPosition[     20329,        657]
+NotebookOutlinePosition[     20679,        672]
+CellTagsIndexPosition[     20636,        669]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell[BoxData[
+ RowBox[{"SetDirectory", "[", 
+  "\"\<C:\\\\Documents and Settings\\\\ocroissant\\\\My \
+Documents\\\\EDA23\\\\ExpertSystemEDA23\\\\NewExpertSystem\>\"", 
+  "]"}]], "Input",
+ CellChangeTimes->{3.48336286572061*^9}],
+
+Cell[BoxData["\<\"C:\\\\Documents and Settings\\\\ocroissant\\\\My \
+Documents\\\\EDA23\\\\ExpertSystemEDA23\\\\NewExpertSystem\"\>"], "Output",
+ CellChangeTimes->{3.483362877205059*^9, 3.4833669485279903`*^9}]
+}, Open  ]],
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"Get", "[", "\"\<Creations.m\>\"", "]"}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"Get", "[", "\"\<InferenceEngine.m\>\"", "]"}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"Get", "[", "\"\<DisplayFunctions.m\>\"", "]"}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"Get", "[", "\"\<Why.m\>\"", "]"}], ";"}]}], "Input",
+ CellChangeTimes->{{3.4833633995521517`*^9, 3.4833634003490314`*^9}, {
+  3.483363430411724*^9, 3.4833634309273524`*^9}}],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"Get", "[", "\"\<RWSpecsKB.m\>\"", "]"}], ";"}]], "Input",
+ CellChangeTimes->{{3.4833634498337235`*^9, 3.4833634803339186`*^9}}],
+
+Cell[BoxData["\<\"end of KB\"\>"], "Print",
+ CellChangeTimes->{3.4833645062154846`*^9, 3.4833647310762987`*^9, 
+  3.48336695241864*^9}]
+}, Open  ]],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"TraceReasoning1", "=", "False"}], ";", 
+  RowBox[{"TraceReasoning", "=", "False"}], ";"}]], "Input"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"cc", "=", 
+   RowBox[{"AddInstance", "[", "\"\<Consultation\>\"", "]"}]}], 
+  ";"}]], "Input"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"V", "[", 
+  RowBox[{"cc", ",", "\"\<Main\>\""}], "]"}]], "Input"],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"LookUpAttribute: Non existent attribute: \"\>", 
+   "\[InvisibleSpace]", "\<\"Instrument//Type\"\>"}],
+  SequenceForm[
+  "LookUpAttribute: Non existent attribute: ", "Instrument//Type"],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.48336697895006*^9}],
+
+Cell[BoxData["$Aborted"], "Output",
+ CellChangeTimes->{3.4833648017017508`*^9, 3.4833648406394997`*^9, 
+  3.48336697895006*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"How", "[", 
+  RowBox[{"\"\<Main\>\"", ",", "\"\<Consultation<1>\>\""}], "]"}]], "Input"],
+
+Cell[BoxData["False"], "Output",
+ CellChangeTimes->{{3.4833648520458226`*^9, 3.4833648543427124`*^9}, 
+   3.483365006906189*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"ShowSRE", "[", "]"}]], "Input"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"SuccedeedRuleEvent : \"\>", "\[InvisibleSpace]", "1"}],
+  SequenceForm["SuccedeedRuleEvent : ", 1],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.483364856014598*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"BackwardRule = \"\>", 
+   "\[InvisibleSpace]", "\<\"Rule Treasury Bond 1\"\>"}],
+  SequenceForm["BackwardRule = ", "Rule Treasury Bond 1"],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.483364856014598*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"Instance = \"\>", 
+   "\[InvisibleSpace]", "\<\"Consultation<1>\"\>"}],
+  SequenceForm["Instance = ", "Consultation<1>"],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.483364856014598*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"Attribute = \"\>", 
+   "\[InvisibleSpace]", "\<\"Bond Convention\"\>"}],
+  SequenceForm["Attribute = ", "Bond Convention"],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.483364856014598*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"ConclusionType = \"\>", 
+   "\[InvisibleSpace]", "\<\"Rule Goal\"\>"}],
+  SequenceForm["ConclusionType = ", "Rule Goal"],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.483364856014598*^9}],
+
+Cell[BoxData["\<\"-\"\>"], "Print",
+ CellChangeTimes->{3.483364856014598*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"SuccedeedRuleEvent : \"\>", "\[InvisibleSpace]", "2"}],
+  SequenceForm["SuccedeedRuleEvent : ", 2],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.483364856014598*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"BackwardRule = \"\>", 
+   "\[InvisibleSpace]", "\<\"Rule Instrument/Currency 3\"\>"}],
+  SequenceForm["BackwardRule = ", "Rule Instrument/Currency 3"],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.483364856014598*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"Instance = \"\>", 
+   "\[InvisibleSpace]", "\<\"Consultation<1>\"\>"}],
+  SequenceForm["Instance = ", "Consultation<1>"],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.483364856014598*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"Attribute = \"\>", 
+   "\[InvisibleSpace]", "\<\"Instrument/Currency\"\>"}],
+  SequenceForm["Attribute = ", "Instrument/Currency"],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.483364856014598*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"ConclusionType = \"\>", 
+   "\[InvisibleSpace]", "\<\"Rule Goal\"\>"}],
+  SequenceForm["ConclusionType = ", "Rule Goal"],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.483364856014598*^9}],
+
+Cell[BoxData["\<\"-\"\>"], "Print",
+ CellChangeTimes->{3.483364856030223*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"SuccedeedRuleEvent : \"\>", "\[InvisibleSpace]", "3"}],
+  SequenceForm["SuccedeedRuleEvent : ", 3],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.483364856030223*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"BackwardRule = \"\>", 
+   "\[InvisibleSpace]", "\<\"Rule Instrument/Term 2\"\>"}],
+  SequenceForm["BackwardRule = ", "Rule Instrument/Term 2"],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.483364856030223*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"Instance = \"\>", 
+   "\[InvisibleSpace]", "\<\"Consultation<1>\"\>"}],
+  SequenceForm["Instance = ", "Consultation<1>"],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.483364856030223*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"Attribute = \"\>", 
+   "\[InvisibleSpace]", "\<\"Instrument/Term\"\>"}],
+  SequenceForm["Attribute = ", "Instrument/Term"],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.483364856030223*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"ConclusionType = \"\>", 
+   "\[InvisibleSpace]", "\<\"Rule Goal\"\>"}],
+  SequenceForm["ConclusionType = ", "Rule Goal"],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.483364856030223*^9}],
+
+Cell[BoxData["\<\"-\"\>"], "Print",
+ CellChangeTimes->{3.483364856030223*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"SuccedeedRuleEvent : \"\>", "\[InvisibleSpace]", "4"}],
+  SequenceForm["SuccedeedRuleEvent : ", 4],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.483364856061473*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"BackwardRule = \"\>", 
+   "\[InvisibleSpace]", "\<\"Rule Treasury Bond 1\"\>"}],
+  SequenceForm["BackwardRule = ", "Rule Treasury Bond 1"],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.4833648560770984`*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"Instance = \"\>", 
+   "\[InvisibleSpace]", "\<\"Consultation<2>\"\>"}],
+  SequenceForm["Instance = ", "Consultation<2>"],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.483364856092724*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"Attribute = \"\>", 
+   "\[InvisibleSpace]", "\<\"Bond Convention\"\>"}],
+  SequenceForm["Attribute = ", "Bond Convention"],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.483364856092724*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"ConclusionType = \"\>", 
+   "\[InvisibleSpace]", "\<\"Rule Goal\"\>"}],
+  SequenceForm["ConclusionType = ", "Rule Goal"],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.483364856108349*^9}],
+
+Cell[BoxData["\<\"-\"\>"], "Print",
+ CellChangeTimes->{3.483364856123974*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"SuccedeedRuleEvent : \"\>", "\[InvisibleSpace]", "5"}],
+  SequenceForm["SuccedeedRuleEvent : ", 5],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.483364856139599*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"BackwardRule = \"\>", 
+   "\[InvisibleSpace]", "\<\"Rule Instrument/Currency 3\"\>"}],
+  SequenceForm["BackwardRule = ", "Rule Instrument/Currency 3"],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.483364856139599*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"Instance = \"\>", 
+   "\[InvisibleSpace]", "\<\"Consultation<2>\"\>"}],
+  SequenceForm["Instance = ", "Consultation<2>"],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.483364856155224*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"Attribute = \"\>", 
+   "\[InvisibleSpace]", "\<\"Instrument/Currency\"\>"}],
+  SequenceForm["Attribute = ", "Instrument/Currency"],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.483364856170849*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"ConclusionType = \"\>", 
+   "\[InvisibleSpace]", "\<\"Rule Goal\"\>"}],
+  SequenceForm["ConclusionType = ", "Rule Goal"],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.483364856170849*^9}],
+
+Cell[BoxData["\<\"-\"\>"], "Print",
+ CellChangeTimes->{3.483364856186474*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"SuccedeedRuleEvent : \"\>", "\[InvisibleSpace]", "6"}],
+  SequenceForm["SuccedeedRuleEvent : ", 6],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.483364856202099*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"BackwardRule = \"\>", 
+   "\[InvisibleSpace]", "\<\"Rule Compounding Frequency 2\"\>"}],
+  SequenceForm["BackwardRule = ", "Rule Compounding Frequency 2"],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.483364856202099*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"Instance = \"\>", 
+   "\[InvisibleSpace]", "\<\"Consultation<2>\"\>"}],
+  SequenceForm["Instance = ", "Consultation<2>"],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.4833648562177243`*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"Attribute = \"\>", 
+   "\[InvisibleSpace]", "\<\"Compounding Frequency\"\>"}],
+  SequenceForm["Attribute = ", "Compounding Frequency"],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.4833648562333493`*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"ConclusionType = \"\>", 
+   "\[InvisibleSpace]", "\<\"Rule Goal\"\>"}],
+  SequenceForm["ConclusionType = ", "Rule Goal"],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.4833648562333493`*^9}],
+
+Cell[BoxData["\<\"-\"\>"], "Print",
+ CellChangeTimes->{3.4833648562489743`*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"SuccedeedRuleEvent : \"\>", "\[InvisibleSpace]", "7"}],
+  SequenceForm["SuccedeedRuleEvent : ", 7],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.4833648562646*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"BackwardRule = \"\>", 
+   "\[InvisibleSpace]", "\<\"Rule Instrument/Term 1\"\>"}],
+  SequenceForm["BackwardRule = ", "Rule Instrument/Term 1"],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.4833648562646*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"Instance = \"\>", 
+   "\[InvisibleSpace]", "\<\"Consultation<2>\"\>"}],
+  SequenceForm["Instance = ", "Consultation<2>"],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.483364856280225*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"Attribute = \"\>", 
+   "\[InvisibleSpace]", "\<\"Instrument/Term\"\>"}],
+  SequenceForm["Attribute = ", "Instrument/Term"],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.48336485629585*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"ConclusionType = \"\>", 
+   "\[InvisibleSpace]", "\<\"Rule Goal\"\>"}],
+  SequenceForm["ConclusionType = ", "Rule Goal"],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.483364856311475*^9}],
+
+Cell[BoxData["\<\"-\"\>"], "Print",
+ CellChangeTimes->{3.483364856311475*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"SuccedeedRuleEvent : \"\>", "\[InvisibleSpace]", "8"}],
+  SequenceForm["SuccedeedRuleEvent : ", 8],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.4833648563271*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"BackwardRule = \"\>", 
+   "\[InvisibleSpace]", "\<\"Rule Market Model/Accrued Interest 1\"\>"}],
+  SequenceForm["BackwardRule = ", "Rule Market Model/Accrued Interest 1"],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.4833648563427253`*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"Instance = \"\>", 
+   "\[InvisibleSpace]", "\<\"Consultation<2>\"\>"}],
+  SequenceForm["Instance = ", "Consultation<2>"],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.4833648563427253`*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"Attribute = \"\>", 
+   "\[InvisibleSpace]", "\<\"Market Model/Accrued Interest\"\>"}],
+  SequenceForm["Attribute = ", "Market Model/Accrued Interest"],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.4833648563583503`*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"ConclusionType = \"\>", 
+   "\[InvisibleSpace]", "\<\"Rule Goal\"\>"}],
+  SequenceForm["ConclusionType = ", "Rule Goal"],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.4833648563739753`*^9}],
+
+Cell[BoxData["\<\"-\"\>"], "Print",
+ CellChangeTimes->{3.4833648563739753`*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"SuccedeedRuleEvent : \"\>", "\[InvisibleSpace]", "9"}],
+  SequenceForm["SuccedeedRuleEvent : ", 9],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.4833648563896008`*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"BackwardRule = \"\>", 
+   "\[InvisibleSpace]", "\<\"Rule Day Counting Convention 1\"\>"}],
+  SequenceForm["BackwardRule = ", "Rule Day Counting Convention 1"],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.4833648564052258`*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"Instance = \"\>", 
+   "\[InvisibleSpace]", "\<\"Consultation<2>\"\>"}],
+  SequenceForm["Instance = ", "Consultation<2>"],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.4833648564052258`*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"Attribute = \"\>", 
+   "\[InvisibleSpace]", "\<\"Day Counting Convention\"\>"}],
+  SequenceForm["Attribute = ", "Day Counting Convention"],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.4833648564208508`*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"ConclusionType = \"\>", 
+   "\[InvisibleSpace]", "\<\"Rule Goal\"\>"}],
+  SequenceForm["ConclusionType = ", "Rule Goal"],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.4833648564364758`*^9}],
+
+Cell[BoxData["\<\"-\"\>"], "Print",
+ CellChangeTimes->{3.4833648564364758`*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"SuccedeedRuleEvent : \"\>", "\[InvisibleSpace]", "10"}],
+  SequenceForm["SuccedeedRuleEvent : ", 10],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.4833648564521008`*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"BackwardRule = \"\>", 
+   "\[InvisibleSpace]", "\<\"Rule Accrual Daycount Basis 1\"\>"}],
+  SequenceForm["BackwardRule = ", "Rule Accrual Daycount Basis 1"],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.4833648564677258`*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"Instance = \"\>", 
+   "\[InvisibleSpace]", "\<\"Consultation<2>\"\>"}],
+  SequenceForm["Instance = ", "Consultation<2>"],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.4833648564833508`*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"Attribute = \"\>", 
+   "\[InvisibleSpace]", "\<\"Instrument/Accrual Daycount Basis\"\>"}],
+  SequenceForm["Attribute = ", "Instrument/Accrual Daycount Basis"],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.4833648564833508`*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"ConclusionType = \"\>", 
+   "\[InvisibleSpace]", "\<\"Rule Goal\"\>"}],
+  SequenceForm["ConclusionType = ", "Rule Goal"],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.4833648564989758`*^9}],
+
+Cell[BoxData["\<\"-\"\>"], "Print",
+ CellChangeTimes->{3.483364856514601*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"SuccedeedRuleEvent : \"\>", "\[InvisibleSpace]", "11"}],
+  SequenceForm["SuccedeedRuleEvent : ", 11],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.483364856514601*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"BackwardRule = \"\>", 
+   "\[InvisibleSpace]", "\<\"Rule Trade Day Number 3\"\>"}],
+  SequenceForm["BackwardRule = ", "Rule Trade Day Number 3"],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.4833648565302267`*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"Instance = \"\>", 
+   "\[InvisibleSpace]", "\<\"Consultation<2>\"\>"}],
+  SequenceForm["Instance = ", "Consultation<2>"],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.4833648565458517`*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"Attribute = \"\>", 
+   "\[InvisibleSpace]", "\<\"Trade Day Number\"\>"}],
+  SequenceForm["Attribute = ", "Trade Day Number"],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.4833648565458517`*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"ConclusionType = \"\>", 
+   "\[InvisibleSpace]", "\<\"Rule Goal\"\>"}],
+  SequenceForm["ConclusionType = ", "Rule Goal"],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.4833648565614767`*^9}],
+
+Cell[BoxData["\<\"-\"\>"], "Print",
+ CellChangeTimes->{3.4833648565771017`*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"SuccedeedRuleEvent : \"\>", "\[InvisibleSpace]", "12"}],
+  SequenceForm["SuccedeedRuleEvent : ", 12],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.4833648565771017`*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"BackwardRule = \"\>", 
+   "\[InvisibleSpace]", "\<\"Rule Treasury Bond 2\"\>"}],
+  SequenceForm["BackwardRule = ", "Rule Treasury Bond 2"],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.4833648565927267`*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"Instance = \"\>", 
+   "\[InvisibleSpace]", "\<\"Consultation<2>\"\>"}],
+  SequenceForm["Instance = ", "Consultation<2>"],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.4833648566083517`*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"Attribute = \"\>", 
+   "\[InvisibleSpace]", "\<\"Risk Watch Spec\"\>"}],
+  SequenceForm["Attribute = ", "Risk Watch Spec"],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.4833648566083517`*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"ConclusionType = \"\>", 
+   "\[InvisibleSpace]", "\<\"Rule Goal\"\>"}],
+  SequenceForm["ConclusionType = ", "Rule Goal"],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.4833648566239767`*^9}],
+
+Cell[BoxData["\<\"-\"\>"], "Print",
+ CellChangeTimes->{3.4833648566396017`*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"SuccedeedRuleEvent : \"\>", "\[InvisibleSpace]", "13"}],
+  SequenceForm["SuccedeedRuleEvent : ", 13],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.483364856655227*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"BackwardRule = \"\>", 
+   "\[InvisibleSpace]", "\<\"Main determination 2\"\>"}],
+  SequenceForm["BackwardRule = ", "Main determination 2"],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.483364856655227*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"Instance = \"\>", 
+   "\[InvisibleSpace]", "\<\"Consultation<2>\"\>"}],
+  SequenceForm["Instance = ", "Consultation<2>"],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.483364856670852*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"Attribute = \"\>", "\[InvisibleSpace]", "\<\"Main\"\>"}],
+  SequenceForm["Attribute = ", "Main"],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.483364856686477*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"ConclusionType = \"\>", 
+   "\[InvisibleSpace]", "\<\"Rule Goal\"\>"}],
+  SequenceForm["ConclusionType = ", "Rule Goal"],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.483364856686477*^9}],
+
+Cell[BoxData["\<\"-\"\>"], "Print",
+ CellChangeTimes->{3.4833648567021027`*^9}]
+}, Open  ]]
+}, Open  ]]
+},
+WindowSize->{1020, 884},
+WindowMargins->{{Automatic, -1133}, {Automatic, -45}},
+FrontEndVersion->"7.0 for Microsoft Windows (32-bit) (February 18, 2009)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[567, 22, 228, 5, 31, "Input"],
+Cell[798, 29, 210, 2, 30, "Output"]
+}, Open  ]],
+Cell[1023, 34, 510, 13, 92, "Input"],
+Cell[CellGroupData[{
+Cell[1558, 51, 162, 3, 31, "Input"],
+Cell[1723, 56, 135, 2, 23, "Print"]
+}, Open  ]],
+Cell[1873, 61, 135, 3, 31, "Input"],
+Cell[2011, 66, 129, 4, 31, "Input"],
+Cell[CellGroupData[{
+Cell[2165, 74, 89, 2, 31, "Input"],
+Cell[2257, 78, 306, 7, 23, "Print"],
+Cell[2566, 87, 127, 2, 30, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[2730, 94, 112, 2, 31, "Input"],
+Cell[2845, 98, 128, 2, 30, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[3010, 105, 55, 1, 31, "Input"],
+Cell[CellGroupData[{
+Cell[3090, 110, 220, 5, 23, "Print"],
+Cell[3313, 117, 260, 6, 23, "Print"],
+Cell[3576, 125, 242, 6, 23, "Print"],
+Cell[3821, 133, 244, 6, 23, "Print"],
+Cell[4068, 141, 242, 6, 23, "Print"],
+Cell[4313, 149, 77, 1, 23, "Print"],
+Cell[4393, 152, 220, 5, 23, "Print"],
+Cell[4616, 159, 272, 6, 23, "Print"],
+Cell[4891, 167, 242, 6, 23, "Print"],
+Cell[5136, 175, 252, 6, 23, "Print"],
+Cell[5391, 183, 242, 6, 23, "Print"],
+Cell[5636, 191, 77, 1, 23, "Print"],
+Cell[5716, 194, 220, 5, 23, "Print"],
+Cell[5939, 201, 264, 6, 23, "Print"],
+Cell[6206, 209, 242, 6, 23, "Print"],
+Cell[6451, 217, 244, 6, 23, "Print"],
+Cell[6698, 225, 242, 6, 23, "Print"],
+Cell[6943, 233, 77, 1, 23, "Print"],
+Cell[7023, 236, 220, 5, 23, "Print"],
+Cell[7246, 243, 262, 6, 23, "Print"],
+Cell[7511, 251, 242, 6, 23, "Print"],
+Cell[7756, 259, 244, 6, 23, "Print"],
+Cell[8003, 267, 242, 6, 23, "Print"],
+Cell[8248, 275, 77, 1, 23, "Print"],
+Cell[8328, 278, 220, 5, 23, "Print"],
+Cell[8551, 285, 272, 6, 23, "Print"],
+Cell[8826, 293, 242, 6, 23, "Print"],
+Cell[9071, 301, 252, 6, 23, "Print"],
+Cell[9326, 309, 242, 6, 23, "Print"],
+Cell[9571, 317, 77, 1, 23, "Print"],
+Cell[9651, 320, 220, 5, 23, "Print"],
+Cell[9874, 327, 276, 6, 23, "Print"],
+Cell[10153, 335, 244, 6, 23, "Print"],
+Cell[10400, 343, 258, 6, 23, "Print"],
+Cell[10661, 351, 244, 6, 23, "Print"],
+Cell[10908, 359, 79, 1, 23, "Print"],
+Cell[10990, 362, 218, 5, 23, "Print"],
+Cell[11211, 369, 262, 6, 23, "Print"],
+Cell[11476, 377, 242, 6, 23, "Print"],
+Cell[11721, 385, 243, 6, 23, "Print"],
+Cell[11967, 393, 242, 6, 23, "Print"],
+Cell[12212, 401, 77, 1, 23, "Print"],
+Cell[12292, 404, 218, 5, 23, "Print"],
+Cell[12513, 411, 294, 6, 23, "Print"],
+Cell[12810, 419, 244, 6, 23, "Print"],
+Cell[13057, 427, 274, 6, 23, "Print"],
+Cell[13334, 435, 244, 6, 23, "Print"],
+Cell[13581, 443, 79, 1, 23, "Print"],
+Cell[13663, 446, 222, 5, 23, "Print"],
+Cell[13888, 453, 282, 6, 23, "Print"],
+Cell[14173, 461, 244, 6, 23, "Print"],
+Cell[14420, 469, 262, 6, 23, "Print"],
+Cell[14685, 477, 244, 6, 23, "Print"],
+Cell[14932, 485, 79, 1, 23, "Print"],
+Cell[15014, 488, 224, 5, 23, "Print"],
+Cell[15241, 495, 280, 6, 23, "Print"],
+Cell[15524, 503, 244, 6, 23, "Print"],
+Cell[15771, 511, 282, 6, 23, "Print"],
+Cell[16056, 519, 244, 6, 23, "Print"],
+Cell[16303, 527, 77, 1, 23, "Print"],
+Cell[16383, 530, 222, 5, 23, "Print"],
+Cell[16608, 537, 268, 6, 23, "Print"],
+Cell[16879, 545, 244, 6, 23, "Print"],
+Cell[17126, 553, 248, 6, 23, "Print"],
+Cell[17377, 561, 244, 6, 23, "Print"],
+Cell[17624, 569, 79, 1, 23, "Print"],
+Cell[17706, 572, 224, 5, 23, "Print"],
+Cell[17933, 579, 262, 6, 23, "Print"],
+Cell[18198, 587, 244, 6, 23, "Print"],
+Cell[18445, 595, 246, 6, 23, "Print"],
+Cell[18694, 603, 244, 6, 23, "Print"],
+Cell[18941, 611, 79, 1, 23, "Print"],
+Cell[19023, 614, 222, 5, 23, "Print"],
+Cell[19248, 621, 260, 6, 23, "Print"],
+Cell[19511, 629, 242, 6, 23, "Print"],
+Cell[19756, 637, 218, 5, 23, "Print"],
+Cell[19977, 644, 242, 6, 23, "Print"],
+Cell[20222, 652, 79, 1, 23, "Print"]
+}, Open  ]]
+}, Open  ]]
+}
+]
+*)
+
+(* End of internal cache information *)

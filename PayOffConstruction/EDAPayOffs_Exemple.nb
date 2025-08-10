@@ -1,0 +1,1953 @@
+(* Content-type: application/mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 7.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       145,          7]
+NotebookDataLength[     76765,       1944]
+NotebookOptionsPosition[     71667,       1797]
+NotebookOutlinePosition[     72060,       1814]
+CellTagsIndexPosition[     72017,       1811]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell[BoxData[
+ RowBox[{"SetDirectory", "[", 
+  "\"\<C:\\\\Users\\\\ocroissant\\\\Documents\\\\Desk_EDA23\\\\\
+ExpertSystemEDA23\\\\PayOffConstruction\>\"", "]"}]], "Input",
+ InitializationCell->True,
+ CellChangeTimes->{
+  3.48336286572061*^9, {3.483367670126358*^9, 3.483367677938908*^9}, {
+   3.5498874195764904`*^9, 3.549887434053383*^9}}],
+
+Cell[BoxData["\<\"C:\\\\Users\\\\ocroissant\\\\Documents\\\\Desk_EDA23\\\\\
+ExpertSystemEDA23\\\\PayOffConstruction\"\>"], "Output",
+ CellChangeTimes->{3.483362877205059*^9, 3.4833688207430973`*^9, 
+  3.483371085695093*^9, 3.4834277242527227`*^9, 3.5498874584831395`*^9}]
+}, Open  ]],
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"DirectorySave", "=", 
+   RowBox[{"Directory", "[", "]"}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{
+  "SetDirectory", "[", 
+   "\"\<C:\\\\Users\\\\ocroissant\\\\Documents\\\\Desk_EDA23\\\\\
+ExpertSystemEDA23\\\\PayOffConstruction\\\\Base\>\"", "]"}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"Get", "[", "\"\<Creations.m\>\"", "]"}], ";"}], "\n", 
+ RowBox[{
+  RowBox[{"Get", "[", "\"\<InferenceEngine.m\>\"", "]"}], ";"}], "\n", 
+ RowBox[{
+  RowBox[{"Get", "[", "\"\<DisplayFunctions.m\>\"", "]"}], ";"}], "\n", 
+ RowBox[{
+  RowBox[{"Get", "[", "\"\<Why.m\>\"", "]"}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"SetDirectory", "[", "DirectorySave", "]"}], 
+  ";"}], "\[IndentingNewLine]"}], "Input",
+ InitializationCell->True,
+ CellChangeTimes->{{3.4833633470361905`*^9, 3.4833633485362005`*^9}, {
+   3.483367606469701*^9, 3.4833676209072933`*^9}, {3.4833676852670803`*^9, 
+   3.4833676917358713`*^9}, {3.483367783220832*^9, 3.483367802408455*^9}, 
+   3.549887446814265*^9}],
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"Get", "[", "\"\<EDAPayOffsKB.m\>\"", "]"}], ";"}], "\n", 
+ RowBox[{
+  RowBox[{"TraceReasoning1", "=", "False"}], ";", 
+  RowBox[{"TraceReasoning", "=", "True"}], ";"}], "\n", 
+ RowBox[{
+  RowBox[{"cc", "=", 
+   RowBox[{"AddInstance", "[", "\"\<Consultation\>\"", "]"}]}], 
+  ";"}]}], "Input",
+ InitializationCell->True,
+ CellChangeTimes->{{3.4833634498337235`*^9, 3.4833634803339186`*^9}, 
+   3.4833680288161535`*^9, {3.483368686960991*^9, 3.4833687003360767`*^9}, {
+   3.5498875792123137`*^9, 3.549887580351121*^9}}],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"V", "[", 
+  RowBox[{"cc", ",", "\"\<Main\>\""}], "]"}]], "Input"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"--- trying to conclude by rule : \"\>", 
+   "\[InvisibleSpace]", "\<\"Main\"\>", "\[InvisibleSpace]", "\<\"[\"\>", 
+   "\[InvisibleSpace]", "\<\"Consultation<1>\"\>", 
+   "\[InvisibleSpace]", "\<\"]\"\>"}],
+  SequenceForm[
+  "--- trying to conclude by rule : ", "Main", "[", "Consultation<1>", "]"],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.5498875842043457`*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"--- Rule that will be tried : \"\>", "\[InvisibleSpace]", 
+   RowBox[{"{", 
+    RowBox[{"\<\"Main determination 1\"\>", 
+     ",", "\<\"Main determination 2\"\>"}], "}"}]}],
+  SequenceForm[
+  "--- Rule that will be tried : ", {
+   "Main determination 1", "Main determination 2"}],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.5498875842043457`*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"--- trying to fire : \"\>", 
+   "\[InvisibleSpace]", "\<\"Main determination 1\"\>"}],
+  SequenceForm["--- trying to fire : ", "Main determination 1"],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.5498875842043457`*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"--- trying to conclude by rule : \"\>", 
+   "\[InvisibleSpace]", "\<\"Clause List\"\>", 
+   "\[InvisibleSpace]", "\<\"[\"\>", 
+   "\[InvisibleSpace]", "\<\"Consultation<1>\"\>", 
+   "\[InvisibleSpace]", "\<\"]\"\>"}],
+  SequenceForm[
+  "--- trying to conclude by rule : ", "Clause List", "[", "Consultation<1>", 
+   "]"],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.5498875842043457`*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"--- Rule that will be tried : \"\>", "\[InvisibleSpace]", 
+   RowBox[{"{", 
+    RowBox[{"\<\"Rule NoSwap_Autocall_CMSTrigger\"\>", 
+     ",", "\<\"Rule AutoCall_CMS_InArrear_FinalPDI\"\>"}], "}"}]}],
+  SequenceForm[
+  "--- Rule that will be tried : ", {
+   "Rule NoSwap_Autocall_CMSTrigger", "Rule AutoCall_CMS_InArrear_FinalPDI"}],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.549887584219946*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"--- trying to fire : \"\>", 
+   "\[InvisibleSpace]", "\<\"Rule NoSwap_Autocall_CMSTrigger\"\>"}],
+  SequenceForm["--- trying to fire : ", "Rule NoSwap_Autocall_CMSTrigger"],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.549887584219946*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"--- trying to conclude by rule : \"\>", 
+   "\[InvisibleSpace]", "\<\"Coupon Type\"\>", 
+   "\[InvisibleSpace]", "\<\"[\"\>", 
+   "\[InvisibleSpace]", "\<\"Consultation<1>\"\>", 
+   "\[InvisibleSpace]", "\<\"]\"\>"}],
+  SequenceForm[
+  "--- trying to conclude by rule : ", "Coupon Type", "[", "Consultation<1>", 
+   "]"],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.549887584219946*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"--- Rule that will be tried : \"\>", "\[InvisibleSpace]", 
+   RowBox[{"{", "}"}]}],
+  SequenceForm["--- Rule that will be tried : ", {}],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.549887584219946*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"*** \"\>", "\[InvisibleSpace]", "\<\"Coupon Type\"\>", 
+   "\[InvisibleSpace]", "\<\"[\"\>", 
+   "\[InvisibleSpace]", "\<\"Consultation<1>\"\>", 
+   "\[InvisibleSpace]", "\<\"]  concluded by question = \"\>", 
+   "\[InvisibleSpace]", "\<\"CMS avec Barriere\"\>"}],
+  SequenceForm[
+  "*** ", "Coupon Type", "[", "Consultation<1>", 
+   "]  concluded by question = ", "CMS avec Barriere"],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.549887587729968*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"--- trying to conclude by rule : \"\>", 
+   "\[InvisibleSpace]", "\<\"Coupon Date List\"\>", 
+   "\[InvisibleSpace]", "\<\"[\"\>", 
+   "\[InvisibleSpace]", "\<\"Consultation<1>\"\>", 
+   "\[InvisibleSpace]", "\<\"]\"\>"}],
+  SequenceForm[
+  "--- trying to conclude by rule : ", "Coupon Date List", "[", 
+   "Consultation<1>", "]"],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.5498875877455683`*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"--- Rule that will be tried : \"\>", "\[InvisibleSpace]", 
+   RowBox[{"{", "\<\"Rule Clause Date Generation\"\>", "}"}]}],
+  SequenceForm[
+  "--- Rule that will be tried : ", {"Rule Clause Date Generation"}],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.5498875877455683`*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"--- trying to fire : \"\>", 
+   "\[InvisibleSpace]", "\<\"Rule Clause Date Generation\"\>"}],
+  SequenceForm["--- trying to fire : ", "Rule Clause Date Generation"],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.5498875877455683`*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"--- trying to conclude by rule : \"\>", 
+   "\[InvisibleSpace]", "\<\"Number of coupons\"\>", 
+   "\[InvisibleSpace]", "\<\"[\"\>", 
+   "\[InvisibleSpace]", "\<\"Consultation<1>\"\>", 
+   "\[InvisibleSpace]", "\<\"]\"\>"}],
+  SequenceForm[
+  "--- trying to conclude by rule : ", "Number of coupons", "[", 
+   "Consultation<1>", "]"],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.5498875877455683`*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"--- Rule that will be tried : \"\>", "\[InvisibleSpace]", 
+   RowBox[{"{", "}"}]}],
+  SequenceForm["--- Rule that will be tried : ", {}],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.5498875877455683`*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"*** \"\>", "\[InvisibleSpace]", "\<\"Number of coupons\"\>", 
+   "\[InvisibleSpace]", "\<\"[\"\>", 
+   "\[InvisibleSpace]", "\<\"Consultation<1>\"\>", 
+   "\[InvisibleSpace]", "\<\"]  concluded by question = \"\>", 
+   "\[InvisibleSpace]", "\<\"125\"\>"}],
+  SequenceForm[
+  "*** ", "Number of coupons", "[", "Consultation<1>", 
+   "]  concluded by question = ", "125"],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.5498875903039846`*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"--- trying to conclude by rule : \"\>", 
+   "\[InvisibleSpace]", "\<\"Periods between coupons\"\>", 
+   "\[InvisibleSpace]", "\<\"[\"\>", 
+   "\[InvisibleSpace]", "\<\"Consultation<1>\"\>", 
+   "\[InvisibleSpace]", "\<\"]\"\>"}],
+  SequenceForm[
+  "--- trying to conclude by rule : ", "Periods between coupons", "[", 
+   "Consultation<1>", "]"],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.5498875903039846`*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"--- Rule that will be tried : \"\>", "\[InvisibleSpace]", 
+   RowBox[{"{", "}"}]}],
+  SequenceForm["--- Rule that will be tried : ", {}],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.5498875903039846`*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"*** \"\>", 
+   "\[InvisibleSpace]", "\<\"Periods between coupons\"\>", 
+   "\[InvisibleSpace]", "\<\"[\"\>", 
+   "\[InvisibleSpace]", "\<\"Consultation<1>\"\>", 
+   "\[InvisibleSpace]", "\<\"]  concluded by question = \"\>", 
+   "\[InvisibleSpace]", "\<\"2\"\>"}],
+  SequenceForm[
+  "*** ", "Periods between coupons", "[", "Consultation<1>", 
+   "]  concluded by question = ", "2"],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.5498875921603966`*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"--- trying to conclude by rule : \"\>", 
+   "\[InvisibleSpace]", "\<\"Starting Date\"\>", 
+   "\[InvisibleSpace]", "\<\"[\"\>", 
+   "\[InvisibleSpace]", "\<\"Consultation<1>\"\>", 
+   "\[InvisibleSpace]", "\<\"]\"\>"}],
+  SequenceForm[
+  "--- trying to conclude by rule : ", "Starting Date", "[", 
+   "Consultation<1>", "]"],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.5498875921603966`*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"--- Rule that will be tried : \"\>", "\[InvisibleSpace]", 
+   RowBox[{"{", "}"}]}],
+  SequenceForm["--- Rule that will be tried : ", {}],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.5498875921603966`*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"*** \"\>", "\[InvisibleSpace]", "\<\"Starting Date\"\>", 
+   "\[InvisibleSpace]", "\<\"[\"\>", 
+   "\[InvisibleSpace]", "\<\"Consultation<1>\"\>", 
+   "\[InvisibleSpace]", "\<\"]  concluded by question = \"\>", 
+   "\[InvisibleSpace]", "\<\"1/1:2\"\>"}],
+  SequenceForm[
+  "*** ", "Starting Date", "[", "Consultation<1>", 
+   "]  concluded by question = ", "1/1:2"],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.5498875972148285`*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"Premisse of \"\>", 
+   "\[InvisibleSpace]", "\<\"Rule Clause Date Generation\"\>", 
+   "\[InvisibleSpace]", "\<\":\"\>", "\[InvisibleSpace]", 
+   TagBox[
+    RowBox[{
+     RowBox[{
+      RowBox[{"V", "[", 
+       RowBox[{"1", ",", "\<\"Coupon Type\"\>"}], "]"}], 
+      "\[Equal]", "\<\"CMS avec Barriere\"\>"}], "&&", 
+     RowBox[{"Known", "[", 
+      RowBox[{"1", ",", "\<\"Number of coupons\"\>"}], "]"}], "&&", 
+     RowBox[{"Known", "[", 
+      RowBox[{"1", ",", "\<\"Periods between coupons\"\>"}], "]"}], "&&", 
+     RowBox[{"Known", "[", 
+      RowBox[{"1", ",", "\<\"Starting Date\"\>"}], "]"}]}],
+    HoldForm], "\[InvisibleSpace]", "\<\" ->True\"\>"}],
+  SequenceForm["Premisse of ", "Rule Clause Date Generation", ":", 
+   HoldForm[
+    And[$CellContext`V[1, "Coupon Type"] == "CMS avec Barriere", 
+     $CellContext`Known[1, "Number of coupons"], 
+     $CellContext`Known[1, "Periods between coupons"], 
+     $CellContext`Known[1, "Starting Date"]]], " ->True"],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.5498875972148285`*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"***++ \"\>", 
+   "\[InvisibleSpace]", "\<\"Rule Clause Date Generation\"\>", 
+   "\[InvisibleSpace]", "\<\"  succeeded !\"\>"}],
+  SequenceForm["***++ ", "Rule Clause Date Generation", "  succeeded !"],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.5498875972148285`*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"*** \"\>", "\[InvisibleSpace]", "\<\"Coupon Date List\"\>", 
+   "\[InvisibleSpace]", "\<\"[\"\>", 
+   "\[InvisibleSpace]", "\<\"Consultation<1>\"\>", 
+   "\[InvisibleSpace]", "\<\"]\"\>", 
+   "\[InvisibleSpace]", "\<\"  concluded by rule = \"\>", "\[InvisibleSpace]", 
+   RowBox[{"{", 
+    RowBox[{"\<\"1/1:2\"\>", ",", "\<\"1/1:2\"\>", ",", "\<\"1/1:2\"\>", 
+     ",", "\<\"1/1:2\"\>", ",", "\<\"1/1:2\"\>", ",", "\<\"1/1:2\"\>", 
+     ",", "\<\"1/1:2\"\>", ",", "\<\"1/1:2\"\>", ",", "\<\"1/1:2\"\>", 
+     ",", "\<\"1/1:2\"\>", ",", "\<\"1/1:2\"\>", ",", "\<\"1/1:2\"\>", 
+     ",", "\<\"1/1:2\"\>", ",", "\<\"1/1:2\"\>", ",", "\<\"1/1:2\"\>", 
+     ",", "\<\"1/1:2\"\>", ",", "\<\"1/1:2\"\>", ",", "\<\"1/1:2\"\>", 
+     ",", "\<\"1/1:2\"\>", ",", "\<\"1/1:2\"\>", ",", "\<\"1/1:2\"\>", 
+     ",", "\<\"1/1:2\"\>", ",", "\<\"1/1:2\"\>", ",", "\<\"1/1:2\"\>", 
+     ",", "\<\"1/1:2\"\>", ",", "\<\"1/1:2\"\>", ",", "\<\"1/1:2\"\>", 
+     ",", "\<\"1/1:2\"\>", ",", "\<\"1/1:2\"\>", ",", "\<\"1/1:2\"\>", 
+     ",", "\<\"1/1:2\"\>", ",", "\<\"1/1:2\"\>", ",", "\<\"1/1:2\"\>", 
+     ",", "\<\"1/1:2\"\>", ",", "\<\"1/1:2\"\>", ",", "\<\"1/1:2\"\>", 
+     ",", "\<\"1/1:2\"\>", ",", "\<\"1/1:2\"\>", ",", "\<\"1/1:2\"\>", 
+     ",", "\<\"1/1:2\"\>", ",", "\<\"1/1:2\"\>", ",", "\<\"1/1:2\"\>", 
+     ",", "\<\"1/1:2\"\>", ",", "\<\"1/1:2\"\>", ",", "\<\"1/1:2\"\>", 
+     ",", "\<\"1/1:2\"\>", ",", "\<\"1/1:2\"\>", ",", "\<\"1/1:2\"\>", 
+     ",", "\<\"1/1:2\"\>", ",", "\<\"1/1:2\"\>", ",", "\<\"1/1:2\"\>", 
+     ",", "\<\"1/1:2\"\>", ",", "\<\"1/1:2\"\>", ",", "\<\"1/1:2\"\>", 
+     ",", "\<\"1/1:2\"\>", ",", "\<\"1/1:2\"\>", ",", "\<\"1/1:2\"\>", 
+     ",", "\<\"1/1:2\"\>", ",", "\<\"1/1:2\"\>", ",", "\<\"1/1:2\"\>", 
+     ",", "\<\"1/1:2\"\>", ",", "\<\"1/1:2\"\>", ",", "\<\"1/1:2\"\>", 
+     ",", "\<\"1/1:2\"\>", ",", "\<\"1/1:2\"\>", ",", "\<\"1/1:2\"\>", 
+     ",", "\<\"1/1:2\"\>", ",", "\<\"1/1:2\"\>", ",", "\<\"1/1:2\"\>", 
+     ",", "\<\"1/1:2\"\>", ",", "\<\"1/1:2\"\>", ",", "\<\"1/1:2\"\>", 
+     ",", "\<\"1/1:2\"\>", ",", "\<\"1/1:2\"\>", ",", "\<\"1/1:2\"\>", 
+     ",", "\<\"1/1:2\"\>", ",", "\<\"1/1:2\"\>", ",", "\<\"1/1:2\"\>", 
+     ",", "\<\"1/1:2\"\>", ",", "\<\"1/1:2\"\>", ",", "\<\"1/1:2\"\>", 
+     ",", "\<\"1/1:2\"\>", ",", "\<\"1/1:2\"\>", ",", "\<\"1/1:2\"\>", 
+     ",", "\<\"1/1:2\"\>", ",", "\<\"1/1:2\"\>", ",", "\<\"1/1:2\"\>", 
+     ",", "\<\"1/1:2\"\>", ",", "\<\"1/1:2\"\>", ",", "\<\"1/1:2\"\>", 
+     ",", "\<\"1/1:2\"\>", ",", "\<\"1/1:2\"\>", ",", "\<\"1/1:2\"\>", 
+     ",", "\<\"1/1:2\"\>", ",", "\<\"1/1:2\"\>", ",", "\<\"1/1:2\"\>", 
+     ",", "\<\"1/1:2\"\>", ",", "\<\"1/1:2\"\>", ",", "\<\"1/1:2\"\>", 
+     ",", "\<\"1/1:2\"\>", ",", "\<\"1/1:2\"\>", ",", "\<\"1/1:2\"\>", 
+     ",", "\<\"1/1:2\"\>", ",", "\<\"1/1:2\"\>", ",", "\<\"1/1:2\"\>", 
+     ",", "\<\"1/1:2\"\>", ",", "\<\"1/1:2\"\>", ",", "\<\"1/1:2\"\>", 
+     ",", "\<\"1/1:2\"\>", ",", "\<\"1/1:2\"\>", ",", "\<\"1/1:2\"\>", 
+     ",", "\<\"1/1:2\"\>", ",", "\<\"1/1:2\"\>", ",", "\<\"1/1:2\"\>", 
+     ",", "\<\"1/1:2\"\>", ",", "\<\"1/1:2\"\>", ",", "\<\"1/1:2\"\>", 
+     ",", "\<\"1/1:2\"\>", ",", "\<\"1/1:2\"\>", ",", "\<\"1/1:2\"\>", 
+     ",", "\<\"1/1:2\"\>", ",", "\<\"1/1:2\"\>", ",", "\<\"1/1:2\"\>", 
+     ",", "\<\"1/1:2\"\>", ",", "\<\"1/1:2\"\>"}], "}"}]}],
+  SequenceForm[
+  "*** ", "Coupon Date List", "[", "Consultation<1>", "]", 
+   "  concluded by rule = ", {
+   "1/1:2", "1/1:2", "1/1:2", "1/1:2", "1/1:2", "1/1:2", "1/1:2", "1/1:2", 
+    "1/1:2", "1/1:2", "1/1:2", "1/1:2", "1/1:2", "1/1:2", "1/1:2", "1/1:2", 
+    "1/1:2", "1/1:2", "1/1:2", "1/1:2", "1/1:2", "1/1:2", "1/1:2", "1/1:2", 
+    "1/1:2", "1/1:2", "1/1:2", "1/1:2", "1/1:2", "1/1:2", "1/1:2", "1/1:2", 
+    "1/1:2", "1/1:2", "1/1:2", "1/1:2", "1/1:2", "1/1:2", "1/1:2", "1/1:2", 
+    "1/1:2", "1/1:2", "1/1:2", "1/1:2", "1/1:2", "1/1:2", "1/1:2", "1/1:2", 
+    "1/1:2", "1/1:2", "1/1:2", "1/1:2", "1/1:2", "1/1:2", "1/1:2", "1/1:2", 
+    "1/1:2", "1/1:2", "1/1:2", "1/1:2", "1/1:2", "1/1:2", "1/1:2", "1/1:2", 
+    "1/1:2", "1/1:2", "1/1:2", "1/1:2", "1/1:2", "1/1:2", "1/1:2", "1/1:2", 
+    "1/1:2", "1/1:2", "1/1:2", "1/1:2", "1/1:2", "1/1:2", "1/1:2", "1/1:2", 
+    "1/1:2", "1/1:2", "1/1:2", "1/1:2", "1/1:2", "1/1:2", "1/1:2", "1/1:2", 
+    "1/1:2", "1/1:2", "1/1:2", "1/1:2", "1/1:2", "1/1:2", "1/1:2", "1/1:2", 
+    "1/1:2", "1/1:2", "1/1:2", "1/1:2", "1/1:2", "1/1:2", "1/1:2", "1/1:2", 
+    "1/1:2", "1/1:2", "1/1:2", "1/1:2", "1/1:2", "1/1:2", "1/1:2", "1/1:2", 
+    "1/1:2", "1/1:2", "1/1:2", "1/1:2", "1/1:2", "1/1:2", "1/1:2", "1/1:2", 
+    "1/1:2", "1/1:2", "1/1:2", "1/1:2", "1/1:2"}],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.549887597246029*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"Premisse of \"\>", 
+   "\[InvisibleSpace]", "\<\"Rule NoSwap_Autocall_CMSTrigger\"\>", 
+   "\[InvisibleSpace]", "\<\":\"\>", "\[InvisibleSpace]", 
+   TagBox[
+    RowBox[{
+     RowBox[{
+      RowBox[{"V", "[", 
+       RowBox[{"1", ",", "\<\"Coupon Type\"\>"}], "]"}], 
+      "\[Equal]", "\<\"CMS avec Barriere\"\>"}], "&&", 
+     RowBox[{"Known", "[", 
+      RowBox[{"1", ",", "\<\"Coupon Date List\"\>"}], "]"}]}],
+    HoldForm], "\[InvisibleSpace]", "\<\" ->True\"\>"}],
+  SequenceForm["Premisse of ", "Rule NoSwap_Autocall_CMSTrigger", ":", 
+   HoldForm[
+    And[$CellContext`V[1, "Coupon Type"] == "CMS avec Barriere", 
+     $CellContext`Known[1, "Coupon Date List"]]], " ->True"],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.549887597246029*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"***++ \"\>", 
+   "\[InvisibleSpace]", "\<\"Rule NoSwap_Autocall_CMSTrigger\"\>", 
+   "\[InvisibleSpace]", "\<\"  succeeded !\"\>"}],
+  SequenceForm["***++ ", "Rule NoSwap_Autocall_CMSTrigger", "  succeeded !"],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.549887597246029*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"+++++concluding\"\>", 
+   "\[InvisibleSpace]", "\<\"PayOff Type\"\>", 
+   "\[InvisibleSpace]", "\<\"[\"\>", "\[InvisibleSpace]", 
+   "InstanceNameFromInstance", "\[InvisibleSpace]", "\<\"]\"\>"}],
+  SequenceForm[
+  "+++++concluding", "PayOff Type", 
+   "[", $CellContext`InstanceNameFromInstance, "]"],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.549887597261629*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"*** \"\>", "\[InvisibleSpace]", 
+   RowBox[{"ATTName", "[", 
+    RowBox[{"IAatt", "[", "11", "]"}], "]"}], 
+   "\[InvisibleSpace]", "\<\"[\"\>", 
+   "\[InvisibleSpace]", "\<\"Consultation<1>\"\>", 
+   "\[InvisibleSpace]", "\<\"]\"\>", 
+   "\[InvisibleSpace]", "\<\"  concluded directly = \"\>", 
+   "\[InvisibleSpace]", "\<\"NoSwap_Autocall_CMSTrigger\"\>"}],
+  SequenceForm["*** ", 
+   $CellContext`ATTName[
+    $CellContext`IAatt[11]], "[", "Consultation<1>", "]", 
+   "  concluded directly = ", "NoSwap_Autocall_CMSTrigger"],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.549887597261629*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"--- trying to conclude by rule : \"\>", 
+   "\[InvisibleSpace]", "\<\"BarrierDown\"\>", 
+   "\[InvisibleSpace]", "\<\"[\"\>", 
+   "\[InvisibleSpace]", "\<\"Consultation<1>\"\>", 
+   "\[InvisibleSpace]", "\<\"]\"\>"}],
+  SequenceForm[
+  "--- trying to conclude by rule : ", "BarrierDown", "[", "Consultation<1>", 
+   "]"],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.549887597261629*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"--- Rule that will be tried : \"\>", "\[InvisibleSpace]", 
+   RowBox[{"{", "}"}]}],
+  SequenceForm["--- Rule that will be tried : ", {}],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.549887597261629*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"*** \"\>", "\[InvisibleSpace]", "\<\"BarrierDown\"\>", 
+   "\[InvisibleSpace]", "\<\"[\"\>", 
+   "\[InvisibleSpace]", "\<\"Consultation<1>\"\>", 
+   "\[InvisibleSpace]", "\<\"]  concluded by question = \"\>", 
+   "\[InvisibleSpace]", "\<\"5\"\>"}],
+  SequenceForm[
+  "*** ", "BarrierDown", "[", "Consultation<1>", 
+   "]  concluded by question = ", "5"],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.5498875999760466`*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"+++++concluding\"\>", 
+   "\[InvisibleSpace]", "\<\"Clause/Min\"\>", 
+   "\[InvisibleSpace]", "\<\"[\"\>", "\[InvisibleSpace]", 
+   "InstanceNameFromInstance", "\[InvisibleSpace]", "\<\"]\"\>"}],
+  SequenceForm[
+  "+++++concluding", "Clause/Min", "[", $CellContext`InstanceNameFromInstance,
+    "]"],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.5498875999760466`*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"*** \"\>", "\[InvisibleSpace]", 
+   RowBox[{"ATTName", "[", 
+    RowBox[{"IAatt", "[", "6", "]"}], "]"}], "\[InvisibleSpace]", "\<\"[\"\>",
+    "\[InvisibleSpace]", "\<\"Consultation<1>\"\>", 
+   "\[InvisibleSpace]", "\<\"]\"\>", 
+   "\[InvisibleSpace]", "\<\"  concluded directly = \"\>", 
+   "\[InvisibleSpace]", "\<\"5\"\>"}],
+  SequenceForm["*** ", 
+   $CellContext`ATTName[
+    $CellContext`IAatt[6]], "[", "Consultation<1>", "]", 
+   "  concluded directly = ", "5"],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.5498875999760466`*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"--- trying to conclude by rule : \"\>", 
+   "\[InvisibleSpace]", "\<\"BarrierUp\"\>", "\[InvisibleSpace]", "\<\"[\"\>",
+    "\[InvisibleSpace]", "\<\"Consultation<1>\"\>", 
+   "\[InvisibleSpace]", "\<\"]\"\>"}],
+  SequenceForm[
+  "--- trying to conclude by rule : ", "BarrierUp", "[", "Consultation<1>", 
+   "]"],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.5498875999760466`*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"--- Rule that will be tried : \"\>", "\[InvisibleSpace]", 
+   RowBox[{"{", "}"}]}],
+  SequenceForm["--- Rule that will be tried : ", {}],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.5498875999760466`*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"*** \"\>", "\[InvisibleSpace]", "\<\"BarrierUp\"\>", 
+   "\[InvisibleSpace]", "\<\"[\"\>", 
+   "\[InvisibleSpace]", "\<\"Consultation<1>\"\>", 
+   "\[InvisibleSpace]", "\<\"]  concluded by question = \"\>", 
+   "\[InvisibleSpace]", "\<\"8\"\>"}],
+  SequenceForm[
+  "*** ", "BarrierUp", "[", "Consultation<1>", "]  concluded by question = ", 
+   "8"],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.5498876015516567`*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"+++++concluding\"\>", 
+   "\[InvisibleSpace]", "\<\"Clause/Max\"\>", 
+   "\[InvisibleSpace]", "\<\"[\"\>", "\[InvisibleSpace]", 
+   "InstanceNameFromInstance", "\[InvisibleSpace]", "\<\"]\"\>"}],
+  SequenceForm[
+  "+++++concluding", "Clause/Max", "[", $CellContext`InstanceNameFromInstance,
+    "]"],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.549887601567257*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"*** \"\>", "\[InvisibleSpace]", 
+   RowBox[{"ATTName", "[", 
+    RowBox[{"IAatt", "[", "7", "]"}], "]"}], "\[InvisibleSpace]", "\<\"[\"\>",
+    "\[InvisibleSpace]", "\<\"Consultation<1>\"\>", 
+   "\[InvisibleSpace]", "\<\"]\"\>", 
+   "\[InvisibleSpace]", "\<\"  concluded directly = \"\>", 
+   "\[InvisibleSpace]", "\<\"8\"\>"}],
+  SequenceForm["*** ", 
+   $CellContext`ATTName[
+    $CellContext`IAatt[7]], "[", "Consultation<1>", "]", 
+   "  concluded directly = ", "8"],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.549887601567257*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"--- trying to conclude by rule : \"\>", 
+   "\[InvisibleSpace]", "\<\"Spread\"\>", "\[InvisibleSpace]", "\<\"[\"\>", 
+   "\[InvisibleSpace]", "\<\"Consultation<1>\"\>", 
+   "\[InvisibleSpace]", "\<\"]\"\>"}],
+  SequenceForm[
+  "--- trying to conclude by rule : ", "Spread", "[", "Consultation<1>", "]"],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.549887601567257*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"--- Rule that will be tried : \"\>", "\[InvisibleSpace]", 
+   RowBox[{"{", "}"}]}],
+  SequenceForm["--- Rule that will be tried : ", {}],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.549887601567257*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"*** \"\>", "\[InvisibleSpace]", "\<\"Spread\"\>", 
+   "\[InvisibleSpace]", "\<\"[\"\>", 
+   "\[InvisibleSpace]", "\<\"Consultation<1>\"\>", 
+   "\[InvisibleSpace]", "\<\"]  concluded by question = \"\>", 
+   "\[InvisibleSpace]", "\<\"6\"\>"}],
+  SequenceForm[
+  "*** ", "Spread", "[", "Consultation<1>", "]  concluded by question = ", 
+   "6"],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.5498876027372646`*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"+++++concluding\"\>", 
+   "\[InvisibleSpace]", "\<\"Clause/Gearing\"\>", 
+   "\[InvisibleSpace]", "\<\"[\"\>", "\[InvisibleSpace]", 
+   "InstanceNameFromInstance", "\[InvisibleSpace]", "\<\"]\"\>"}],
+  SequenceForm[
+  "+++++concluding", "Clause/Gearing", 
+   "[", $CellContext`InstanceNameFromInstance, "]"],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.5498876027372646`*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"*** \"\>", "\[InvisibleSpace]", 
+   RowBox[{"ATTName", "[", 
+    RowBox[{"IAatt", "[", "8", "]"}], "]"}], "\[InvisibleSpace]", "\<\"[\"\>",
+    "\[InvisibleSpace]", "\<\"Consultation<1>\"\>", 
+   "\[InvisibleSpace]", "\<\"]\"\>", 
+   "\[InvisibleSpace]", "\<\"  concluded directly = \"\>", 
+   "\[InvisibleSpace]", "\<\"6\"\>"}],
+  SequenceForm["*** ", 
+   $CellContext`ATTName[
+    $CellContext`IAatt[8]], "[", "Consultation<1>", "]", 
+   "  concluded directly = ", "6"],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.5498876027372646`*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"+++++concluding\"\>", 
+   "\[InvisibleSpace]", "\<\"Clause Name List\"\>", 
+   "\[InvisibleSpace]", "\<\"[\"\>", "\[InvisibleSpace]", 
+   "InstanceNameFromInstance", "\[InvisibleSpace]", "\<\"]\"\>"}],
+  SequenceForm[
+  "+++++concluding", "Clause Name List", 
+   "[", $CellContext`InstanceNameFromInstance, "]"],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.5498876027372646`*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"*** \"\>", "\[InvisibleSpace]", 
+   RowBox[{"ATTName", "[", 
+    RowBox[{"IAatt", "[", "18", "]"}], "]"}], 
+   "\[InvisibleSpace]", "\<\"[\"\>", 
+   "\[InvisibleSpace]", "\<\"Consultation<1>\"\>", 
+   "\[InvisibleSpace]", "\<\"]\"\>", 
+   "\[InvisibleSpace]", "\<\"  concluded directly = \"\>", 
+   "\[InvisibleSpace]", 
+   RowBox[{"{", 
+    RowBox[{"\<\"Payer\"\>", ",", "\<\"Min\"\>", ",", "\<\"Max\"\>", 
+     ",", "\<\"Gearing\"\>"}], "}"}]}],
+  SequenceForm["*** ", 
+   $CellContext`ATTName[
+    $CellContext`IAatt[18]], "[", "Consultation<1>", "]", 
+   "  concluded directly = ", {"Payer", "Min", "Max", "Gearing"}],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.5498876027372646`*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"+++++concluding\"\>", 
+   "\[InvisibleSpace]", "\<\"Clause Matrix\"\>", 
+   "\[InvisibleSpace]", "\<\"[\"\>", "\[InvisibleSpace]", 
+   "InstanceNameFromInstance", "\[InvisibleSpace]", "\<\"]\"\>"}],
+  SequenceForm[
+  "+++++concluding", "Clause Matrix", 
+   "[", $CellContext`InstanceNameFromInstance, "]"],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.5498876027528644`*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"*** \"\>", "\[InvisibleSpace]", 
+   RowBox[{"ATTName", "[", 
+    RowBox[{"IAatt", "[", "19", "]"}], "]"}], 
+   "\[InvisibleSpace]", "\<\"[\"\>", 
+   "\[InvisibleSpace]", "\<\"Consultation<1>\"\>", 
+   "\[InvisibleSpace]", "\<\"]\"\>", 
+   "\[InvisibleSpace]", "\<\"  concluded directly = \"\>", 
+   "\[InvisibleSpace]", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"\<\"1/1:2\"\>", ",", "\<\"5\"\>", ",", "\<\"8\"\>", 
+       ",", "\<\"6\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"\<\"1/1:2\"\>", ",", "\<\"5\"\>", ",", "\<\"8\"\>", 
+       ",", "\<\"6\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"\<\"1/1:2\"\>", ",", "\<\"5\"\>", ",", "\<\"8\"\>", 
+       ",", "\<\"6\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"\<\"1/1:2\"\>", ",", "\<\"5\"\>", ",", "\<\"8\"\>", 
+       ",", "\<\"6\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"\<\"1/1:2\"\>", ",", "\<\"5\"\>", ",", "\<\"8\"\>", 
+       ",", "\<\"6\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"\<\"1/1:2\"\>", ",", "\<\"5\"\>", ",", "\<\"8\"\>", 
+       ",", "\<\"6\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"\<\"1/1:2\"\>", ",", "\<\"5\"\>", ",", "\<\"8\"\>", 
+       ",", "\<\"6\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"\<\"1/1:2\"\>", ",", "\<\"5\"\>", ",", "\<\"8\"\>", 
+       ",", "\<\"6\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"\<\"1/1:2\"\>", ",", "\<\"5\"\>", ",", "\<\"8\"\>", 
+       ",", "\<\"6\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"\<\"1/1:2\"\>", ",", "\<\"5\"\>", ",", "\<\"8\"\>", 
+       ",", "\<\"6\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"\<\"1/1:2\"\>", ",", "\<\"5\"\>", ",", "\<\"8\"\>", 
+       ",", "\<\"6\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"\<\"1/1:2\"\>", ",", "\<\"5\"\>", ",", "\<\"8\"\>", 
+       ",", "\<\"6\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"\<\"1/1:2\"\>", ",", "\<\"5\"\>", ",", "\<\"8\"\>", 
+       ",", "\<\"6\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"\<\"1/1:2\"\>", ",", "\<\"5\"\>", ",", "\<\"8\"\>", 
+       ",", "\<\"6\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"\<\"1/1:2\"\>", ",", "\<\"5\"\>", ",", "\<\"8\"\>", 
+       ",", "\<\"6\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"\<\"1/1:2\"\>", ",", "\<\"5\"\>", ",", "\<\"8\"\>", 
+       ",", "\<\"6\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"\<\"1/1:2\"\>", ",", "\<\"5\"\>", ",", "\<\"8\"\>", 
+       ",", "\<\"6\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"\<\"1/1:2\"\>", ",", "\<\"5\"\>", ",", "\<\"8\"\>", 
+       ",", "\<\"6\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"\<\"1/1:2\"\>", ",", "\<\"5\"\>", ",", "\<\"8\"\>", 
+       ",", "\<\"6\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"\<\"1/1:2\"\>", ",", "\<\"5\"\>", ",", "\<\"8\"\>", 
+       ",", "\<\"6\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"\<\"1/1:2\"\>", ",", "\<\"5\"\>", ",", "\<\"8\"\>", 
+       ",", "\<\"6\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"\<\"1/1:2\"\>", ",", "\<\"5\"\>", ",", "\<\"8\"\>", 
+       ",", "\<\"6\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"\<\"1/1:2\"\>", ",", "\<\"5\"\>", ",", "\<\"8\"\>", 
+       ",", "\<\"6\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"\<\"1/1:2\"\>", ",", "\<\"5\"\>", ",", "\<\"8\"\>", 
+       ",", "\<\"6\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"\<\"1/1:2\"\>", ",", "\<\"5\"\>", ",", "\<\"8\"\>", 
+       ",", "\<\"6\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"\<\"1/1:2\"\>", ",", "\<\"5\"\>", ",", "\<\"8\"\>", 
+       ",", "\<\"6\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"\<\"1/1:2\"\>", ",", "\<\"5\"\>", ",", "\<\"8\"\>", 
+       ",", "\<\"6\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"\<\"1/1:2\"\>", ",", "\<\"5\"\>", ",", "\<\"8\"\>", 
+       ",", "\<\"6\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"\<\"1/1:2\"\>", ",", "\<\"5\"\>", ",", "\<\"8\"\>", 
+       ",", "\<\"6\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"\<\"1/1:2\"\>", ",", "\<\"5\"\>", ",", "\<\"8\"\>", 
+       ",", "\<\"6\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"\<\"1/1:2\"\>", ",", "\<\"5\"\>", ",", "\<\"8\"\>", 
+       ",", "\<\"6\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"\<\"1/1:2\"\>", ",", "\<\"5\"\>", ",", "\<\"8\"\>", 
+       ",", "\<\"6\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"\<\"1/1:2\"\>", ",", "\<\"5\"\>", ",", "\<\"8\"\>", 
+       ",", "\<\"6\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"\<\"1/1:2\"\>", ",", "\<\"5\"\>", ",", "\<\"8\"\>", 
+       ",", "\<\"6\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"\<\"1/1:2\"\>", ",", "\<\"5\"\>", ",", "\<\"8\"\>", 
+       ",", "\<\"6\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"\<\"1/1:2\"\>", ",", "\<\"5\"\>", ",", "\<\"8\"\>", 
+       ",", "\<\"6\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"\<\"1/1:2\"\>", ",", "\<\"5\"\>", ",", "\<\"8\"\>", 
+       ",", "\<\"6\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"\<\"1/1:2\"\>", ",", "\<\"5\"\>", ",", "\<\"8\"\>", 
+       ",", "\<\"6\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"\<\"1/1:2\"\>", ",", "\<\"5\"\>", ",", "\<\"8\"\>", 
+       ",", "\<\"6\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"\<\"1/1:2\"\>", ",", "\<\"5\"\>", ",", "\<\"8\"\>", 
+       ",", "\<\"6\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"\<\"1/1:2\"\>", ",", "\<\"5\"\>", ",", "\<\"8\"\>", 
+       ",", "\<\"6\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"\<\"1/1:2\"\>", ",", "\<\"5\"\>", ",", "\<\"8\"\>", 
+       ",", "\<\"6\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"\<\"1/1:2\"\>", ",", "\<\"5\"\>", ",", "\<\"8\"\>", 
+       ",", "\<\"6\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"\<\"1/1:2\"\>", ",", "\<\"5\"\>", ",", "\<\"8\"\>", 
+       ",", "\<\"6\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"\<\"1/1:2\"\>", ",", "\<\"5\"\>", ",", "\<\"8\"\>", 
+       ",", "\<\"6\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"\<\"1/1:2\"\>", ",", "\<\"5\"\>", ",", "\<\"8\"\>", 
+       ",", "\<\"6\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"\<\"1/1:2\"\>", ",", "\<\"5\"\>", ",", "\<\"8\"\>", 
+       ",", "\<\"6\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"\<\"1/1:2\"\>", ",", "\<\"5\"\>", ",", "\<\"8\"\>", 
+       ",", "\<\"6\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"\<\"1/1:2\"\>", ",", "\<\"5\"\>", ",", "\<\"8\"\>", 
+       ",", "\<\"6\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"\<\"1/1:2\"\>", ",", "\<\"5\"\>", ",", "\<\"8\"\>", 
+       ",", "\<\"6\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"\<\"1/1:2\"\>", ",", "\<\"5\"\>", ",", "\<\"8\"\>", 
+       ",", "\<\"6\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"\<\"1/1:2\"\>", ",", "\<\"5\"\>", ",", "\<\"8\"\>", 
+       ",", "\<\"6\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"\<\"1/1:2\"\>", ",", "\<\"5\"\>", ",", "\<\"8\"\>", 
+       ",", "\<\"6\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"\<\"1/1:2\"\>", ",", "\<\"5\"\>", ",", "\<\"8\"\>", 
+       ",", "\<\"6\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"\<\"1/1:2\"\>", ",", "\<\"5\"\>", ",", "\<\"8\"\>", 
+       ",", "\<\"6\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"\<\"1/1:2\"\>", ",", "\<\"5\"\>", ",", "\<\"8\"\>", 
+       ",", "\<\"6\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"\<\"1/1:2\"\>", ",", "\<\"5\"\>", ",", "\<\"8\"\>", 
+       ",", "\<\"6\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"\<\"1/1:2\"\>", ",", "\<\"5\"\>", ",", "\<\"8\"\>", 
+       ",", "\<\"6\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"\<\"1/1:2\"\>", ",", "\<\"5\"\>", ",", "\<\"8\"\>", 
+       ",", "\<\"6\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"\<\"1/1:2\"\>", ",", "\<\"5\"\>", ",", "\<\"8\"\>", 
+       ",", "\<\"6\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"\<\"1/1:2\"\>", ",", "\<\"5\"\>", ",", "\<\"8\"\>", 
+       ",", "\<\"6\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"\<\"1/1:2\"\>", ",", "\<\"5\"\>", ",", "\<\"8\"\>", 
+       ",", "\<\"6\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"\<\"1/1:2\"\>", ",", "\<\"5\"\>", ",", "\<\"8\"\>", 
+       ",", "\<\"6\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"\<\"1/1:2\"\>", ",", "\<\"5\"\>", ",", "\<\"8\"\>", 
+       ",", "\<\"6\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"\<\"1/1:2\"\>", ",", "\<\"5\"\>", ",", "\<\"8\"\>", 
+       ",", "\<\"6\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"\<\"1/1:2\"\>", ",", "\<\"5\"\>", ",", "\<\"8\"\>", 
+       ",", "\<\"6\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"\<\"1/1:2\"\>", ",", "\<\"5\"\>", ",", "\<\"8\"\>", 
+       ",", "\<\"6\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"\<\"1/1:2\"\>", ",", "\<\"5\"\>", ",", "\<\"8\"\>", 
+       ",", "\<\"6\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"\<\"1/1:2\"\>", ",", "\<\"5\"\>", ",", "\<\"8\"\>", 
+       ",", "\<\"6\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"\<\"1/1:2\"\>", ",", "\<\"5\"\>", ",", "\<\"8\"\>", 
+       ",", "\<\"6\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"\<\"1/1:2\"\>", ",", "\<\"5\"\>", ",", "\<\"8\"\>", 
+       ",", "\<\"6\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"\<\"1/1:2\"\>", ",", "\<\"5\"\>", ",", "\<\"8\"\>", 
+       ",", "\<\"6\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"\<\"1/1:2\"\>", ",", "\<\"5\"\>", ",", "\<\"8\"\>", 
+       ",", "\<\"6\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"\<\"1/1:2\"\>", ",", "\<\"5\"\>", ",", "\<\"8\"\>", 
+       ",", "\<\"6\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"\<\"1/1:2\"\>", ",", "\<\"5\"\>", ",", "\<\"8\"\>", 
+       ",", "\<\"6\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"\<\"1/1:2\"\>", ",", "\<\"5\"\>", ",", "\<\"8\"\>", 
+       ",", "\<\"6\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"\<\"1/1:2\"\>", ",", "\<\"5\"\>", ",", "\<\"8\"\>", 
+       ",", "\<\"6\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"\<\"1/1:2\"\>", ",", "\<\"5\"\>", ",", "\<\"8\"\>", 
+       ",", "\<\"6\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"\<\"1/1:2\"\>", ",", "\<\"5\"\>", ",", "\<\"8\"\>", 
+       ",", "\<\"6\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"\<\"1/1:2\"\>", ",", "\<\"5\"\>", ",", "\<\"8\"\>", 
+       ",", "\<\"6\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"\<\"1/1:2\"\>", ",", "\<\"5\"\>", ",", "\<\"8\"\>", 
+       ",", "\<\"6\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"\<\"1/1:2\"\>", ",", "\<\"5\"\>", ",", "\<\"8\"\>", 
+       ",", "\<\"6\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"\<\"1/1:2\"\>", ",", "\<\"5\"\>", ",", "\<\"8\"\>", 
+       ",", "\<\"6\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"\<\"1/1:2\"\>", ",", "\<\"5\"\>", ",", "\<\"8\"\>", 
+       ",", "\<\"6\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"\<\"1/1:2\"\>", ",", "\<\"5\"\>", ",", "\<\"8\"\>", 
+       ",", "\<\"6\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"\<\"1/1:2\"\>", ",", "\<\"5\"\>", ",", "\<\"8\"\>", 
+       ",", "\<\"6\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"\<\"1/1:2\"\>", ",", "\<\"5\"\>", ",", "\<\"8\"\>", 
+       ",", "\<\"6\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"\<\"1/1:2\"\>", ",", "\<\"5\"\>", ",", "\<\"8\"\>", 
+       ",", "\<\"6\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"\<\"1/1:2\"\>", ",", "\<\"5\"\>", ",", "\<\"8\"\>", 
+       ",", "\<\"6\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"\<\"1/1:2\"\>", ",", "\<\"5\"\>", ",", "\<\"8\"\>", 
+       ",", "\<\"6\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"\<\"1/1:2\"\>", ",", "\<\"5\"\>", ",", "\<\"8\"\>", 
+       ",", "\<\"6\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"\<\"1/1:2\"\>", ",", "\<\"5\"\>", ",", "\<\"8\"\>", 
+       ",", "\<\"6\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"\<\"1/1:2\"\>", ",", "\<\"5\"\>", ",", "\<\"8\"\>", 
+       ",", "\<\"6\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"\<\"1/1:2\"\>", ",", "\<\"5\"\>", ",", "\<\"8\"\>", 
+       ",", "\<\"6\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"\<\"1/1:2\"\>", ",", "\<\"5\"\>", ",", "\<\"8\"\>", 
+       ",", "\<\"6\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"\<\"1/1:2\"\>", ",", "\<\"5\"\>", ",", "\<\"8\"\>", 
+       ",", "\<\"6\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"\<\"1/1:2\"\>", ",", "\<\"5\"\>", ",", "\<\"8\"\>", 
+       ",", "\<\"6\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"\<\"1/1:2\"\>", ",", "\<\"5\"\>", ",", "\<\"8\"\>", 
+       ",", "\<\"6\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"\<\"1/1:2\"\>", ",", "\<\"5\"\>", ",", "\<\"8\"\>", 
+       ",", "\<\"6\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"\<\"1/1:2\"\>", ",", "\<\"5\"\>", ",", "\<\"8\"\>", 
+       ",", "\<\"6\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"\<\"1/1:2\"\>", ",", "\<\"5\"\>", ",", "\<\"8\"\>", 
+       ",", "\<\"6\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"\<\"1/1:2\"\>", ",", "\<\"5\"\>", ",", "\<\"8\"\>", 
+       ",", "\<\"6\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"\<\"1/1:2\"\>", ",", "\<\"5\"\>", ",", "\<\"8\"\>", 
+       ",", "\<\"6\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"\<\"1/1:2\"\>", ",", "\<\"5\"\>", ",", "\<\"8\"\>", 
+       ",", "\<\"6\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"\<\"1/1:2\"\>", ",", "\<\"5\"\>", ",", "\<\"8\"\>", 
+       ",", "\<\"6\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"\<\"1/1:2\"\>", ",", "\<\"5\"\>", ",", "\<\"8\"\>", 
+       ",", "\<\"6\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"\<\"1/1:2\"\>", ",", "\<\"5\"\>", ",", "\<\"8\"\>", 
+       ",", "\<\"6\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"\<\"1/1:2\"\>", ",", "\<\"5\"\>", ",", "\<\"8\"\>", 
+       ",", "\<\"6\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"\<\"1/1:2\"\>", ",", "\<\"5\"\>", ",", "\<\"8\"\>", 
+       ",", "\<\"6\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"\<\"1/1:2\"\>", ",", "\<\"5\"\>", ",", "\<\"8\"\>", 
+       ",", "\<\"6\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"\<\"1/1:2\"\>", ",", "\<\"5\"\>", ",", "\<\"8\"\>", 
+       ",", "\<\"6\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"\<\"1/1:2\"\>", ",", "\<\"5\"\>", ",", "\<\"8\"\>", 
+       ",", "\<\"6\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"\<\"1/1:2\"\>", ",", "\<\"5\"\>", ",", "\<\"8\"\>", 
+       ",", "\<\"6\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"\<\"1/1:2\"\>", ",", "\<\"5\"\>", ",", "\<\"8\"\>", 
+       ",", "\<\"6\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"\<\"1/1:2\"\>", ",", "\<\"5\"\>", ",", "\<\"8\"\>", 
+       ",", "\<\"6\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"\<\"1/1:2\"\>", ",", "\<\"5\"\>", ",", "\<\"8\"\>", 
+       ",", "\<\"6\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"\<\"1/1:2\"\>", ",", "\<\"5\"\>", ",", "\<\"8\"\>", 
+       ",", "\<\"6\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"\<\"1/1:2\"\>", ",", "\<\"5\"\>", ",", "\<\"8\"\>", 
+       ",", "\<\"6\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"\<\"1/1:2\"\>", ",", "\<\"5\"\>", ",", "\<\"8\"\>", 
+       ",", "\<\"6\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"\<\"1/1:2\"\>", ",", "\<\"5\"\>", ",", "\<\"8\"\>", 
+       ",", "\<\"6\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"\<\"1/1:2\"\>", ",", "\<\"5\"\>", ",", "\<\"8\"\>", 
+       ",", "\<\"6\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"\<\"1/1:2\"\>", ",", "\<\"5\"\>", ",", "\<\"8\"\>", 
+       ",", "\<\"6\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"\<\"1/1:2\"\>", ",", "\<\"5\"\>", ",", "\<\"8\"\>", 
+       ",", "\<\"6\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"\<\"1/1:2\"\>", ",", "\<\"5\"\>", ",", "\<\"8\"\>", 
+       ",", "\<\"6\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"\<\"1/1:2\"\>", ",", "\<\"5\"\>", ",", "\<\"8\"\>", 
+       ",", "\<\"6\"\>"}], "}"}]}], "}"}]}],
+  SequenceForm["*** ", 
+   $CellContext`ATTName[
+    $CellContext`IAatt[19]], "[", "Consultation<1>", "]", 
+   "  concluded directly = ", {{"1/1:2", "5", "8", "6"}, {
+    "1/1:2", "5", "8", "6"}, {"1/1:2", "5", "8", "6"}, {
+    "1/1:2", "5", "8", "6"}, {"1/1:2", "5", "8", "6"}, {
+    "1/1:2", "5", "8", "6"}, {"1/1:2", "5", "8", "6"}, {
+    "1/1:2", "5", "8", "6"}, {"1/1:2", "5", "8", "6"}, {
+    "1/1:2", "5", "8", "6"}, {"1/1:2", "5", "8", "6"}, {
+    "1/1:2", "5", "8", "6"}, {"1/1:2", "5", "8", "6"}, {
+    "1/1:2", "5", "8", "6"}, {"1/1:2", "5", "8", "6"}, {
+    "1/1:2", "5", "8", "6"}, {"1/1:2", "5", "8", "6"}, {
+    "1/1:2", "5", "8", "6"}, {"1/1:2", "5", "8", "6"}, {
+    "1/1:2", "5", "8", "6"}, {"1/1:2", "5", "8", "6"}, {
+    "1/1:2", "5", "8", "6"}, {"1/1:2", "5", "8", "6"}, {
+    "1/1:2", "5", "8", "6"}, {"1/1:2", "5", "8", "6"}, {
+    "1/1:2", "5", "8", "6"}, {"1/1:2", "5", "8", "6"}, {
+    "1/1:2", "5", "8", "6"}, {"1/1:2", "5", "8", "6"}, {
+    "1/1:2", "5", "8", "6"}, {"1/1:2", "5", "8", "6"}, {
+    "1/1:2", "5", "8", "6"}, {"1/1:2", "5", "8", "6"}, {
+    "1/1:2", "5", "8", "6"}, {"1/1:2", "5", "8", "6"}, {
+    "1/1:2", "5", "8", "6"}, {"1/1:2", "5", "8", "6"}, {
+    "1/1:2", "5", "8", "6"}, {"1/1:2", "5", "8", "6"}, {
+    "1/1:2", "5", "8", "6"}, {"1/1:2", "5", "8", "6"}, {
+    "1/1:2", "5", "8", "6"}, {"1/1:2", "5", "8", "6"}, {
+    "1/1:2", "5", "8", "6"}, {"1/1:2", "5", "8", "6"}, {
+    "1/1:2", "5", "8", "6"}, {"1/1:2", "5", "8", "6"}, {
+    "1/1:2", "5", "8", "6"}, {"1/1:2", "5", "8", "6"}, {
+    "1/1:2", "5", "8", "6"}, {"1/1:2", "5", "8", "6"}, {
+    "1/1:2", "5", "8", "6"}, {"1/1:2", "5", "8", "6"}, {
+    "1/1:2", "5", "8", "6"}, {"1/1:2", "5", "8", "6"}, {
+    "1/1:2", "5", "8", "6"}, {"1/1:2", "5", "8", "6"}, {
+    "1/1:2", "5", "8", "6"}, {"1/1:2", "5", "8", "6"}, {
+    "1/1:2", "5", "8", "6"}, {"1/1:2", "5", "8", "6"}, {
+    "1/1:2", "5", "8", "6"}, {"1/1:2", "5", "8", "6"}, {
+    "1/1:2", "5", "8", "6"}, {"1/1:2", "5", "8", "6"}, {
+    "1/1:2", "5", "8", "6"}, {"1/1:2", "5", "8", "6"}, {
+    "1/1:2", "5", "8", "6"}, {"1/1:2", "5", "8", "6"}, {
+    "1/1:2", "5", "8", "6"}, {"1/1:2", "5", "8", "6"}, {
+    "1/1:2", "5", "8", "6"}, {"1/1:2", "5", "8", "6"}, {
+    "1/1:2", "5", "8", "6"}, {"1/1:2", "5", "8", "6"}, {
+    "1/1:2", "5", "8", "6"}, {"1/1:2", "5", "8", "6"}, {
+    "1/1:2", "5", "8", "6"}, {"1/1:2", "5", "8", "6"}, {
+    "1/1:2", "5", "8", "6"}, {"1/1:2", "5", "8", "6"}, {
+    "1/1:2", "5", "8", "6"}, {"1/1:2", "5", "8", "6"}, {
+    "1/1:2", "5", "8", "6"}, {"1/1:2", "5", "8", "6"}, {
+    "1/1:2", "5", "8", "6"}, {"1/1:2", "5", "8", "6"}, {
+    "1/1:2", "5", "8", "6"}, {"1/1:2", "5", "8", "6"}, {
+    "1/1:2", "5", "8", "6"}, {"1/1:2", "5", "8", "6"}, {
+    "1/1:2", "5", "8", "6"}, {"1/1:2", "5", "8", "6"}, {
+    "1/1:2", "5", "8", "6"}, {"1/1:2", "5", "8", "6"}, {
+    "1/1:2", "5", "8", "6"}, {"1/1:2", "5", "8", "6"}, {
+    "1/1:2", "5", "8", "6"}, {"1/1:2", "5", "8", "6"}, {
+    "1/1:2", "5", "8", "6"}, {"1/1:2", "5", "8", "6"}, {
+    "1/1:2", "5", "8", "6"}, {"1/1:2", "5", "8", "6"}, {
+    "1/1:2", "5", "8", "6"}, {"1/1:2", "5", "8", "6"}, {
+    "1/1:2", "5", "8", "6"}, {"1/1:2", "5", "8", "6"}, {
+    "1/1:2", "5", "8", "6"}, {"1/1:2", "5", "8", "6"}, {
+    "1/1:2", "5", "8", "6"}, {"1/1:2", "5", "8", "6"}, {
+    "1/1:2", "5", "8", "6"}, {"1/1:2", "5", "8", "6"}, {
+    "1/1:2", "5", "8", "6"}, {"1/1:2", "5", "8", "6"}, {
+    "1/1:2", "5", "8", "6"}, {"1/1:2", "5", "8", "6"}, {
+    "1/1:2", "5", "8", "6"}, {"1/1:2", "5", "8", "6"}, {
+    "1/1:2", "5", "8", "6"}, {"1/1:2", "5", "8", "6"}, {
+    "1/1:2", "5", "8", "6"}, {"1/1:2", "5", "8", "6"}, {
+    "1/1:2", "5", "8", "6"}, {"1/1:2", "5", "8", "6"}}],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.5498876027528644`*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"*** \"\>", "\[InvisibleSpace]", "\<\"Clause List\"\>", 
+   "\[InvisibleSpace]", "\<\"[\"\>", 
+   "\[InvisibleSpace]", "\<\"Consultation<1>\"\>", 
+   "\[InvisibleSpace]", "\<\"]\"\>", 
+   "\[InvisibleSpace]", "\<\"  concluded by rule = \"\>", "\[InvisibleSpace]",
+    "Null"}],
+  SequenceForm[
+  "*** ", "Clause List", "[", "Consultation<1>", "]", 
+   "  concluded by rule = ", Null],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.5498876027528644`*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"--- trying to conclude by rule : \"\>", 
+   "\[InvisibleSpace]", "\<\"Want create a PayOff File\"\>", 
+   "\[InvisibleSpace]", "\<\"[\"\>", 
+   "\[InvisibleSpace]", "\<\"Consultation<1>\"\>", 
+   "\[InvisibleSpace]", "\<\"]\"\>"}],
+  SequenceForm[
+  "--- trying to conclude by rule : ", "Want create a PayOff File", "[", 
+   "Consultation<1>", "]"],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.5498876027528644`*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"--- Rule that will be tried : \"\>", "\[InvisibleSpace]", 
+   RowBox[{"{", "}"}]}],
+  SequenceForm["--- Rule that will be tried : ", {}],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.549887602768464*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"*** \"\>", 
+   "\[InvisibleSpace]", "\<\"Want create a PayOff File\"\>", 
+   "\[InvisibleSpace]", "\<\"[\"\>", 
+   "\[InvisibleSpace]", "\<\"Consultation<1>\"\>", 
+   "\[InvisibleSpace]", "\<\"]  concluded by question = \"\>", 
+   "\[InvisibleSpace]", "\<\"No\"\>"}],
+  SequenceForm[
+  "*** ", "Want create a PayOff File", "[", "Consultation<1>", 
+   "]  concluded by question = ", "No"],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.5498876120973244`*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"Failed ! :  premisse, aa=\"\>", "\[InvisibleSpace]", "False", 
+   "\[InvisibleSpace]", "\<\"   \"\>", 
+   "\[InvisibleSpace]", "\<\"Main determination 1\"\>"}],
+  SequenceForm[
+  "Failed ! :  premisse, aa=", False, "   ", "Main determination 1"],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.5498876120973244`*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"--- trying to fire : \"\>", 
+   "\[InvisibleSpace]", "\<\"Main determination 2\"\>"}],
+  SequenceForm["--- trying to fire : ", "Main determination 2"],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.5498876120973244`*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"Premisse of \"\>", 
+   "\[InvisibleSpace]", "\<\"Main determination 2\"\>", 
+   "\[InvisibleSpace]", "\<\":\"\>", "\[InvisibleSpace]", 
+   TagBox[
+    RowBox[{
+     RowBox[{"Known", "[", 
+      RowBox[{"1", ",", "\<\"Clause List\"\>"}], "]"}], "&&", 
+     RowBox[{"Known", "[", 
+      RowBox[{"1", ",", "\<\"PayOff Type\"\>"}], "]"}], "&&", 
+     RowBox[{
+      RowBox[{"V", "[", 
+       RowBox[{"1", ",", "\<\"Want create a PayOff File\"\>"}], "]"}], 
+      "\[Equal]", "\<\"No\"\>"}]}],
+    HoldForm], "\[InvisibleSpace]", "\<\" ->True\"\>"}],
+  SequenceForm["Premisse of ", "Main determination 2", ":", 
+   HoldForm[
+    And[
+     $CellContext`Known[1, "Clause List"], 
+     $CellContext`Known[
+     1, "PayOff Type"], $CellContext`V[1, "Want create a PayOff File"] == 
+     "No"]], " ->True"],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.5498876120973244`*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"***++ \"\>", 
+   "\[InvisibleSpace]", "\<\"Main determination 2\"\>", 
+   "\[InvisibleSpace]", "\<\"  succeeded !\"\>"}],
+  SequenceForm["***++ ", "Main determination 2", "  succeeded !"],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.5498876120973244`*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"*** \"\>", "\[InvisibleSpace]", "\<\"Main\"\>", 
+   "\[InvisibleSpace]", "\<\"[\"\>", 
+   "\[InvisibleSpace]", "\<\"Consultation<1>\"\>", 
+   "\[InvisibleSpace]", "\<\"]\"\>", 
+   "\[InvisibleSpace]", "\<\"  concluded by rule = \"\>", 
+   "\[InvisibleSpace]", "\<\"Good Bye\"\>"}],
+  SequenceForm[
+  "*** ", "Main", "[", "Consultation<1>", "]", "  concluded by rule = ", 
+   "Good Bye"],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.5498876120973244`*^9}]
+}, Open  ]],
+
+Cell[BoxData["\<\"Good Bye\"\>"], "Output",
+ CellChangeTimes->{
+  3.4833648017017508`*^9, 3.4833648406394997`*^9, 3.48336697895006*^9, 
+   3.4833670864038725`*^9, 3.4833688331025515`*^9, 3.48337030087757*^9, 
+   3.483370411534528*^9, 3.48337068139563*^9, 3.4833710909295015`*^9, 
+   3.4833726442519426`*^9, 3.4833728029404583`*^9, 3.483372900175455*^9, 
+   3.483372955394559*^9, 3.483376250321896*^9, 3.4833763199004664`*^9, 
+   3.483376552214453*^9, 3.4833777463783455`*^9, 3.483377986536133*^9, 
+   3.483378027177018*^9, 3.483378525430207*^9, 3.4833786598685675`*^9, 
+   3.483427875359964*^9, 3.4834279254999475`*^9, 3.483427974561819*^9, {
+   3.4834281277317333`*^9, 3.483428153090784*^9}, 3.4834288149447613`*^9, 
+   3.4834290535526094`*^9, 3.4834301133583264`*^9, 3.4834302816541243`*^9, 
+   3.4834304900121655`*^9, 3.549887528480788*^9, 3.5498876121129246`*^9}]
+}, Open  ]],
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"Get", "[", "\"\<EDAPayOffsKB.m\>\"", "]"}], ";"}], "\n", 
+ RowBox[{
+  RowBox[{"TraceReasoning1", "=", "True"}], ";", 
+  RowBox[{"TraceReasoning", "=", "False"}], ";"}], "\n", 
+ RowBox[{
+  RowBox[{"cc2", "=", 
+   RowBox[{"AddInstance", "[", "\"\<Consultation\>\"", "]"}]}], 
+  ";"}]}], "Input",
+ InitializationCell->True,
+ CellChangeTimes->{{3.4833634498337235`*^9, 3.4833634803339186`*^9}, 
+   3.4833680288161535`*^9, {3.483368686960991*^9, 3.4833687003360767`*^9}, {
+   3.5498875792123137`*^9, 3.549887580351121*^9}, {3.5498876894738207`*^9, 
+   3.5498877083655415`*^9}}],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"V", "[", 
+  RowBox[{"cc2", ",", "\"\<Main\>\""}], "]"}]], "Input",
+ CellChangeTimes->{3.549887696852668*^9}],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"Trying to get the value of \\\"\"\>", 
+   "\[InvisibleSpace]", "\<\"Main\"\>", "\[InvisibleSpace]", "\<\"[\"\>", 
+   "\[InvisibleSpace]", "\<\"Consultation<1>\"\>", 
+   "\[InvisibleSpace]", "\<\"]\"\>"}],
+  SequenceForm[
+  "Trying to get the value of \"", "Main", "[", "Consultation<1>", "]"],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.5498875842043457`*^9, 3.549887713107972*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"Trying to get the value of \\\"\"\>", 
+   "\[InvisibleSpace]", "\<\"Clause List\"\>", 
+   "\[InvisibleSpace]", "\<\"[\"\>", 
+   "\[InvisibleSpace]", "\<\"Consultation<1>\"\>", 
+   "\[InvisibleSpace]", "\<\"]\"\>"}],
+  SequenceForm[
+  "Trying to get the value of \"", "Clause List", "[", "Consultation<1>", "]"],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.5498875842043457`*^9, 3.549887713107972*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"Trying to get the value of \\\"\"\>", 
+   "\[InvisibleSpace]", "\<\"Coupon Type\"\>", 
+   "\[InvisibleSpace]", "\<\"[\"\>", 
+   "\[InvisibleSpace]", "\<\"Consultation<1>\"\>", 
+   "\[InvisibleSpace]", "\<\"]\"\>"}],
+  SequenceForm[
+  "Trying to get the value of \"", "Coupon Type", "[", "Consultation<1>", "]"],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.5498875842043457`*^9, 3.549887713107972*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"Trying to get the value of \\\"\"\>", 
+   "\[InvisibleSpace]", "\<\"Coupon Date List\"\>", 
+   "\[InvisibleSpace]", "\<\"[\"\>", 
+   "\[InvisibleSpace]", "\<\"Consultation<1>\"\>", 
+   "\[InvisibleSpace]", "\<\"]\"\>"}],
+  SequenceForm[
+  "Trying to get the value of \"", "Coupon Date List", "[", "Consultation<1>",
+    "]"],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.5498875842043457`*^9, 3.549887716898796*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"accessing the value of \\\"\"\>", 
+   "\[InvisibleSpace]", "\<\"Coupon Type\"\>", 
+   "\[InvisibleSpace]", "\<\"[\"\>", 
+   "\[InvisibleSpace]", "\<\"Consultation<1>\"\>", 
+   "\[InvisibleSpace]", "\<\"]\"\>"}],
+  SequenceForm[
+  "accessing the value of \"", "Coupon Type", "[", "Consultation<1>", "]"],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.5498875842043457`*^9, 3.549887716898796*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"Trying to get the value of \\\"\"\>", 
+   "\[InvisibleSpace]", "\<\"Number of coupons\"\>", 
+   "\[InvisibleSpace]", "\<\"[\"\>", 
+   "\[InvisibleSpace]", "\<\"Consultation<1>\"\>", 
+   "\[InvisibleSpace]", "\<\"]\"\>"}],
+  SequenceForm[
+  "Trying to get the value of \"", "Number of coupons", "[", 
+   "Consultation<1>", "]"],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.5498875842043457`*^9, 3.5498877169143963`*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"Trying to get the value of \\\"\"\>", 
+   "\[InvisibleSpace]", "\<\"Periods between coupons\"\>", 
+   "\[InvisibleSpace]", "\<\"[\"\>", 
+   "\[InvisibleSpace]", "\<\"Consultation<1>\"\>", 
+   "\[InvisibleSpace]", "\<\"]\"\>"}],
+  SequenceForm[
+  "Trying to get the value of \"", "Periods between coupons", "[", 
+   "Consultation<1>", "]"],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.5498875842043457`*^9, 3.549887717788002*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"Trying to get the value of \\\"\"\>", 
+   "\[InvisibleSpace]", "\<\"Starting Date\"\>", 
+   "\[InvisibleSpace]", "\<\"[\"\>", 
+   "\[InvisibleSpace]", "\<\"Consultation<1>\"\>", 
+   "\[InvisibleSpace]", "\<\"]\"\>"}],
+  SequenceForm[
+  "Trying to get the value of \"", "Starting Date", "[", "Consultation<1>", 
+   "]"],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.5498875842043457`*^9, 3.549887718443206*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"accessing the value of \\\"\"\>", 
+   "\[InvisibleSpace]", "\<\"Number of coupons\"\>", 
+   "\[InvisibleSpace]", "\<\"[\"\>", 
+   "\[InvisibleSpace]", "\<\"Consultation<1>\"\>", 
+   "\[InvisibleSpace]", "\<\"]\"\>"}],
+  SequenceForm[
+  "accessing the value of \"", "Number of coupons", "[", "Consultation<1>", 
+   "]"],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.5498875842043457`*^9, 3.5498877191140103`*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"accessing the value of \\\"\"\>", 
+   "\[InvisibleSpace]", "\<\"Starting Date\"\>", 
+   "\[InvisibleSpace]", "\<\"[\"\>", 
+   "\[InvisibleSpace]", "\<\"Consultation<1>\"\>", 
+   "\[InvisibleSpace]", "\<\"]\"\>"}],
+  SequenceForm[
+  "accessing the value of \"", "Starting Date", "[", "Consultation<1>", "]"],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.5498875842043457`*^9, 3.5498877191140103`*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"Trying to get the value of \\\"\"\>", 
+   "\[InvisibleSpace]", "\<\"BarrierDown\"\>", 
+   "\[InvisibleSpace]", "\<\"[\"\>", 
+   "\[InvisibleSpace]", "\<\"Consultation<1>\"\>", 
+   "\[InvisibleSpace]", "\<\"]\"\>"}],
+  SequenceForm[
+  "Trying to get the value of \"", "BarrierDown", "[", "Consultation<1>", "]"],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.5498875842043457`*^9, 3.5498877191140103`*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"Trying to get the value of \\\"\"\>", 
+   "\[InvisibleSpace]", "\<\"BarrierUp\"\>", "\[InvisibleSpace]", "\<\"[\"\>",
+    "\[InvisibleSpace]", "\<\"Consultation<1>\"\>", 
+   "\[InvisibleSpace]", "\<\"]\"\>"}],
+  SequenceForm[
+  "Trying to get the value of \"", "BarrierUp", "[", "Consultation<1>", "]"],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.5498875842043457`*^9, 3.549887719738014*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"Trying to get the value of \\\"\"\>", 
+   "\[InvisibleSpace]", "\<\"Spread\"\>", "\[InvisibleSpace]", "\<\"[\"\>", 
+   "\[InvisibleSpace]", "\<\"Consultation<1>\"\>", 
+   "\[InvisibleSpace]", "\<\"]\"\>"}],
+  SequenceForm[
+  "Trying to get the value of \"", "Spread", "[", "Consultation<1>", "]"],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.5498875842043457`*^9, 3.54988772064282*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"accessing the value of \\\"\"\>", 
+   "\[InvisibleSpace]", "\<\"Coupon Date List\"\>", 
+   "\[InvisibleSpace]", "\<\"[\"\>", 
+   "\[InvisibleSpace]", "\<\"Consultation<1>\"\>", 
+   "\[InvisibleSpace]", "\<\"]\"\>"}],
+  SequenceForm[
+  "accessing the value of \"", "Coupon Date List", "[", "Consultation<1>", 
+   "]"],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.5498875842043457`*^9, 3.5498877213760247`*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"accessing the value of \\\"\"\>", 
+   "\[InvisibleSpace]", "\<\"Clause/Min\"\>", 
+   "\[InvisibleSpace]", "\<\"[\"\>", 
+   "\[InvisibleSpace]", "\<\"Consultation<1>\"\>", 
+   "\[InvisibleSpace]", "\<\"]\"\>"}],
+  SequenceForm[
+  "accessing the value of \"", "Clause/Min", "[", "Consultation<1>", "]"],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.5498875842043457`*^9, 3.5498877213760247`*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"accessing the value of \\\"\"\>", 
+   "\[InvisibleSpace]", "\<\"Clause/Max\"\>", 
+   "\[InvisibleSpace]", "\<\"[\"\>", 
+   "\[InvisibleSpace]", "\<\"Consultation<1>\"\>", 
+   "\[InvisibleSpace]", "\<\"]\"\>"}],
+  SequenceForm[
+  "accessing the value of \"", "Clause/Max", "[", "Consultation<1>", "]"],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.5498875842043457`*^9, 3.5498877213760247`*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"accessing the value of \\\"\"\>", 
+   "\[InvisibleSpace]", "\<\"Clause/Gearing\"\>", 
+   "\[InvisibleSpace]", "\<\"[\"\>", 
+   "\[InvisibleSpace]", "\<\"Consultation<1>\"\>", 
+   "\[InvisibleSpace]", "\<\"]\"\>"}],
+  SequenceForm[
+  "accessing the value of \"", "Clause/Gearing", "[", "Consultation<1>", "]"],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.5498875842043457`*^9, 3.5498877213760247`*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"accessing the value of \\\"\"\>", 
+   "\[InvisibleSpace]", "\<\"PayOff Type\"\>", 
+   "\[InvisibleSpace]", "\<\"[\"\>", 
+   "\[InvisibleSpace]", "\<\"Consultation<1>\"\>", 
+   "\[InvisibleSpace]", "\<\"]\"\>"}],
+  SequenceForm[
+  "accessing the value of \"", "PayOff Type", "[", "Consultation<1>", "]"],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.5498875842043457`*^9, 3.5498877213760247`*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"Trying to get the value of \\\"\"\>", 
+   "\[InvisibleSpace]", "\<\"Want create a PayOff File\"\>", 
+   "\[InvisibleSpace]", "\<\"[\"\>", 
+   "\[InvisibleSpace]", "\<\"Consultation<1>\"\>", 
+   "\[InvisibleSpace]", "\<\"]\"\>"}],
+  SequenceForm[
+  "Trying to get the value of \"", "Want create a PayOff File", "[", 
+   "Consultation<1>", "]"],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.5498875842043457`*^9, 3.5498877213916245`*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"Premisse not evaluable: Rule : \"\>", 
+   "\[InvisibleSpace]", "\<\"Main determination 1\"\>"}],
+  SequenceForm["Premisse not evaluable: Rule : ", "Main determination 1"],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.5498875842043457`*^9, 3.5498877252448497`*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"$$$ :\"\>", "\[InvisibleSpace]", "\<\"Main\"\>", 
+   "\[InvisibleSpace]", "\<\"  throw False 1!\"\>"}],
+  SequenceForm["$$$ :", "Main", "  throw False 1!"],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.5498875842043457`*^9, 3.5498877252448497`*^9}]
+}, Open  ]],
+
+Cell[BoxData[
+ RowBox[{
+  StyleBox[
+   RowBox[{"Throw", "::", "nocatch"}], "MessageName"], 
+  RowBox[{
+  ":", " "}], "\<\"Uncaught \[NoBreak]\\!\\(Throw[False]\\)\[NoBreak] \
+returned to top level. \\!\\(\\*ButtonBox[\\\"\[RightSkeleton]\\\", \
+ButtonStyle->\\\"Link\\\", ButtonFrame->None, \
+ButtonData:>\\\"paclet:ref/Throw\\\", ButtonNote -> \
+\\\"Throw::nocatch\\\"]\\)\"\>"}]], "Message", "MSG",
+ CellChangeTimes->{3.5498877252448497`*^9}],
+
+Cell[BoxData[
+ RowBox[{"Hold", "[", 
+  RowBox[{"Throw", "[", "False", "]"}], "]"}]], "Output",
+ CellChangeTimes->{
+  3.4833648017017508`*^9, 3.4833648406394997`*^9, 3.48336697895006*^9, 
+   3.4833670864038725`*^9, 3.4833688331025515`*^9, 3.48337030087757*^9, 
+   3.483370411534528*^9, 3.48337068139563*^9, 3.4833710909295015`*^9, 
+   3.4833726442519426`*^9, 3.4833728029404583`*^9, 3.483372900175455*^9, 
+   3.483372955394559*^9, 3.483376250321896*^9, 3.4833763199004664`*^9, 
+   3.483376552214453*^9, 3.4833777463783455`*^9, 3.483377986536133*^9, 
+   3.483378027177018*^9, 3.483378525430207*^9, 3.4833786598685675`*^9, 
+   3.483427875359964*^9, 3.4834279254999475`*^9, 3.483427974561819*^9, {
+   3.4834281277317333`*^9, 3.483428153090784*^9}, 3.4834288149447613`*^9, 
+   3.4834290535526094`*^9, 3.4834301133583264`*^9, 3.4834302816541243`*^9, 
+   3.4834304900121655`*^9, 3.549887528480788*^9, 3.5498876121129246`*^9, 
+   3.5498877252604494`*^9}]
+}, Open  ]],
+
+Cell[BoxData["1"], "Input",
+ CellChangeTimes->{3.483430490309039*^9}],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"V", "[", 
+  RowBox[{"cc", ",", "\"\<Coupon Date List\>\""}], "]"}]], "Input",
+ CellChangeTimes->{3.483370425581493*^9, 3.4833777618784447`*^9}],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{"\<\"1/2/2\"\>", ",", "\<\"1/2/2\"\>"}], "}"}]], "Output",
+ CellChangeTimes->{
+  3.483370427237754*^9, 3.4833710975389185`*^9, 3.483377763800332*^9, {
+   3.4833779947861853`*^9, 3.4833780313332944`*^9}, 3.483378682790589*^9, 
+   3.483428826397813*^9, 3.5498875378876486`*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"How", "[", 
+  RowBox[{"\"\<Main\>\"", ",", "\"\<Consultation<1>\>\""}], "]"}]], "Input"],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\" ->BackwardRule \"\>", 
+   "\[InvisibleSpace]", "\<\"Main determination 2\"\>", 
+   "\[InvisibleSpace]", "\<\" concluded  \"\>", 
+   "\[InvisibleSpace]", "\<\"Main\"\>", "\[InvisibleSpace]", "\<\"[\"\>", 
+   "\[InvisibleSpace]", "\<\"Consultation<1>\"\>", 
+   "\[InvisibleSpace]", "\<\"]\"\>", "\[InvisibleSpace]", "\<\"=\"\>", 
+   "\[InvisibleSpace]", "\<\"Good Bye\"\>"}],
+  SequenceForm[
+  " ->BackwardRule ", "Main determination 2", " concluded  ", "Main", "[", 
+   "Consultation<1>", "]", "=", "Good Bye"],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.483372962816481*^9, 3.4833786853999805`*^9, 
+  3.4834288297571664`*^9, 3.549887553113346*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"ShowSRE", "[", "]"}]], "Input"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"SuccedeedRuleEvent : \"\>", "\[InvisibleSpace]", "1"}],
+  SequenceForm["SuccedeedRuleEvent : ", 1],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.48337296578525*^9, 3.4833786881187477`*^9, 
+  3.483428832632148*^9, 3.549887557028971*^9, 3.549887631051446*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"BackwardRule = \"\>", 
+   "\[InvisibleSpace]", "\<\"Rule Clause Date Generation\"\>"}],
+  SequenceForm["BackwardRule = ", "Rule Clause Date Generation"],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.48337296578525*^9, 3.4833786881187477`*^9, 
+  3.483428832632148*^9, 3.549887557028971*^9, 3.549887631051446*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"Instance = \"\>", 
+   "\[InvisibleSpace]", "\<\"Consultation<1>\"\>"}],
+  SequenceForm["Instance = ", "Consultation<1>"],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.48337296578525*^9, 3.4833786881187477`*^9, 
+  3.483428832632148*^9, 3.549887557028971*^9, 3.549887631051446*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"Attribute = \"\>", 
+   "\[InvisibleSpace]", "\<\"Coupon Date List\"\>"}],
+  SequenceForm["Attribute = ", "Coupon Date List"],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.48337296578525*^9, 3.4833786881187477`*^9, 
+  3.483428832632148*^9, 3.549887557028971*^9, 3.549887631051446*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"ConclusionType = \"\>", 
+   "\[InvisibleSpace]", "\<\"Rule Goal\"\>"}],
+  SequenceForm["ConclusionType = ", "Rule Goal"],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.48337296578525*^9, 3.4833786881187477`*^9, 
+  3.483428832632148*^9, 3.549887557028971*^9, 3.549887631051446*^9}],
+
+Cell[BoxData["\<\"-\"\>"], "Print",
+ CellChangeTimes->{3.48337296578525*^9, 3.4833786881187477`*^9, 
+  3.483428832632148*^9, 3.549887557028971*^9, 3.549887631051446*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"SuccedeedRuleEvent : \"\>", "\[InvisibleSpace]", "2"}],
+  SequenceForm["SuccedeedRuleEvent : ", 2],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.48337296578525*^9, 3.4833786881187477`*^9, 
+  3.483428832632148*^9, 3.549887557028971*^9, 3.549887631051446*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"BackwardRule = \"\>", 
+   "\[InvisibleSpace]", "\<\"Rule NoSwap_Autocall_CMSTrigger\"\>"}],
+  SequenceForm["BackwardRule = ", "Rule NoSwap_Autocall_CMSTrigger"],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.48337296578525*^9, 3.4833786881187477`*^9, 
+  3.483428832632148*^9, 3.549887557028971*^9, 3.549887631051446*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"Instance = \"\>", 
+   "\[InvisibleSpace]", "\<\"Consultation<1>\"\>"}],
+  SequenceForm["Instance = ", "Consultation<1>"],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.48337296578525*^9, 3.4833786881187477`*^9, 
+  3.483428832632148*^9, 3.549887557028971*^9, 3.549887631051446*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"Attribute = \"\>", "\[InvisibleSpace]", "\<\"Clause List\"\>"}],
+  SequenceForm["Attribute = ", "Clause List"],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.48337296578525*^9, 3.4833786881187477`*^9, 
+  3.483428832632148*^9, 3.549887557028971*^9, 3.549887631051446*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"ConclusionType = \"\>", 
+   "\[InvisibleSpace]", "\<\"Rule Goal\"\>"}],
+  SequenceForm["ConclusionType = ", "Rule Goal"],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.48337296578525*^9, 3.4833786881187477`*^9, 
+  3.483428832632148*^9, 3.549887557028971*^9, 3.549887631051446*^9}],
+
+Cell[BoxData["\<\"-\"\>"], "Print",
+ CellChangeTimes->{3.48337296578525*^9, 3.4833786881187477`*^9, 
+  3.483428832632148*^9, 3.549887557028971*^9, 3.549887631051446*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"SuccedeedRuleEvent : \"\>", "\[InvisibleSpace]", "3"}],
+  SequenceForm["SuccedeedRuleEvent : ", 3],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.48337296578525*^9, 3.4833786881187477`*^9, 
+  3.483428832632148*^9, 3.549887557028971*^9, 3.549887631051446*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"BackwardRule = \"\>", 
+   "\[InvisibleSpace]", "\<\"Main determination 2\"\>"}],
+  SequenceForm["BackwardRule = ", "Main determination 2"],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.48337296578525*^9, 3.4833786881187477`*^9, 
+  3.483428832632148*^9, 3.549887557028971*^9, 3.549887631051446*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"Instance = \"\>", 
+   "\[InvisibleSpace]", "\<\"Consultation<1>\"\>"}],
+  SequenceForm["Instance = ", "Consultation<1>"],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.48337296578525*^9, 3.4833786881187477`*^9, 
+  3.483428832632148*^9, 3.549887557028971*^9, 3.549887631051446*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"Attribute = \"\>", "\[InvisibleSpace]", "\<\"Main\"\>"}],
+  SequenceForm["Attribute = ", "Main"],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.48337296578525*^9, 3.4833786881187477`*^9, 
+  3.483428832632148*^9, 3.549887557028971*^9, 3.549887631051446*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"ConclusionType = \"\>", 
+   "\[InvisibleSpace]", "\<\"Rule Goal\"\>"}],
+  SequenceForm["ConclusionType = ", "Rule Goal"],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.48337296578525*^9, 3.4833786881187477`*^9, 
+  3.483428832632148*^9, 3.549887557028971*^9, 3.549887631051446*^9}],
+
+Cell[BoxData["\<\"-\"\>"], "Print",
+ CellChangeTimes->{3.48337296578525*^9, 3.4833786881187477`*^9, 
+  3.483428832632148*^9, 3.549887557028971*^9, 3.549887631051446*^9}]
+}, Open  ]]
+}, Open  ]]
+},
+AutoGeneratedPackage->None,
+WindowSize->{1196, 889},
+WindowMargins->{{Automatic, 0}, {Automatic, 0}},
+ShowSelection->True,
+FrontEndVersion->"8.0 for Microsoft Windows (64-bit) (February 23, 2011)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[567, 22, 341, 7, 31, "Input",
+ InitializationCell->True],
+Cell[911, 31, 271, 3, 30, "Output"]
+}, Open  ]],
+Cell[1197, 37, 1044, 25, 172, "Input",
+ InitializationCell->True],
+Cell[2244, 64, 553, 13, 72, "Input",
+ InitializationCell->True],
+Cell[CellGroupData[{
+Cell[2822, 81, 89, 2, 31, "Input"],
+Cell[CellGroupData[{
+Cell[2936, 87, 422, 9, 23, "Print"],
+Cell[3361, 98, 403, 10, 23, "Print"],
+Cell[3767, 110, 274, 6, 23, "Print"],
+Cell[4044, 118, 444, 11, 23, "Print"],
+Cell[4491, 131, 453, 10, 23, "Print"],
+Cell[4947, 143, 294, 6, 23, "Print"],
+Cell[5244, 151, 442, 11, 23, "Print"],
+Cell[5689, 164, 258, 6, 23, "Print"],
+Cell[5950, 172, 507, 11, 23, "Print"],
+Cell[6460, 185, 454, 11, 23, "Print"],
+Cell[6917, 198, 331, 7, 23, "Print"],
+Cell[7251, 207, 288, 6, 23, "Print"],
+Cell[7542, 215, 456, 11, 23, "Print"],
+Cell[8001, 228, 260, 6, 23, "Print"],
+Cell[8264, 236, 493, 11, 23, "Print"],
+Cell[8760, 249, 468, 11, 23, "Print"],
+Cell[9231, 262, 260, 6, 23, "Print"],
+Cell[9494, 270, 505, 12, 23, "Print"],
+Cell[10002, 284, 448, 11, 23, "Print"],
+Cell[10453, 297, 260, 6, 23, "Print"],
+Cell[10716, 305, 489, 11, 23, "Print"],
+Cell[11208, 318, 1099, 25, 43, "Print"],
+Cell[12310, 345, 325, 7, 23, "Print"],
+Cell[12638, 354, 4732, 70, 138, "Print"],
+Cell[17373, 426, 805, 19, 23, "Print"],
+Cell[18181, 447, 331, 7, 23, "Print"],
+Cell[18515, 456, 423, 10, 23, "Print"],
+Cell[18941, 468, 649, 15, 23, "Print"],
+Cell[19593, 485, 442, 11, 23, "Print"],
+Cell[20038, 498, 258, 6, 23, "Print"],
+Cell[20299, 506, 477, 11, 23, "Print"],
+Cell[20779, 519, 423, 10, 23, "Print"],
+Cell[21205, 531, 595, 14, 23, "Print"],
+Cell[21803, 547, 436, 10, 23, "Print"],
+Cell[22242, 559, 260, 6, 23, "Print"],
+Cell[22505, 567, 473, 11, 23, "Print"],
+Cell[22981, 580, 421, 10, 23, "Print"],
+Cell[23405, 592, 593, 14, 23, "Print"],
+Cell[24001, 608, 424, 9, 23, "Print"],
+Cell[24428, 619, 258, 6, 23, "Print"],
+Cell[24689, 627, 467, 11, 23, "Print"],
+Cell[25159, 640, 431, 10, 23, "Print"],
+Cell[25593, 652, 595, 14, 23, "Print"],
+Cell[26191, 668, 435, 10, 23, "Print"],
+Cell[26629, 680, 745, 18, 23, "Print"],
+Cell[27377, 700, 429, 10, 23, "Print"],
+Cell[27809, 712, 20054, 454, 309, "Print"],
+Cell[47866, 1168, 506, 12, 23, "Print"],
+Cell[48375, 1182, 472, 11, 23, "Print"],
+Cell[48850, 1195, 258, 6, 23, "Print"],
+Cell[49111, 1203, 511, 12, 23, "Print"],
+Cell[49625, 1217, 369, 8, 23, "Print"],
+Cell[49997, 1227, 274, 6, 23, "Print"],
+Cell[50274, 1235, 920, 24, 23, "Print"],
+Cell[51197, 1261, 311, 7, 23, "Print"],
+Cell[51511, 1270, 510, 12, 23, "Print"]
+}, Open  ]],
+Cell[52036, 1285, 867, 12, 30, "Output"]
+}, Open  ]],
+Cell[52918, 1300, 608, 14, 72, "Input",
+ InitializationCell->True],
+Cell[CellGroupData[{
+Cell[53551, 1318, 132, 3, 31, "Input"],
+Cell[CellGroupData[{
+Cell[53708, 1325, 438, 9, 23, "Print"],
+Cell[54149, 1336, 456, 10, 23, "Print"],
+Cell[54608, 1348, 456, 10, 23, "Print"],
+Cell[55067, 1360, 470, 11, 23, "Print"],
+Cell[55540, 1373, 448, 10, 23, "Print"],
+Cell[55991, 1385, 474, 11, 23, "Print"],
+Cell[56468, 1398, 484, 11, 23, "Print"],
+Cell[56955, 1411, 464, 11, 23, "Print"],
+Cell[57422, 1424, 466, 11, 23, "Print"],
+Cell[57891, 1437, 454, 10, 23, "Print"],
+Cell[58348, 1449, 458, 10, 23, "Print"],
+Cell[58809, 1461, 448, 9, 23, "Print"],
+Cell[59260, 1472, 441, 9, 23, "Print"],
+Cell[59704, 1483, 464, 11, 23, "Print"],
+Cell[60171, 1496, 448, 10, 23, "Print"],
+Cell[60622, 1508, 448, 10, 23, "Print"],
+Cell[61073, 1520, 456, 10, 23, "Print"],
+Cell[61532, 1532, 450, 10, 23, "Print"],
+Cell[61985, 1544, 490, 11, 23, "Print"],
+Cell[62478, 1557, 318, 6, 23, "Print"],
+Cell[62799, 1565, 303, 6, 23, "Print"]
+}, Open  ]],
+Cell[63117, 1574, 444, 10, 21, "Message"],
+Cell[63564, 1586, 946, 15, 30, "Output"]
+}, Open  ]],
+Cell[64525, 1604, 69, 1, 31, "Input"],
+Cell[CellGroupData[{
+Cell[64619, 1609, 167, 3, 31, "Input"],
+Cell[64789, 1614, 314, 6, 30, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[65140, 1625, 112, 2, 31, "Input"],
+Cell[65255, 1629, 705, 14, 23, "Print"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[65997, 1648, 55, 1, 31, "Input"],
+Cell[CellGroupData[{
+Cell[66077, 1653, 312, 6, 23, "Print"],
+Cell[66392, 1661, 366, 7, 23, "Print"],
+Cell[66761, 1670, 334, 7, 23, "Print"],
+Cell[67098, 1679, 338, 7, 23, "Print"],
+Cell[67439, 1688, 334, 7, 23, "Print"],
+Cell[67776, 1697, 169, 2, 23, "Print"],
+Cell[67948, 1701, 312, 6, 23, "Print"],
+Cell[68263, 1709, 374, 7, 23, "Print"],
+Cell[68640, 1718, 334, 7, 23, "Print"],
+Cell[68977, 1727, 324, 6, 23, "Print"],
+Cell[69304, 1735, 334, 7, 23, "Print"],
+Cell[69641, 1744, 169, 2, 23, "Print"],
+Cell[69813, 1748, 312, 6, 23, "Print"],
+Cell[70128, 1756, 352, 7, 23, "Print"],
+Cell[70483, 1765, 334, 7, 23, "Print"],
+Cell[70820, 1774, 310, 6, 23, "Print"],
+Cell[71133, 1782, 334, 7, 23, "Print"],
+Cell[71470, 1791, 169, 2, 23, "Print"]
+}, Open  ]]
+}, Open  ]]
+}
+]
+*)
+
+(* End of internal cache information *)

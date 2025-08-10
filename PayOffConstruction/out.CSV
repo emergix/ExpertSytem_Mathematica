@@ -1,0 +1,6 @@
+Fixed Rate Bond,Name,Type,Currency,Maturity Date,Notional,Issue Date,Coupon Rate,Fixed Coupon Date,State Procedure,Term,Accrual Daycount Basis,Coupon Generation Method,Business Day Rule,Spot Price,Trade day Rule,Repo Curve,Discount Curve,RiskMetrics Map Procedure,Spread Over Yield,Theoretical Model*,Market Model*
+,rrrt,Fixed Rate Bond,USD,10/10/10,2 USD,22,2% SEMI actual/actual,5,@cash flow generator,6 Months,actual/actual,Backward,Regular Following 0-day(CalUSD),98.8281 USD,Regular Following 3-day(CalUSD),IRUSD-Treasury,IRUSD-Treasury,@CashFlow riskmetrics map,@implied spread MKT(%CONT actual/actual,errrr,fff
+Bond Model,Name,Value,Price,Spot Value,Yield,Accrued Interest
+,fff,@clean to dirty($),@spot price($),@spot value($),bond IRR from value(%SEMI actual/actual),@accrued bond($)
+Bond Model,Name,Value,Price,Spot Value,Yield,Accrued Interest
+,errrr,@PV bond($),@PV bond less accrued($),@spot value($),bond IRR from value(%SEMI actual/actual),@accrued bond($)

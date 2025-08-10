@@ -1,0 +1,1459 @@
+(* Content-type: application/mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 7.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       145,          7]
+NotebookDataLength[     49192,       1450]
+NotebookOptionsPosition[     42906,       1258]
+NotebookOutlinePosition[     43542,       1283]
+CellTagsIndexPosition[     43456,       1278]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell[BoxData[
+ RowBox[{"SetDirectory", "[", 
+  "\"\<C:\\\\Documents and Settings\\\\ocroissant\\\\My \
+Documents\\\\EDA23\\\\ExpertSystemEDA23\\\\PayOffConstruction\>\"", 
+  "]"}]], "Input",
+ CellChangeTimes->{
+  3.48336286572061*^9, {3.483367670126358*^9, 3.483367677938908*^9}}],
+
+Cell[BoxData["\<\"C:\\\\Documents and Settings\\\\ocroissant\\\\My \
+Documents\\\\EDA23\\\\ExpertSystemEDA23\\\\NewExpertSystem\"\>"], "Output",
+ CellChangeTimes->{3.483362877205059*^9}]
+}, Open  ]],
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"DirectorySave", "=", 
+   RowBox[{"Directory", "[", "]"}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{
+  "SetDirectory", "[", 
+   "\"\<C:\\\\Documents and Settings\\\\ocroissant\\\\My Documents\\\\EDA23\\\
+\\ExpertSystemEDA23\\\\PayOffConstruction\\\\Base\>\"", "]"}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"Get", "[", "\"\<Creations.m\>\"", "]"}], ";"}], "\n", 
+ RowBox[{
+  RowBox[{"Get", "[", "\"\<InferenceEngine.m\>\"", "]"}], ";"}], "\n", 
+ RowBox[{
+  RowBox[{"Get", "[", "\"\<DisplayFunctions.m\>\"", "]"}], ";"}], "\n", 
+ RowBox[{
+  RowBox[{"Get", "[", "\"\<Why.m\>\"", "]"}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"SetDirectory", "[", "DirectorySave", "]"}], ";"}]}], "Input",
+ InitializationCell->True,
+ CellChangeTimes->{{3.4833633470361905`*^9, 3.4833633485362005`*^9}, {
+   3.483367606469701*^9, 3.4833676209072933`*^9}, {3.4833676852670803`*^9, 
+   3.4833676917358713`*^9}, {3.483367783220832*^9, 3.483367802408455*^9}, 
+   3.483367888893383*^9}],
+
+Cell[BoxData[{
+ RowBox[{"NewKb", "[", "]"}], "\n", 
+ RowBox[{
+  RowBox[{"AddClass", "[", "\"\<Maison\>\"", "]"}], ";"}], "\n", 
+ RowBox[{
+  RowBox[{"AddAttribute", "[", 
+   RowBox[{"\"\<Maison\>\"", ",", "\"\<PorteNb\>\""}], "]"}], ";"}], "\n", 
+ RowBox[{
+  RowBox[{"AddAttribute", "[", 
+   RowBox[{"\"\<Maison\>\"", ",", "\"\<TemporalState\>\""}], "]"}], 
+  ";"}], "\n", 
+ RowBox[{
+  RowBox[{"AddAttribute", "[", 
+   RowBox[{"\"\<Maison\>\"", ",", "\"\<Confiance\>\""}], "]"}], ";"}], "\n", 
+ RowBox[{
+  RowBox[{"AddAttribute", "[", 
+   RowBox[{"\"\<Maison\>\"", ",", "\"\<Etat_des_chiottes\>\"", ",", 
+    RowBox[{"question", "->", "\"\<Quelle est l'etats des chiottes?\>\""}], 
+    ",", 
+    RowBox[{"legalvalues", "\[Rule]", 
+     RowBox[{"{", 
+      RowBox[{
+      "\"\<terrible\>\"", ",", "\"\<moyen\>\"", ",", 
+       "\"\<on en mangerait\>\""}], "}"}]}]}], "]"}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"AddAttribute", "[", 
+   RowBox[{"\"\<Maison\>\"", ",", "\"\<owner\>\""}], "]"}], ";"}], "\n", 
+ RowBox[{
+  RowBox[{"AddAttribute", "[", 
+   RowBox[{"\"\<Maison\>\"", ",", " ", "\"\<name\>\""}], "]"}], ";"}], "\n", 
+ RowBox[{
+  RowBox[{"AddBackwardRule", "[", 
+   RowBox[{"\"\<rule1\>\"", ",", "\[IndentingNewLine]", "\t", 
+    RowBox[{
+     RowBox[{"V", "[", 
+      RowBox[{"CurrentInstance", ",", "\"\<owner\>\""}], "]"}], "==", 
+     "\"\<Catherine\>\""}], ",", "\[IndentingNewLine]", "\t", 
+    "\"\<pasfiniAuPipi\>\"", ",", "\[IndentingNewLine]", "\t", 
+    "\"\<TemporalState\>\"", ",", "\[IndentingNewLine]", "\"\<Maison\>\""}], 
+   "]"}], ";"}], "\n", 
+ RowBox[{
+  RowBox[{"AddBackwardRule", "[", 
+   RowBox[{"\"\<rule2\>\"", ",", "\[IndentingNewLine]", "\t", 
+    RowBox[{
+     RowBox[{"(", 
+      RowBox[{
+       RowBox[{"V", "[", 
+        RowBox[{"CurrentInstance", ",", "\"\<owner\>\""}], "]"}], "==", 
+       "\"\<olivier\>\""}], ")"}], "&&", 
+     RowBox[{"(", 
+      RowBox[{"Known", "[", 
+       RowBox[{"CurrentInstance", ",", "\"\<Etat_des_chiottes\>\""}], "]"}], 
+      ")"}]}], ",", "\[IndentingNewLine]", "\t", "\"\<superfiniAuPipi\>\"", 
+    ",", "\[IndentingNewLine]", "\t", "\"\<TemporalState\>\"", ",", 
+    "\[IndentingNewLine]", "\"\<Maison\>\""}], "]"}], ";"}], "\n", 
+ RowBox[{
+  RowBox[{"AddBackwardRule", "[", 
+   RowBox[{"\"\<rule3\>\"", ",", "\[IndentingNewLine]", "\t", 
+    RowBox[{
+     RowBox[{"V", "[", 
+      RowBox[{"CurrentInstance", ",", "\"\<owner\>\""}], "]"}], "==", 
+     "\"\<michel\>\""}], ",", "\[IndentingNewLine]", "\t", 
+    "\"\<finiAuPipi\>\"", ",", "\[IndentingNewLine]", "\t", 
+    "\"\<TemporalState\>\"", ",", "\[IndentingNewLine]", "\"\<Maison\>\""}], 
+   "]"}], ";"}], "\n", 
+ RowBox[{
+  RowBox[{"AddBackwardRule", "[", 
+   RowBox[{"\"\<rule4\>\"", ",", "\[IndentingNewLine]", "\t", 
+    RowBox[{
+     RowBox[{"V", "[", 
+      RowBox[{"CurrentInstance", ",", "\"\<TemporalState\>\""}], "]"}], "==", 
+     "\"\<superfiniAuPipi\>\""}], ",", "\[IndentingNewLine]", "\t", 
+    "\"\<TresMoyenne\>\"", ",", "\[IndentingNewLine]", "\t", 
+    "\"\<Confiance\>\"", ",", "\[IndentingNewLine]", "\"\<Maison\>\""}], 
+   "]"}], ";"}], "\n", 
+ RowBox[{
+  RowBox[{"AddBackwardRule", "[", 
+   RowBox[{"\"\<rule5\>\"", ",", "\[IndentingNewLine]", "\t", 
+    RowBox[{
+     RowBox[{"V", "[", 
+      RowBox[{"CurrentInstance", ",", "\"\<TemporalState\>\""}], "]"}], "==", 
+     "\"\<finiAuPipi\>\""}], ",", "\[IndentingNewLine]", "\t", 
+    "\"\<bonne\>\"", ",", "\[IndentingNewLine]", "\t", "\"\<Confiance\>\"", 
+    ",", "\[IndentingNewLine]", "\"\<Maison\>\""}], "]"}], ";"}], "\n", 
+ RowBox[{
+  RowBox[{"AddBackwardRule", "[", 
+   RowBox[{"\"\<rule6\>\"", ",", "\[IndentingNewLine]", "\t", 
+    RowBox[{
+     RowBox[{"(", 
+      RowBox[{
+       RowBox[{"V", "[", 
+        RowBox[{"CurrentInstance", ",", "\"\<TemporalState\>\""}], "]"}], 
+       "==", "\"\<pasfiniAuPipi\>\""}], ")"}], "&&", 
+     RowBox[{"Known", "[", 
+      RowBox[{"CurrentInstance", ",", "\"\<Etat_des_chiottes\>\""}], "]"}]}], 
+    ",", "\[IndentingNewLine]", "\t", "\"\<Tresbonne\>\"", ",", 
+    "\[IndentingNewLine]", "\t", "\"\<Confiance\>\"", ",", 
+    "\[IndentingNewLine]", "\"\<Maison\>\""}], "]"}], ";"}], "\n", 
+ RowBox[{
+  RowBox[{"a", "=", 
+   RowBox[{"AddInstance", "[", 
+    RowBox[{"\"\<Maison\>\"", ",", 
+     RowBox[{"initialvalues", "\[Rule]", 
+      RowBox[{"{", 
+       RowBox[{"\"\<owner\>\"", ",", "\"\<olivier\>\""}], "}"}]}]}], "]"}]}], 
+  ";"}], "\n", 
+ RowBox[{
+  RowBox[{"b", "=", 
+   RowBox[{"AddInstance", "[", 
+    RowBox[{"\"\<Maison\>\"", ",", 
+     RowBox[{"initialvalues", "\[Rule]", 
+      RowBox[{"{", 
+       RowBox[{
+        RowBox[{"{", 
+         RowBox[{"\"\<owner\>\"", ",", "\"\<michel\>\""}], "}"}], ",", 
+        RowBox[{"{", 
+         RowBox[{"\"\<name\>\"", ",", "\"\<les_capucines\>\""}], "}"}]}], 
+       "}"}]}]}], "]"}]}], ";"}]}], "Input"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"TraceReasoning1", "=", "True"}], ";", 
+  RowBox[{"TraceReasoning", "=", "True"}], ";"}]], "Input"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Value", "[", 
+  RowBox[{"a", ",", "\"\<Confiance\>\""}], "]"}]], "Input"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"Trying to get the value of \\\"\"\>", 
+   "\[InvisibleSpace]", "\<\"Confiance\"\>", "\[InvisibleSpace]", "\<\"[\"\>",
+    "\[InvisibleSpace]", "\<\"Maison<1>\"\>", 
+   "\[InvisibleSpace]", "\<\"]\"\>"}],
+  SequenceForm[
+  "Trying to get the value of \"", "Confiance", "[", "Maison<1>", "]"],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.4833629149240503`*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"--- trying to conclude by rule : \"\>", 
+   "\[InvisibleSpace]", "\<\"Confiance\"\>", "\[InvisibleSpace]", "\<\"[\"\>",
+    "\[InvisibleSpace]", "\<\"Maison<1>\"\>", 
+   "\[InvisibleSpace]", "\<\"]\"\>"}],
+  SequenceForm[
+  "--- trying to conclude by rule : ", "Confiance", "[", "Maison<1>", "]"],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.4833629149240503`*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"--- Rule that will be tried : \"\>", "\[InvisibleSpace]", 
+   RowBox[{"{", 
+    RowBox[{"\<\"rule4\"\>", ",", "\<\"rule5\"\>", ",", "\<\"rule6\"\>"}], 
+    "}"}]}],
+  SequenceForm["--- Rule that will be tried : ", {"rule4", "rule5", "rule6"}],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.4833629149240503`*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"--- trying to fire : \"\>", 
+   "\[InvisibleSpace]", "\<\"rule4\"\>"}],
+  SequenceForm["--- trying to fire : ", "rule4"],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.4833629149240503`*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"Trying to get the value of \\\"\"\>", 
+   "\[InvisibleSpace]", "\<\"TemporalState\"\>", 
+   "\[InvisibleSpace]", "\<\"[\"\>", "\[InvisibleSpace]", "\<\"Maison<1>\"\>",
+    "\[InvisibleSpace]", "\<\"]\"\>"}],
+  SequenceForm[
+  "Trying to get the value of \"", "TemporalState", "[", "Maison<1>", "]"],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.4833629149240503`*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"--- trying to conclude by rule : \"\>", 
+   "\[InvisibleSpace]", "\<\"TemporalState\"\>", 
+   "\[InvisibleSpace]", "\<\"[\"\>", "\[InvisibleSpace]", "\<\"Maison<1>\"\>",
+    "\[InvisibleSpace]", "\<\"]\"\>"}],
+  SequenceForm[
+  "--- trying to conclude by rule : ", "TemporalState", "[", "Maison<1>", "]"],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.4833629149240503`*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"--- Rule that will be tried : \"\>", "\[InvisibleSpace]", 
+   RowBox[{"{", 
+    RowBox[{"\<\"rule1\"\>", ",", "\<\"rule2\"\>", ",", "\<\"rule3\"\>"}], 
+    "}"}]}],
+  SequenceForm["--- Rule that will be tried : ", {"rule1", "rule2", "rule3"}],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.4833629149240503`*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"--- trying to fire : \"\>", 
+   "\[InvisibleSpace]", "\<\"rule1\"\>"}],
+  SequenceForm["--- trying to fire : ", "rule1"],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.4833629149240503`*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"accessing the value of \\\"\"\>", 
+   "\[InvisibleSpace]", "\<\"owner\"\>", "\[InvisibleSpace]", "\<\"[\"\>", 
+   "\[InvisibleSpace]", "\<\"Maison<1>\"\>", 
+   "\[InvisibleSpace]", "\<\"]\"\>"}],
+  SequenceForm["accessing the value of \"", "owner", "[", "Maison<1>", "]"],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.4833629149240503`*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"Failed ! :  premisse, aa=\"\>", "\[InvisibleSpace]", "False", 
+   "\[InvisibleSpace]", "\<\"   \"\>", "\[InvisibleSpace]", "\<\"rule1\"\>"}],
+  SequenceForm["Failed ! :  premisse, aa=", False, "   ", "rule1"],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.4833629149396753`*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"--- trying to fire : \"\>", 
+   "\[InvisibleSpace]", "\<\"rule2\"\>"}],
+  SequenceForm["--- trying to fire : ", "rule2"],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.4833629149396753`*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"accessing the value of \\\"\"\>", 
+   "\[InvisibleSpace]", "\<\"owner\"\>", "\[InvisibleSpace]", "\<\"[\"\>", 
+   "\[InvisibleSpace]", "\<\"Maison<1>\"\>", 
+   "\[InvisibleSpace]", "\<\"]\"\>"}],
+  SequenceForm["accessing the value of \"", "owner", "[", "Maison<1>", "]"],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.4833629149396753`*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"Trying to get the value of \\\"\"\>", 
+   "\[InvisibleSpace]", "\<\"Etat_des_chiottes\"\>", 
+   "\[InvisibleSpace]", "\<\"[\"\>", "\[InvisibleSpace]", "\<\"Maison<1>\"\>",
+    "\[InvisibleSpace]", "\<\"]\"\>"}],
+  SequenceForm[
+  "Trying to get the value of \"", "Etat_des_chiottes", "[", "Maison<1>", "]"],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.4833629149709253`*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"--- trying to conclude by rule : \"\>", 
+   "\[InvisibleSpace]", "\<\"Etat_des_chiottes\"\>", 
+   "\[InvisibleSpace]", "\<\"[\"\>", "\[InvisibleSpace]", "\<\"Maison<1>\"\>",
+    "\[InvisibleSpace]", "\<\"]\"\>"}],
+  SequenceForm[
+  "--- trying to conclude by rule : ", "Etat_des_chiottes", "[", "Maison<1>", 
+   "]"],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.483362915049051*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"--- Rule that will be tried : \"\>", "\[InvisibleSpace]", 
+   RowBox[{"{", "}"}]}],
+  SequenceForm["--- Rule that will be tried : ", {}],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.4833629150803013`*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"*** \"\>", "\[InvisibleSpace]", "\<\"Etat_des_chiottes\"\>", 
+   "\[InvisibleSpace]", "\<\"[\"\>", "\[InvisibleSpace]", "\<\"Maison<1>\"\>",
+    "\[InvisibleSpace]", "\<\"]  concluded by question = \"\>", 
+   "\[InvisibleSpace]", "\<\"terrible\"\>"}],
+  SequenceForm[
+  "*** ", "Etat_des_chiottes", "[", "Maison<1>", 
+   "]  concluded by question = ", "terrible"],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.4833629209709635`*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"Premisse of \"\>", "\[InvisibleSpace]", "\<\"rule2\"\>", 
+   "\[InvisibleSpace]", "\<\":\"\>", "\[InvisibleSpace]", 
+   TagBox[
+    RowBox[{
+     RowBox[{
+      RowBox[{"V", "[", 
+       RowBox[{"1", ",", "\<\"owner\"\>"}], "]"}], 
+      "\[Equal]", "\<\"olivier\"\>"}], "&&", 
+     RowBox[{"Known", "[", 
+      RowBox[{"1", ",", "\<\"Etat_des_chiottes\"\>"}], "]"}]}],
+    HoldForm], "\[InvisibleSpace]", "\<\" ->True\"\>"}],
+  SequenceForm["Premisse of ", "rule2", ":", 
+   HoldForm[
+    And[$CellContext`V[1, "owner"] == "olivier", 
+     $CellContext`Known[1, "Etat_des_chiottes"]]], " ->True"],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.483362921002214*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"***++ \"\>", "\[InvisibleSpace]", "\<\"rule2\"\>", 
+   "\[InvisibleSpace]", "\<\"  succeeded !\"\>"}],
+  SequenceForm["***++ ", "rule2", "  succeeded !"],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.4833629210490894`*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"*** \"\>", "\[InvisibleSpace]", "\<\"TemporalState\"\>", 
+   "\[InvisibleSpace]", "\<\"[\"\>", "\[InvisibleSpace]", "\<\"Maison<1>\"\>",
+    "\[InvisibleSpace]", "\<\"]\"\>", 
+   "\[InvisibleSpace]", "\<\"  concluded by rule = \"\>", 
+   "\[InvisibleSpace]", "\<\"superfiniAuPipi\"\>"}],
+  SequenceForm[
+  "*** ", "TemporalState", "[", "Maison<1>", "]", "  concluded by rule = ", 
+   "superfiniAuPipi"],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.4833629210803394`*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"Premisse of \"\>", "\[InvisibleSpace]", "\<\"rule4\"\>", 
+   "\[InvisibleSpace]", "\<\":\"\>", "\[InvisibleSpace]", 
+   TagBox[
+    RowBox[{
+     RowBox[{"V", "[", 
+      RowBox[{"1", ",", "\<\"TemporalState\"\>"}], "]"}], 
+     "\[Equal]", "\<\"superfiniAuPipi\"\>"}],
+    HoldForm], "\[InvisibleSpace]", "\<\" ->True\"\>"}],
+  SequenceForm["Premisse of ", "rule4", ":", 
+   HoldForm[$CellContext`V[1, "TemporalState"] == "superfiniAuPipi"], 
+   " ->True"],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.483362921127215*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"***++ \"\>", "\[InvisibleSpace]", "\<\"rule4\"\>", 
+   "\[InvisibleSpace]", "\<\"  succeeded !\"\>"}],
+  SequenceForm["***++ ", "rule4", "  succeeded !"],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.48336292117409*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"*** \"\>", "\[InvisibleSpace]", "\<\"Confiance\"\>", 
+   "\[InvisibleSpace]", "\<\"[\"\>", "\[InvisibleSpace]", "\<\"Maison<1>\"\>",
+    "\[InvisibleSpace]", "\<\"]\"\>", 
+   "\[InvisibleSpace]", "\<\"  concluded by rule = \"\>", 
+   "\[InvisibleSpace]", "\<\"TresMoyenne\"\>"}],
+  SequenceForm[
+  "*** ", "Confiance", "[", "Maison<1>", "]", "  concluded by rule = ", 
+   "TresMoyenne"],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.4833629212053404`*^9}]
+}, Open  ]],
+
+Cell[BoxData["\<\"TresMoyenne\"\>"], "Output",
+ CellChangeTimes->{3.4833629212522154`*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"ShowInstances", "[", "]"}]], "Input"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"CLASS = \"\>", "\[InvisibleSpace]", "\<\"Maison\"\>"}],
+  SequenceForm["CLASS = ", "Maison"],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.483362931533531*^9}],
+
+Cell[BoxData["\<\"--------------------\"\>"], "Print",
+ CellChangeTimes->{3.483362931533531*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"Instance:\"\>", "\[InvisibleSpace]", "\<\"Maison\"\>", 
+   "\[InvisibleSpace]", "\<\"<\"\>", "\[InvisibleSpace]", "1", 
+   "\[InvisibleSpace]", "\<\">\"\>"}],
+  SequenceForm["Instance:", "Maison", "<", 1, ">"],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.483362931533531*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"TemporalState\"\>", "\[InvisibleSpace]", "\<\"=\"\>", 
+   "\[InvisibleSpace]", "\<\"superfiniAuPipi\"\>"}],
+  SequenceForm["TemporalState", "=", "superfiniAuPipi"],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.483362931533531*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"Confiance\"\>", "\[InvisibleSpace]", "\<\"=\"\>", 
+   "\[InvisibleSpace]", "\<\"TresMoyenne\"\>"}],
+  SequenceForm["Confiance", "=", "TresMoyenne"],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.483362931549156*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"Etat_des_chiottes\"\>", "\[InvisibleSpace]", "\<\"=\"\>", 
+   "\[InvisibleSpace]", "\<\"terrible\"\>"}],
+  SequenceForm["Etat_des_chiottes", "=", "terrible"],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.483362931549156*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"owner\"\>", "\[InvisibleSpace]", "\<\"=\"\>", 
+   "\[InvisibleSpace]", "\<\"olivier\"\>"}],
+  SequenceForm["owner", "=", "olivier"],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.483362931549156*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"Instance:\"\>", "\[InvisibleSpace]", "\<\"Maison\"\>", 
+   "\[InvisibleSpace]", "\<\"<\"\>", "\[InvisibleSpace]", "2", 
+   "\[InvisibleSpace]", "\<\">\"\>"}],
+  SequenceForm["Instance:", "Maison", "<", 2, ">"],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.483362931549156*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"owner\"\>", "\[InvisibleSpace]", "\<\"=\"\>", 
+   "\[InvisibleSpace]", "\<\"michel\"\>"}],
+  SequenceForm["owner", "=", "michel"],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.483362931549156*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"name\"\>", "\[InvisibleSpace]", "\<\"=\"\>", 
+   "\[InvisibleSpace]", "\<\"les_capucines\"\>"}],
+  SequenceForm["name", "=", "les_capucines"],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.483362931549156*^9}]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"V", "[", 
+  RowBox[{"b", ",", "\"\<Confiance\>\""}], "]"}]], "Input"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"Trying to get the value of \\\"\"\>", 
+   "\[InvisibleSpace]", "\<\"Confiance\"\>", "\[InvisibleSpace]", "\<\"[\"\>",
+    "\[InvisibleSpace]", "\<\"Maison<2>\"\>", 
+   "\[InvisibleSpace]", "\<\"]\"\>"}],
+  SequenceForm[
+  "Trying to get the value of \"", "Confiance", "[", "Maison<2>", "]"],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.483362934080423*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"--- trying to conclude by rule : \"\>", 
+   "\[InvisibleSpace]", "\<\"Confiance\"\>", "\[InvisibleSpace]", "\<\"[\"\>",
+    "\[InvisibleSpace]", "\<\"Maison<2>\"\>", 
+   "\[InvisibleSpace]", "\<\"]\"\>"}],
+  SequenceForm[
+  "--- trying to conclude by rule : ", "Confiance", "[", "Maison<2>", "]"],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.483362934080423*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"--- Rule that will be tried : \"\>", "\[InvisibleSpace]", 
+   RowBox[{"{", 
+    RowBox[{"\<\"rule4\"\>", ",", "\<\"rule5\"\>", ",", "\<\"rule6\"\>"}], 
+    "}"}]}],
+  SequenceForm["--- Rule that will be tried : ", {"rule4", "rule5", "rule6"}],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.483362934080423*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"--- trying to fire : \"\>", 
+   "\[InvisibleSpace]", "\<\"rule4\"\>"}],
+  SequenceForm["--- trying to fire : ", "rule4"],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.483362934080423*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"Trying to get the value of \\\"\"\>", 
+   "\[InvisibleSpace]", "\<\"TemporalState\"\>", 
+   "\[InvisibleSpace]", "\<\"[\"\>", "\[InvisibleSpace]", "\<\"Maison<2>\"\>",
+    "\[InvisibleSpace]", "\<\"]\"\>"}],
+  SequenceForm[
+  "Trying to get the value of \"", "TemporalState", "[", "Maison<2>", "]"],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.483362934080423*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"--- trying to conclude by rule : \"\>", 
+   "\[InvisibleSpace]", "\<\"TemporalState\"\>", 
+   "\[InvisibleSpace]", "\<\"[\"\>", "\[InvisibleSpace]", "\<\"Maison<2>\"\>",
+    "\[InvisibleSpace]", "\<\"]\"\>"}],
+  SequenceForm[
+  "--- trying to conclude by rule : ", "TemporalState", "[", "Maison<2>", "]"],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.483362934080423*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"--- Rule that will be tried : \"\>", "\[InvisibleSpace]", 
+   RowBox[{"{", 
+    RowBox[{"\<\"rule1\"\>", ",", "\<\"rule2\"\>", ",", "\<\"rule3\"\>"}], 
+    "}"}]}],
+  SequenceForm["--- Rule that will be tried : ", {"rule1", "rule2", "rule3"}],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.483362934080423*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"--- trying to fire : \"\>", 
+   "\[InvisibleSpace]", "\<\"rule1\"\>"}],
+  SequenceForm["--- trying to fire : ", "rule1"],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.483362934080423*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"accessing the value of \\\"\"\>", 
+   "\[InvisibleSpace]", "\<\"owner\"\>", "\[InvisibleSpace]", "\<\"[\"\>", 
+   "\[InvisibleSpace]", "\<\"Maison<2>\"\>", 
+   "\[InvisibleSpace]", "\<\"]\"\>"}],
+  SequenceForm["accessing the value of \"", "owner", "[", "Maison<2>", "]"],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.483362934080423*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"Failed ! :  premisse, aa=\"\>", "\[InvisibleSpace]", "False", 
+   "\[InvisibleSpace]", "\<\"   \"\>", "\[InvisibleSpace]", "\<\"rule1\"\>"}],
+  SequenceForm["Failed ! :  premisse, aa=", False, "   ", "rule1"],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.483362934080423*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"--- trying to fire : \"\>", 
+   "\[InvisibleSpace]", "\<\"rule2\"\>"}],
+  SequenceForm["--- trying to fire : ", "rule2"],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.4833629341272984`*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"accessing the value of \\\"\"\>", 
+   "\[InvisibleSpace]", "\<\"owner\"\>", "\[InvisibleSpace]", "\<\"[\"\>", 
+   "\[InvisibleSpace]", "\<\"Maison<2>\"\>", 
+   "\[InvisibleSpace]", "\<\"]\"\>"}],
+  SequenceForm["accessing the value of \"", "owner", "[", "Maison<2>", "]"],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.4833629342054234`*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"Failed ! :  premisse, aa=\"\>", "\[InvisibleSpace]", "False", 
+   "\[InvisibleSpace]", "\<\"   \"\>", "\[InvisibleSpace]", "\<\"rule2\"\>"}],
+  SequenceForm["Failed ! :  premisse, aa=", False, "   ", "rule2"],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.483362934252299*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"--- trying to fire : \"\>", 
+   "\[InvisibleSpace]", "\<\"rule3\"\>"}],
+  SequenceForm["--- trying to fire : ", "rule3"],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.4833629342991743`*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"accessing the value of \\\"\"\>", 
+   "\[InvisibleSpace]", "\<\"owner\"\>", "\[InvisibleSpace]", "\<\"[\"\>", 
+   "\[InvisibleSpace]", "\<\"Maison<2>\"\>", 
+   "\[InvisibleSpace]", "\<\"]\"\>"}],
+  SequenceForm["accessing the value of \"", "owner", "[", "Maison<2>", "]"],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.4833629343304243`*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"Premisse of \"\>", "\[InvisibleSpace]", "\<\"rule3\"\>", 
+   "\[InvisibleSpace]", "\<\":\"\>", "\[InvisibleSpace]", 
+   TagBox[
+    RowBox[{
+     RowBox[{"V", "[", 
+      RowBox[{"2", ",", "\<\"owner\"\>"}], "]"}], 
+     "\[Equal]", "\<\"michel\"\>"}],
+    HoldForm], "\[InvisibleSpace]", "\<\" ->True\"\>"}],
+  SequenceForm["Premisse of ", "rule3", ":", 
+   HoldForm[$CellContext`V[2, "owner"] == "michel"], " ->True"],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.4833629343772993`*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"***++ \"\>", "\[InvisibleSpace]", "\<\"rule3\"\>", 
+   "\[InvisibleSpace]", "\<\"  succeeded !\"\>"}],
+  SequenceForm["***++ ", "rule3", "  succeeded !"],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.48336293440855*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"*** \"\>", "\[InvisibleSpace]", "\<\"TemporalState\"\>", 
+   "\[InvisibleSpace]", "\<\"[\"\>", "\[InvisibleSpace]", "\<\"Maison<2>\"\>",
+    "\[InvisibleSpace]", "\<\"]\"\>", 
+   "\[InvisibleSpace]", "\<\"  concluded by rule = \"\>", 
+   "\[InvisibleSpace]", "\<\"finiAuPipi\"\>"}],
+  SequenceForm[
+  "*** ", "TemporalState", "[", "Maison<2>", "]", "  concluded by rule = ", 
+   "finiAuPipi"],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.4833629344554253`*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"Failed ! :  premisse, aa=\"\>", "\[InvisibleSpace]", "False", 
+   "\[InvisibleSpace]", "\<\"   \"\>", "\[InvisibleSpace]", "\<\"rule4\"\>"}],
+  SequenceForm["Failed ! :  premisse, aa=", False, "   ", "rule4"],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.4833629345023003`*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"--- trying to fire : \"\>", 
+   "\[InvisibleSpace]", "\<\"rule5\"\>"}],
+  SequenceForm["--- trying to fire : ", "rule5"],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.4833629345335503`*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"accessing the value of \\\"\"\>", 
+   "\[InvisibleSpace]", "\<\"TemporalState\"\>", 
+   "\[InvisibleSpace]", "\<\"[\"\>", "\[InvisibleSpace]", "\<\"Maison<2>\"\>",
+    "\[InvisibleSpace]", "\<\"]\"\>"}],
+  SequenceForm[
+  "accessing the value of \"", "TemporalState", "[", "Maison<2>", "]"],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.483362934580426*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"Premisse of \"\>", "\[InvisibleSpace]", "\<\"rule5\"\>", 
+   "\[InvisibleSpace]", "\<\":\"\>", "\[InvisibleSpace]", 
+   TagBox[
+    RowBox[{
+     RowBox[{"V", "[", 
+      RowBox[{"2", ",", "\<\"TemporalState\"\>"}], "]"}], 
+     "\[Equal]", "\<\"finiAuPipi\"\>"}],
+    HoldForm], "\[InvisibleSpace]", "\<\" ->True\"\>"}],
+  SequenceForm["Premisse of ", "rule5", ":", 
+   HoldForm[$CellContext`V[2, "TemporalState"] == "finiAuPipi"], " ->True"],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.483362934611676*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"***++ \"\>", "\[InvisibleSpace]", "\<\"rule5\"\>", 
+   "\[InvisibleSpace]", "\<\"  succeeded !\"\>"}],
+  SequenceForm["***++ ", "rule5", "  succeeded !"],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.483362934658551*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"*** \"\>", "\[InvisibleSpace]", "\<\"Confiance\"\>", 
+   "\[InvisibleSpace]", "\<\"[\"\>", "\[InvisibleSpace]", "\<\"Maison<2>\"\>",
+    "\[InvisibleSpace]", "\<\"]\"\>", 
+   "\[InvisibleSpace]", "\<\"  concluded by rule = \"\>", 
+   "\[InvisibleSpace]", "\<\"bonne\"\>"}],
+  SequenceForm[
+  "*** ", "Confiance", "[", "Maison<2>", "]", "  concluded by rule = ", 
+   "bonne"],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.4833629347054267`*^9}]
+}, Open  ]],
+
+Cell[BoxData["\<\"bonne\"\>"], "Output",
+ CellChangeTimes->{3.4833629347366767`*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"V", "[", 
+  RowBox[{"b", ",", "\"\<Etat_des_chiottes\>\""}], "]"}]], "Input"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"Trying to get the value of \\\"\"\>", 
+   "\[InvisibleSpace]", "\<\"Etat_des_chiottes\"\>", 
+   "\[InvisibleSpace]", "\<\"[\"\>", "\[InvisibleSpace]", "\<\"Maison<2>\"\>",
+    "\[InvisibleSpace]", "\<\"]\"\>"}],
+  SequenceForm[
+  "Trying to get the value of \"", "Etat_des_chiottes", "[", "Maison<2>", "]"],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.4833629432679815`*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"--- trying to conclude by rule : \"\>", 
+   "\[InvisibleSpace]", "\<\"Etat_des_chiottes\"\>", 
+   "\[InvisibleSpace]", "\<\"[\"\>", "\[InvisibleSpace]", "\<\"Maison<2>\"\>",
+    "\[InvisibleSpace]", "\<\"]\"\>"}],
+  SequenceForm[
+  "--- trying to conclude by rule : ", "Etat_des_chiottes", "[", "Maison<2>", 
+   "]"],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.4833629432679815`*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"--- Rule that will be tried : \"\>", "\[InvisibleSpace]", 
+   RowBox[{"{", "}"}]}],
+  SequenceForm["--- Rule that will be tried : ", {}],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.4833629432679815`*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"*** \"\>", "\[InvisibleSpace]", "\<\"Etat_des_chiottes\"\>", 
+   "\[InvisibleSpace]", "\<\"[\"\>", "\[InvisibleSpace]", "\<\"Maison<2>\"\>",
+    "\[InvisibleSpace]", "\<\"]  concluded by question = \"\>", 
+   "\[InvisibleSpace]", "\<\"terrible\"\>"}],
+  SequenceForm[
+  "*** ", "Etat_des_chiottes", "[", "Maison<2>", 
+   "]  concluded by question = ", "terrible"],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.4833629472523823`*^9}]
+}, Open  ]],
+
+Cell[BoxData["\<\"terrible\"\>"], "Output",
+ CellChangeTimes->{3.4833629472523823`*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"ShowInstances", "[", "]"}]], "Input"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"CLASS = \"\>", "\[InvisibleSpace]", "\<\"Maison\"\>"}],
+  SequenceForm["CLASS = ", "Maison"],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.4833629880026426`*^9}],
+
+Cell[BoxData["\<\"--------------------\"\>"], "Print",
+ CellChangeTimes->{3.4833629880026426`*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"Instance:\"\>", "\[InvisibleSpace]", "\<\"Maison\"\>", 
+   "\[InvisibleSpace]", "\<\"<\"\>", "\[InvisibleSpace]", "1", 
+   "\[InvisibleSpace]", "\<\">\"\>"}],
+  SequenceForm["Instance:", "Maison", "<", 1, ">"],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.4833629880026426`*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"TemporalState\"\>", "\[InvisibleSpace]", "\<\"=\"\>", 
+   "\[InvisibleSpace]", "\<\"superfiniAuPipi\"\>"}],
+  SequenceForm["TemporalState", "=", "superfiniAuPipi"],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.4833629880026426`*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"Confiance\"\>", "\[InvisibleSpace]", "\<\"=\"\>", 
+   "\[InvisibleSpace]", "\<\"TresMoyenne\"\>"}],
+  SequenceForm["Confiance", "=", "TresMoyenne"],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.483362988018268*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"Etat_des_chiottes\"\>", "\[InvisibleSpace]", "\<\"=\"\>", 
+   "\[InvisibleSpace]", "\<\"terrible\"\>"}],
+  SequenceForm["Etat_des_chiottes", "=", "terrible"],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.483362988018268*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"owner\"\>", "\[InvisibleSpace]", "\<\"=\"\>", 
+   "\[InvisibleSpace]", "\<\"olivier\"\>"}],
+  SequenceForm["owner", "=", "olivier"],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.483362988018268*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"Instance:\"\>", "\[InvisibleSpace]", "\<\"Maison\"\>", 
+   "\[InvisibleSpace]", "\<\"<\"\>", "\[InvisibleSpace]", "2", 
+   "\[InvisibleSpace]", "\<\">\"\>"}],
+  SequenceForm["Instance:", "Maison", "<", 2, ">"],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.483362988018268*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"TemporalState\"\>", "\[InvisibleSpace]", "\<\"=\"\>", 
+   "\[InvisibleSpace]", "\<\"finiAuPipi\"\>"}],
+  SequenceForm["TemporalState", "=", "finiAuPipi"],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.483362988018268*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"Confiance\"\>", "\[InvisibleSpace]", "\<\"=\"\>", 
+   "\[InvisibleSpace]", "\<\"bonne\"\>"}],
+  SequenceForm["Confiance", "=", "bonne"],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.483362988018268*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"Etat_des_chiottes\"\>", "\[InvisibleSpace]", "\<\"=\"\>", 
+   "\[InvisibleSpace]", "\<\"terrible\"\>"}],
+  SequenceForm["Etat_des_chiottes", "=", "terrible"],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.483362988018268*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"owner\"\>", "\[InvisibleSpace]", "\<\"=\"\>", 
+   "\[InvisibleSpace]", "\<\"michel\"\>"}],
+  SequenceForm["owner", "=", "michel"],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.483362988033893*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"name\"\>", "\[InvisibleSpace]", "\<\"=\"\>", 
+   "\[InvisibleSpace]", "\<\"les_capucines\"\>"}],
+  SequenceForm["name", "=", "les_capucines"],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.483362988033893*^9}]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"ShowCL", "[", "]"}]], "Input"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"Class : \"\>", "\[InvisibleSpace]", "1"}],
+  SequenceForm["Class : ", 1],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.4833629912370386`*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"InstanceList = \"\>", "\[InvisibleSpace]", 
+   RowBox[{"{", 
+    RowBox[{"\<\"Maison<1>\"\>", ",", "\<\"Maison<2>\"\>"}], "}"}]}],
+  SequenceForm["InstanceList = ", {"Maison<1>", "Maison<2>"}],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.4833629912370386`*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"AttributeList = \"\>", "\[InvisibleSpace]", 
+   RowBox[{"{", 
+    RowBox[{"\<\"PorteNb\"\>", ",", "\<\"TemporalState\"\>", 
+     ",", "\<\"Confiance\"\>", ",", "\<\"Etat_des_chiottes\"\>", 
+     ",", "\<\"owner\"\>", ",", "\<\"name\"\>"}], "}"}]}],
+  SequenceForm[
+  "AttributeList = ", {
+   "PorteNb", "TemporalState", "Confiance", "Etat_des_chiottes", "owner", 
+    "name"}],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.4833629912370386`*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"Name = \"\>", "\[InvisibleSpace]", "\<\"Maison\"\>"}],
+  SequenceForm["Name = ", "Maison"],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.4833629912526636`*^9}],
+
+Cell[BoxData["\<\"-\"\>"], "Print",
+ CellChangeTimes->{3.4833629912526636`*^9}]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"ShowINS", "[", "]"}]], "Input"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData["\<\"Maison\"\>"], "Print",
+ CellChangeTimes->{3.4833629952839394`*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"Instance = \"\>", "\[InvisibleSpace]", "1"}],
+  SequenceForm["Instance = ", 1],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.4833629952839394`*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"Class = \"\>", "\[InvisibleSpace]", "1"}],
+  SequenceForm["Class = ", 1],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.4833629952839394`*^9}],
+
+Cell[BoxData["\<\"-\"\>"], "Print",
+ CellChangeTimes->{3.4833629952839394`*^9}],
+
+Cell[BoxData["\<\"Maison\"\>"], "Print",
+ CellChangeTimes->{3.4833629952839394`*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"Instance = \"\>", "\[InvisibleSpace]", "2"}],
+  SequenceForm["Instance = ", 2],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.4833629952839394`*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"Class = \"\>", "\[InvisibleSpace]", "1"}],
+  SequenceForm["Class = ", 1],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.4833629952995644`*^9}],
+
+Cell[BoxData["\<\"-\"\>"], "Print",
+ CellChangeTimes->{3.4833629952995644`*^9}]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"ShowSRE", "[", "]"}]], "Input"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"SuccedeedRuleEvent : \"\>", "\[InvisibleSpace]", "1"}],
+  SequenceForm["SuccedeedRuleEvent : ", 1],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.4833630005339727`*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"BackwardRule = \"\>", "\[InvisibleSpace]", "\<\"rule2\"\>"}],
+  SequenceForm["BackwardRule = ", "rule2"],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.4833630005339727`*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"Instance = \"\>", "\[InvisibleSpace]", "\<\"Maison<1>\"\>"}],
+  SequenceForm["Instance = ", "Maison<1>"],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.4833630005339727`*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"Attribute = \"\>", 
+   "\[InvisibleSpace]", "\<\"TemporalState\"\>"}],
+  SequenceForm["Attribute = ", "TemporalState"],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.4833630005339727`*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"ConclusionType = \"\>", 
+   "\[InvisibleSpace]", "\<\"Rule Goal\"\>"}],
+  SequenceForm["ConclusionType = ", "Rule Goal"],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.4833630005495977`*^9}],
+
+Cell[BoxData["\<\"-\"\>"], "Print",
+ CellChangeTimes->{3.4833630005495977`*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"SuccedeedRuleEvent : \"\>", "\[InvisibleSpace]", "2"}],
+  SequenceForm["SuccedeedRuleEvent : ", 2],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.4833630005495977`*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"BackwardRule = \"\>", "\[InvisibleSpace]", "\<\"rule4\"\>"}],
+  SequenceForm["BackwardRule = ", "rule4"],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.4833630005495977`*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"Instance = \"\>", "\[InvisibleSpace]", "\<\"Maison<1>\"\>"}],
+  SequenceForm["Instance = ", "Maison<1>"],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.4833630005495977`*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"Attribute = \"\>", "\[InvisibleSpace]", "\<\"Confiance\"\>"}],
+  SequenceForm["Attribute = ", "Confiance"],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.4833630005495977`*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"ConclusionType = \"\>", 
+   "\[InvisibleSpace]", "\<\"Rule Goal\"\>"}],
+  SequenceForm["ConclusionType = ", "Rule Goal"],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.4833630005495977`*^9}],
+
+Cell[BoxData["\<\"-\"\>"], "Print",
+ CellChangeTimes->{3.4833630005495977`*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"SuccedeedRuleEvent : \"\>", "\[InvisibleSpace]", "3"}],
+  SequenceForm["SuccedeedRuleEvent : ", 3],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.4833630005495977`*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"BackwardRule = \"\>", "\[InvisibleSpace]", "\<\"rule3\"\>"}],
+  SequenceForm["BackwardRule = ", "rule3"],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.4833630005495977`*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"Instance = \"\>", "\[InvisibleSpace]", "\<\"Maison<2>\"\>"}],
+  SequenceForm["Instance = ", "Maison<2>"],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.483363000565223*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"Attribute = \"\>", 
+   "\[InvisibleSpace]", "\<\"TemporalState\"\>"}],
+  SequenceForm["Attribute = ", "TemporalState"],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.483363000565223*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"ConclusionType = \"\>", 
+   "\[InvisibleSpace]", "\<\"Rule Goal\"\>"}],
+  SequenceForm["ConclusionType = ", "Rule Goal"],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.483363000565223*^9}],
+
+Cell[BoxData["\<\"-\"\>"], "Print",
+ CellChangeTimes->{3.483363000565223*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"SuccedeedRuleEvent : \"\>", "\[InvisibleSpace]", "4"}],
+  SequenceForm["SuccedeedRuleEvent : ", 4],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.483363000565223*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"BackwardRule = \"\>", "\[InvisibleSpace]", "\<\"rule5\"\>"}],
+  SequenceForm["BackwardRule = ", "rule5"],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.4833630005964737`*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"Instance = \"\>", "\[InvisibleSpace]", "\<\"Maison<2>\"\>"}],
+  SequenceForm["Instance = ", "Maison<2>"],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.4833630006433487`*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"Attribute = \"\>", "\[InvisibleSpace]", "\<\"Confiance\"\>"}],
+  SequenceForm["Attribute = ", "Confiance"],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.4833630006745987`*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"ConclusionType = \"\>", 
+   "\[InvisibleSpace]", "\<\"Rule Goal\"\>"}],
+  SequenceForm["ConclusionType = ", "Rule Goal"],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.483363000721474*^9}],
+
+Cell[BoxData["\<\"-\"\>"], "Print",
+ CellChangeTimes->{3.4833630007527246`*^9}]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"?", "SREConclusionType"}]], "Input"],
+
+Cell[CellGroupData[{
+
+Cell["Global`SREConclusionType", "Print", "PrintUsage",
+ CellChangeTimes->{3.4833630046589994`*^9},
+ CellTags->"Info3483366604-2407336"],
+
+Cell[BoxData[
+ InterpretationBox[GridBox[{
+    {GridBox[{
+       {
+        RowBox[{
+         RowBox[{"SREConclusionType", "[", "1", "]"}], 
+         "=", "\<\"Rule Goal\"\>"}]},
+       {" "},
+       {
+        RowBox[{
+         RowBox[{"SREConclusionType", "[", "2", "]"}], 
+         "=", "\<\"Rule Goal\"\>"}]},
+       {" "},
+       {
+        RowBox[{
+         RowBox[{"SREConclusionType", "[", "3", "]"}], 
+         "=", "\<\"Rule Goal\"\>"}]},
+       {" "},
+       {
+        RowBox[{
+         RowBox[{"SREConclusionType", "[", "4", "]"}], 
+         "=", "\<\"Rule Goal\"\>"}]}
+      },
+      BaselinePosition->{Baseline, {1, 1}},
+      GridBoxAlignment->{
+       "Columns" -> {{Left}}, "ColumnsIndexed" -> {}, "Rows" -> {{Baseline}}, 
+        "RowsIndexed" -> {}},
+      GridBoxItemSize->{"Columns" -> {{
+           Scaled[0.999]}}, "ColumnsIndexed" -> {}, "Rows" -> {{1.}}, 
+        "RowsIndexed" -> {}}]}
+   },
+   BaselinePosition->{Baseline, {1, 1}},
+   GridBoxAlignment->{
+    "Columns" -> {{Left}}, "ColumnsIndexed" -> {}, "Rows" -> {{Baseline}}, 
+     "RowsIndexed" -> {}}],
+  Definition[$CellContext`SREConclusionType],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.4833630046902494`*^9},
+ CellTags->"Info3483366604-2407336"]
+}, Open  ]]
+}, Open  ]]
+},
+AutoGeneratedPackage->None,
+WindowSize->{1009, 889},
+WindowMargins->{{Automatic, 104}, {-80, Automatic}},
+ShowSelection->True,
+FrontEndVersion->"7.0 for Microsoft Windows (32-bit) (February 18, 2009)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{
+ "Info3483366604-2407336"->{
+  Cell[41500, 1212, 136, 2, 42, "Print",
+   CellTags->"Info3483366604-2407336"],
+  Cell[41639, 1216, 1239, 38, 113, "Print",
+   CellTags->"Info3483366604-2407336"]}
+ }
+*)
+(*CellTagsIndex
+CellTagsIndex->{
+ {"Info3483366604-2407336", 43267, 1270}
+ }
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[567, 22, 280, 6, 31, "Input"],
+Cell[850, 30, 186, 2, 30, "Output"]
+}, Open  ]],
+Cell[1051, 35, 1033, 24, 152, "Input",
+ InitializationCell->True],
+Cell[2087, 61, 4831, 118, 832, "Input"],
+Cell[6921, 181, 133, 3, 31, "Input"],
+Cell[CellGroupData[{
+Cell[7079, 188, 97, 2, 31, "Input"],
+Cell[CellGroupData[{
+Cell[7201, 194, 414, 9, 23, "Print"],
+Cell[7618, 205, 420, 9, 23, "Print"],
+Cell[8041, 216, 366, 8, 23, "Print"],
+Cell[8410, 226, 244, 6, 23, "Print"],
+Cell[8657, 234, 422, 9, 23, "Print"],
+Cell[9082, 245, 428, 9, 23, "Print"],
+Cell[9513, 256, 366, 8, 23, "Print"],
+Cell[9882, 266, 244, 6, 23, "Print"],
+Cell[10129, 274, 395, 8, 23, "Print"],
+Cell[10527, 284, 332, 6, 23, "Print"],
+Cell[10862, 292, 244, 6, 23, "Print"],
+Cell[11109, 300, 395, 8, 23, "Print"],
+Cell[11507, 310, 430, 9, 23, "Print"],
+Cell[11940, 321, 438, 10, 23, "Print"],
+Cell[12381, 333, 260, 6, 23, "Print"],
+Cell[12644, 341, 487, 10, 23, "Print"],
+Cell[13134, 353, 719, 18, 23, "Print"],
+Cell[13856, 373, 277, 6, 23, "Print"],
+Cell[14136, 381, 526, 11, 23, "Print"],
+Cell[14665, 394, 579, 14, 23, "Print"],
+Cell[15247, 410, 274, 6, 23, "Print"],
+Cell[15524, 418, 510, 11, 23, "Print"]
+}, Open  ]],
+Cell[16049, 432, 90, 1, 30, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[16176, 438, 61, 1, 31, "Input"],
+Cell[CellGroupData[{
+Cell[16262, 443, 214, 5, 23, "Print"],
+Cell[16479, 450, 96, 1, 23, "Print"],
+Cell[16578, 453, 331, 7, 23, "Print"],
+Cell[16912, 462, 285, 6, 23, "Print"],
+Cell[17200, 470, 269, 6, 23, "Print"],
+Cell[17472, 478, 279, 6, 23, "Print"],
+Cell[17754, 486, 253, 6, 23, "Print"],
+Cell[18010, 494, 331, 7, 23, "Print"],
+Cell[18344, 503, 251, 6, 23, "Print"],
+Cell[18598, 511, 263, 6, 23, "Print"]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[18910, 523, 93, 2, 31, "Input"],
+Cell[CellGroupData[{
+Cell[19028, 529, 412, 9, 23, "Print"],
+Cell[19443, 540, 418, 9, 23, "Print"],
+Cell[19864, 551, 364, 8, 23, "Print"],
+Cell[20231, 561, 242, 6, 23, "Print"],
+Cell[20476, 569, 420, 9, 23, "Print"],
+Cell[20899, 580, 426, 9, 23, "Print"],
+Cell[21328, 591, 364, 8, 23, "Print"],
+Cell[21695, 601, 242, 6, 23, "Print"],
+Cell[21940, 609, 393, 8, 23, "Print"],
+Cell[22336, 619, 330, 6, 23, "Print"],
+Cell[22669, 627, 244, 6, 23, "Print"],
+Cell[22916, 635, 395, 8, 23, "Print"],
+Cell[23314, 645, 330, 6, 23, "Print"],
+Cell[23647, 653, 244, 6, 23, "Print"],
+Cell[23894, 661, 395, 8, 23, "Print"],
+Cell[24292, 671, 543, 13, 23, "Print"],
+Cell[24838, 686, 274, 6, 23, "Print"],
+Cell[25115, 694, 516, 11, 23, "Print"],
+Cell[25634, 707, 332, 6, 23, "Print"],
+Cell[25969, 715, 244, 6, 23, "Print"],
+Cell[26216, 723, 412, 9, 23, "Print"],
+Cell[26631, 734, 565, 13, 23, "Print"],
+Cell[27199, 749, 275, 6, 23, "Print"],
+Cell[27477, 757, 498, 11, 23, "Print"]
+}, Open  ]],
+Cell[27990, 771, 84, 1, 30, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[28111, 777, 101, 2, 31, "Input"],
+Cell[CellGroupData[{
+Cell[28237, 783, 430, 9, 23, "Print"],
+Cell[28670, 794, 440, 10, 23, "Print"],
+Cell[29113, 806, 260, 6, 23, "Print"],
+Cell[29376, 814, 487, 10, 23, "Print"]
+}, Open  ]],
+Cell[29878, 827, 87, 1, 30, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[30002, 833, 61, 1, 31, "Input"],
+Cell[CellGroupData[{
+Cell[30088, 838, 216, 5, 23, "Print"],
+Cell[30307, 845, 98, 1, 23, "Print"],
+Cell[30408, 848, 333, 7, 23, "Print"],
+Cell[30744, 857, 287, 6, 23, "Print"],
+Cell[31034, 865, 269, 6, 23, "Print"],
+Cell[31306, 873, 279, 6, 23, "Print"],
+Cell[31588, 881, 253, 6, 23, "Print"],
+Cell[31844, 889, 331, 7, 23, "Print"],
+Cell[32178, 898, 275, 6, 23, "Print"],
+Cell[32456, 906, 257, 6, 23, "Print"],
+Cell[32716, 914, 279, 6, 23, "Print"],
+Cell[32998, 922, 251, 6, 23, "Print"],
+Cell[33252, 930, 263, 6, 23, "Print"]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[33564, 942, 54, 1, 31, "Input"],
+Cell[CellGroupData[{
+Cell[33643, 947, 196, 5, 23, "Print"],
+Cell[33842, 954, 316, 7, 23, "Print"],
+Cell[34161, 963, 500, 12, 23, "Print"],
+Cell[34664, 977, 214, 5, 23, "Print"],
+Cell[34881, 984, 79, 1, 23, "Print"]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[35009, 991, 55, 1, 31, "Input"],
+Cell[CellGroupData[{
+Cell[35089, 996, 84, 1, 23, "Print"],
+Cell[35176, 999, 202, 5, 23, "Print"],
+Cell[35381, 1006, 196, 5, 23, "Print"],
+Cell[35580, 1013, 79, 1, 23, "Print"],
+Cell[35662, 1016, 84, 1, 23, "Print"],
+Cell[35749, 1019, 202, 5, 23, "Print"],
+Cell[35954, 1026, 196, 5, 23, "Print"],
+Cell[36153, 1033, 79, 1, 23, "Print"]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[36281, 1040, 55, 1, 31, "Input"],
+Cell[CellGroupData[{
+Cell[36361, 1045, 222, 5, 23, "Print"],
+Cell[36586, 1052, 228, 5, 23, "Print"],
+Cell[36817, 1059, 228, 5, 23, "Print"],
+Cell[37048, 1066, 242, 6, 23, "Print"],
+Cell[37293, 1074, 244, 6, 23, "Print"],
+Cell[37540, 1082, 79, 1, 23, "Print"],
+Cell[37622, 1085, 222, 5, 23, "Print"],
+Cell[37847, 1092, 228, 5, 23, "Print"],
+Cell[38078, 1099, 228, 5, 23, "Print"],
+Cell[38309, 1106, 230, 5, 23, "Print"],
+Cell[38542, 1113, 244, 6, 23, "Print"],
+Cell[38789, 1121, 79, 1, 23, "Print"],
+Cell[38871, 1124, 222, 5, 23, "Print"],
+Cell[39096, 1131, 228, 5, 23, "Print"],
+Cell[39327, 1138, 226, 5, 23, "Print"],
+Cell[39556, 1145, 240, 6, 23, "Print"],
+Cell[39799, 1153, 242, 6, 23, "Print"],
+Cell[40044, 1161, 77, 1, 23, "Print"],
+Cell[40124, 1164, 220, 5, 23, "Print"],
+Cell[40347, 1171, 228, 5, 23, "Print"],
+Cell[40578, 1178, 228, 5, 23, "Print"],
+Cell[40809, 1185, 230, 5, 23, "Print"],
+Cell[41042, 1192, 242, 6, 23, "Print"],
+Cell[41287, 1200, 79, 1, 23, "Print"]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[41415, 1207, 60, 1, 31, "Input"],
+Cell[CellGroupData[{
+Cell[41500, 1212, 136, 2, 42, "Print",
+ CellTags->"Info3483366604-2407336"],
+Cell[41639, 1216, 1239, 38, 113, "Print",
+ CellTags->"Info3483366604-2407336"]
+}, Open  ]]
+}, Open  ]]
+}
+]
+*)
+
+(* End of internal cache information *)
