@@ -1,0 +1,602 @@
+(* Content-type: application/mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 7.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       145,          7]
+NotebookDataLength[     20207,        593]
+NotebookOptionsPosition[     17152,        491]
+NotebookOutlinePosition[     17499,        506]
+CellTagsIndexPosition[     17456,        503]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell["Algebre", "Section",
+ CellChangeTimes->{{3.483455825506648*^9, 3.4834558279402523`*^9}}],
+
+Cell[CellGroupData[{
+
+Cell["MesurableState type  : AtomicState", "Subsection",
+ CellChangeTimes->{{3.4834503987503166`*^9, 3.483450425488764*^9}, {
+  3.4834504805100603`*^9, 3.4834504875456724`*^9}, {3.483450938152464*^9, 
+  3.4834509560768957`*^9}, {3.4834521658278203`*^9, 3.483452206855892*^9}}],
+
+Cell[BoxData[
+ RowBox[{"CMS", 
+  RowBox[{"(", "i", ")"}], "  "}]], "Input",
+ CellChangeTimes->{{3.4834504125563407`*^9, 3.4834504150679455`*^9}, {
+  3.483450572160221*^9, 3.4834505750306263`*^9}}],
+
+Cell[BoxData[
+ RowBox[{"CMS", 
+  RowBox[{"(", 
+   RowBox[{"i", "-", "1"}], ")"}]}]], "Input",
+ CellChangeTimes->{{3.4834505770118294`*^9, 3.4834505819570384`*^9}}],
+
+Cell[BoxData[
+ RowBox[{"Swap", 
+  RowBox[{"(", "i", ")"}]}]], "Input",
+ CellChangeTimes->{{3.48345056579541*^9, 3.4834505686658154`*^9}}],
+
+Cell[BoxData[
+ RowBox[{"Swap", 
+  RowBox[{"(", 
+   RowBox[{"i", "-", "1"}], ")"}]}]], "Input",
+ CellChangeTimes->{{3.4834505849210434`*^9, 3.483450589647852*^9}}],
+
+Cell[BoxData[
+ RowBox[{"BasketValue", 
+  RowBox[{"(", "i", ")"}]}]], "Input",
+ CellChangeTimes->{{3.483450439325988*^9, 3.483450449528406*^9}, {
+  3.4834520421664033`*^9, 3.483452065987645*^9}}],
+
+Cell[BoxData[
+ RowBox[{"BasketWorst", 
+  RowBox[{"(", "i", ")"}]}]], "Input",
+ CellChangeTimes->{{3.4834504540056133`*^9, 3.4834504570008187`*^9}, {
+  3.4834520480320134`*^9, 3.483452050169217*^9}}],
+
+Cell[BoxData[
+ RowBox[{"BasketBest", 
+  RowBox[{"(", "i", ")"}]}]], "Input",
+ CellChangeTimes->{{3.4834504540056133`*^9, 3.4834504570008187`*^9}, {
+  3.4834520480320134`*^9, 3.483452050169217*^9}, {3.48345209171209*^9, 
+  3.483452092928892*^9}}],
+
+Cell[BoxData[
+ RowBox[{"BasketRainbow", 
+  RowBox[{"(", "i", ")"}]}]], "Input",
+ CellChangeTimes->{{3.483450462273628*^9, 3.4834504674216375`*^9}, {
+  3.4834520540692244`*^9, 3.483452056456028*^9}}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["CouponValue", "Subsection",
+ CellChangeTimes->{{3.4834522334539394`*^9, 3.4834522354351425`*^9}, {
+   3.4834524414647045`*^9, 3.483452444069909*^9}, 3.483452544440485*^9}],
+
+Cell[CellGroupData[{
+
+Cell["Somme sur m  de 1 a ncoupon de", "Subsubsection",
+ CellChangeTimes->{{3.483452290160039*^9, 3.483452328520506*^9}, {
+  3.483452882290279*^9, 3.4834528843338823`*^9}}],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{
+   RowBox[{"CouponMultiplicateur", 
+    RowBox[{"(", 
+     RowBox[{"m", ",", "i"}], ")"}]}], " ", ",", 
+   RowBox[{"CouponTransformateur", 
+    RowBox[{"(", "m", ")"}]}], ",", "  ", 
+   RowBox[{"CouponCondition", 
+    RowBox[{"(", "m", ")"}]}]}], "}"}]], "Input",
+ CellChangeTimes->{{3.4834523527317486`*^9, 3.4834523720445824`*^9}, {
+  3.483452453570326*^9, 3.4834524624779415`*^9}, {3.483452548543292*^9, 
+  3.4834525552513046`*^9}, {3.4834529266567564`*^9, 3.4834529357983727`*^9}, {
+  3.4836797648304234`*^9, 3.4836797779553394`*^9}}]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["MesurableState : CouponTransformateur", "Subsection",
+ CellChangeTimes->{{3.48345065702437*^9, 3.4834506817816133`*^9}, 
+   3.483452216356309*^9, {3.483452526640854*^9, 3.483452528185257*^9}}],
+
+Cell[CellGroupData[{
+
+Cell["un au choix", "Subsubsection",
+ CellChangeTimes->{{3.48345149374744*^9, 3.483451498396248*^9}}],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"nature", "[", "AtomicState", "]"}], "+", 
+  RowBox[{"couponspread", 
+   RowBox[{"(", 
+    RowBox[{"m", ",", "i"}], ")"}]}]}]], "Input",
+ CellChangeTimes->{{3.483450695306837*^9, 3.4834506964300394`*^9}, {
+   3.4834507420601196`*^9, 3.483450746256527*^9}, {3.4834508024634256`*^9, 
+   3.4834508040234284`*^9}, 3.483450926670844*^9, {3.4834509643917103`*^9, 
+   3.4834509668877144`*^9}, {3.4834519219369917`*^9, 
+   3.4834519229197936`*^9}, {3.4834531035454674`*^9, 3.4834531047934694`*^9}}],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{
+   RowBox[{"Cappe", "[", "AtomicState", "]"}], 
+   RowBox[{"(", 
+    RowBox[{"couponcap", 
+     RowBox[{"(", 
+      RowBox[{"m", ",", "i"}], ")"}]}], ")"}]}], " ", "+", 
+  RowBox[{"couponspread", 
+   RowBox[{"(", 
+    RowBox[{"m", ",", "i"}], ")"}]}]}]], "Input",
+ CellChangeTimes->{{3.4834507003456464`*^9, 3.483450703060051*^9}, {
+   3.483450749657333*^9, 3.4834508130558443`*^9}, 3.483450980771739*^9, {
+   3.4834519321082096`*^9, 3.483451942529028*^9}, {3.483453109130277*^9, 
+   3.483453114808687*^9}}],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{
+   RowBox[{"Floore", "[", "AtomicState", "]"}], 
+   RowBox[{"(", 
+    RowBox[{"couponfloor", 
+     RowBox[{"(", 
+      RowBox[{"m", ",", "i"}], ")"}]}], ")"}]}], "+", 
+  RowBox[{"couponspread", 
+   RowBox[{"(", 
+    RowBox[{"m", ",", "i"}], ")"}]}]}]], "Input",
+ CellChangeTimes->{{3.4834507072876587`*^9, 3.4834507105792646`*^9}, {
+   3.4834507615289536`*^9, 3.4834508181258535`*^9}, 3.483450985030546*^9, {
+   3.483451934198613*^9, 3.4834519466630354`*^9}, {3.483453118583894*^9, 
+   3.483453123295102*^9}}],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{
+   RowBox[{"CappeFloore", "[", "AtomicState", "]"}], 
+   RowBox[{"(", 
+    RowBox[{
+     RowBox[{"couponcap", 
+      RowBox[{"(", 
+       RowBox[{"m", ",", "i"}], ")"}]}], ",", 
+     RowBox[{"couponfloor", 
+      RowBox[{"(", 
+       RowBox[{"m", ",", "i"}], ")"}]}]}], ")"}]}], "+", 
+  RowBox[{"couponspread", 
+   RowBox[{"(", 
+    RowBox[{"m", ",", "i"}], ")"}]}]}]], "Input",
+ CellChangeTimes->{{3.48345071374607*^9, 3.4834507202980814`*^9}, {
+   3.483450821682659*^9, 3.483450843085897*^9}, 3.483450988852553*^9, {
+   3.483451951452244*^9, 3.4834519574582543`*^9}, {3.4834531270391083`*^9, 
+   3.4834531361963243`*^9}}]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["MesurableState : CouponCondition", "Subsection",
+ CellChangeTimes->{{3.4834508603707275`*^9, 3.483450869387543*^9}, 
+   3.4834522213795176`*^9, {3.4834525330524654`*^9, 3.4834525345344677`*^9}}],
+
+Cell[CellGroupData[{
+
+Cell["Conjonction de k entre 0 et nAtomicState de chaque", "Subsubsection",
+ CellChangeTimes->{{3.4834515557887487`*^9, 3.483451643242502*^9}, {
+  3.483452826613781*^9, 3.4834528271441817`*^9}, {3.4834553001601253`*^9, 
+  3.483455304621733*^9}}],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"ConditionLessThan", "[", "AtomicState", "]"}], 
+  RowBox[{"(", 
+   RowBox[{"couponConditionLessThan", 
+    RowBox[{"(", 
+     RowBox[{"m", ",", "k", ",", "i"}], ")"}]}], ")"}]}]], "Input",
+ CellChangeTimes->{{3.483451321647938*^9, 3.483451382800045*^9}, {
+  3.4834524855503817`*^9, 3.483452486657984*^9}, {3.483452833508993*^9, 
+  3.4834528357397966`*^9}, {3.4834532722597637`*^9, 3.483453273133365*^9}}],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"ConditionLMoreThan", "[", "AtomicState", "]"}], 
+  RowBox[{"(", 
+   RowBox[{"couponConditionMoreThan", 
+    RowBox[{"(", 
+     RowBox[{"m", ",", "k", ",", "i"}], ")"}]}], ")"}]}]], "Input",
+ CellChangeTimes->{{3.483451321647938*^9, 3.483451419210509*^9}, {
+  3.4834524900899897`*^9, 3.483452491275592*^9}, {3.483452839717804*^9, 
+  3.483452840373005*^9}, {3.48345327592577*^9, 3.483453277048972*^9}}],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"BarrierUpOut", "[", "AtomicState", "]"}], 
+  RowBox[{"(", 
+   RowBox[{"couponBarrierUpOut", 
+    RowBox[{"(", 
+     RowBox[{"m", ",", "k", ",", "i"}], ")"}]}], ")"}]}]], "Input",
+ CellChangeTimes->{{3.4834511853660984`*^9, 3.483451268420644*^9}, {
+  3.4834524942551975`*^9, 3.483452495315999*^9}, {3.4834528435398107`*^9, 
+  3.4834528442418118`*^9}, {3.483453282306181*^9, 3.483453283039383*^9}}],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"BarrierUpIn", "[", "AtomicState", "]"}], 
+  RowBox[{"(", 
+   RowBox[{"couponBarrierUpIn", 
+    RowBox[{"(", 
+     RowBox[{"m", ",", "k", ",", "i"}], ")"}]}], ")"}]}]], "Input",
+ CellChangeTimes->{{3.4834511853660984`*^9, 3.483451268420644*^9}, {
+  3.483451304253907*^9, 3.4834513164843283`*^9}, {3.4834524982644043`*^9, 
+  3.483452499200406*^9}, {3.483452847315017*^9, 3.483452847689418*^9}, {
+  3.4834532869081893`*^9, 3.483453287641391*^9}}],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"BarrierDownOut", "[", "AtomicState", "]"}], 
+  RowBox[{"(", 
+   RowBox[{"couponBarrierDownpOut", 
+    RowBox[{"(", 
+     RowBox[{"m", ",", "k", ",", "i"}], ")"}]}], ")"}]}]], "Input",
+ CellChangeTimes->{{3.4834511853660984`*^9, 3.483451268420644*^9}, {
+  3.4834517140666265`*^9, 3.483451723925844*^9}, {3.4834525025076113`*^9, 
+  3.4834525035528135`*^9}, {3.483452850981024*^9, 3.483452851277424*^9}, {
+  3.4834532909485965`*^9, 3.4834532916817975`*^9}}],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"BarrierDownIn", "[", "AtomicState", "]"}], 
+  RowBox[{"(", 
+   RowBox[{"couponBarrierDownIn", 
+    RowBox[{"(", 
+     RowBox[{"m", ",", "k", ",", "i"}], ")"}]}], ")"}]}]], "Input",
+ CellChangeTimes->{{3.4834511853660984`*^9, 3.483451268420644*^9}, {
+  3.483451304253907*^9, 3.4834513164843283`*^9}, {3.483451730415456*^9, 
+  3.483451740103072*^9}, {3.48345250723442*^9, 3.483452508404422*^9}, {
+  3.483452855021431*^9, 3.4834528554114313`*^9}, {3.4834532955194044`*^9, 
+  3.4834532961590056`*^9}}]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Callabilite", "Subsection",
+ CellChangeTimes->{{3.483452616169411*^9, 3.483452628789833*^9}}],
+
+Cell[CellGroupData[{
+
+Cell["p Disjonction de q(p) conjonction de type (p peut etre =0)", \
+"Subsubsection",
+ CellChangeTimes->{{3.4834515557887487`*^9, 3.483451643242502*^9}, {
+  3.4834529920832715`*^9, 3.4834529945168757`*^9}, {3.483455082830144*^9, 
+  3.483455149832261*^9}, {3.483455452151192*^9, 3.4834554585004034`*^9}}],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"BarrierUpOut", "[", "AtomicState", "]"}], 
+  RowBox[{"(", 
+   RowBox[{"CallabilityBarrierUpOut", 
+    RowBox[{"(", 
+     RowBox[{"p", ",", 
+      RowBox[{"q", 
+       RowBox[{"(", "p", ")"}]}], ",", "i"}], ")"}]}], ")"}]}]], "Input",
+ CellChangeTimes->{{3.4834511853660984`*^9, 3.483451268420644*^9}, {
+   3.4834524942551975`*^9, 3.483452495315999*^9}, 3.48345270093996*^9, {
+   3.4834530079640994`*^9, 3.4834530083697*^9}, {3.4834551993779483`*^9, 
+   3.4834552114835696`*^9}}],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"BarrierUpIn", "[", "AtomicState", "]"}], 
+  RowBox[{"(", 
+   RowBox[{"CallabilityBarrierUpIn", 
+    RowBox[{"(", 
+     RowBox[{"p", ",", 
+      RowBox[{"q", 
+       RowBox[{"(", "p", ")"}]}], ",", "i"}], ")"}]}], ")"}]}]], "Input",
+ CellChangeTimes->{{3.4834511853660984`*^9, 3.483451268420644*^9}, {
+   3.483451304253907*^9, 3.4834513164843283`*^9}, {3.4834524982644043`*^9, 
+   3.483452499200406*^9}, 3.48345270657157*^9, {3.483453011630106*^9, 
+   3.4834530120357065`*^9}, 3.483455242112423*^9}],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"BarrierDownOut", "[", "AtomicState", "]"}], 
+  RowBox[{"(", 
+   RowBox[{"CallabilityBarrierDownpOut", 
+    RowBox[{"(", 
+     RowBox[{"p", ",", 
+      RowBox[{"q", 
+       RowBox[{"(", "p", ")"}]}], ",", "i"}], ")"}]}], ")"}]}]], "Input",
+ CellChangeTimes->{{3.4834511853660984`*^9, 3.483451268420644*^9}, {
+   3.4834517140666265`*^9, 3.483451723925844*^9}, {3.4834525025076113`*^9, 
+   3.4834525035528135`*^9}, 3.4834527120783796`*^9, {3.483453015077712*^9, 
+   3.483453015498913*^9}, 3.4834552505832376`*^9}],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"BarrierDownIn", "[", "AtomicState", "]"}], 
+  RowBox[{"(", 
+   RowBox[{"CallabilityBarrierDownIn", 
+    RowBox[{"(", 
+     RowBox[{"p", ",", 
+      RowBox[{"q", 
+       RowBox[{"(", "p", ")"}]}], ",", "i"}], ")"}]}], ")"}]}]], "Input",
+ CellChangeTimes->{{3.4834511853660984`*^9, 3.483451268420644*^9}, {
+   3.483451304253907*^9, 3.4834513164843283`*^9}, {3.483451730415456*^9, 
+   3.483451740103072*^9}, {3.48345250723442*^9, 3.483452508404422*^9}, 
+   3.4834527176319895`*^9, {3.4834530187905183`*^9, 3.483453019164919*^9}, 
+   3.483455255060446*^9}]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Instrument", "Subsection",
+ CellChangeTimes->{{3.4834555563437753`*^9, 3.4834555599785814`*^9}}],
+
+Cell[CellGroupData[{
+
+Cell["\<\
+C' est la donn\[EAcute]e de simultan\[EAcute]ment\
+\>", "Subsubsection",
+ CellChangeTimes->{{3.483455612628674*^9, 3.483455631208307*^9}}],
+
+Cell[BoxData["CouponValue"], "Input",
+ CellChangeTimes->{{3.483455586514228*^9, 3.483455606248263*^9}, {
+  3.483455636574716*^9, 3.4834556466679335`*^9}}],
+
+Cell[BoxData["Callabilit\[EAcute]"], "Input"]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Utilisation de l' algebre", "Section",
+ CellChangeTimes->{{3.483455844273481*^9, 3.4834558509502926`*^9}}],
+
+Cell["\<\
+A chaque element de l' algebre precedente, correspond  un payoff defini par \
+une fonctionelle :\
+\>", "Text",
+ CellChangeTimes->{{3.483455871557929*^9, 3.4834559402760496`*^9}, {
+  3.4834562641638184`*^9, 3.4834562665350227`*^9}}],
+
+Cell[BoxData[
+ RowBox[{"PayOffStateEvaluation", "[", 
+  RowBox[{
+  "algebreElement_", ",", " ", "CMSi_", ",", " ", "CMSip_", ",", " ", 
+   "Swapi_", ",", " ", "Swapip_", ",", " ", "BasketValuei_", ",", " ", 
+   "BasketWorsti_", ",", " ", "BasketBesti_", ",", " ", "BasketRainbowi_", 
+   ",", " ", "i_", ",", " ", "hisory_"}], "]"}]], "Input",
+ CellChangeTimes->{{3.4834559443008566`*^9, 3.4834561485520153`*^9}},
+ FormatType->"InputForm"],
+
+Cell["\<\
+Le payoff est bien sur path dependent a cause des barriere intervenant dans \
+les coupons et de la callabilite.\
+\>", "Text",
+ CellChangeTimes->{{3.483456167630849*^9, 3.483456199283304*^9}, {
+  3.4834562361305695`*^9, 3.483456243883783*^9}}],
+
+Cell["\<\
+A chaque element de l' algebre precedente correspond aussi une liste de \
+parametres qui ont besoin d' etre valorises avant  toute evaluation.\
+\>", "Text",
+ CellChangeTimes->{{3.4834562527601986`*^9, 3.48345629349187*^9}, {
+  3.483456325456326*^9, 3.483456375064413*^9}, {3.4834582248376617`*^9, 
+  3.4834582272400665`*^9}}],
+
+Cell[BoxData[
+ RowBox[{"PayOffParameterList", "[", "algebreElement_", "]"}]], "Input",
+ CellChangeTimes->{{3.48345638461163*^9, 3.483456408604472*^9}},
+ FormatType->"InputForm"],
+
+Cell[CellGroupData[{
+
+Cell["Relation de l' algebre avec les payoffs definis dans Sophis.", \
+"Subsection",
+ CellChangeTimes->{{3.4834564438293343`*^9, 3.4834564786173954`*^9}, {
+  3.4834582080208325`*^9, 3.483458210797638*^9}}],
+
+Cell["\<\
+On pense que tous les payoffs (sinon la majeure partie d' entre eux) sont \
+associ\[EAcute] a un et un seul element de l' algebre.\
+\>", "Text",
+ CellChangeTimes->{{3.483456489943015*^9, 3.483456564901147*^9}}],
+
+Cell["\<\
+de plus en supposant donn\[EAcute]e une liste date associ\[EAcute]es  aux \
+coupons, les  dates de payments et de resets, et les definition des etats \
+etant exogene au probleme trait\[EAcute] par l' algebre.On a les theoremes \
+suivants :\
+\>", "Text",
+ CellChangeTimes->{{3.483456631840864*^9, 3.4834566710905333`*^9}, {
+   3.4834567134446077`*^9, 3.4834568102115774`*^9}, {3.4834568527840524`*^9, 
+   3.4834568632360706`*^9}, 3.483456956789435*^9, {3.4834570755680437`*^9, 
+   3.483457082385256*^9}}],
+
+Cell["Soit A l' algebre ainsi definie", "Text",
+ CellChangeTimes->{{3.483457238011129*^9, 3.483457247667546*^9}}],
+
+Cell["\<\
+Soit la suralgebre E l' espace vectoriel engendr\[EAcute] par l' algebre\
+\>", "Text",
+ CellChangeTimes->{{3.483457168497407*^9, 3.483457225484307*^9}, {
+  3.4834572595079665`*^9, 3.483457259585967*^9}}],
+
+Cell["\<\
+Soit V l' espace vectoriel engendr\[EAcute] par les instrument de sophis.(la \
+redondance est trait\[EAcute]e)\
+\>", "Text",
+ CellChangeTimes->{{3.483457268275182*^9, 3.4834573265256844`*^9}}],
+
+Cell[CellGroupData[{
+
+Cell["Theoreme 1", "ItemNumbered"],
+
+Cell["\<\
+Tout element de V est associ\[EAcute] a un et un seul element de E\
+\>", "ItemParagraph",
+ CellChangeTimes->{{3.483457336104101*^9, 3.483457383184984*^9}}]
+}, Open  ]],
+
+Cell["V est alors plong\[EAcute] dans E", "Text",
+ CellChangeTimes->{{3.4834576815043077`*^9, 3.4834576897879224`*^9}}],
+
+Cell["\<\
+L' id\[EAcute]e est alors de construire une parametrisation de V et donc un \
+inverse local au plongement\
+\>", "Text",
+ CellChangeTimes->{{3.4834577159959683`*^9, 3.483457764855254*^9}}],
+
+Cell["\<\
+V est engendr\[EAcute] par un certain nombre de payoffs.\
+\>", "Text",
+ CellChangeTimes->{{3.483457828394166*^9, 3.4834578606550226`*^9}}],
+
+Cell["\<\
+L' id\[EAcute]e est de construire un programme realisant un inverse local du  \
+plongement etant donn\[EAcute] un liste de payoff\
+\>", "Text",
+ CellChangeTimes->{{3.4834578685486364`*^9, 3.4834579312451468`*^9}}],
+
+Cell["\<\
+L' algorithme s' appuiyant sur la definition de l' algebre permet : \
+\>", "Text",
+ CellChangeTimes->{{3.48345797336522*^9, 3.4834580577301683`*^9}}],
+
+Cell[CellGroupData[{
+
+Cell["une specification de payoff tres souple ", "Subitem"],
+
+Cell["La mise en evidence des payoff manquant", "Subitem",
+ CellChangeTimes->{{3.4834580644849806`*^9, 3.4834580781818047`*^9}}]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]]
+},
+WindowSize->{1325, 784},
+WindowMargins->{{1233, Automatic}, {Automatic, 4}},
+FrontEndVersion->"7.0 for Microsoft Windows (32-bit) (February 18, 2009)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[567, 22, 94, 1, 71, "Section"],
+Cell[CellGroupData[{
+Cell[686, 27, 276, 3, 36, "Subsection"],
+Cell[965, 32, 196, 4, 31, "Input"],
+Cell[1164, 38, 163, 4, 31, "Input"],
+Cell[1330, 44, 137, 3, 31, "Input"],
+Cell[1470, 49, 162, 4, 31, "Input"],
+Cell[1635, 55, 194, 4, 31, "Input"],
+Cell[1832, 61, 198, 4, 31, "Input"],
+Cell[2033, 67, 245, 5, 31, "Input"],
+Cell[2281, 74, 198, 4, 31, "Input"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[2516, 83, 177, 2, 36, "Subsection"],
+Cell[CellGroupData[{
+Cell[2718, 89, 172, 2, 27, "Subsubsection"],
+Cell[2893, 93, 578, 13, 31, "Input"]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[3520, 112, 198, 2, 36, "Subsection"],
+Cell[CellGroupData[{
+Cell[3743, 118, 101, 1, 27, "Subsubsection"],
+Cell[3847, 121, 524, 10, 31, "Input"],
+Cell[4374, 133, 542, 14, 31, "Input"],
+Cell[4919, 149, 544, 14, 31, "Input"],
+Cell[5466, 165, 658, 18, 31, "Input"]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[6173, 189, 200, 2, 36, "Subsection"],
+Cell[CellGroupData[{
+Cell[6398, 195, 245, 3, 27, "Subsubsection"],
+Cell[6646, 200, 439, 9, 31, "Input"],
+Cell[7088, 211, 435, 9, 31, "Input"],
+Cell[7526, 222, 431, 9, 31, "Input"],
+Cell[7960, 233, 478, 10, 31, "Input"],
+Cell[8441, 245, 489, 10, 31, "Input"],
+Cell[8933, 257, 532, 11, 31, "Input"]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[9514, 274, 99, 1, 36, "Subsection"],
+Cell[CellGroupData[{
+Cell[9638, 279, 303, 4, 27, "Subsubsection"],
+Cell[9944, 285, 513, 12, 31, "Input"],
+Cell[10460, 299, 533, 12, 31, "Input"],
+Cell[10996, 313, 545, 12, 31, "Input"],
+Cell[11544, 327, 587, 13, 31, "Input"]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[12180, 346, 102, 1, 36, "Subsection"],
+Cell[CellGroupData[{
+Cell[12307, 351, 148, 3, 27, "Subsubsection"],
+Cell[12458, 356, 154, 2, 31, "Input"],
+Cell[12615, 360, 45, 0, 31, "Input"]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[12721, 367, 112, 1, 71, "Section"],
+Cell[12836, 370, 241, 5, 29, "Text"],
+Cell[13080, 377, 438, 8, 31, "Input"],
+Cell[13521, 387, 252, 5, 29, "Text"],
+Cell[13776, 394, 335, 6, 29, "Text"],
+Cell[14114, 402, 177, 3, 31, "Input"],
+Cell[CellGroupData[{
+Cell[14316, 409, 205, 3, 36, "Subsection"],
+Cell[14524, 414, 220, 4, 29, "Text"],
+Cell[14747, 420, 513, 9, 29, "Text"],
+Cell[15263, 431, 113, 1, 29, "Text"],
+Cell[15379, 434, 213, 4, 29, "Text"],
+Cell[15595, 440, 202, 4, 29, "Text"],
+Cell[CellGroupData[{
+Cell[15822, 448, 34, 0, 24, "ItemNumbered"],
+Cell[15859, 450, 165, 3, 20, "ItemParagraph"]
+}, Open  ]],
+Cell[16039, 456, 119, 1, 29, "Text"],
+Cell[16161, 459, 197, 4, 29, "Text"],
+Cell[16361, 465, 148, 3, 29, "Text"],
+Cell[16512, 470, 223, 4, 29, "Text"],
+Cell[16738, 476, 159, 3, 29, "Text"],
+Cell[CellGroupData[{
+Cell[16922, 483, 59, 0, 23, "Subitem"],
+Cell[16984, 485, 128, 1, 23, "Subitem"]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]]
+}
+]
+*)
+
+(* End of internal cache information *)
